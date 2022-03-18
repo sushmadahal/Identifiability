@@ -1,0 +1,219 @@
+MODEL7a
+
+MODEL7a
+
+MODEL EQUATION(S)$
+
+c_ := {df(x1,t)=( - (betah*x4 + betai*x3)*x1 - betad*x1*x6)/(x4 + x5 + x3 + x2 + x1),
+df(x2,t)=( - ((x4 + x5 + x3 + x2 + x1)*k*x2 - betai*x1*x3 - betah*x1*x4) + betad*x1*x6)/(x4 + x5 + x3 + x2 +
+x1),
+df(x3,t)= - (gammai*x3 - k*x2 + deltai*x3) - alpha*x3,
+df(x4,t)= - (deltah + gammah)*x4 + alpha*x3,
+df(x5,t)=gammah*x4 + gammai*x3,
+df(x6,t)=deltah*x4 + deltai*x3,
+y1=k*x2}$
+
+CHARACTERISTIC SET$
+
+aa_(1) := df(y1,t,2)*betai + df(y1,t)*(alpha*betah + betad*deltai + betai*deltah + betai*gammah) + y1*betad*(
+alpha*deltah + deltah*deltai + deltai*gammah)$
+
+aa_(2) :=  - x2*k + y1$
+
+aa_(3) :=  - df(y1,t)*betai + x3*(alpha**2*betah - alpha**2*betai - alpha*betad*deltah + alpha*betad*deltai +
+alpha*betah*deltai + alpha*betah*gammai + alpha*betai*deltah - 2*alpha*betai*deltai + alpha*betai*gammah - 2*
+alpha*betai*gammai - betad*deltah*deltai + betad*deltai**2 - betad*deltai*gammah + betad*deltai*gammai + betai
+*deltah*deltai + betai*deltah*gammai - betai*deltai**2 + betai*deltai*gammah - 2*betai*deltai*gammai + betai*
+gammah*gammai - betai*gammai**2) + y1*( - alpha*betah + alpha*betai - betad*deltai - betai*deltah + betai*
+deltai - betai*gammah + betai*gammai)$
+
+aa_(4) := df(y1,t)*betai*( - alpha*betah + alpha*betai - betad*deltai + betai*deltai + betai*gammai) + x4*( -
+alpha**2*betad*betah*deltah + alpha**2*betad*betai*deltah + alpha**2*betah**2*deltah + alpha**2*betah**2*
+gammah - alpha**2*betah*betai*deltah - alpha**2*betah*betai*gammah + alpha*betad**2*deltah**2 - alpha*betad**2
+*deltah*deltai - alpha*betad*betah*deltah**2 - alpha*betad*betah*deltah*gammah - alpha*betad*betah*deltah*
+gammai + alpha*betad*betah*deltai*gammah - alpha*betad*betai*deltah**2 + 2*alpha*betad*betai*deltah*deltai -
+alpha*betad*betai*deltah*gammah + 2*alpha*betad*betai*deltah*gammai + alpha*betah**2*deltah*deltai + alpha*
+betah**2*deltah*gammai + alpha*betah**2*deltai*gammah + alpha*betah**2*gammah*gammai + alpha*betah*betai*
+deltah**2 - 2*alpha*betah*betai*deltah*deltai + 2*alpha*betah*betai*deltah*gammah - 2*alpha*betah*betai*deltah
+*gammai - 2*alpha*betah*betai*deltai*gammah + alpha*betah*betai*gammah**2 - 2*alpha*betah*betai*gammah*gammai
++ betad**2*deltah**2*deltai - betad**2*deltah*deltai**2 + betad**2*deltah*deltai*gammah - betad**2*deltah*
+deltai*gammai - betad*betah*deltah**2*deltai + betad*betah*deltah*deltai**2 - 2*betad*betah*deltah*deltai*
+gammah + betad*betah*deltah*deltai*gammai + betad*betah*deltai**2*gammah - betad*betah*deltai*gammah**2 +
+betad*betah*deltai*gammah*gammai - betad*betai*deltah**2*deltai - betad*betai*deltah**2*gammai + betad*betai*
+deltah*deltai**2 - betad*betai*deltah*deltai*gammah + 2*betad*betai*deltah*deltai*gammai - betad*betai*deltah*
+gammah*gammai + betad*betai*deltah*gammai**2 + betah*betai*deltah**2*deltai + betah*betai*deltah**2*gammai -
+betah*betai*deltah*deltai**2 + 2*betah*betai*deltah*deltai*gammah - 2*betah*betai*deltah*deltai*gammai + 2*
+betah*betai*deltah*gammah*gammai - betah*betai*deltah*gammai**2 - betah*betai*deltai**2*gammah + betah*betai*
+deltai*gammah**2 - 2*betah*betai*deltai*gammah*gammai + betah*betai*gammah**2*gammai - betah*betai*gammah*
+gammai**2) + y1*( - alpha**2*betah**2 + alpha**2*betah*betai - 2*alpha*betad*betah*deltai + alpha*betad*betai*
+deltah + alpha*betad*betai*deltai - alpha*betah*betai*deltah + alpha*betah*betai*deltai - alpha*betah*betai*
+gammah + alpha*betah*betai*gammai - betad**2*deltai**2 + betad*betai*deltai**2 + betad*betai*deltai*gammai)$
+
+aa_(5) := df(y1,t)*betai*k*( - alpha*betah + alpha*betai + betad*deltah - betad*deltai - betah*deltah - betah*
+gammah + betai*deltai + betai*gammai) + x1*k*(alpha**2*betad*betah*deltah - alpha**2*betad*betai*deltah -
+alpha**2*betah**2*deltah - alpha**2*betah**2*gammah + alpha**2*betah*betai*deltah + alpha**2*betah*betai*
+gammah - alpha*betad**2*deltah**2 + alpha*betad**2*deltah*deltai + alpha*betad*betah*deltah**2 + alpha*betad*
+betah*deltah*gammah + alpha*betad*betah*deltah*gammai - alpha*betad*betah*deltai*gammah + alpha*betad*betai*
+deltah**2 - 2*alpha*betad*betai*deltah*deltai + alpha*betad*betai*deltah*gammah - 2*alpha*betad*betai*deltah*
+gammai - alpha*betah**2*deltah*deltai - alpha*betah**2*deltah*gammai - alpha*betah**2*deltai*gammah - alpha*
+betah**2*gammah*gammai - alpha*betah*betai*deltah**2 + 2*alpha*betah*betai*deltah*deltai - 2*alpha*betah*betai
+*deltah*gammah + 2*alpha*betah*betai*deltah*gammai + 2*alpha*betah*betai*deltai*gammah - alpha*betah*betai*
+gammah**2 + 2*alpha*betah*betai*gammah*gammai - betad**2*deltah**2*deltai + betad**2*deltah*deltai**2 - betad
+**2*deltah*deltai*gammah + betad**2*deltah*deltai*gammai + betad*betah*deltah**2*deltai - betad*betah*deltah*
+deltai**2 + 2*betad*betah*deltah*deltai*gammah - betad*betah*deltah*deltai*gammai - betad*betah*deltai**2*
+gammah + betad*betah*deltai*gammah**2 - betad*betah*deltai*gammah*gammai + betad*betai*deltah**2*deltai +
+betad*betai*deltah**2*gammai - betad*betai*deltah*deltai**2 + betad*betai*deltah*deltai*gammah - 2*betad*betai
+*deltah*deltai*gammai + betad*betai*deltah*gammah*gammai - betad*betai*deltah*gammai**2 - betah*betai*deltah**
+2*deltai - betah*betai*deltah**2*gammai + betah*betai*deltah*deltai**2 - 2*betah*betai*deltah*deltai*gammah +
+2*betah*betai*deltah*deltai*gammai - 2*betah*betai*deltah*gammah*gammai + betah*betai*deltah*gammai**2 + betah
+*betai*deltai**2*gammah - betah*betai*deltai*gammah**2 + 2*betah*betai*deltai*gammah*gammai - betah*betai*
+gammah**2*gammai + betah*betai*gammah*gammai**2) + x5*k*(alpha**2*betad*betah*deltah - alpha**2*betad*betai*
+deltah - alpha**2*betah**2*deltah - alpha**2*betah**2*gammah + alpha**2*betah*betai*deltah + alpha**2*betah*
+betai*gammah - alpha*betad**2*deltah**2 + alpha*betad**2*deltah*deltai + alpha*betad*betah*deltah**2 + alpha*
+betad*betah*deltah*gammah + alpha*betad*betah*deltah*gammai - alpha*betad*betah*deltai*gammah + alpha*betad*
+betai*deltah**2 - 2*alpha*betad*betai*deltah*deltai + alpha*betad*betai*deltah*gammah - 2*alpha*betad*betai*
+deltah*gammai - alpha*betah**2*deltah*deltai - alpha*betah**2*deltah*gammai - alpha*betah**2*deltai*gammah -
+alpha*betah**2*gammah*gammai - alpha*betah*betai*deltah**2 + 2*alpha*betah*betai*deltah*deltai - 2*alpha*betah
+*betai*deltah*gammah + 2*alpha*betah*betai*deltah*gammai + 2*alpha*betah*betai*deltai*gammah - alpha*betah*
+betai*gammah**2 + 2*alpha*betah*betai*gammah*gammai - betad**2*deltah**2*deltai + betad**2*deltah*deltai**2 -
+betad**2*deltah*deltai*gammah + betad**2*deltah*deltai*gammai + betad*betah*deltah**2*deltai - betad*betah*
+deltah*deltai**2 + 2*betad*betah*deltah*deltai*gammah - betad*betah*deltah*deltai*gammai - betad*betah*deltai
+**2*gammah + betad*betah*deltai*gammah**2 - betad*betah*deltai*gammah*gammai + betad*betai*deltah**2*deltai +
+betad*betai*deltah**2*gammai - betad*betai*deltah*deltai**2 + betad*betai*deltah*deltai*gammah - 2*betad*betai
+*deltah*deltai*gammai + betad*betai*deltah*gammah*gammai - betad*betai*deltah*gammai**2 - betah*betai*deltah**
+2*deltai - betah*betai*deltah**2*gammai + betah*betai*deltah*deltai**2 - 2*betah*betai*deltah*deltai*gammah +
+2*betah*betai*deltah*deltai*gammai - 2*betah*betai*deltah*gammah*gammai + betah*betai*deltah*gammai**2 + betah
+*betai*deltai**2*gammah - betah*betai*deltai*gammah**2 + 2*betah*betai*deltai*gammah*gammai - betah*betai*
+gammah**2*gammai + betah*betai*gammah*gammai**2) + y1*(alpha**2*betad*betah*deltah - alpha**2*betad*betai*
+deltah - alpha**2*betah**2*deltah - alpha**2*betah**2*gammah - alpha**2*betah**2*k + alpha**2*betah*betai*
+deltah + alpha**2*betah*betai*gammah + alpha**2*betah*betai*k - alpha*betad**2*deltah**2 + alpha*betad**2*
+deltah*deltai + alpha*betad*betah*deltah**2 + alpha*betad*betah*deltah*gammah + alpha*betad*betah*deltah*
+gammai + alpha*betad*betah*deltah*k - alpha*betad*betah*deltai*gammah - 2*alpha*betad*betah*deltai*k + alpha*
+betad*betai*deltah**2 - 2*alpha*betad*betai*deltah*deltai + alpha*betad*betai*deltah*gammah - 2*alpha*betad*
+betai*deltah*gammai + alpha*betad*betai*deltai*k - alpha*betah**2*deltah*deltai - alpha*betah**2*deltah*gammai
+ - alpha*betah**2*deltah*k - alpha*betah**2*deltai*gammah - alpha*betah**2*gammah*gammai - alpha*betah**2*
+gammah*k - alpha*betah*betai*deltah**2 + 2*alpha*betah*betai*deltah*deltai - 2*alpha*betah*betai*deltah*gammah
+ + 2*alpha*betah*betai*deltah*gammai + 2*alpha*betah*betai*deltai*gammah + alpha*betah*betai*deltai*k - alpha*
+betah*betai*gammah**2 + 2*alpha*betah*betai*gammah*gammai + alpha*betah*betai*gammai*k - betad**2*deltah**2*
+deltai + betad**2*deltah*deltai**2 - betad**2*deltah*deltai*gammah + betad**2*deltah*deltai*gammai + betad**2*
+deltah*deltai*k - betad**2*deltai**2*k + betad*betah*deltah**2*deltai - betad*betah*deltah*deltai**2 + 2*betad
+*betah*deltah*deltai*gammah - betad*betah*deltah*deltai*gammai - betad*betah*deltah*deltai*k - betad*betah*
+deltai**2*gammah + betad*betah*deltai*gammah**2 - betad*betah*deltai*gammah*gammai - betad*betah*deltai*gammah
+*k + betad*betai*deltah**2*deltai + betad*betai*deltah**2*gammai + betad*betai*deltah**2*k - betad*betai*
+deltah*deltai**2 + betad*betai*deltah*deltai*gammah - 2*betad*betai*deltah*deltai*gammai - betad*betai*deltah*
+deltai*k + betad*betai*deltah*gammah*gammai + betad*betai*deltah*gammah*k - betad*betai*deltah*gammai**2 -
+betad*betai*deltah*gammai*k + betad*betai*deltai**2*k + betad*betai*deltai*gammai*k - betah*betai*deltah**2*
+deltai - betah*betai*deltah**2*gammai - betah*betai*deltah**2*k + betah*betai*deltah*deltai**2 - 2*betah*betai
+*deltah*deltai*gammah + 2*betah*betai*deltah*deltai*gammai + betah*betai*deltah*deltai*k - 2*betah*betai*
+deltah*gammah*gammai - 2*betah*betai*deltah*gammah*k + betah*betai*deltah*gammai**2 + betah*betai*deltah*
+gammai*k + betah*betai*deltai**2*gammah - betah*betai*deltai*gammah**2 + 2*betah*betai*deltai*gammah*gammai +
+betah*betai*deltai*gammah*k - betah*betai*gammah**2*gammai - betah*betai*gammah**2*k + betah*betai*gammah*
+gammai**2 + betah*betai*gammah*gammai*k)$
+
+aa_(6) := df(y1,t)*betai*(alpha*betah**2 - alpha*betah*betai + betad*betah*deltai - betad*betai*deltah + betah
+*betai*deltah - betah*betai*deltai + betah*betai*gammah - betah*betai*gammai) + x6*betad*( - alpha**2*betad*
+betah*deltah + alpha**2*betad*betai*deltah + alpha**2*betah**2*deltah + alpha**2*betah**2*gammah - alpha**2*
+betah*betai*deltah - alpha**2*betah*betai*gammah + alpha*betad**2*deltah**2 - alpha*betad**2*deltah*deltai -
+alpha*betad*betah*deltah**2 - alpha*betad*betah*deltah*gammah - alpha*betad*betah*deltah*gammai + alpha*betad*
+betah*deltai*gammah - alpha*betad*betai*deltah**2 + 2*alpha*betad*betai*deltah*deltai - alpha*betad*betai*
+deltah*gammah + 2*alpha*betad*betai*deltah*gammai + alpha*betah**2*deltah*deltai + alpha*betah**2*deltah*
+gammai + alpha*betah**2*deltai*gammah + alpha*betah**2*gammah*gammai + alpha*betah*betai*deltah**2 - 2*alpha*
+betah*betai*deltah*deltai + 2*alpha*betah*betai*deltah*gammah - 2*alpha*betah*betai*deltah*gammai - 2*alpha*
+betah*betai*deltai*gammah + alpha*betah*betai*gammah**2 - 2*alpha*betah*betai*gammah*gammai + betad**2*deltah
+**2*deltai - betad**2*deltah*deltai**2 + betad**2*deltah*deltai*gammah - betad**2*deltah*deltai*gammai - betad
+*betah*deltah**2*deltai + betad*betah*deltah*deltai**2 - 2*betad*betah*deltah*deltai*gammah + betad*betah*
+deltah*deltai*gammai + betad*betah*deltai**2*gammah - betad*betah*deltai*gammah**2 + betad*betah*deltai*gammah
+*gammai - betad*betai*deltah**2*deltai - betad*betai*deltah**2*gammai + betad*betai*deltah*deltai**2 - betad*
+betai*deltah*deltai*gammah + 2*betad*betai*deltah*deltai*gammai - betad*betai*deltah*gammah*gammai + betad*
+betai*deltah*gammai**2 + betah*betai*deltah**2*deltai + betah*betai*deltah**2*gammai - betah*betai*deltah*
+deltai**2 + 2*betah*betai*deltah*deltai*gammah - 2*betah*betai*deltah*deltai*gammai + 2*betah*betai*deltah*
+gammah*gammai - betah*betai*deltah*gammai**2 - betah*betai*deltai**2*gammah + betah*betai*deltai*gammah**2 - 2
+*betah*betai*deltai*gammah*gammai + betah*betai*gammah**2*gammai - betah*betai*gammah*gammai**2) + y1*(alpha**
+2*betah**3 - alpha**2*betah**2*betai + 2*alpha*betad*betah**2*deltai - 2*alpha*betad*betah*betai*deltah -
+alpha*betad*betah*betai*deltai + alpha*betad*betai**2*deltah + 2*alpha*betah**2*betai*deltah - alpha*betah**2*
+betai*deltai + 2*alpha*betah**2*betai*gammah - alpha*betah**2*betai*gammai - alpha*betah*betai**2*deltah -
+alpha*betah*betai**2*gammah + betad**2*betah*deltai**2 - betad**2*betai*deltah*deltai + betad*betah*betai*
+deltah*deltai - betad*betah*betai*deltai**2 + betad*betah*betai*deltai*gammah - betad*betah*betai*deltai*
+gammai - betad*betai**2*deltah**2 + betad*betai**2*deltah*deltai - betad*betai**2*deltah*gammah + betad*betai
+**2*deltah*gammai + betah*betai**2*deltah**2 - betah*betai**2*deltah*deltai + 2*betah*betai**2*deltah*gammah -
+ betah*betai**2*deltah*gammai - betah*betai**2*deltai*gammah + betah*betai**2*gammah**2 - betah*betai**2*
+gammah*gammai)$
+
+aa_(7) := df(x1,t)*k*(alpha**2*betad*betah*deltah - alpha**2*betad*betai*deltah - alpha**2*betah**2*deltah -
+alpha**2*betah**2*gammah + alpha**2*betah*betai*deltah + alpha**2*betah*betai*gammah - alpha*betad**2*deltah**
+2 + alpha*betad**2*deltah*deltai + alpha*betad*betah*deltah**2 + alpha*betad*betah*deltah*gammah + alpha*betad
+*betah*deltah*gammai - alpha*betad*betah*deltai*gammah + alpha*betad*betai*deltah**2 - 2*alpha*betad*betai*
+deltah*deltai + alpha*betad*betai*deltah*gammah - 2*alpha*betad*betai*deltah*gammai - alpha*betah**2*deltah*
+deltai - alpha*betah**2*deltah*gammai - alpha*betah**2*deltai*gammah - alpha*betah**2*gammah*gammai - alpha*
+betah*betai*deltah**2 + 2*alpha*betah*betai*deltah*deltai - 2*alpha*betah*betai*deltah*gammah + 2*alpha*betah*
+betai*deltah*gammai + 2*alpha*betah*betai*deltai*gammah - alpha*betah*betai*gammah**2 + 2*alpha*betah*betai*
+gammah*gammai - betad**2*deltah**2*deltai + betad**2*deltah*deltai**2 - betad**2*deltah*deltai*gammah + betad
+**2*deltah*deltai*gammai + betad*betah*deltah**2*deltai - betad*betah*deltah*deltai**2 + 2*betad*betah*deltah*
+deltai*gammah - betad*betah*deltah*deltai*gammai - betad*betah*deltai**2*gammah + betad*betah*deltai*gammah**2
+ - betad*betah*deltai*gammah*gammai + betad*betai*deltah**2*deltai + betad*betai*deltah**2*gammai - betad*
+betai*deltah*deltai**2 + betad*betai*deltah*deltai*gammah - 2*betad*betai*deltah*deltai*gammai + betad*betai*
+deltah*gammah*gammai - betad*betai*deltah*gammai**2 - betah*betai*deltah**2*deltai - betah*betai*deltah**2*
+gammai + betah*betai*deltah*deltai**2 - 2*betah*betai*deltah*deltai*gammah + 2*betah*betai*deltah*deltai*
+gammai - 2*betah*betai*deltah*gammah*gammai + betah*betai*deltah*gammai**2 + betah*betai*deltai**2*gammah -
+betah*betai*deltai*gammah**2 + 2*betah*betai*deltai*gammah*gammai - betah*betai*gammah**2*gammai + betah*betai
+*gammah*gammai**2) + df(y1,t)*(alpha**2*betad*betah*deltah - alpha**2*betad*betai*deltah - alpha**2*betah**2*
+deltah - alpha**2*betah**2*gammah + alpha**2*betah*betai*deltah + alpha**2*betah*betai*gammah - alpha*betad**2
+*deltah**2 + alpha*betad**2*deltah*deltai + alpha*betad*betah*deltah**2 + alpha*betad*betah*deltah*gammah +
+alpha*betad*betah*deltah*gammai - alpha*betad*betah*deltai*gammah + alpha*betad*betai*deltah**2 - 2*alpha*
+betad*betai*deltah*deltai + alpha*betad*betai*deltah*gammah - 2*alpha*betad*betai*deltah*gammai - alpha*betah
+**2*deltah*deltai - alpha*betah**2*deltah*gammai - alpha*betah**2*deltai*gammah - alpha*betah**2*gammah*gammai
+ - alpha*betah*betai*deltah**2 + 2*alpha*betah*betai*deltah*deltai - 2*alpha*betah*betai*deltah*gammah + 2*
+alpha*betah*betai*deltah*gammai + alpha*betah*betai*deltah*k + 2*alpha*betah*betai*deltai*gammah - alpha*betah
+*betai*gammah**2 + 2*alpha*betah*betai*gammah*gammai - alpha*betai**2*deltah*k - betad**2*deltah**2*deltai +
+betad**2*deltah*deltai**2 - betad**2*deltah*deltai*gammah + betad**2*deltah*deltai*gammai + betad*betah*deltah
+**2*deltai - betad*betah*deltah*deltai**2 + 2*betad*betah*deltah*deltai*gammah - betad*betah*deltah*deltai*
+gammai - betad*betah*deltai**2*gammah + betad*betah*deltai*gammah**2 - betad*betah*deltai*gammah*gammai +
+betad*betai*deltah**2*deltai + betad*betai*deltah**2*gammai - betad*betai*deltah*deltai**2 + betad*betai*
+deltah*deltai*gammah - 2*betad*betai*deltah*deltai*gammai + betad*betai*deltah*gammah*gammai - betad*betai*
+deltah*gammai**2 - betah*betai*deltah**2*deltai - betah*betai*deltah**2*gammai + betah*betai*deltah*deltai**2
+- 2*betah*betai*deltah*deltai*gammah + 2*betah*betai*deltah*deltai*gammai + betah*betai*deltah*deltai*k - 2*
+betah*betai*deltah*gammah*gammai + betah*betai*deltah*gammai**2 + betah*betai*deltai**2*gammah - betah*betai*
+deltai*gammah**2 + 2*betah*betai*deltai*gammah*gammai + betah*betai*deltai*gammah*k - betah*betai*gammah**2*
+gammai + betah*betai*gammah*gammai**2 - betai**2*deltah*deltai*k - betai**2*deltah*gammai*k) + y1*k*(alpha**2*
+betad*betah*deltah - alpha**2*betad*betai*deltah - alpha**2*betah**2*gammah + alpha**2*betah*betai*gammah -
+alpha*betad**2*deltah**2 + alpha*betad**2*deltah*deltai + alpha*betad*betah*deltah**2 + alpha*betad*betah*
+deltah*deltai + alpha*betad*betah*deltah*gammah + alpha*betad*betah*deltah*gammai - alpha*betad*betah*deltai*
+gammah - 2*alpha*betad*betai*deltah*deltai + alpha*betad*betai*deltah*gammah - 2*alpha*betad*betai*deltah*
+gammai - alpha*betah**2*deltah*gammai - alpha*betah**2*gammah*gammai - alpha*betah*betai*deltah*gammah + alpha
+*betah*betai*deltah*gammai + alpha*betah*betai*deltai*gammah - alpha*betah*betai*gammah**2 + 2*alpha*betah*
+betai*gammah*gammai - betad**2*deltah**2*deltai + betad**2*deltah*deltai**2 - betad**2*deltah*deltai*gammah +
+betad**2*deltah*deltai*gammai + betad*betah*deltah**2*deltai + 2*betad*betah*deltah*deltai*gammah - betad*
+betah*deltah*deltai*gammai + betad*betah*deltai*gammah**2 - betad*betah*deltai*gammah*gammai + betad*betai*
+deltah**2*gammai - betad*betai*deltah*deltai**2 - 2*betad*betai*deltah*deltai*gammai + betad*betai*deltah*
+gammah*gammai - betad*betai*deltah*gammai**2 - betah*betai*deltah**2*gammai + betah*betai*deltah*deltai*gammai
+ - 2*betah*betai*deltah*gammah*gammai + betah*betai*deltah*gammai**2 + betah*betai*deltai*gammah*gammai -
+betah*betai*gammah**2*gammai + betah*betai*gammah*gammai**2)$
+
+MODEL NOT ALGEBRAICALLY OBSERVABLE$
+
+PARAMETER VALUES$
+
+b2_ := {betai=2,betah=3,betad=5,k=7,alpha=11,gammai=13,deltai=17,gammah=19,deltah=23}$
+
+MODEL PARAMETER SOLUTION(S)$
+
+g_ := {{betah=( - 2*alpha*betad*deltah**2 - 2*alpha*betad*deltah*gammah + 202*alpha*betad*deltah - 2*betad*
+deltah**2*deltai - 4*betad*deltah*deltai*gammah + 202*betad*deltah*deltai - 2*betad*deltai*gammah**2 + 202*
+betad*deltai*gammah - 4835*betad*deltai)/(4835*alpha),
+betai=(2*alpha*betad*deltah + 2*betad*deltah*deltai + 2*betad*deltai*gammah)/4835},
+{betai=0,alpha=0,betad=0,betah=arbcomplex(1),deltai=arbcomplex(2),gammah=arbcomplex(3),deltah=arbcomplex(4)},
+{betai=0,alpha=0,deltai=0,betah=arbcomplex(5),betad=arbcomplex(6),gammah=arbcomplex(7),deltah=arbcomplex(8)},
+{betai=( - 3*sqrt(59)*betad*deltai + 101*betad*deltai)/4835,
+alpha=0,
+gammah=( - 3*sqrt(59) - 2*deltah + 101)/2,
+betah=arbcomplex(10)},
+{betai=(3*sqrt(59)*betad*deltai + 101*betad*deltai)/4835,
+alpha=0,
+gammah=(3*sqrt(59) - 2*deltah + 101)/2,
+betah=arbcomplex(9)}}$
+
+MODEL NON IDENTIFIABLE$
+
+IDENTIFIABILITY WITH ALL INITIAL CONDITIONS (IC_)$
+
+ic_ := {x1=x10,x2=x20,x3=x30,x4=x40,x5=x50,x6=x60}$

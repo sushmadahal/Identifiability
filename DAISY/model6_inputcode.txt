@@ -1,0 +1,37 @@
+WRITE "MODEL6"$
+
+WRITE "MODEL6"$
+
+% B_ IS THE VARIABLE VECTOR
+
+B_:={Y1,X1,X2,X3,X4,X5,X6}$
+FOR EACH EL_ IN B_ DO DEPEND EL_,T$
+
+%B1_ IS THE UNKNOWN PARAMETER VECTOR
+
+B1_:={betaI,betaA,muv,betav,rho1,gamma1,lambdaupsilon,n}$
+
+%NUMBER OF STATES
+NX_:=6$
+%NUMBER OF INPUTS 
+NU_:=0$
+%NUMBER OF OUTPUTS
+NY_:=1$
+
+%MODEL  EQUATIONS 
+
+C_:= {df(x1,t) = lambdaupsilon-((betaI*x1*x4+betaA*x1*x5)/n)-muv*x1, %sv
+      df(x2,t) = (betaI*x1*x4+betaA*x1*x5)/n- muv*x2,%Iv
+      df(x3,t) = -betav*x2*x3/n,%S
+      df(x4,t) = rho1*betav*x2/n*x3-gamma1*x4,%I
+      df(x5,t) = (1-rho1)*betav*x2*x3/n- gamma1*x5, %A
+      df(x6,t) = gamma1*x4+ gamma1*x5, %R
+            y1 = rho1*x3}$
+FLAG_:=1$
+daisy()$
+
+%VALUES OF INITIAL CONDITIONS
+ICK_:={x1=x10,x2=x20,x3=x30,x4=x40,x5=x50,x6=x60}$ 
+ICUNK_:={}$
+CONDINIZ()$
+END$

@@ -1,0 +1,92 @@
+
+MODEL3
+
+MODEL3
+
+MODEL EQUATION(S)$
+
+c_ := {df(x1,t)=( - betaa*x1*x4 - betai*x1*x3)/n,
+df(x2,t)=(betai*x1*x3 - k*n*x2 + betaa*x1*x4)/n,
+df(x3,t)= - gamma1*x3 + k*rho1*x2,
+df(x4,t)= - (rho1 - 1)*k*x2 - gamma1*x4,
+df(x5,t)=(x3 + x4)*gamma1,
+y1=k*rho1*x2}$
+
+CHARACTERISTIC SET$
+
+aa_(1) := df(y1,t,3)**2*df(y1,t)*y1*n**2*rho1**2 + df(y1,t,3)**2*y1**2*k*n**2*rho1**2 - df(y1,t,3)*df(y1,t,2)
+**2*y1*n**2*rho1**2 - df(y1,t,3)*df(y1,t,2)*df(y1,t)**2*n**2*rho1**2 + df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1*n**2*
+rho1**2*(2*gamma1 - k) + 2*df(y1,t,3)*df(y1,t,2)*y1**2*k*n**2*rho1**2*(gamma1 + k) - df(y1,t,3)*df(y1,t)**3*n
+**2*rho1**2*(gamma1 + k) + 4*df(y1,t,3)*df(y1,t)**2*y1**2*n*rho1*( - betaa*rho1 + betaa + betai*rho1) + df(y1,
+t,3)*df(y1,t)**2*y1*n**2*rho1**2*(gamma1**2 - 2*k**2) + 8*df(y1,t,3)*df(y1,t)*y1**3*k*n*rho1*( - betaa*rho1 + 
+betaa + betai*rho1) + df(y1,t,3)*df(y1,t)*y1**2*gamma1*k*n**2*rho1**2*(2*gamma1 + k) + 4*df(y1,t,3)*y1**4*k**2
+*n*rho1*( - betaa*rho1 + betaa + betai*rho1) + df(y1,t,3)*y1**3*gamma1**2*k**2*n**2*rho1**2 + df(y1,t,2)**3*df
+(y1,t)*n**2*rho1**2 - df(y1,t,2)**3*y1*n**2*rho1**2*(gamma1 + k) + 2*df(y1,t,2)**2*df(y1,t)**2*k*n**2*rho1**2 
++ 3*df(y1,t,2)**2*df(y1,t)*y1**2*n*rho1*(betaa*rho1 - betaa - betai*rho1) + df(y1,t,2)**2*df(y1,t)*y1*n**2*
+rho1**2*(gamma1**2 - gamma1*k - 2*k**2) + 3*df(y1,t,2)**2*y1**3*k*n*rho1*(betaa*rho1 - betaa - betai*rho1) + 
+df(y1,t,2)**2*y1**2*k*n**2*rho1**2*(gamma1**2 + 2*gamma1*k + k**2) + df(y1,t,2)*df(y1,t)**3*n**2*rho1**2*( - 2
+*gamma1**2 - gamma1*k + 2*k**2) + 2*df(y1,t,2)*df(y1,t)**2*y1**2*n*rho1*( - 3*betaa*gamma1*rho1 + 3*betaa*
+gamma1 + betaa*k*rho1 - betaa*k + 3*betai*gamma1*rho1 - betai*k*rho1) + df(y1,t,2)*df(y1,t)**2*y1*n**2*rho1**2
+*(gamma1**3 - gamma1**2*k - 3*gamma1*k**2 - 2*k**3) + 2*df(y1,t,2)*df(y1,t)*y1**3*k*n*rho1*( - 6*betaa*gamma1*
+rho1 + 6*betaa*gamma1 - betaa*k*rho1 + betaa*k + 6*betai*gamma1*rho1 + betai*k*rho1) + df(y1,t,2)*df(y1,t)*y1
+**2*gamma1*k*n**2*rho1**2*(2*gamma1**2 + 2*gamma1*k + k**2) + 2*df(y1,t,2)*y1**4*k**2*n*rho1*( - 3*betaa*
+gamma1*rho1 + 3*betaa*gamma1 - 2*betaa*k*rho1 + 2*betaa*k + 3*betai*gamma1*rho1 + 2*betai*k*rho1) + df(y1,t,2)
+*y1**3*gamma1**2*k**2*n**2*rho1**2*(gamma1 + k) + df(y1,t)**5*n*rho1*(betaa*rho1 - betaa - betai*rho1) + df(y1
+,t)**4*y1*n*rho1*(4*betaa*gamma1*rho1 - 4*betaa*gamma1 + 3*betaa*k*rho1 - 3*betaa*k - 4*betai*gamma1*rho1 - 3*
+betai*k*rho1) + df(y1,t)**4*n**2*rho1**2*( - gamma1**3 - 2*gamma1**2*k + k**3) + 4*df(y1,t)**3*y1**3*(betaa**2
+*rho1**2 - 2*betaa**2*rho1 + betaa**2 - 2*betaa*betai*rho1**2 + 2*betaa*betai*rho1 + betai**2*rho1**2) + df(y1
+,t)**3*y1**2*n*rho1*( - betaa*gamma1**2*rho1 + betaa*gamma1**2 + 6*betaa*gamma1*k*rho1 - 6*betaa*gamma1*k + 6*
+betaa*k**2*rho1 - 6*betaa*k**2 + betai*gamma1**2*rho1 - 6*betai*gamma1*k*rho1 - 6*betai*k**2*rho1) + df(y1,t)
+**3*y1*gamma1*k*n**2*rho1**2*( - 2*gamma1**2 - 3*gamma1*k - k**2) + 12*df(y1,t)**2*y1**4*k*(betaa**2*rho1**2 -
+ 2*betaa**2*rho1 + betaa**2 - 2*betaa*betai*rho1**2 + 2*betaa*betai*rho1 + betai**2*rho1**2) + df(y1,t)**2*y1
+**3*k*n*rho1*( - 3*betaa*gamma1**2*rho1 + 3*betaa*gamma1**2 + 4*betaa*k**2*rho1 - 4*betaa*k**2 + 3*betai*
+gamma1**2*rho1 - 4*betai*k**2*rho1) - df(y1,t)**2*y1**2*gamma1**2*k**2*n**2*rho1**2*(gamma1 + k) + 12*df(y1,t)
+*y1**5*k**2*(betaa**2*rho1**2 - 2*betaa**2*rho1 + betaa**2 - 2*betaa*betai*rho1**2 + 2*betaa*betai*rho1 + 
+betai**2*rho1**2) + df(y1,t)*y1**4*gamma1*k**2*n*rho1*( - 3*betaa*gamma1*rho1 + 3*betaa*gamma1 - 2*betaa*k*
+rho1 + 2*betaa*k + 3*betai*gamma1*rho1 + 2*betai*k*rho1) + 4*y1**6*k**3*(betaa**2*rho1**2 - 2*betaa**2*rho1 + 
+betaa**2 - 2*betaa*betai*rho1**2 + 2*betaa*betai*rho1 + betai**2*rho1**2) + y1**5*gamma1**2*k**3*n*rho1*( - 
+betaa*rho1 + betaa + betai*rho1)$
+
+aa_(2) :=  - df(y1,t,3)*x1*y1*k*n*rho1 + df(y1,t,2)*df(y1,t)*x1*k*n*rho1 - df(y1,t,2)*df(y1,t)*y1*n - df(y1,t,
+2)*x1*y1*k*n*rho1*(gamma1 + k) - df(y1,t,2)*y1**2*k*n + df(y1,t)**3*n + df(y1,t)**2*x1*k*n*rho1*(gamma1 + k) +
+ df(y1,t)**2*y1*n*(gamma1 + k) + 2*df(y1,t)*x1*y1**2*k*(betaa*rho1 - betaa - betai*rho1) + 2*df(y1,t)*y1**2*
+gamma1*k*n + 2*x1*y1**3*k**2*(betaa*rho1 - betaa - betai*rho1) + y1**3*gamma1*k**2*n$
+
+aa_(3) :=  - x2*k*rho1 + y1$
+
+aa_(4) := df(y1,t,3)*y1*n*rho1 - df(y1,t,2)*df(y1,t)*n*rho1 + df(y1,t,2)*x3*y1*betai*rho1 + df(y1,t,2)*x4*y1*
+betaa*rho1 + df(y1,t,2)*y1*n*rho1*(gamma1 + k) - df(y1,t)**2*x3*betai*rho1 - df(y1,t)**2*x4*betaa*rho1 - df(y1
+,t)**2*n*rho1*(gamma1 + k) - df(y1,t)*x3*y1*betai*gamma1*rho1 - df(y1,t)*x4*y1*betaa*gamma1*rho1 + 2*df(y1,t)*
+y1**2*( - betaa*rho1 + betaa + betai*rho1) - x3*y1**2*betai*gamma1*k*rho1 - x4*y1**2*betaa*gamma1*k*rho1 + 2*
+y1**3*k*( - betaa*rho1 + betaa + betai*rho1)$
+
+aa_(5) := df(x3,t) + x3*gamma1 - y1$
+
+aa_(6) :=  - df(x5,t)*df(y1,t,2)*y1*betaa*rho1 + df(x5,t)*df(y1,t)**2*betaa*rho1 + df(x5,t)*df(y1,t)*y1*betaa*
+gamma1*rho1 + df(x5,t)*y1**2*betaa*gamma1*k*rho1 - df(y1,t,3)*y1*gamma1*n*rho1 + df(y1,t,2)*df(y1,t)*gamma1*n*
+rho1 + df(y1,t,2)*x3*y1*gamma1*rho1*(betaa - betai) - df(y1,t,2)*y1*gamma1*n*rho1*(gamma1 + k) + df(y1,t)**2*
+x3*gamma1*rho1*( - betaa + betai) + df(y1,t)**2*gamma1*n*rho1*(gamma1 + k) + df(y1,t)*x3*y1*gamma1**2*rho1*( -
+ betaa + betai) + 2*df(y1,t)*y1**2*gamma1*(betaa*rho1 - betaa - betai*rho1) + x3*y1**2*gamma1**2*k*rho1*( - 
+betaa + betai) + 2*y1**3*gamma1*k*(betaa*rho1 - betaa - betai*rho1)$
+
+MODEL NOT ALGEBRAICALLY OBSERVABLE$
+
+PARAMETER VALUES$
+
+b2_ := {betaa=2,betai=3,k=5,rho1=7,gamma1=11,n=13}$
+
+MODEL PARAMETER SOLUTION(S)$
+
+g_ := {{n=( - 91*betaa*rho1 + 91*betaa + 91*betai*rho1)/(9*rho1),gamma1=11,k=5}}$
+
+MODEL NON IDENTIFIABLE$
+
+IDENTIFIABILITY WITH ALL INITIAL CONDITIONS (IC_)$
+
+ic_ := {x1=x10,x2=x20,x3=x30,x4=x40,x5=x50}$
+
+MODEL PARAMETER SOLUTIONS$
+
+gi_ := {{n=(13*betaa)/2,betai=(3*betaa)/2,rho1=7,gamma1=11,k=5}}$
+
+MODEL NON IDENTIFIABLE$

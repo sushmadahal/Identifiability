@@ -1,0 +1,62 @@
+
+MODEL4-SEIRD-part b
+
+MODEL EQUATION(S)$
+
+c_ := {df(x1,t)=( - beta*x1*x3)/(x3 + x4 + x2 + x1),
+df(x2,t)=( - (x3 + x4 + x2 + x1)*k*x2 + beta*x1*x3)/(x3 + x4 + x2 + x1),
+df(x3,t)= - (gamma1*x3 - k*x2) - delta1*x3,
+df(x4,t)=gamma1*x3,
+df(x5,t)=delta1*x3,
+y1=k*x2,
+y2=delta1*x3}$
+
+CHARACTERISTIC SET$
+
+aa_(1) := df(y2,t) - y1*delta1 + y2*(delta1 + gamma1)$
+
+aa_(2) := df(y1,t,3)*df(y1,t)*y2**2*(beta - delta1) + df(y1,t,3)*y1*y2**2*k*(beta - delta1) + df(y1,t,2)**2*y2
+**2*( - beta + 2*delta1) - df(y1,t,2)*df(y1,t)*y1*y2*delta1*(beta + delta1) + df(y1,t,2)*df(y1,t)*y2**2*(beta*
+delta1 + beta*gamma1 - beta*k + delta1**2 + delta1*gamma1 + 3*delta1*k) - df(y1,t,2)*y1**2*y2*delta1*k*(beta +
+ delta1) + df(y1,t,2)*y1*y2**2*k*(beta*delta1 + beta*gamma1 + beta*k + delta1**2 + delta1*gamma1 - delta1*k) +
+ df(y1,t)**3*y2*delta1*( - beta + delta1) + df(y1,t)**2*y1**2*delta1**2*(2*beta - delta1) + df(y1,t)**2*y1*y2*
+delta1*( - 3*beta*delta1 - 3*beta*gamma1 - 3*beta*k + delta1**2 + delta1*gamma1 + delta1*k) + df(y1,t)**2*y2**
+2*(beta*delta1**2 + 2*beta*delta1*gamma1 + beta*delta1*k + beta*gamma1**2 + beta*gamma1*k - beta*k**2 + delta1
+**2*k + delta1*gamma1*k + 2*delta1*k**2) + 2*df(y1,t)*y1**3*delta1**2*k*(2*beta - delta1) + 2*df(y1,t)*y1**2*
+y2*delta1*k*( - 3*beta*delta1 - 3*beta*gamma1 - beta*k + delta1**2 + delta1*gamma1) + df(y1,t)*y1*y2**2*k*(2*
+beta*delta1**2 + 4*beta*delta1*gamma1 + beta*delta1*k + 2*beta*gamma1**2 + beta*gamma1*k + delta1**2*k +
+delta1*gamma1*k) + y1**4*delta1**2*k**2*(2*beta - delta1) + y1**3*y2*delta1*k**2*( - 3*beta*delta1 - 3*beta*
+gamma1 + delta1**2 + delta1*gamma1) + y1**2*y2**2*beta*k**2*(delta1**2 + 2*delta1*gamma1 + gamma1**2)$
+
+aa_(3) :=  - df(y1,t,2)*x1*y2*beta*k + df(y1,t)**2*y2*( - beta + delta1) + df(y1,t)*x1*y1*beta*delta1*k - df(
+y1,t)*x1*y2*beta*k*(delta1 + gamma1 + k) + 2*df(y1,t)*y1*y2*k*( - beta + delta1) + x1*y1**2*beta*delta1*k**2 -
+ x1*y1*y2*beta*k**2*(delta1 + gamma1) + y1**2*y2*k**2*( - beta + delta1)$
+
+aa_(4) :=  - x2*k + y1$
+
+aa_(5) :=  - x3*delta1 + y2$
+
+aa_(6) := df(y1,t,2)*x4*y2*beta*delta1*k + df(y1,t,2)*y1*y2*beta*delta1 + df(y1,t,2)*y2**2*beta*k + df(y1,t)**
+2*y2*delta1*( - beta + delta1) - df(y1,t)*x4*y1*beta*delta1**2*k + df(y1,t)*x4*y2*beta*delta1*k*(delta1 +
+gamma1 + k) - df(y1,t)*y1**2*beta*delta1**2 + df(y1,t)*y1*y2*delta1*(beta*delta1 + beta*gamma1 - 2*beta*k + 2*
+delta1*k) + df(y1,t)*y2**2*beta*k*(beta + gamma1 + k) - x4*y1**2*beta*delta1**2*k**2 + x4*y1*y2*beta*delta1*k
+**2*(delta1 + gamma1) - y1**3*beta*delta1**2*k + y1**2*y2*delta1*k*(beta*delta1 + beta*gamma1 - 2*beta*k +
+delta1*k) + y1*y2**2*beta*k**2*(beta + gamma1)$
+
+aa_(7) := df(x5,t) - y2$
+
+MODEL NOT ALGEBRAICALLY OBSERVABLE$
+
+PARAMETER VALUES$
+
+b2_ := {beta=2,k=3,gamma1=5,delta1=7}$
+
+MODEL PARAMETER SOLUTION(S)$
+
+g_ := {{beta=2,gamma1=5,k=3,delta1=7}}$
+
+MODEL GLOBALLY IDENTIFIABLE$
+
+INITIAL CONDITION(S) WERE NOT NECESSARY$
+
+3:

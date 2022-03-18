@@ -1,0 +1,85 @@
+04`010MODEL1-SEIR \mathrm{MODEL1-SEIR}
+04X410MODEL1-SEIR \mathrm{MODEL1-SEIR}
+
+MODEL EQUATION(S)
+
+
+c_ := {df(x1,t)=( - beta*x1*x3)/n,
+df(x2,t)=(beta*x1*x3 - k*n*x2)/n,
+df(x3,t)= - gamma1*x3 + k*x2,
+df(x4,t)=gamma1*x3,
+y1=k*x2}
+
+
+CHARACTERISTIC SET
+
+
+aa_(1) := df(y1,t,3)**2*df(y1,t)*y1*n**2 + df(y1,t,3)**2*y1**2*k*n**2 - df(y1,t,3)*df(y1,t,2)**2*y1*n**2 - df(
+y1,t,3)*df(y1,t,2)*df(y1,t)**2*n**2 + df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1*n**2*(2*gamma1 - k) + 2*df(y1,t,3)*df(
+y1,t,2)*y1**2*k*n**2*(gamma1 + k) - df(y1,t,3)*df(y1,t)**3*n**2*(gamma1 + k) + 4*df(y1,t,3)*df(y1,t)**2*y1**2*
+beta*n + df(y1,t,3)*df(y1,t)**2*y1*n**2*(gamma1**2 - 2*k**2) + 8*df(y1,t,3)*df(y1,t)*y1**3*beta*k*n + df(y1,t,
+3)*df(y1,t)*y1**2*gamma1*k*n**2*(2*gamma1 + k) + 4*df(y1,t,3)*y1**4*beta*k**2*n + df(y1,t,3)*y1**3*gamma1**2*k
+**2*n**2 + df(y1,t,2)**3*df(y1,t)*n**2 - df(y1,t,2)**3*y1*n**2*(gamma1 + k) + 2*df(y1,t,2)**2*df(y1,t)**2*k*n
+**2 - 3*df(y1,t,2)**2*df(y1,t)*y1**2*beta*n + df(y1,t,2)**2*df(y1,t)*y1*n**2*(gamma1**2 - gamma1*k - 2*k**2) -
+ 3*df(y1,t,2)**2*y1**3*beta*k*n + df(y1,t,2)**2*y1**2*k*n**2*(gamma1**2 + 2*gamma1*k + k**2) + df(y1,t,2)*df(
+y1,t)**3*n**2*( - 2*gamma1**2 - gamma1*k + 2*k**2) + 2*df(y1,t,2)*df(y1,t)**2*y1**2*beta*n*(3*gamma1 - k) + df
+(y1,t,2)*df(y1,t)**2*y1*n**2*(gamma1**3 - gamma1**2*k - 3*gamma1*k**2 - 2*k**3) + 2*df(y1,t,2)*df(y1,t)*y1**3*
+beta*k*n*(6*gamma1 + k) + df(y1,t,2)*df(y1,t)*y1**2*gamma1*k*n**2*(2*gamma1**2 + 2*gamma1*k + k**2) + 2*df(y1,
+t,2)*y1**4*beta*k**2*n*(3*gamma1 + 2*k) + df(y1,t,2)*y1**3*gamma1**2*k**2*n**2*(gamma1 + k) - df(y1,t)**5*beta
+*n + df(y1,t)**4*y1*beta*n*( - 4*gamma1 - 3*k) + df(y1,t)**4*n**2*( - gamma1**3 - 2*gamma1**2*k + k**3) + 4*df
+(y1,t)**3*y1**3*beta**2 + df(y1,t)**3*y1**2*beta*n*(gamma1**2 - 6*gamma1*k - 6*k**2) + df(y1,t)**3*y1*gamma1*k
+*n**2*( - 2*gamma1**2 - 3*gamma1*k - k**2) + 12*df(y1,t)**2*y1**4*beta**2*k + df(y1,t)**2*y1**3*beta*k*n*(3*
+gamma1**2 - 4*k**2) - df(y1,t)**2*y1**2*gamma1**2*k**2*n**2*(gamma1 + k) + 12*df(y1,t)*y1**5*beta**2*k**2 + df
+(y1,t)*y1**4*beta*gamma1*k**2*n*(3*gamma1 + 2*k) + 4*y1**6*beta**2*k**3 + y1**5*beta*gamma1**2*k**3*n
+
+
+aa_(2) :=  - df(y1,t,3)*x1*y1*k*n + df(y1,t,2)*df(y1,t)*x1*k*n - df(y1,t,2)*df(y1,t)*y1*n - df(y1,t,2)*x1*y1*k
+*n*(gamma1 + k) - df(y1,t,2)*y1**2*k*n + df(y1,t)**3*n + df(y1,t)**2*x1*k*n*(gamma1 + k) + df(y1,t)**2*y1*n*(
+gamma1 + k) - 2*df(y1,t)*x1*y1**2*beta*k + 2*df(y1,t)*y1**2*gamma1*k*n - 2*x1*y1**3*beta*k**2 + y1**3*gamma1*k
+**2*n
+
+
+aa_(3) :=  - x2*k + y1
+
+
+aa_(4) := df(y1,t,3)*y1*n - df(y1,t,2)*df(y1,t)*n + df(y1,t,2)*x3*y1*beta + df(y1,t,2)*y1*n*(gamma1 + k) - df(
+y1,t)**2*x3*beta - df(y1,t)**2*n*(gamma1 + k) - df(y1,t)*x3*y1*beta*gamma1 + 2*df(y1,t)*y1**2*beta - x3*y1**2*
+beta*gamma1*k + 2*y1**3*beta*k
+
+
+aa_(5) :=  - df(x4,t)*df(y1,t,2)*y1*beta + df(x4,t)*df(y1,t)**2*beta + df(x4,t)*df(y1,t)*y1*beta*gamma1 + df(
+x4,t)*y1**2*beta*gamma1*k - df(y1,t,3)*y1*gamma1*n + df(y1,t,2)*df(y1,t)*gamma1*n - df(y1,t,2)*y1*gamma1*n*(
+gamma1 + k) + df(y1,t)**2*gamma1*n*(gamma1 + k) - 2*df(y1,t)*y1**2*beta*gamma1 - 2*y1**3*beta*gamma1*k
+
+
+MODEL NOT ALGEBRAICALLY OBSERVABLE
+
+
+PARAMETER VALUES
+
+
+b2_ := {beta=2,k=3,gamma1=5,n=7}
+
+
+MODEL PARAMETER SOLUTION(S)
+
+
+g_ := {{n=(7*beta)/2,gamma1=5,k=3}}
+
+
+MODEL NON IDENTIFIABLE
+
+
+IDENTIFIABILITY WITH ALL INITIAL CONDITIONS (IC_)
+
+
+ic_ := {x1=5,x2=1,x3=0,x4=0}
+
+
+MODEL PARAMETER SOLUTIONS
+
+
+gi_ := {{n=(7*beta)/2,gamma1=5,k=3}}
+
+
+MODEL NON IDENTIFIABLE

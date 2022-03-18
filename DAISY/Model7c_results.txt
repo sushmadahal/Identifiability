@@ -1,0 +1,124 @@
+MODEL7c
+
+MODEL7c
+
+MODEL EQUATION(S)$
+
+c_ := {df(x1,t)=( - (betah*x4 + betai*x3)*x1 - betad*x1*x6)/(x4 + x5 + x3 + x2 + x1),
+df(x2,t)=( - ((x4 + x5 + x3 + x2 + x1)*k*x2 - betai*x1*x3 - betah*x1*x4) + betad*x1*x6)/(x4 + x5 + x3 + x2 +
+x1),
+df(x3,t)= - (gammai*x3 - k*x2 + deltai*x3) - alpha*x3,
+df(x4,t)= - (deltah + gammah)*x4 + alpha*x3,
+df(x5,t)=gammah*x4 + gammai*x3,
+df(x6,t)=deltah*x4 + deltai*x3,
+y1=k*x2,
+y2=alpha*x3,
+y3=deltah*x6 + deltai*x3}$
+
+CHARACTERISTIC SET$
+
+aa_(1) := df(y2,t) - y1*alpha + y2*(alpha + deltai + gammai)$
+
+aa_(2) := df(y3,t)*alpha*betah - y1*alpha*betah*deltai + y2*(alpha*betah*deltai - betad*deltah*deltai - betah*
+deltah*deltai + betah*deltai**2 + betah*deltai*gammai + betai*deltah**2) + y3*alpha*betad*deltah$
+
+aa_(3) :=  - df(y1,t)*alpha*betah*deltai + df(y3,t,2)*alpha*betah + y1*alpha*betah*deltai*(alpha - deltah +
+deltai + gammai) + y2*( - alpha**2*betah*deltai - alpha*betah*deltah**2 + alpha*betah*deltah*deltai - 2*alpha*
+betah*deltai**2 - 2*alpha*betah*deltai*gammai + betad*deltah**2*deltai + betad*deltah*deltai*gammah + betah*
+deltah*deltai**2 + betah*deltah*deltai*gammai - betah*deltai**3 - 2*betah*deltai**2*gammai - betah*deltai*
+gammai**2 - betai*deltah**3 - betai*deltah**2*gammah) - y3*alpha*betad*deltah*(deltah + gammah)$
+
+aa_(4) := df(y1,t)**2*y2*deltah*(betad*deltai + betah*deltai - betai*deltah) - df(y1,t)**2*y3*alpha*betad*
+deltah + df(y1,t)*x1*y1*alpha*betah*betai*deltah*k + df(y1,t)*x1*y2*k*(alpha*betah**2*deltah - alpha*betah*
+betai*deltah + betad**2*deltah*deltai - betad*betah*deltai*gammah - betad*betai*deltah**2 + betah*betai*deltah
+**2 - betah*betai*deltah*deltai + betah*betai*deltah*gammah - betah*betai*deltah*gammai) + df(y1,t)*x1*y3*
+alpha*betad*k*( - betad*deltah + betah*deltah + betah*gammah) + 2*df(y1,t)*y1*y2*deltah*k*(betad*deltai +
+betah*deltai - betai*deltah) - 2*df(y1,t)*y1*y3*alpha*betad*deltah*k + x1*y1**2*alpha*betah*betai*deltah*k**2
++ x1*y1*y2*k**2*(alpha*betah**2*deltah - alpha*betah*betai*deltah + betad**2*deltah*deltai - betad*betah*
+deltai*gammah - betad*betai*deltah**2 + betah*betai*deltah**2 - betah*betai*deltah*deltai + betah*betai*deltah
+*gammah - betah*betai*deltah*gammai) + x1*y1*y3*alpha*betad*k**2*( - betad*deltah + betah*deltah + betah*
+gammah) + y1**2*y2*deltah*k**2*(betad*deltai + betah*deltai - betai*deltah) - y1**2*y3*alpha*betad*deltah*k**2
+$
+
+aa_(5) :=  - x2*k + y1$
+
+aa_(6) :=  - x3*alpha + y2$
+
+aa_(7) :=  - x4*alpha*betah*deltah + y2*(betad*deltai - betai*deltah) - y3*alpha*betad$
+
+aa_(8) := df(y1,t)**2*y2*alpha*betah*deltah**2*(betad*deltai + betah*deltai - betai*deltah) - df(y1,t)**2*y3*
+alpha**2*betad*betah*deltah**2 - df(y1,t)*x5*y1*alpha**2*betah**2*betai*deltah**2*k + df(y1,t)*x5*y2*alpha*
+betah*deltah*k*( - alpha*betah**2*deltah + alpha*betah*betai*deltah - betad**2*deltah*deltai + betad*betah*
+deltai*gammah + betad*betai*deltah**2 - betah*betai*deltah**2 + betah*betai*deltah*deltai - betah*betai*deltah
+*gammah + betah*betai*deltah*gammai) + df(y1,t)*x5*y3*alpha**2*betad*betah*deltah*k*(betad*deltah - betah*
+deltah - betah*gammah) - df(y1,t)*y1**2*alpha**2*betah**2*betai*deltah**2 + df(y1,t)*y1*y2*alpha*betah*deltah*
+( - alpha*betah**2*deltah + alpha*betah*betai*deltah - betad**2*deltah*deltai + betad*betah*deltai*gammah +
+betad*betai*deltah**2 - betad*betai*deltai*k + 2*betad*deltah*deltai*k - betah*betai*deltah**2 + betah*betai*
+deltah*deltai - betah*betai*deltah*gammah + betah*betai*deltah*gammai - betah*betai*deltah*k + 2*betah*deltah*
+deltai*k + betai**2*deltah*k - 2*betai*deltah**2*k) + df(y1,t)*y1*y3*alpha**2*betad*betah*deltah*(betad*deltah
+ - betah*deltah - betah*gammah + betai*k - 2*deltah*k) + df(y1,t)*y2**2*k*( - alpha*betad*betah**2*deltah*
+deltai + alpha*betad*betah*betai*deltah*deltai - alpha*betah**3*deltah**2 + 2*alpha*betah**2*betai*deltah**2 -
+ alpha*betah*betai**2*deltah**2 - betad**3*deltah*deltai**2 - betad**2*betah*deltah**2*deltai + betad**2*betah
+*deltai**2*gammah + 2*betad**2*betai*deltah**2*deltai + betad*betah**2*deltah*deltai*gammah + betad*betah*
+betai*deltah**3 - betad*betah*betai*deltah**2*deltai + betad*betah*betai*deltah*deltai**2 - 2*betad*betah*
+betai*deltah*deltai*gammah + betad*betah*betai*deltah*deltai*gammai - betad*betai**2*deltah**3 - betah**2*
+betai*deltah**3 + betah**2*betai*deltah**2*deltai - betah**2*betai*deltah**2*gammah + betah**2*betai*deltah**2
+*gammai + betah*betai**2*deltah**3 - betah*betai**2*deltah**2*deltai + betah*betai**2*deltah**2*gammah - betah
+*betai**2*deltah**2*gammai) + df(y1,t)*y2*y3*alpha*betad*k*(alpha*betah**2*deltah - alpha*betah*betai*deltah +
+ 2*betad**2*deltah*deltai + betad*betah*deltah**2 - betad*betah*deltah*deltai - 2*betad*betah*deltai*gammah -
+2*betad*betai*deltah**2 - betah**2*deltah**2 - betah**2*deltah*gammah + 2*betah*betai*deltah**2 - betah*betai*
+deltah*deltai + 2*betah*betai*deltah*gammah - betah*betai*deltah*gammai) + df(y1,t)*y3**2*alpha**2*betad**2*k*
+( - betad*deltah + betah*deltah + betah*gammah) - x5*y1**2*alpha**2*betah**2*betai*deltah**2*k**2 + x5*y1*y2*
+alpha*betah*deltah*k**2*( - alpha*betah**2*deltah + alpha*betah*betai*deltah - betad**2*deltah*deltai + betad*
+betah*deltai*gammah + betad*betai*deltah**2 - betah*betai*deltah**2 + betah*betai*deltah*deltai - betah*betai*
+deltah*gammah + betah*betai*deltah*gammai) + x5*y1*y3*alpha**2*betad*betah*deltah*k**2*(betad*deltah - betah*
+deltah - betah*gammah) - y1**3*alpha**2*betah**2*betai*deltah**2*k + y1**2*y2*alpha*betah*deltah*k*( - alpha*
+betah**2*deltah + alpha*betah*betai*deltah - betad**2*deltah*deltai + betad*betah*deltai*gammah + betad*betai*
+deltah**2 - betad*betai*deltai*k + betad*deltah*deltai*k - betah*betai*deltah**2 + betah*betai*deltah*deltai -
+ betah*betai*deltah*gammah + betah*betai*deltah*gammai - betah*betai*deltah*k + betah*deltah*deltai*k + betai
+**2*deltah*k - betai*deltah**2*k) + y1**2*y3*alpha**2*betad*betah*deltah*k*(betad*deltah - betah*deltah -
+betah*gammah + betai*k - deltah*k) + y1*y2**2*k**2*( - alpha*betad*betah**2*deltah*deltai + alpha*betad*betah*
+betai*deltah*deltai - alpha*betah**3*deltah**2 + 2*alpha*betah**2*betai*deltah**2 - alpha*betah*betai**2*
+deltah**2 - betad**3*deltah*deltai**2 - betad**2*betah*deltah**2*deltai + betad**2*betah*deltai**2*gammah + 2*
+betad**2*betai*deltah**2*deltai + betad*betah**2*deltah*deltai*gammah + betad*betah*betai*deltah**3 - betad*
+betah*betai*deltah**2*deltai + betad*betah*betai*deltah*deltai**2 - 2*betad*betah*betai*deltah*deltai*gammah +
+ betad*betah*betai*deltah*deltai*gammai - betad*betai**2*deltah**3 - betah**2*betai*deltah**3 + betah**2*betai
+*deltah**2*deltai - betah**2*betai*deltah**2*gammah + betah**2*betai*deltah**2*gammai + betah*betai**2*deltah
+**3 - betah*betai**2*deltah**2*deltai + betah*betai**2*deltah**2*gammah - betah*betai**2*deltah**2*gammai) +
+y1*y2*y3*alpha*betad*k**2*(alpha*betah**2*deltah - alpha*betah*betai*deltah + 2*betad**2*deltah*deltai + betad
+*betah*deltah**2 - betad*betah*deltah*deltai - 2*betad*betah*deltai*gammah - 2*betad*betai*deltah**2 - betah**
+2*deltah**2 - betah**2*deltah*gammah + 2*betah*betai*deltah**2 - betah*betai*deltah*deltai + 2*betah*betai*
+deltah*gammah - betah*betai*deltah*gammai) + y1*y3**2*alpha**2*betad**2*k**2*( - betad*deltah + betah*deltah +
+ betah*gammah)$
+
+aa_(9) :=  - x6*alpha*deltah - y2*deltai + y3*alpha$
+
+MODEL ALGEBRAICALLY OBSERVABLE$
+
+PARAMETER VALUES$
+
+b2_ := {betai=2,betah=3,betad=5,k=7,alpha=11,gammai=13,deltai=17,gammah=19,deltah=23}$
+
+MODEL PARAMETER SOLUTION(S)$
+
+g_ := {{betai=(2*betah)/3,
+gammah=19,
+betad=(5*betah)/3,
+gammai=13,
+alpha=11,
+deltah=23,
+deltai=17}}$
+
+MODEL NON IDENTIFIABLE$
+
+IDENTIFIABILITY WITH ALL INITIAL CONDITIONS (IC_)$
+
+ic_ := {x1=x10,x2=x20,x3=x30,x4=x40,x5=x50,x6=x60}$
+
+MODEL PARAMETER SOLUTIONS$
+
+gi_ := {}$
+
+MODEL NON IDENTIFIABLE$
+
+3:
