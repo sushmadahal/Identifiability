@@ -1,0 +1,205 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7471,        197]
+NotebookOptionsPosition[      6804,        178]
+NotebookOutlinePosition[      7199,        194]
+CellTagsIndexPosition[      7156,        191]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"polys", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"alpha", "*", "betaH"}], "+", 
+         RowBox[{"betaD", "*", "deltaI"}], "+", 
+         RowBox[{"betaI", "*", "deltaH"}], "+", 
+         RowBox[{"betaI", "*", "gammaH"}]}], ")"}], "*", "betaIhat"}], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"alphahat", "*", "betaHhat"}], "+", 
+         RowBox[{"betaDhat", "*", "deltaIhat"}], "+", 
+         RowBox[{"betaIhat", "*", "deltaHhat"}], "+", 
+         RowBox[{"betaIhat", "*", "gammaHhat"}]}], ")"}], "*", "betaI"}]}], 
+     ",", " ", 
+     RowBox[{
+      RowBox[{"alpha", "*", "deltaH"}], "+", 
+      RowBox[{"deltaH", "*", "deltaI"}], "+", 
+      RowBox[{"deltaI", "*", "gammaH"}], "-", 
+      RowBox[{"alphahat", "*", "deltaHhat"}], "+", 
+      RowBox[{"deltaHhat", "*", "deltaIhat"}], "+", 
+      RowBox[{"deltaIhat", "*", "gammaHhat"}]}]}], "}"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"polys", "\[Equal]", " ", "0"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "betaI", ",", "betaH", ",", "betaD", ",", "k", ",", "alpha", ",", 
+     "gammaI", ",", "gammaH", ",", "deltaI", ",", "deltaH"}], "}"}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.8484288405437407`*^9, 3.8484289319557486`*^9}, {
+  3.8484289781994057`*^9, 3.8484291298583984`*^9}, {3.848429218401057*^9, 
+  3.8484293304180813`*^9}, {3.8505510016624985`*^9, 3.850551119145213*^9}, {
+  3.8505511495870695`*^9, 3.8505511574379025`*^9}, {3.8505512226301904`*^9, 
+  3.8505513133267107`*^9}, {3.8529080754003406`*^9, 3.8529082595489244`*^9}, {
+  3.8529084236242933`*^9, 3.8529084813304605`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"156adb2d-7d95-4bbc-8d9f-17d9053de8e6"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"betaIhat", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"alpha", " ", "betaH"}], "+", 
+       RowBox[{"betaI", " ", "deltaH"}], "+", 
+       RowBox[{"betaD", " ", "deltaI"}], "+", 
+       RowBox[{"betaI", " ", "gammaH"}]}], ")"}]}], "-", 
+    RowBox[{"betaI", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"alphahat", " ", "betaHhat"}], "+", 
+       RowBox[{"betaIhat", " ", "deltaHhat"}], "+", 
+       RowBox[{"betaDhat", " ", "deltaIhat"}], "+", 
+       RowBox[{"betaIhat", " ", "gammaHhat"}]}], ")"}]}]}], ",", 
+   RowBox[{
+    RowBox[{"alpha", " ", "deltaH"}], "-", 
+    RowBox[{"alphahat", " ", "deltaHhat"}], "+", 
+    RowBox[{"deltaH", " ", "deltaI"}], "+", 
+    RowBox[{"deltaHhat", " ", "deltaIhat"}], "+", 
+    RowBox[{"deltaI", " ", "gammaH"}], "+", 
+    RowBox[{"deltaIhat", " ", "gammaHhat"}]}]}], "}"}]], "Output",
+ CellChangeTimes->{3.8484291333691854`*^9, 3.8484293350829673`*^9, 
+  3.850551315321775*^9, 3.852908484919812*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"997e17e8-81dd-45ec-873c-32a5e2dbdb04"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve", "svars", 
+   "\"Equations may not give solutions for all \\\"solve\\\" variables.\"", 2,
+    3, 1, 32786638680617327497, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.852908485434885*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"e3c91d70-446e-4e27-b242-f9c82a12b5c2"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"betaD", "\[Rule]", 
+      RowBox[{
+       FractionBox["1", 
+        RowBox[{"betaIhat", " ", 
+         SuperscriptBox["deltaI", "2"]}]], 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"alpha", " ", "betaI", " ", "betaIhat", " ", "deltaH"}], "-", 
+         RowBox[{
+         "alphahat", " ", "betaI", " ", "betaIhat", " ", "deltaHhat"}], "+", 
+         RowBox[{"alphahat", " ", "betaHhat", " ", "betaI", " ", "deltaI"}], 
+         "-", 
+         RowBox[{"alpha", " ", "betaH", " ", "betaIhat", " ", "deltaI"}], "+", 
+         RowBox[{"betaI", " ", "betaIhat", " ", "deltaHhat", " ", "deltaI"}], 
+         "+", 
+         RowBox[{
+         "betaI", " ", "betaIhat", " ", "deltaHhat", " ", "deltaIhat"}], "+", 
+         RowBox[{"betaDhat", " ", "betaI", " ", "deltaI", " ", "deltaIhat"}], 
+         "+", 
+         RowBox[{"betaI", " ", "betaIhat", " ", "deltaI", " ", "gammaHhat"}], 
+         "+", 
+         RowBox[{
+         "betaI", " ", "betaIhat", " ", "deltaIhat", " ", "gammaHhat"}]}], 
+        ")"}]}]}], ",", 
+     RowBox[{"gammaH", "\[Rule]", 
+      FractionBox[
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "alpha"}], " ", "deltaH"}], "+", 
+        RowBox[{"alphahat", " ", "deltaHhat"}], "-", 
+        RowBox[{"deltaH", " ", "deltaI"}], "-", 
+        RowBox[{"deltaHhat", " ", "deltaIhat"}], "-", 
+        RowBox[{"deltaIhat", " ", "gammaHhat"}]}], "deltaI"]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"betaH", "\[Rule]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"betaI", " ", "deltaH", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"alphahat", " ", "betaHhat"}], "-", 
+           RowBox[{"betaIhat", " ", "deltaH"}], "+", 
+           RowBox[{"betaIhat", " ", "deltaHhat"}], "+", 
+           RowBox[{"betaDhat", " ", "deltaIhat"}], "-", 
+           RowBox[{"betaIhat", " ", "gammaH"}], "+", 
+           RowBox[{"betaIhat", " ", "gammaHhat"}]}], ")"}]}], ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"alphahat", " ", "betaIhat", " ", "deltaHhat"}], "-", 
+         RowBox[{"betaIhat", " ", "deltaHhat", " ", "deltaIhat"}], "-", 
+         RowBox[{"betaIhat", " ", "deltaIhat", " ", "gammaHhat"}]}], 
+        ")"}]}]}], ",", 
+     RowBox[{"alpha", "\[Rule]", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"alphahat", " ", "deltaHhat"}], "-", 
+        RowBox[{"deltaHhat", " ", "deltaIhat"}], "-", 
+        RowBox[{"deltaIhat", " ", "gammaHhat"}]}], "deltaH"]}], ",", 
+     RowBox[{"deltaI", "\[Rule]", "0"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.8484291333691854`*^9, 3.8484293350829673`*^9, 
+  3.850551315321775*^9, 3.8529084856427846`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"c6d95215-a4a1-4510-92fe-6f4d0646695a"]
+}, Open  ]]
+},
+WindowSize->{949, 467},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (July 9, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"fdaf5e9b-9040-4ed5-95c9-6e6a9600a46e"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1919, 44, 143, "Input",ExpressionUUID->"156adb2d-7d95-4bbc-8d9f-17d9053de8e6"],
+Cell[2502, 68, 1105, 27, 71, "Output",ExpressionUUID->"997e17e8-81dd-45ec-873c-32a5e2dbdb04"],
+Cell[3610, 97, 357, 9, 28, "Message",ExpressionUUID->"e3c91d70-446e-4e27-b242-f9c82a12b5c2"],
+Cell[3970, 108, 2818, 67, 255, "Output",ExpressionUUID->"c6d95215-a4a1-4510-92fe-6f4d0646695a"]
+}, Open  ]]
+}
+]
+*)
+

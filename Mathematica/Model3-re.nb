@@ -1,0 +1,40 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{"ClearAll"," ","[","\"Global'*\"","]"}],RowBox[
+{"\n","\n"}],RowBox[{"ploys","=",RowBox[{"{",RowBox[{RowBox[{"k","-","khat"}],","," ",RowBox[
+{RowBox[{"2","gamma"}],"-","k","-",RowBox[{"(",RowBox[{RowBox[{"2","gammahat"}],"-","khat"}],")"}]}],","," ",RowBox[
+{RowBox[{RowBox[{"-","betaa"}],"*","rho"}],"+","betaa","+",RowBox[{"betai",RowBox[
+{"(",RowBox[{"rho"," ","N"}],")"}]}],"-",RowBox[{"(",RowBox[{RowBox[{RowBox[{"-","betaahat"}],"*","rhohat"}],"+","betaahat","+",RowBox[
+{"betaihat"," ",RowBox[{"(",RowBox[{"rhohat","*"," ","Nhat"}],")"}]}]}],")"}]}],","," ",RowBox[
+{RowBox[{"(",RowBox[{RowBox[{"gamma","^","2"}],"-",RowBox[{"gamma","*","k"}],"-",RowBox[
+{RowBox[{"(",RowBox[{"2"," ",RowBox[{"k","^","2"}]}],")"}],"*","  ",RowBox[{"(",RowBox[
+{"rhohat","*"," ","Nhat"}],")"}]}]}],")"}],"-",RowBox[{"(",RowBox[{RowBox[{"gammahat","^","2"}],"-",RowBox[
+{"gammahat","*","khat"}],"-",RowBox[{RowBox[{"(",RowBox[{"2"," ",RowBox[{"khat","^","2"}]}]," ",")"}],"*",RowBox[
+{"(",RowBox[{"rho","*"," ","N"}],")"}]}]}],")"}]}]}],"}"}]}],RowBox[{"\n","\n"}],RowBox[
+{"Solve","[",RowBox[{RowBox[{"ploys","==","0"}],",",RowBox[{"{",RowBox[{"k",","," ","beta",",","gamma",",","rho",",","betaa",",","betai",",","N"}],"}"}]}],"]"}]}],
+"Input",CellLabel -> "In[15]:= ",ExpressionUUID -> "22093340-6b2a-4c4f-acbc-92c2d5d09ee8"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{RowBox[{"k","-","khat"}],",",RowBox[{RowBox[{"2"," ","gamma"}],"-",RowBox[
+{"2"," ","gammahat"}],"-","k","+","khat"}],",",RowBox[{"betaa","-","betaahat","-",RowBox[
+{"betaa"," ","rho"}],"+",RowBox[{"betai"," ","N"," ","rho"}],"+",RowBox[{"betaahat"," ","rhohat"}],"-",RowBox[
+{"betaihat"," ","Nhat"," ","rhohat"}]}],",",RowBox[{SuperscriptBox["gamma","2"],"-",SuperscriptBox[
+"gammahat","2"],"-",RowBox[{"gamma"," ","k"}],"+",RowBox[{"gammahat"," ","khat"}],"+",RowBox[
+{"2"," ",SuperscriptBox["khat","2"]," ","N"," ","rho"}],"-",RowBox[{"2"," ",SuperscriptBox[
+"k","2"]," ","Nhat"," ","rhohat"}]}]}],"}"}],StandardForm],"Output",CellLabel -> "Out[16]= ",
+ExpressionUUID -> "b4767225-2ebc-4fd9-94cc-59ebc06c545d"],Cell[
+BoxData[TemplateBox[
+{"Solve","svars","\"Equations may not give solutions for all \\\"solve\\\" variables.\"",2,17,13,31439398318445983244,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",ExpressionUUID -> "af109467-483e-43a4-9785-15f29b706822"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{RowBox[{"{",RowBox[{RowBox[{"k","\[Rule]","khat"}],",",RowBox[
+{"gamma","\[Rule]","gammahat"}],",",RowBox[{"betaa","\[Rule]",FractionBox[RowBox[
+{RowBox[{"-","betaahat"}],"+",RowBox[{"betaahat"," ","rhohat"}],"+",RowBox[{"betai"," ","Nhat"," ","rhohat"}],"-",RowBox[
+{"betaihat"," ","Nhat"," ","rhohat"}]}],RowBox[{RowBox[{"-","1"}],"+","rho"}]]}],",",RowBox[
+{"N","\[Rule]",FractionBox[RowBox[{"Nhat"," ","rhohat"}],"rho"]}]}],"}"}],",",RowBox[
+{"{",RowBox[{RowBox[{"k","\[Rule]","khat"}],",",RowBox[{"gamma","\[Rule]","gammahat"}],",",RowBox[
+{"rho","\[Rule]","1"}],",",RowBox[{"betai","\[Rule]",FractionBox[RowBox[{"betaahat","-",RowBox[
+{"betaahat"," ","rhohat"}],"+",RowBox[{"betaihat"," ","Nhat"," ","rhohat"}]}],RowBox[
+{"Nhat"," ","rhohat"}]]}],",",RowBox[{"N","\[Rule]",RowBox[{"Nhat"," ","rhohat"}]}]}],"}"}]}],"}"}],
+StandardForm],"Output",CellLabel -> "Out[17]= ",ExpressionUUID -> "a1477ce2-2f72-44b7-94a1-ad9dbc8652fc"]},
+Open],ExpressionUUID -> "b1478a17-b733-4887-97bc-c4180715a937"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "13. for Wolfram Cloud 1.61.2 (January 4, 2022)"]

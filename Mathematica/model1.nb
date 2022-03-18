@@ -1,0 +1,108 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3273,        100]
+NotebookOptionsPosition[      2705,         82]
+NotebookOutlinePosition[      3100,         98]
+CellTagsIndexPosition[      3057,         95]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"polys", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"k", "-", "khat"}], ",", 
+     RowBox[{
+      RowBox[{"2", "*", "gamma"}], "-", "k", "-", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"2", "*", "gammahat"}], "-", "khat"}], ")"}]}], ",", 
+     RowBox[{"gamma", "+", "k", "-", 
+      RowBox[{"(", 
+       RowBox[{"gammahat", "+", "khat"}], ")"}]}], ",", 
+     RowBox[{
+      RowBox[{"beta", "*", "Nhat"}], "-", 
+      RowBox[{"betahat", "*", "N"}]}]}], "}"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"polys", "\[Equal]", " ", "0"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"beta", ",", "k", ",", "gamma", ",", "N"}], "}"}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.8505637544587107`*^9, 3.8505638746139164`*^9}, {
+  3.850564235973487*^9, 3.850564254149789*^9}, {3.8505644408767233`*^9, 
+  3.850564442348898*^9}},ExpressionUUID->"dcf941ec-4b05-4c16-b788-\
+7569de12682d"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"k", "-", "khat"}], ",", 
+   RowBox[{"N", "-", "Nhat"}], ",", 
+   RowBox[{
+    RowBox[{"2", " ", "gamma"}], "-", 
+    RowBox[{"2", " ", "gammahat"}], "-", "k", "+", "khat"}], ",", 
+   RowBox[{"gamma", "-", "gammahat", "+", "k", "-", "khat"}], ",", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "betahat"}], " ", "N"}], "+", 
+    RowBox[{"beta", " ", "Nhat"}]}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.8505639059437237`*^9, {3.8505642491299467`*^9, 3.850564257050984*^9}},
+ CellLabel->"Out[8]=",ExpressionUUID->"d7569a0e-9cbb-44d9-898d-d2bd743af4a1"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"beta", "\[Rule]", "betahat"}], ",", 
+    RowBox[{"k", "\[Rule]", "khat"}], ",", 
+    RowBox[{"gamma", "\[Rule]", "gammahat"}], ",", 
+    RowBox[{"N", "\[Rule]", "Nhat"}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.8505639059437237`*^9, {3.8505642491299467`*^9, 3.850564257058999*^9}},
+ CellLabel->"Out[9]=",ExpressionUUID->"b08671c8-0c7e-4556-af58-b30f3d3fb065"]
+}, Open  ]]
+},
+WindowSize->{949, 467},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (July 9, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"25a6e30e-7cbb-4f08-abc7-d44a63c4fbe7"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1060, 28, 86, "Input",ExpressionUUID->"dcf941ec-4b05-4c16-b788-7569de12682d"],
+Cell[1643, 52, 603, 15, 32, "Output",ExpressionUUID->"d7569a0e-9cbb-44d9-898d-d2bd743af4a1"],
+Cell[2249, 69, 440, 10, 32, "Output",ExpressionUUID->"b08671c8-0c7e-4556-af58-b30f3d3fb065"]
+}, Open  ]]
+}
+]
+*)
+

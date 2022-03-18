@@ -1,0 +1,586 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     22336,        578]
+NotebookOptionsPosition[     21662,        559]
+NotebookOutlinePosition[     22057,        575]
+CellTagsIndexPosition[     22014,        572]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"ClearAll", " ", "[", "\"\<Global'*\>\"", "]"}], "\n", 
+ RowBox[{
+  RowBox[{"ploys", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"k", "-", "khat"}], ",", 
+     RowBox[{"gamma", "-", "gammahat"}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "betaa"}], "*", "rho"}], "+", "betaa", "+", 
+         RowBox[{"betai", "*", "rho"}]}], ")"}], 
+       RowBox[{"(", 
+        RowBox[{"nhat", "*", "rhohat"}], ")"}]}], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "betaahat"}], "*", "rhohat"}], "+", "betaahat", "+", 
+         RowBox[{"betaihat", "*", "rhohat"}]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"n", "*", "rho"}], ")"}]}]}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"betaa", "*", "rho"}], "-", "betaa", "-", 
+         RowBox[{"betai", "*", "rho"}]}], ")"}], 
+       RowBox[{"(", 
+        RowBox[{"nhat", "*", "rhohat"}], ")"}]}], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"betaahat", "*", "rhohat"}], "-", "betaahat", "-", 
+         RowBox[{"betaihat", "*", "rhohat"}]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"n", "*", "rho"}], ")"}]}]}], ",", " ", 
+     RowBox[{
+      RowBox[{"gamma", "^", "2"}], "+", 
+      RowBox[{"2", " ", "gamma", "*", "k"}], "-", 
+      RowBox[{"k", "^", "2"}], "-", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"gammahat", "^", "2"}], "+", 
+        RowBox[{"2", " ", "gammahat", "*", "khat"}], "-", 
+        RowBox[{"khat", "^", "2"}]}], ")"}]}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "3"}], " ", "betaa", "*", "gamma", "*", "rho"}], "+", 
+         RowBox[{"3", " ", "betaa", "*", "gamma"}], "+", 
+         RowBox[{"betaa", "*", "k", "*", "rho"}], "-", 
+         RowBox[{"betaa", "*", "k"}], "+", 
+         RowBox[{"3", " ", "betai", "*", "rho", "*", "gamma"}], "-", 
+         RowBox[{"betai", "*", "k", "*", "rho"}]}], " ", ")"}], 
+       RowBox[{"(", 
+        RowBox[{"nhat", "*", "rhohat"}], ")"}]}], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "3"}], " ", "betaahat", "*", "gammahat", "*", 
+          "rhohat"}], "+", 
+         RowBox[{"3", " ", "betaahat", "*", "gammahat"}], "+", 
+         RowBox[{"betaahat", "*", "khat", "*", "rhohat"}], "-", 
+         RowBox[{"betaahat", "*", "khat"}], "+", 
+         RowBox[{"3", " ", "betaihat", "*", "rhohat", "*", "gammahat"}], "-", 
+         RowBox[{"betaihat", "*", "khat", "*", "rhohat"}]}], " ", ")"}], 
+       RowBox[{"(", 
+        RowBox[{"n", "*", "rho"}], ")"}]}]}], ",", " ", 
+     RowBox[{
+      RowBox[{"k", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "6"}], " ", "betaa", "*", "gamma", "*", "rho"}], "+", 
+         RowBox[{"6", " ", "betaa", "*", "gamma"}], "-", 
+         RowBox[{"betaa", "*", "k", "*", "rho"}], "+", 
+         RowBox[{"betaa", "*", "k"}], "+", 
+         RowBox[{"6", "*", "betai", "*", "gamma", "*", "rho"}], "+", 
+         RowBox[{"betai", "*", "k", "*", "rho"}]}], ")"}], 
+       RowBox[{"(", 
+        RowBox[{"nhat", "*", "rhohat"}], ")"}]}], "-", "  ", 
+      RowBox[{"khat", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "6"}], " ", "betaahat", "*", "gammahat", "*", 
+          "rhohat"}], "+", 
+         RowBox[{"6", " ", "betaahat", "*", "gammahat"}], "-", 
+         RowBox[{"betaahat", "*", "khat", "*", "rhohat"}], "+", 
+         RowBox[{"betaahat", "*", "khat"}], "+", 
+         RowBox[{"6", " ", "betaihat", "*", "gammahat", "*", "rhohat"}], "+", 
+         RowBox[{"betaihat", "*", "khat", "*", "rhohat"}]}], ")"}], 
+       RowBox[{"(", 
+        RowBox[{"n", "*", "rho"}], ")"}]}]}], ",", " ", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"betaa", "*", "rho"}], "-", "betaa", "-", 
+         RowBox[{"betai", "*", "rho"}]}], " ", ")"}], 
+       RowBox[{"(", 
+        RowBox[{"nhat", "*", "rhohat"}], ")"}]}], "-", "  ", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"betaahat", "*", "rhohat"}], "-", "betaahat", "-", 
+         RowBox[{"betaihat", "*", "rhohat"}]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"n", " ", "*", "rho"}], ")"}]}]}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"betaa", "^", "2"}], " ", 
+          RowBox[{"rho", "^", "2"}]}], "-", 
+         RowBox[{"2", " ", 
+          RowBox[{"betaa", "^", "2"}], " ", "rho"}], "+", " ", 
+         RowBox[{"betaa", "^", "2"}], "-", 
+         RowBox[{"2", " ", "betaa", "*", "betai", "*", 
+          RowBox[{"rho", "^", "2"}]}], "+", 
+         RowBox[{"2", " ", "betaa", "*", "betai", "*", "rho"}], "+", 
+         RowBox[{
+          RowBox[{"betai", "^", "2"}], " ", 
+          RowBox[{"rho", "^", "2"}]}]}], ")"}], 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"nhat", "^", "2"}], " ", 
+         RowBox[{"rhohat", "^", "2"}]}], ")"}]}], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"betaahat", "^", "2"}], " ", 
+          RowBox[{"rhohat", "^", "2"}]}], "-", 
+         RowBox[{"2", " ", 
+          RowBox[{"betaahat", "^", "2"}], " ", "rhohat"}], "+", " ", 
+         RowBox[{"betaahat", "^", "2"}], "-", 
+         RowBox[{"2", " ", "betaahat", "*", "betaihat", "*", 
+          RowBox[{"rhohat", "^", "2"}]}], "+", 
+         RowBox[{"2", " ", "betaahat", "*", "betaihat", "*", "rhohat"}], "+", 
+         RowBox[{
+          RowBox[{"betaihat", "^", "2"}], " ", 
+          RowBox[{"rhohat", "^", "2"}]}]}], ")"}], 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"n", "^", "2"}], " ", 
+         RowBox[{"rho", "^", "2"}]}], ")"}]}]}], " ", ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "betaa"}], "*", 
+          RowBox[{"gamma", "^", "2"}], " ", "rho"}], "+", 
+         RowBox[{"betaa", "*", 
+          RowBox[{"gamma", "^", "2"}]}], "+", 
+         RowBox[{"6", " ", "betaa", "*", "gamma", "*", "k", "*", "rho"}], "-",
+          " ", 
+         RowBox[{"6", "*", "betaa", "*", "gamma", "*", "k"}], "+", " ", 
+         RowBox[{"6", "*", "betaa", "*", 
+          RowBox[{"k", "^", "2"}], " ", "rho"}], "-", 
+         RowBox[{"6", "*", "betaa", " ", 
+          RowBox[{"k", "^", "2"}]}], "+", 
+         RowBox[{"betai", "*", 
+          RowBox[{"gamma", "^", "2"}], " ", "rho"}], "-", 
+         RowBox[{"6", "*", "betai", "*", "gamma", "*", "k", "*", "rho"}], "-", 
+         RowBox[{"6", "*", "betai", "*", 
+          RowBox[{"k", "^", "2"}], "*", "rho"}]}], ")"}], 
+       RowBox[{"(", 
+        RowBox[{"nhat", "*", "rhohat"}], ")"}]}], " ", "-", " ", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "betaahat"}], "*", 
+          RowBox[{"gammahat", "^", "2"}], " ", "rhohat"}], "+", 
+         RowBox[{"betaahat", "*", 
+          RowBox[{"gammahat", "^", "2"}]}], "+", 
+         RowBox[{
+         "6", " ", "betaahat", "*", "gammahat", "*", "khat", "*", "rhohat"}], 
+         "-", " ", 
+         RowBox[{"6", "*", "betaahat", "*", "gammahat", "*", "khat"}], "+", 
+         " ", 
+         RowBox[{"6", "*", "betaahat", "*", 
+          RowBox[{"khat", "^", "2"}], " ", "rhohat"}], "-", 
+         RowBox[{"6", "*", "betaahat", "*", 
+          RowBox[{"khat", "^", "2"}]}], "+", 
+         RowBox[{"betaihat", "*", 
+          RowBox[{"gammahat", "^", "2"}], " ", "rhohat"}], "-", 
+         RowBox[{
+         "6", " ", "betaihat", " ", "gammahat", " ", "khat", " ", "rhohat"}], 
+         "-", 
+         RowBox[{"6", " ", "betaihat", " ", 
+          RowBox[{"khat", "^", "2"}], " ", "rhohat"}]}], ")"}], 
+       RowBox[{"(", 
+        RowBox[{"n", "*", "rho"}], ")"}]}]}], ",", " ", 
+     RowBox[{
+      RowBox[{"k", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "3"}], " ", "betaa", "*", 
+          RowBox[{"gamma", "^", "2"}], " ", "rho"}], "+", 
+         RowBox[{"3", " ", "betaa", "*", 
+          RowBox[{"gamma", "^", "2"}]}], "+", 
+         RowBox[{"4", "*", "betaa", "*", 
+          RowBox[{"k", "^", "2"}], " ", "rho"}], "-", 
+         RowBox[{"4", "*", "betaa", " ", "*", 
+          RowBox[{"k", "^", "2"}]}], "+", " ", 
+         RowBox[{"3", "*", "betai", "*", 
+          RowBox[{"gamma", "^", "2"}], " ", "rho"}], "-", 
+         RowBox[{"4", "*", "betai", "*", 
+          RowBox[{"k", "^", "2"}], " ", "rho"}]}], ")"}], 
+       RowBox[{"(", 
+        RowBox[{"nhat", "*", "rhohat"}], ")"}]}], "-", 
+      RowBox[{"khat", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "3"}], "*", "betaahat", "*", 
+          RowBox[{"gammahat", "^", "2"}], " ", "rhohat"}], "+", 
+         RowBox[{"3", " ", "betaahat", "*", 
+          RowBox[{"gammahat", "^", "2"}]}], "+", 
+         RowBox[{"4", " ", "betaahat", "*", 
+          RowBox[{"khat", "^", "2"}], " ", "rhohat"}], "-", 
+         RowBox[{"4", " ", "betaahat", " ", "*", 
+          RowBox[{"khat", "^", "2"}]}], "+", " ", 
+         RowBox[{"3", " ", "betaihat", "*", 
+          RowBox[{"gammahat", "^", "2"}], " ", "rhohat"}], "-", 
+         RowBox[{"4", " ", "betaihat", "*", 
+          RowBox[{"khat", "^", "2"}], " ", "rhohat"}]}], ")"}], 
+       RowBox[{"(", 
+        RowBox[{"n", "*", "rho"}], ")"}]}]}], ",", " ", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"gamma", "^", "2"}], " ", 
+       RowBox[{"k", "^", "3"}], 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "betaa"}], "*", "rho"}], "+", "betaa", "+", 
+         RowBox[{"betai", "*", "rho"}]}], ")"}], 
+       RowBox[{"(", 
+        RowBox[{"nhat", "*", "rhohat"}], ")"}]}], "-", " ", 
+      RowBox[{
+       RowBox[{"gammahat", "^", "2"}], " ", 
+       RowBox[{"khat", "^", "3"}], 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "betaahat"}], "*", "rhohat"}], "+", "betaahat", "+", 
+         RowBox[{"betaihat", "*", "rhohat"}]}], ")"}], 
+       RowBox[{"(", 
+        RowBox[{"n", "*", "rho"}], ")"}]}]}], ",", 
+     RowBox[{
+      RowBox[{"k", "*", "k", "*", 
+       RowBox[{"(", 
+        RowBox[{"gamma", "+", "k"}], ")"}], "*", 
+       RowBox[{"(", 
+        RowBox[{"rhohat", "*", "nhat"}], ")"}]}], "-", 
+      RowBox[{"khat", "*", "khat", "*", 
+       RowBox[{"(", 
+        RowBox[{"gammahat", "+", "khat"}], ")"}], "*", 
+       RowBox[{"(", 
+        RowBox[{"rho", "*", "n"}], ")"}]}]}]}], " ", "}"}]}], "\n"}], "\n", 
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"ploys", "==", "0"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "k", ",", " ", "beta", ",", "gamma", ",", "rho", ",", "betaa", ",", 
+     "betai", ",", "n"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8552632453372774`*^9, 3.8552632462146873`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"ee97d4a0-350c-4589-ad82-f547cec75e73"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"k", "-", "khat"}], ",", 
+   RowBox[{"gamma", "-", "gammahat"}], ",", 
+   RowBox[{
+    RowBox[{"nhat", " ", 
+     RowBox[{"(", 
+      RowBox[{"betaa", "-", 
+       RowBox[{"betaa", " ", "rho"}], "+", 
+       RowBox[{"betai", " ", "rho"}]}], ")"}], " ", "rhohat"}], "-", 
+    RowBox[{"n", " ", "rho", " ", 
+     RowBox[{"(", 
+      RowBox[{"betaahat", "-", 
+       RowBox[{"betaahat", " ", "rhohat"}], "+", 
+       RowBox[{"betaihat", " ", "rhohat"}]}], ")"}]}]}], ",", 
+   RowBox[{
+    RowBox[{"nhat", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "betaa"}], "+", 
+       RowBox[{"betaa", " ", "rho"}], "-", 
+       RowBox[{"betai", " ", "rho"}]}], ")"}], " ", "rhohat"}], "-", 
+    RowBox[{"n", " ", "rho", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "betaahat"}], "+", 
+       RowBox[{"betaahat", " ", "rhohat"}], "-", 
+       RowBox[{"betaihat", " ", "rhohat"}]}], ")"}]}]}], ",", 
+   RowBox[{
+    SuperscriptBox["gamma", "2"], "-", 
+    SuperscriptBox["gammahat", "2"], "+", 
+    RowBox[{"2", " ", "gamma", " ", "k"}], "-", 
+    SuperscriptBox["k", "2"], "-", 
+    RowBox[{"2", " ", "gammahat", " ", "khat"}], "+", 
+    SuperscriptBox["khat", "2"]}], ",", 
+   RowBox[{
+    RowBox[{"nhat", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"3", " ", "betaa", " ", "gamma"}], "-", 
+       RowBox[{"betaa", " ", "k"}], "-", 
+       RowBox[{"3", " ", "betaa", " ", "gamma", " ", "rho"}], "+", 
+       RowBox[{"3", " ", "betai", " ", "gamma", " ", "rho"}], "+", 
+       RowBox[{"betaa", " ", "k", " ", "rho"}], "-", 
+       RowBox[{"betai", " ", "k", " ", "rho"}]}], ")"}], " ", "rhohat"}], "-", 
+    RowBox[{"n", " ", "rho", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"3", " ", "betaahat", " ", "gammahat"}], "-", 
+       RowBox[{"betaahat", " ", "khat"}], "-", 
+       RowBox[{"3", " ", "betaahat", " ", "gammahat", " ", "rhohat"}], "+", 
+       RowBox[{"3", " ", "betaihat", " ", "gammahat", " ", "rhohat"}], "+", 
+       RowBox[{"betaahat", " ", "khat", " ", "rhohat"}], "-", 
+       RowBox[{"betaihat", " ", "khat", " ", "rhohat"}]}], ")"}]}]}], ",", 
+   RowBox[{
+    RowBox[{"k", " ", "nhat", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"6", " ", "betaa", " ", "gamma"}], "+", 
+       RowBox[{"betaa", " ", "k"}], "-", 
+       RowBox[{"6", " ", "betaa", " ", "gamma", " ", "rho"}], "+", 
+       RowBox[{"6", " ", "betai", " ", "gamma", " ", "rho"}], "-", 
+       RowBox[{"betaa", " ", "k", " ", "rho"}], "+", 
+       RowBox[{"betai", " ", "k", " ", "rho"}]}], ")"}], " ", "rhohat"}], "-", 
+    RowBox[{"khat", " ", "n", " ", "rho", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"6", " ", "betaahat", " ", "gammahat"}], "+", 
+       RowBox[{"betaahat", " ", "khat"}], "-", 
+       RowBox[{"6", " ", "betaahat", " ", "gammahat", " ", "rhohat"}], "+", 
+       RowBox[{"6", " ", "betaihat", " ", "gammahat", " ", "rhohat"}], "-", 
+       RowBox[{"betaahat", " ", "khat", " ", "rhohat"}], "+", 
+       RowBox[{"betaihat", " ", "khat", " ", "rhohat"}]}], ")"}]}]}], ",", 
+   RowBox[{
+    RowBox[{"nhat", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "betaa"}], "+", 
+       RowBox[{"betaa", " ", "rho"}], "-", 
+       RowBox[{"betai", " ", "rho"}]}], ")"}], " ", "rhohat"}], "-", 
+    RowBox[{"n", " ", "rho", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "betaahat"}], "+", 
+       RowBox[{"betaahat", " ", "rhohat"}], "-", 
+       RowBox[{"betaihat", " ", "rhohat"}]}], ")"}]}]}], ",", 
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["nhat", "2"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["betaa", "2"], "-", 
+       RowBox[{"2", " ", 
+        SuperscriptBox["betaa", "2"], " ", "rho"}], "+", 
+       RowBox[{"2", " ", "betaa", " ", "betai", " ", "rho"}], "+", 
+       RowBox[{
+        SuperscriptBox["betaa", "2"], " ", 
+        SuperscriptBox["rho", "2"]}], "-", 
+       RowBox[{"2", " ", "betaa", " ", "betai", " ", 
+        SuperscriptBox["rho", "2"]}], "+", 
+       RowBox[{
+        SuperscriptBox["betai", "2"], " ", 
+        SuperscriptBox["rho", "2"]}]}], ")"}], " ", 
+     SuperscriptBox["rhohat", "2"]}], "-", 
+    RowBox[{
+     SuperscriptBox["n", "2"], " ", 
+     SuperscriptBox["rho", "2"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["betaahat", "2"], "-", 
+       RowBox[{"2", " ", 
+        SuperscriptBox["betaahat", "2"], " ", "rhohat"}], "+", 
+       RowBox[{"2", " ", "betaahat", " ", "betaihat", " ", "rhohat"}], "+", 
+       RowBox[{
+        SuperscriptBox["betaahat", "2"], " ", 
+        SuperscriptBox["rhohat", "2"]}], "-", 
+       RowBox[{"2", " ", "betaahat", " ", "betaihat", " ", 
+        SuperscriptBox["rhohat", "2"]}], "+", 
+       RowBox[{
+        SuperscriptBox["betaihat", "2"], " ", 
+        SuperscriptBox["rhohat", "2"]}]}], ")"}]}]}], ",", 
+   RowBox[{
+    RowBox[{"nhat", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"betaa", " ", 
+        SuperscriptBox["gamma", "2"]}], "-", 
+       RowBox[{"6", " ", "betaa", " ", "gamma", " ", "k"}], "-", 
+       RowBox[{"6", " ", "betaa", " ", 
+        SuperscriptBox["k", "2"]}], "-", 
+       RowBox[{"betaa", " ", 
+        SuperscriptBox["gamma", "2"], " ", "rho"}], "+", 
+       RowBox[{"betai", " ", 
+        SuperscriptBox["gamma", "2"], " ", "rho"}], "+", 
+       RowBox[{"6", " ", "betaa", " ", "gamma", " ", "k", " ", "rho"}], "-", 
+       RowBox[{"6", " ", "betai", " ", "gamma", " ", "k", " ", "rho"}], "+", 
+       RowBox[{"6", " ", "betaa", " ", 
+        SuperscriptBox["k", "2"], " ", "rho"}], "-", 
+       RowBox[{"6", " ", "betai", " ", 
+        SuperscriptBox["k", "2"], " ", "rho"}]}], ")"}], " ", "rhohat"}], "-", 
+    RowBox[{"n", " ", "rho", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"betaahat", " ", 
+        SuperscriptBox["gammahat", "2"]}], "-", 
+       RowBox[{"6", " ", "betaahat", " ", "gammahat", " ", "khat"}], "-", 
+       RowBox[{"6", " ", "betaahat", " ", 
+        SuperscriptBox["khat", "2"]}], "-", 
+       RowBox[{"betaahat", " ", 
+        SuperscriptBox["gammahat", "2"], " ", "rhohat"}], "+", 
+       RowBox[{"betaihat", " ", 
+        SuperscriptBox["gammahat", "2"], " ", "rhohat"}], "+", 
+       RowBox[{
+       "6", " ", "betaahat", " ", "gammahat", " ", "khat", " ", "rhohat"}], 
+       "-", 
+       RowBox[{
+       "6", " ", "betaihat", " ", "gammahat", " ", "khat", " ", "rhohat"}], 
+       "+", 
+       RowBox[{"6", " ", "betaahat", " ", 
+        SuperscriptBox["khat", "2"], " ", "rhohat"}], "-", 
+       RowBox[{"6", " ", "betaihat", " ", 
+        SuperscriptBox["khat", "2"], " ", "rhohat"}]}], ")"}]}]}], ",", 
+   RowBox[{
+    RowBox[{"k", " ", "nhat", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"3", " ", "betaa", " ", 
+        SuperscriptBox["gamma", "2"]}], "-", 
+       RowBox[{"4", " ", "betaa", " ", 
+        SuperscriptBox["k", "2"]}], "-", 
+       RowBox[{"3", " ", "betaa", " ", 
+        SuperscriptBox["gamma", "2"], " ", "rho"}], "+", 
+       RowBox[{"3", " ", "betai", " ", 
+        SuperscriptBox["gamma", "2"], " ", "rho"}], "+", 
+       RowBox[{"4", " ", "betaa", " ", 
+        SuperscriptBox["k", "2"], " ", "rho"}], "-", 
+       RowBox[{"4", " ", "betai", " ", 
+        SuperscriptBox["k", "2"], " ", "rho"}]}], ")"}], " ", "rhohat"}], "-", 
+    RowBox[{"khat", " ", "n", " ", "rho", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"3", " ", "betaahat", " ", 
+        SuperscriptBox["gammahat", "2"]}], "-", 
+       RowBox[{"4", " ", "betaahat", " ", 
+        SuperscriptBox["khat", "2"]}], "-", 
+       RowBox[{"3", " ", "betaahat", " ", 
+        SuperscriptBox["gammahat", "2"], " ", "rhohat"}], "+", 
+       RowBox[{"3", " ", "betaihat", " ", 
+        SuperscriptBox["gammahat", "2"], " ", "rhohat"}], "+", 
+       RowBox[{"4", " ", "betaahat", " ", 
+        SuperscriptBox["khat", "2"], " ", "rhohat"}], "-", 
+       RowBox[{"4", " ", "betaihat", " ", 
+        SuperscriptBox["khat", "2"], " ", "rhohat"}]}], ")"}]}]}], ",", 
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["gamma", "2"], " ", 
+     SuperscriptBox["k", "3"], " ", "nhat", " ", 
+     RowBox[{"(", 
+      RowBox[{"betaa", "-", 
+       RowBox[{"betaa", " ", "rho"}], "+", 
+       RowBox[{"betai", " ", "rho"}]}], ")"}], " ", "rhohat"}], "-", 
+    RowBox[{
+     SuperscriptBox["gammahat", "2"], " ", 
+     SuperscriptBox["khat", "3"], " ", "n", " ", "rho", " ", 
+     RowBox[{"(", 
+      RowBox[{"betaahat", "-", 
+       RowBox[{"betaahat", " ", "rhohat"}], "+", 
+       RowBox[{"betaihat", " ", "rhohat"}]}], ")"}]}]}], ",", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", 
+      SuperscriptBox["khat", "2"]}], " ", 
+     RowBox[{"(", 
+      RowBox[{"gammahat", "+", "khat"}], ")"}], " ", "n", " ", "rho"}], "+", 
+    RowBox[{
+     SuperscriptBox["k", "2"], " ", 
+     RowBox[{"(", 
+      RowBox[{"gamma", "+", "k"}], ")"}], " ", "nhat", " ", "rhohat"}]}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.855263275935248*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"c416f2c2-8ffb-4643-93e3-9fc7846e8da5"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve", "svars", 
+   "\"Equations may not give solutions for all \\\"solve\\\" variables.\"", 2,
+    6, 1, 32802052000704861517, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8552632760894146`*^9},
+ CellLabel->
+  "During evaluation of \
+In[4]:=",ExpressionUUID->"291594a9-aa45-4cfd-8e50-77b88e6946a0"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"k", "\[Rule]", "khat"}], ",", 
+    RowBox[{"gamma", "\[Rule]", "gammahat"}], ",", 
+    RowBox[{"betai", "\[Rule]", 
+     FractionBox[
+      RowBox[{
+       RowBox[{"-", "betaa"}], "+", "betaahat", "+", 
+       RowBox[{"betaa", " ", "rho"}], "-", 
+       RowBox[{"betaahat", " ", "rhohat"}], "+", 
+       RowBox[{"betaihat", " ", "rhohat"}]}], "rho"]}], ",", 
+    RowBox[{"n", "\[Rule]", 
+     FractionBox[
+      RowBox[{"nhat", " ", "rhohat"}], "rho"]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.855263276314521*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"dc64455a-75ce-42d2-b621-b15b21385d8e"]
+}, Open  ]]
+},
+WindowSize->{949, 478},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (July 9, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"a50bbe61-34a9-4e46-903d-05d3ecca7323"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 10998, 281, 561, "Input",ExpressionUUID->"ee97d4a0-350c-4589-ad82-f547cec75e73"],
+Cell[11581, 305, 9029, 221, 442, "Output",ExpressionUUID->"c416f2c2-8ffb-4643-93e3-9fc7846e8da5"],
+Cell[20613, 528, 359, 9, 28, "Message",ExpressionUUID->"291594a9-aa45-4cfd-8e50-77b88e6946a0"],
+Cell[20975, 539, 671, 17, 95, "Output",ExpressionUUID->"dc64455a-75ce-42d2-b621-b15b21385d8e"]
+}, Open  ]]
+}
+]
+*)
+
