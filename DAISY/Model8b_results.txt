@@ -1,0 +1,374 @@
+MODEL EQUATION(S)
+
+
+c_ := {df(x1,t)=( - beta_i*x1*x4 - beta_p*x1*x3)/(x4 + x5 + x3 + x2 + x1),
+df(x2,t)=( - ((x4 + x5 + x3 + x2 + x1)*k*x2 - beta_p*x1*x3) + beta_i*x1*x4)/(x4 + x5 + x3 + x2 + x1),
+df(x3,t)=k*x2 - k_p*x3 - gamma_p*x3,
+df(x4,t)= - (gamma*x4 - k_p*x3) - delta*x4,
+df(x5,t)=gamma*x4 + gamma_p*x3,
+df(x6,t)=delta*x4,
+y1=k_p*x3,
+y2=delta*x4}
+
+
+CHARACTERISTIC SET
+
+
+aa_(1) := df(y2,t) - y1*delta + y2*(delta + gamma)
+
+
+aa_(2) := df(y1,t,4)*df(y1,t,2)*y1**2*beta_p**2*delta**2 + df(y1,t,4)*df(y1,t,2)*y1*y2*beta_p*delta*k_p*(2*
+beta_i - delta) + df(y1,t,4)*df(y1,t,2)*y2**2*beta_i*k_p**2*(beta_i - delta) + df(y1,t,4)*df(y1,t)*y1**2*
+beta_p**2*delta**2*(gamma_p + k + k_p) + df(y1,t,4)*df(y1,t)*y1*y2*beta_p*delta*k_p*(2*beta_i*gamma_p + 2*
+beta_i*k + 2*beta_i*k_p - delta*gamma_p - delta*k - delta*k_p) + df(y1,t,4)*df(y1,t)*y2**2*beta_i*k_p**2*(
+beta_i*gamma_p + beta_i*k + beta_i*k_p - delta*gamma_p - delta*k - delta*k_p) + df(y1,t,4)*y1**3*beta_p**2*
+delta**2*k*(gamma_p + k_p) + df(y1,t,4)*y1**2*y2*beta_p*delta*k*k_p*(2*beta_i*gamma_p + 2*beta_i*k_p - delta*
+gamma_p - delta*k_p) + df(y1,t,4)*y1*y2**2*beta_i*k*k_p**2*(beta_i*gamma_p + beta_i*k_p - delta*gamma_p - 
+delta*k_p) - df(y1,t,3)**2*y1**2*beta_p**2*delta**2 + 2*df(y1,t,3)**2*y1*y2*beta_p*delta*k_p*( - beta_i + 
+delta) + df(y1,t,3)**2*y2**2*beta_i*k_p**2*( - beta_i + 2*delta) - df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1*beta_p**2
+*delta**2 + df(y1,t,3)*df(y1,t,2)*df(y1,t)*y2*beta_p*delta*k_p*( - beta_i - 2*delta) + df(y1,t,3)*df(y1,t,2)*
+y1**2*beta_p*delta**2*( - beta_i*k_p - beta_p*gamma_p - beta_p*k - beta_p*k_p + delta*k_p) + df(y1,t,3)*df(y1,
+t,2)*y1*y2*delta*k_p*( - beta_i**2*k_p + beta_i*beta_p*delta + beta_i*beta_p*gamma - 2*beta_i*beta_p*gamma_p -
+ 2*beta_i*beta_p*k - 2*beta_i*beta_p*k_p - beta_i*delta*k_p - beta_p*delta**2 - beta_p*delta*gamma + 3*beta_p*
+delta*gamma_p + 3*beta_p*delta*k + 3*beta_p*delta*k_p) + df(y1,t,3)*df(y1,t,2)*y2**2*beta_i*k_p**2*(beta_i*
+delta + beta_i*gamma - beta_i*gamma_p - beta_i*k - beta_i*k_p + delta**2 + delta*gamma + 3*delta*gamma_p + 3*
+delta*k + 3*delta*k_p) - df(y1,t,3)*df(y1,t)**2*y1*beta_p**2*delta**2*(gamma_p + k + k_p) + df(y1,t,3)*df(y1,t
+)**2*y2*beta_p*delta*k_p*( - beta_i*gamma_p - beta_i*k - beta_i*k_p - 2*delta*gamma_p - 2*delta*k - 2*delta*
+k_p) + df(y1,t,3)*df(y1,t)*y1**2*beta_p*delta**2*( - beta_i*gamma_p*k_p - beta_i*k*k_p - beta_i*k_p**2 + 
+beta_p*gamma_p**2 - beta_p*gamma_p*k + 2*beta_p*gamma_p*k_p + beta_p*k**2 - beta_p*k*k_p + beta_p*k_p**2 + 
+delta*gamma_p*k_p + delta*k*k_p + delta*k_p**2) + df(y1,t,3)*df(y1,t)*y1*y2*delta*k_p*( - beta_i**2*gamma_p*
+k_p - beta_i**2*k*k_p - beta_i**2*k_p**2 + beta_i*beta_p*delta*gamma_p + beta_i*beta_p*delta*k + beta_i*beta_p
+*delta*k_p + beta_i*beta_p*gamma*gamma_p + beta_i*beta_p*gamma*k + beta_i*beta_p*gamma*k_p + 2*beta_i*beta_p*
+gamma_p**2 - beta_i*beta_p*gamma_p*k + 4*beta_i*beta_p*gamma_p*k_p + 2*beta_i*beta_p*k**2 - beta_i*beta_p*k*
+k_p + 2*beta_i*beta_p*k_p**2 - beta_i*delta*gamma_p*k_p - beta_i*delta*k*k_p - beta_i*delta*k_p**2 - beta_p*
+delta**2*gamma_p - beta_p*delta**2*k - beta_p*delta**2*k_p - beta_p*delta*gamma*gamma_p - beta_p*delta*gamma*k
+ - beta_p*delta*gamma*k_p - beta_p*delta*gamma_p**2 - 2*beta_p*delta*gamma_p*k_p - beta_p*delta*k**2 - beta_p*
+delta*k_p**2) + df(y1,t,3)*df(y1,t)*y2**2*beta_i*k_p**2*(beta_i*delta*gamma_p + beta_i*delta*k + beta_i*delta*
+k_p + beta_i*gamma*gamma_p + beta_i*gamma*k + beta_i*gamma*k_p + beta_i*gamma_p**2 + 2*beta_i*gamma_p*k_p + 
+beta_i*k**2 + beta_i*k_p**2 + delta**2*gamma_p + delta**2*k + delta**2*k_p + delta*gamma*gamma_p + delta*gamma
+*k + delta*gamma*k_p - delta*gamma_p**2 + 2*delta*gamma_p*k - 2*delta*gamma_p*k_p - delta*k**2 + 2*delta*k*k_p
+ - delta*k_p**2) + df(y1,t,3)*y1**3*beta_p*delta**2*k*( - beta_i*gamma_p*k_p - beta_i*k_p**2 + beta_p*gamma_p
+**2 + beta_p*gamma_p*k + 2*beta_p*gamma_p*k_p + beta_p*k*k_p + beta_p*k_p**2 + delta*gamma_p*k_p + delta*k_p**
+2) + df(y1,t,3)*y1**2*y2*delta*k*k_p*( - beta_i**2*gamma_p*k_p - beta_i**2*k_p**2 + beta_i*beta_p*delta*
+gamma_p + beta_i*beta_p*delta*k_p + beta_i*beta_p*gamma*gamma_p + beta_i*beta_p*gamma*k_p + 2*beta_i*beta_p*
+gamma_p**2 + 2*beta_i*beta_p*gamma_p*k + 4*beta_i*beta_p*gamma_p*k_p + 2*beta_i*beta_p*k*k_p + 2*beta_i*beta_p
+*k_p**2 - beta_i*delta*gamma_p*k_p - beta_i*delta*k_p**2 - beta_p*delta**2*gamma_p - beta_p*delta**2*k_p - 
+beta_p*delta*gamma*gamma_p - beta_p*delta*gamma*k_p - beta_p*delta*gamma_p**2 - beta_p*delta*gamma_p*k - 2*
+beta_p*delta*gamma_p*k_p - beta_p*delta*k*k_p - beta_p*delta*k_p**2) + df(y1,t,3)*y1*y2**2*beta_i*k*k_p**2*(
+beta_i*delta*gamma_p + beta_i*delta*k_p + beta_i*gamma*gamma_p + beta_i*gamma*k_p + beta_i*gamma_p**2 + beta_i
+*gamma_p*k + 2*beta_i*gamma_p*k_p + beta_i*k*k_p + beta_i*k_p**2 + delta**2*gamma_p + delta**2*k_p + delta*
+gamma*gamma_p + delta*gamma*k_p - delta*gamma_p**2 - delta*gamma_p*k - 2*delta*gamma_p*k_p - delta*k*k_p - 
+delta*k_p**2) - df(y1,t,2)**3*y1*beta_p**2*delta**2 + df(y1,t,2)**3*y2*beta_p*delta*k_p*( - beta_i + delta) + 
+2*df(y1,t,2)**2*df(y1,t)**2*beta_p**2*delta**2 + df(y1,t,2)**2*df(y1,t)*y1*beta_p*delta**2*(3*beta_i*k_p - 3*
+beta_p*gamma_p - 3*beta_p*k - 3*beta_p*k_p - delta*k_p) + df(y1,t,2)**2*df(y1,t)*y2*delta*k_p*( - beta_i**2*
+k_p - 4*beta_i*beta_p*delta - 4*beta_i*beta_p*gamma - 3*beta_i*beta_p*gamma_p - 3*beta_i*beta_p*k - 3*beta_i*
+beta_p*k_p + beta_i*delta*k_p + beta_p*delta**2 + beta_p*delta*gamma) + df(y1,t,2)**2*y1**2*delta**2*(2*beta_i
+**2*k_p**2 + beta_i*beta_p*delta*k_p + beta_i*beta_p*gamma*k_p - beta_i*beta_p*gamma_p*k_p - beta_i*beta_p*k*
+k_p - beta_i*beta_p*k_p**2 - beta_i*delta*k_p**2 - beta_p**2*gamma_p**2 - 3*beta_p**2*gamma_p*k - 2*beta_p**2*
+gamma_p*k_p - beta_p**2*k**2 - 3*beta_p**2*k*k_p - beta_p**2*k_p**2 + beta_p*delta*gamma_p*k_p + beta_p*delta*
+k*k_p + beta_p*delta*k_p**2) + df(y1,t,2)**2*y1*y2*delta*k_p*( - 3*beta_i**2*delta*k_p - 3*beta_i**2*gamma*k_p
+ - beta_i**2*gamma_p*k_p - beta_i**2*k*k_p - beta_i**2*k_p**2 - beta_i*beta_p*delta**2 - 2*beta_i*beta_p*delta
+*gamma + beta_i*beta_p*delta*gamma_p + beta_i*beta_p*delta*k + beta_i*beta_p*delta*k_p - beta_i*beta_p*gamma**
+2 + beta_i*beta_p*gamma*gamma_p + beta_i*beta_p*gamma*k + beta_i*beta_p*gamma*k_p - 2*beta_i*beta_p*gamma_p**2
+ - 4*beta_i*beta_p*gamma_p*k - 4*beta_i*beta_p*gamma_p*k_p - 2*beta_i*beta_p*k**2 - 4*beta_i*beta_p*k*k_p - 2*
+beta_i*beta_p*k_p**2 + beta_i*delta**2*k_p + beta_i*delta*gamma*k_p - beta_i*delta*gamma_p*k_p - beta_i*delta*
+k*k_p - beta_i*delta*k_p**2 - beta_p*delta**2*gamma_p - beta_p*delta**2*k - beta_p*delta**2*k_p - beta_p*delta
+*gamma*gamma_p - beta_p*delta*gamma*k - beta_p*delta*gamma*k_p + 2*beta_p*delta*gamma_p**2 + 5*beta_p*delta*
+gamma_p*k + 4*beta_p*delta*gamma_p*k_p + 2*beta_p*delta*k**2 + 5*beta_p*delta*k*k_p + 2*beta_p*delta*k_p**2) +
+ df(y1,t,2)**2*y2**2*beta_i*k_p**2*(beta_i*delta**2 + 2*beta_i*delta*gamma + beta_i*delta*gamma_p + beta_i*
+delta*k + beta_i*delta*k_p + beta_i*gamma**2 + beta_i*gamma*gamma_p + beta_i*gamma*k + beta_i*gamma*k_p - 
+beta_i*gamma_p**2 - beta_i*gamma_p*k - 2*beta_i*gamma_p*k_p - beta_i*k**2 - beta_i*k*k_p - beta_i*k_p**2 + 
+delta**2*gamma_p + delta**2*k + delta**2*k_p + delta*gamma*gamma_p + delta*gamma*k + delta*gamma*k_p + 2*delta
+*gamma_p**2 + 3*delta*gamma_p*k + 4*delta*gamma_p*k_p + 2*delta*k**2 + 3*delta*k*k_p + 2*delta*k_p**2) + 4*df(
+y1,t,2)*df(y1,t)**3*beta_p**2*delta**2*(gamma_p + k + k_p) + df(y1,t,2)*df(y1,t)**2*y1*beta_p*delta**2*(6*
+beta_i*gamma_p*k_p + 6*beta_i*k*k_p + 6*beta_i*k_p**2 - 2*beta_p*gamma_p**2 - beta_p*gamma_p*k - 4*beta_p*
+gamma_p*k_p - 2*beta_p*k**2 - beta_p*k*k_p - 2*beta_p*k_p**2 - 2*delta*gamma_p*k_p - 2*delta*k*k_p - 2*delta*
+k_p**2) + df(y1,t,2)*df(y1,t)**2*y2*delta*k_p*( - 2*beta_i**2*gamma_p*k_p - 2*beta_i**2*k*k_p - 2*beta_i**2*
+k_p**2 - 8*beta_i*beta_p*delta*gamma_p - 8*beta_i*beta_p*delta*k - 8*beta_i*beta_p*delta*k_p - 8*beta_i*beta_p
+*gamma*gamma_p - 8*beta_i*beta_p*gamma*k - 8*beta_i*beta_p*gamma*k_p - 2*beta_i*beta_p*gamma_p**2 - 5*beta_i*
+beta_p*gamma_p*k - 4*beta_i*beta_p*gamma_p*k_p - 2*beta_i*beta_p*k**2 - 5*beta_i*beta_p*k*k_p - 2*beta_i*
+beta_p*k_p**2 + 2*beta_i*delta*gamma_p*k_p + 2*beta_i*delta*k*k_p + 2*beta_i*delta*k_p**2 + 2*beta_p*delta**2*
+gamma_p + 2*beta_p*delta**2*k + 2*beta_p*delta**2*k_p + 2*beta_p*delta*gamma*gamma_p + 2*beta_p*delta*gamma*k 
++ 2*beta_p*delta*gamma*k_p - beta_p*delta*gamma_p**2 - 4*beta_p*delta*gamma_p*k - 2*beta_p*delta*gamma_p*k_p -
+ beta_p*delta*k**2 - 4*beta_p*delta*k*k_p - beta_p*delta*k_p**2) + df(y1,t,2)*df(y1,t)*y1**2*delta**2*(4*
+beta_i**2*gamma_p*k_p**2 + 4*beta_i**2*k*k_p**2 + 4*beta_i**2*k_p**3 + 2*beta_i*beta_p*delta*gamma_p*k_p + 2*
+beta_i*beta_p*delta*k*k_p + 2*beta_i*beta_p*delta*k_p**2 + 2*beta_i*beta_p*gamma*gamma_p*k_p + 2*beta_i*beta_p
+*gamma*k*k_p + 2*beta_i*beta_p*gamma*k_p**2 - beta_i*beta_p*gamma_p**2*k_p + 3*beta_i*beta_p*gamma_p*k*k_p - 2
+*beta_i*beta_p*gamma_p*k_p**2 - beta_i*beta_p*k**2*k_p + 3*beta_i*beta_p*k*k_p**2 - beta_i*beta_p*k_p**3 - 2*
+beta_i*delta*gamma_p*k_p**2 - 2*beta_i*delta*k*k_p**2 - 2*beta_i*delta*k_p**3 - 4*beta_p**2*gamma_p**2*k - 4*
+beta_p**2*gamma_p*k**2 - 8*beta_p**2*gamma_p*k*k_p - 4*beta_p**2*k**2*k_p - 4*beta_p**2*k*k_p**2 + beta_p*
+delta*gamma_p**2*k_p + beta_p*delta*gamma_p*k*k_p + 2*beta_p*delta*gamma_p*k_p**2 + beta_p*delta*k**2*k_p + 
+beta_p*delta*k*k_p**2 + beta_p*delta*k_p**3) + df(y1,t,2)*df(y1,t)*y1*y2*delta*k_p*( - 6*beta_i**2*delta*
+gamma_p*k_p - 6*beta_i**2*delta*k*k_p - 6*beta_i**2*delta*k_p**2 - 6*beta_i**2*gamma*gamma_p*k_p - 6*beta_i**2
+*gamma*k*k_p - 6*beta_i**2*gamma*k_p**2 - beta_i**2*gamma_p**2*k_p - 5*beta_i**2*gamma_p*k*k_p - 2*beta_i**2*
+gamma_p*k_p**2 - beta_i**2*k**2*k_p - 5*beta_i**2*k*k_p**2 - beta_i**2*k_p**3 - 2*beta_i*beta_p*delta**2*
+gamma_p - 2*beta_i*beta_p*delta**2*k - 2*beta_i*beta_p*delta**2*k_p - 4*beta_i*beta_p*delta*gamma*gamma_p - 4*
+beta_i*beta_p*delta*gamma*k - 4*beta_i*beta_p*delta*gamma*k_p + beta_i*beta_p*delta*gamma_p**2 - 5*beta_i*
+beta_p*delta*gamma_p*k + 2*beta_i*beta_p*delta*gamma_p*k_p + beta_i*beta_p*delta*k**2 - 5*beta_i*beta_p*delta*
+k*k_p + beta_i*beta_p*delta*k_p**2 - 2*beta_i*beta_p*gamma**2*gamma_p - 2*beta_i*beta_p*gamma**2*k - 2*beta_i*
+beta_p*gamma**2*k_p + beta_i*beta_p*gamma*gamma_p**2 - 5*beta_i*beta_p*gamma*gamma_p*k + 2*beta_i*beta_p*gamma
+*gamma_p*k_p + beta_i*beta_p*gamma*k**2 - 5*beta_i*beta_p*gamma*k*k_p + beta_i*beta_p*gamma*k_p**2 - 5*beta_i*
+beta_p*gamma_p**2*k - 5*beta_i*beta_p*gamma_p*k**2 - 10*beta_i*beta_p*gamma_p*k*k_p - 5*beta_i*beta_p*k**2*k_p
+ - 5*beta_i*beta_p*k*k_p**2 + 2*beta_i*delta**2*gamma_p*k_p + 2*beta_i*delta**2*k*k_p + 2*beta_i*delta**2*k_p
+**2 + 2*beta_i*delta*gamma*gamma_p*k_p + 2*beta_i*delta*gamma*k*k_p + 2*beta_i*delta*gamma*k_p**2 - beta_i*
+delta*gamma_p**2*k_p - beta_i*delta*gamma_p*k*k_p - 2*beta_i*delta*gamma_p*k_p**2 - beta_i*delta*k**2*k_p - 
+beta_i*delta*k*k_p**2 - beta_i*delta*k_p**3 - beta_p*delta**2*gamma_p**2 - beta_p*delta**2*gamma_p*k - 2*
+beta_p*delta**2*gamma_p*k_p - beta_p*delta**2*k**2 - beta_p*delta**2*k*k_p - beta_p*delta**2*k_p**2 - beta_p*
+delta*gamma*gamma_p**2 - beta_p*delta*gamma*gamma_p*k - 2*beta_p*delta*gamma*gamma_p*k_p - beta_p*delta*gamma*
+k**2 - beta_p*delta*gamma*k*k_p - beta_p*delta*gamma*k_p**2 + 3*beta_p*delta*gamma_p**2*k + 3*beta_p*delta*
+gamma_p*k**2 + 6*beta_p*delta*gamma_p*k*k_p + 3*beta_p*delta*k**2*k_p + 3*beta_p*delta*k*k_p**2) + df(y1,t,2)*
+df(y1,t)*y2**2*beta_i*k_p**2*(2*beta_i*delta**2*gamma_p + 2*beta_i*delta**2*k + 2*beta_i*delta**2*k_p + 4*
+beta_i*delta*gamma*gamma_p + 4*beta_i*delta*gamma*k + 4*beta_i*delta*gamma*k_p + beta_i*delta*gamma_p**2 + 3*
+beta_i*delta*gamma_p*k + 2*beta_i*delta*gamma_p*k_p + beta_i*delta*k**2 + 3*beta_i*delta*k*k_p + beta_i*delta*
+k_p**2 + 2*beta_i*gamma**2*gamma_p + 2*beta_i*gamma**2*k + 2*beta_i*gamma**2*k_p + beta_i*gamma*gamma_p**2 + 3
+*beta_i*gamma*gamma_p*k + 2*beta_i*gamma*gamma_p*k_p + beta_i*gamma*k**2 + 3*beta_i*gamma*k*k_p + beta_i*gamma
+*k_p**2 - beta_i*gamma_p**2*k - beta_i*gamma_p*k**2 - 2*beta_i*gamma_p*k*k_p - beta_i*k**2*k_p - beta_i*k*k_p
+**2 + delta**2*gamma_p**2 + 3*delta**2*gamma_p*k + 2*delta**2*gamma_p*k_p + delta**2*k**2 + 3*delta**2*k*k_p +
+ delta**2*k_p**2 + delta*gamma*gamma_p**2 + 3*delta*gamma*gamma_p*k + 2*delta*gamma*gamma_p*k_p + delta*gamma*
+k**2 + 3*delta*gamma*k*k_p + delta*gamma*k_p**2 + 3*delta*gamma_p**2*k + 3*delta*gamma_p*k**2 + 6*delta*
+gamma_p*k*k_p + 3*delta*k**2*k_p + 3*delta*k*k_p**2) + df(y1,t,2)*y1**3*delta**2*k*k_p*(4*beta_i**2*gamma_p*
+k_p + 4*beta_i**2*k_p**2 + 2*beta_i*beta_p*delta*gamma_p + 2*beta_i*beta_p*delta*k_p + 2*beta_i*beta_p*gamma*
+gamma_p + 2*beta_i*beta_p*gamma*k_p - beta_i*beta_p*gamma_p**2 - beta_i*beta_p*gamma_p*k - 2*beta_i*beta_p*
+gamma_p*k_p - beta_i*beta_p*k*k_p - beta_i*beta_p*k_p**2 - 2*beta_i*delta*gamma_p*k_p - 2*beta_i*delta*k_p**2 
++ beta_p*delta*gamma_p**2 + beta_p*delta*gamma_p*k + 2*beta_p*delta*gamma_p*k_p + beta_p*delta*k*k_p + beta_p*
+delta*k_p**2) + df(y1,t,2)*y1**2*y2*delta*k*k_p*( - 6*beta_i**2*delta*gamma_p*k_p - 6*beta_i**2*delta*k_p**2 -
+ 6*beta_i**2*gamma*gamma_p*k_p - 6*beta_i**2*gamma*k_p**2 - beta_i**2*gamma_p**2*k_p - beta_i**2*gamma_p*k*k_p
+ - 2*beta_i**2*gamma_p*k_p**2 - beta_i**2*k*k_p**2 - beta_i**2*k_p**3 - 2*beta_i*beta_p*delta**2*gamma_p - 2*
+beta_i*beta_p*delta**2*k_p - 4*beta_i*beta_p*delta*gamma*gamma_p - 4*beta_i*beta_p*delta*gamma*k_p + beta_i*
+beta_p*delta*gamma_p**2 + beta_i*beta_p*delta*gamma_p*k + 2*beta_i*beta_p*delta*gamma_p*k_p + beta_i*beta_p*
+delta*k*k_p + beta_i*beta_p*delta*k_p**2 - 2*beta_i*beta_p*gamma**2*gamma_p - 2*beta_i*beta_p*gamma**2*k_p + 
+beta_i*beta_p*gamma*gamma_p**2 + beta_i*beta_p*gamma*gamma_p*k + 2*beta_i*beta_p*gamma*gamma_p*k_p + beta_i*
+beta_p*gamma*k*k_p + beta_i*beta_p*gamma*k_p**2 + beta_i*beta_p*gamma_p**2*k + 2*beta_i*beta_p*gamma_p*k*k_p +
+ beta_i*beta_p*k*k_p**2 + 2*beta_i*delta**2*gamma_p*k_p + 2*beta_i*delta**2*k_p**2 + 2*beta_i*delta*gamma*
+gamma_p*k_p + 2*beta_i*delta*gamma*k_p**2 - beta_i*delta*gamma_p**2*k_p - beta_i*delta*gamma_p*k*k_p - 2*
+beta_i*delta*gamma_p*k_p**2 - beta_i*delta*k*k_p**2 - beta_i*delta*k_p**3 - beta_p*delta**2*gamma_p**2 - 
+beta_p*delta**2*gamma_p*k - 2*beta_p*delta**2*gamma_p*k_p - beta_p*delta**2*k*k_p - beta_p*delta**2*k_p**2 - 
+beta_p*delta*gamma*gamma_p**2 - beta_p*delta*gamma*gamma_p*k - 2*beta_p*delta*gamma*gamma_p*k_p - beta_p*delta
+*gamma*k*k_p - beta_p*delta*gamma*k_p**2) + df(y1,t,2)*y1*y2**2*beta_i*k*k_p**2*(2*beta_i*delta**2*gamma_p + 2
+*beta_i*delta**2*k_p + 4*beta_i*delta*gamma*gamma_p + 4*beta_i*delta*gamma*k_p + beta_i*delta*gamma_p**2 + 
+beta_i*delta*gamma_p*k + 2*beta_i*delta*gamma_p*k_p + beta_i*delta*k*k_p + beta_i*delta*k_p**2 + 2*beta_i*
+gamma**2*gamma_p + 2*beta_i*gamma**2*k_p + beta_i*gamma*gamma_p**2 + beta_i*gamma*gamma_p*k + 2*beta_i*gamma*
+gamma_p*k_p + beta_i*gamma*k*k_p + beta_i*gamma*k_p**2 + beta_i*gamma_p**2*k + 2*beta_i*gamma_p*k*k_p + beta_i
+*k*k_p**2 + delta**2*gamma_p**2 + delta**2*gamma_p*k + 2*delta**2*gamma_p*k_p + delta**2*k*k_p + delta**2*k_p
+**2 + delta*gamma*gamma_p**2 + delta*gamma*gamma_p*k + 2*delta*gamma*gamma_p*k_p + delta*gamma*k*k_p + delta*
+gamma*k_p**2 - delta*gamma_p**2*k - 2*delta*gamma_p*k*k_p - delta*k*k_p**2) + 2*df(y1,t)**4*beta_p**2*delta**2
+*(gamma_p**2 + 2*gamma_p*k + 2*gamma_p*k_p + k**2 + 2*k*k_p + k_p**2) + df(y1,t)**3*y1*beta_p*delta**2*(3*
+beta_i*gamma_p**2*k_p + 6*beta_i*gamma_p*k*k_p + 6*beta_i*gamma_p*k_p**2 + 3*beta_i*k**2*k_p + 6*beta_i*k*k_p
+**2 + 3*beta_i*k_p**3 + 3*beta_p*gamma_p**2*k + 3*beta_p*gamma_p*k**2 + 6*beta_p*gamma_p*k*k_p + 3*beta_p*k**2
+*k_p + 3*beta_p*k*k_p**2 - delta*gamma_p**2*k_p - 2*delta*gamma_p*k*k_p - 2*delta*gamma_p*k_p**2 - delta*k**2*
+k_p - 2*delta*k*k_p**2 - delta*k_p**3) + df(y1,t)**3*y2*delta*k_p*( - beta_i**2*gamma_p**2*k_p - 2*beta_i**2*
+gamma_p*k*k_p - 2*beta_i**2*gamma_p*k_p**2 - beta_i**2*k**2*k_p - 2*beta_i**2*k*k_p**2 - beta_i**2*k_p**3 - 4*
+beta_i*beta_p*delta*gamma_p**2 - 8*beta_i*beta_p*delta*gamma_p*k - 8*beta_i*beta_p*delta*gamma_p*k_p - 4*
+beta_i*beta_p*delta*k**2 - 8*beta_i*beta_p*delta*k*k_p - 4*beta_i*beta_p*delta*k_p**2 - 4*beta_i*beta_p*gamma*
+gamma_p**2 - 8*beta_i*beta_p*gamma*gamma_p*k - 8*beta_i*beta_p*gamma*gamma_p*k_p - 4*beta_i*beta_p*gamma*k**2 
+- 8*beta_i*beta_p*gamma*k*k_p - 4*beta_i*beta_p*gamma*k_p**2 - beta_i*beta_p*gamma_p**2*k - beta_i*beta_p*
+gamma_p*k**2 - 2*beta_i*beta_p*gamma_p*k*k_p - beta_i*beta_p*k**2*k_p - beta_i*beta_p*k*k_p**2 + beta_i*delta*
+gamma_p**2*k_p + 2*beta_i*delta*gamma_p*k*k_p + 2*beta_i*delta*gamma_p*k_p**2 + beta_i*delta*k**2*k_p + 2*
+beta_i*delta*k*k_p**2 + beta_i*delta*k_p**3 + beta_p*delta**2*gamma_p**2 + 2*beta_p*delta**2*gamma_p*k + 2*
+beta_p*delta**2*gamma_p*k_p + beta_p*delta**2*k**2 + 2*beta_p*delta**2*k*k_p + beta_p*delta**2*k_p**2 + beta_p
+*delta*gamma*gamma_p**2 + 2*beta_p*delta*gamma*gamma_p*k + 2*beta_p*delta*gamma*gamma_p*k_p + beta_p*delta*
+gamma*k**2 + 2*beta_p*delta*gamma*k*k_p + beta_p*delta*gamma*k_p**2 - 2*beta_p*delta*gamma_p**2*k - 2*beta_p*
+delta*gamma_p*k**2 - 4*beta_p*delta*gamma_p*k*k_p - 2*beta_p*delta*k**2*k_p - 2*beta_p*delta*k*k_p**2) + df(y1
+,t)**2*y1**2*delta**2*k_p*(2*beta_i**2*gamma_p**2*k_p + 4*beta_i**2*gamma_p*k*k_p + 4*beta_i**2*gamma_p*k_p**2
+ + 2*beta_i**2*k**2*k_p + 4*beta_i**2*k*k_p**2 + 2*beta_i**2*k_p**3 + beta_i*beta_p*delta*gamma_p**2 + 2*
+beta_i*beta_p*delta*gamma_p*k + 2*beta_i*beta_p*delta*gamma_p*k_p + beta_i*beta_p*delta*k**2 + 2*beta_i*beta_p
+*delta*k*k_p + beta_i*beta_p*delta*k_p**2 + beta_i*beta_p*gamma*gamma_p**2 + 2*beta_i*beta_p*gamma*gamma_p*k +
+ 2*beta_i*beta_p*gamma*gamma_p*k_p + beta_i*beta_p*gamma*k**2 + 2*beta_i*beta_p*gamma*k*k_p + beta_i*beta_p*
+gamma*k_p**2 + 5*beta_i*beta_p*gamma_p**2*k + 5*beta_i*beta_p*gamma_p*k**2 + 10*beta_i*beta_p*gamma_p*k*k_p + 
+5*beta_i*beta_p*k**2*k_p + 5*beta_i*beta_p*k*k_p**2 - beta_i*delta*gamma_p**2*k_p - 2*beta_i*delta*gamma_p*k*
+k_p - 2*beta_i*delta*gamma_p*k_p**2 - beta_i*delta*k**2*k_p - 2*beta_i*delta*k*k_p**2 - beta_i*delta*k_p**3 - 
+beta_p*delta*gamma_p**2*k - beta_p*delta*gamma_p*k**2 - 2*beta_p*delta*gamma_p*k*k_p - beta_p*delta*k**2*k_p -
+ beta_p*delta*k*k_p**2) + df(y1,t)**2*y1*y2*delta*k_p*( - 3*beta_i**2*delta*gamma_p**2*k_p - 6*beta_i**2*delta
+*gamma_p*k*k_p - 6*beta_i**2*delta*gamma_p*k_p**2 - 3*beta_i**2*delta*k**2*k_p - 6*beta_i**2*delta*k*k_p**2 - 
+3*beta_i**2*delta*k_p**3 - 3*beta_i**2*gamma*gamma_p**2*k_p - 6*beta_i**2*gamma*gamma_p*k*k_p - 6*beta_i**2*
+gamma*gamma_p*k_p**2 - 3*beta_i**2*gamma*k**2*k_p - 6*beta_i**2*gamma*k*k_p**2 - 3*beta_i**2*gamma*k_p**3 - 3*
+beta_i**2*gamma_p**2*k*k_p - 3*beta_i**2*gamma_p*k**2*k_p - 6*beta_i**2*gamma_p*k*k_p**2 - 3*beta_i**2*k**2*
+k_p**2 - 3*beta_i**2*k*k_p**3 - beta_i*beta_p*delta**2*gamma_p**2 - 2*beta_i*beta_p*delta**2*gamma_p*k - 2*
+beta_i*beta_p*delta**2*gamma_p*k_p - beta_i*beta_p*delta**2*k**2 - 2*beta_i*beta_p*delta**2*k*k_p - beta_i*
+beta_p*delta**2*k_p**2 - 2*beta_i*beta_p*delta*gamma*gamma_p**2 - 4*beta_i*beta_p*delta*gamma*gamma_p*k - 4*
+beta_i*beta_p*delta*gamma*gamma_p*k_p - 2*beta_i*beta_p*delta*gamma*k**2 - 4*beta_i*beta_p*delta*gamma*k*k_p -
+ 2*beta_i*beta_p*delta*gamma*k_p**2 - 7*beta_i*beta_p*delta*gamma_p**2*k - 7*beta_i*beta_p*delta*gamma_p*k**2 
+- 14*beta_i*beta_p*delta*gamma_p*k*k_p - 7*beta_i*beta_p*delta*k**2*k_p - 7*beta_i*beta_p*delta*k*k_p**2 - 
+beta_i*beta_p*gamma**2*gamma_p**2 - 2*beta_i*beta_p*gamma**2*gamma_p*k - 2*beta_i*beta_p*gamma**2*gamma_p*k_p 
+- beta_i*beta_p*gamma**2*k**2 - 2*beta_i*beta_p*gamma**2*k*k_p - beta_i*beta_p*gamma**2*k_p**2 - 7*beta_i*
+beta_p*gamma*gamma_p**2*k - 7*beta_i*beta_p*gamma*gamma_p*k**2 - 14*beta_i*beta_p*gamma*gamma_p*k*k_p - 7*
+beta_i*beta_p*gamma*k**2*k_p - 7*beta_i*beta_p*gamma*k*k_p**2 - 3*beta_i*beta_p*gamma_p**2*k**2 - 6*beta_i*
+beta_p*gamma_p*k**2*k_p - 3*beta_i*beta_p*k**2*k_p**2 + beta_i*delta**2*gamma_p**2*k_p + 2*beta_i*delta**2*
+gamma_p*k*k_p + 2*beta_i*delta**2*gamma_p*k_p**2 + beta_i*delta**2*k**2*k_p + 2*beta_i*delta**2*k*k_p**2 + 
+beta_i*delta**2*k_p**3 + beta_i*delta*gamma*gamma_p**2*k_p + 2*beta_i*delta*gamma*gamma_p*k*k_p + 2*beta_i*
+delta*gamma*gamma_p*k_p**2 + beta_i*delta*gamma*k**2*k_p + 2*beta_i*delta*gamma*k*k_p**2 + beta_i*delta*gamma*
+k_p**3 + beta_i*delta*gamma_p**2*k*k_p + beta_i*delta*gamma_p*k**2*k_p + 2*beta_i*delta*gamma_p*k*k_p**2 + 
+beta_i*delta*k**2*k_p**2 + beta_i*delta*k*k_p**3 + beta_p*delta**2*gamma_p**2*k + beta_p*delta**2*gamma_p*k**2
+ + 2*beta_p*delta**2*gamma_p*k*k_p + beta_p*delta**2*k**2*k_p + beta_p*delta**2*k*k_p**2 + beta_p*delta*gamma*
+gamma_p**2*k + beta_p*delta*gamma*gamma_p*k**2 + 2*beta_p*delta*gamma*gamma_p*k*k_p + beta_p*delta*gamma*k**2*
+k_p + beta_p*delta*gamma*k*k_p**2) + df(y1,t)**2*y2**2*beta_i*k_p**2*(beta_i*delta**2*gamma_p**2 + 2*beta_i*
+delta**2*gamma_p*k + 2*beta_i*delta**2*gamma_p*k_p + beta_i*delta**2*k**2 + 2*beta_i*delta**2*k*k_p + beta_i*
+delta**2*k_p**2 + 2*beta_i*delta*gamma*gamma_p**2 + 4*beta_i*delta*gamma*gamma_p*k + 4*beta_i*delta*gamma*
+gamma_p*k_p + 2*beta_i*delta*gamma*k**2 + 4*beta_i*delta*gamma*k*k_p + 2*beta_i*delta*gamma*k_p**2 + beta_i*
+delta*gamma_p**2*k + beta_i*delta*gamma_p*k**2 + 2*beta_i*delta*gamma_p*k*k_p + beta_i*delta*k**2*k_p + beta_i
+*delta*k*k_p**2 + beta_i*gamma**2*gamma_p**2 + 2*beta_i*gamma**2*gamma_p*k + 2*beta_i*gamma**2*gamma_p*k_p + 
+beta_i*gamma**2*k**2 + 2*beta_i*gamma**2*k*k_p + beta_i*gamma**2*k_p**2 + beta_i*gamma*gamma_p**2*k + beta_i*
+gamma*gamma_p*k**2 + 2*beta_i*gamma*gamma_p*k*k_p + beta_i*gamma*k**2*k_p + beta_i*gamma*k*k_p**2 - beta_i*
+gamma_p**2*k**2 - 2*beta_i*gamma_p*k**2*k_p - beta_i*k**2*k_p**2 + delta**2*gamma_p**2*k + delta**2*gamma_p*k
+**2 + 2*delta**2*gamma_p*k*k_p + delta**2*k**2*k_p + delta**2*k*k_p**2 + delta*gamma*gamma_p**2*k + delta*
+gamma*gamma_p*k**2 + 2*delta*gamma*gamma_p*k*k_p + delta*gamma*k**2*k_p + delta*gamma*k*k_p**2 + 2*delta*
+gamma_p**2*k**2 + 4*delta*gamma_p*k**2*k_p + 2*delta*k**2*k_p**2) + 2*df(y1,t)*y1**3*beta_i*delta**2*k*k_p*(2*
+beta_i*gamma_p**2*k_p + 2*beta_i*gamma_p*k*k_p + 4*beta_i*gamma_p*k_p**2 + 2*beta_i*k*k_p**2 + 2*beta_i*k_p**3
+ + beta_p*delta*gamma_p**2 + beta_p*delta*gamma_p*k + 2*beta_p*delta*gamma_p*k_p + beta_p*delta*k*k_p + beta_p
+*delta*k_p**2 + beta_p*gamma*gamma_p**2 + beta_p*gamma*gamma_p*k + 2*beta_p*gamma*gamma_p*k_p + beta_p*gamma*k
+*k_p + beta_p*gamma*k_p**2 + beta_p*gamma_p**2*k + 2*beta_p*gamma_p*k*k_p + beta_p*k*k_p**2 - delta*gamma_p**2
+*k_p - delta*gamma_p*k*k_p - 2*delta*gamma_p*k_p**2 - delta*k*k_p**2 - delta*k_p**3) + df(y1,t)*y1**2*y2*
+beta_i*delta*k*k_p*( - 6*beta_i*delta*gamma_p**2*k_p - 6*beta_i*delta*gamma_p*k*k_p - 12*beta_i*delta*gamma_p*
+k_p**2 - 6*beta_i*delta*k*k_p**2 - 6*beta_i*delta*k_p**3 - 6*beta_i*gamma*gamma_p**2*k_p - 6*beta_i*gamma*
+gamma_p*k*k_p - 12*beta_i*gamma*gamma_p*k_p**2 - 6*beta_i*gamma*k*k_p**2 - 6*beta_i*gamma*k_p**3 - 2*beta_i*
+gamma_p**2*k*k_p - 4*beta_i*gamma_p*k*k_p**2 - 2*beta_i*k*k_p**3 - 2*beta_p*delta**2*gamma_p**2 - 2*beta_p*
+delta**2*gamma_p*k - 4*beta_p*delta**2*gamma_p*k_p - 2*beta_p*delta**2*k*k_p - 2*beta_p*delta**2*k_p**2 - 4*
+beta_p*delta*gamma*gamma_p**2 - 4*beta_p*delta*gamma*gamma_p*k - 8*beta_p*delta*gamma*gamma_p*k_p - 4*beta_p*
+delta*gamma*k*k_p - 4*beta_p*delta*gamma*k_p**2 - 3*beta_p*delta*gamma_p**2*k - 6*beta_p*delta*gamma_p*k*k_p -
+ 3*beta_p*delta*k*k_p**2 - 2*beta_p*gamma**2*gamma_p**2 - 2*beta_p*gamma**2*gamma_p*k - 4*beta_p*gamma**2*
+gamma_p*k_p - 2*beta_p*gamma**2*k*k_p - 2*beta_p*gamma**2*k_p**2 - 3*beta_p*gamma*gamma_p**2*k - 6*beta_p*
+gamma*gamma_p*k*k_p - 3*beta_p*gamma*k*k_p**2 + 2*delta**2*gamma_p**2*k_p + 2*delta**2*gamma_p*k*k_p + 4*delta
+**2*gamma_p*k_p**2 + 2*delta**2*k*k_p**2 + 2*delta**2*k_p**3 + 2*delta*gamma*gamma_p**2*k_p + 2*delta*gamma*
+gamma_p*k*k_p + 4*delta*gamma*gamma_p*k_p**2 + 2*delta*gamma*k*k_p**2 + 2*delta*gamma*k_p**3) + df(y1,t)*y1*y2
+**2*beta_i*k*k_p**2*(2*beta_i*delta**2*gamma_p**2 + 2*beta_i*delta**2*gamma_p*k + 4*beta_i*delta**2*gamma_p*
+k_p + 2*beta_i*delta**2*k*k_p + 2*beta_i*delta**2*k_p**2 + 4*beta_i*delta*gamma*gamma_p**2 + 4*beta_i*delta*
+gamma*gamma_p*k + 8*beta_i*delta*gamma*gamma_p*k_p + 4*beta_i*delta*gamma*k*k_p + 4*beta_i*delta*gamma*k_p**2 
++ beta_i*delta*gamma_p**2*k + 2*beta_i*delta*gamma_p*k*k_p + beta_i*delta*k*k_p**2 + 2*beta_i*gamma**2*gamma_p
+**2 + 2*beta_i*gamma**2*gamma_p*k + 4*beta_i*gamma**2*gamma_p*k_p + 2*beta_i*gamma**2*k*k_p + 2*beta_i*gamma**
+2*k_p**2 + beta_i*gamma*gamma_p**2*k + 2*beta_i*gamma*gamma_p*k*k_p + beta_i*gamma*k*k_p**2 + delta**2*gamma_p
+**2*k + 2*delta**2*gamma_p*k*k_p + delta**2*k*k_p**2 + delta*gamma*gamma_p**2*k + 2*delta*gamma*gamma_p*k*k_p 
++ delta*gamma*k*k_p**2) + y1**4*beta_i*delta**2*k**2*k_p*(2*beta_i*gamma_p**2*k_p + 4*beta_i*gamma_p*k_p**2 + 
+2*beta_i*k_p**3 + beta_p*delta*gamma_p**2 + 2*beta_p*delta*gamma_p*k_p + beta_p*delta*k_p**2 + beta_p*gamma*
+gamma_p**2 + 2*beta_p*gamma*gamma_p*k_p + beta_p*gamma*k_p**2 - delta*gamma_p**2*k_p - 2*delta*gamma_p*k_p**2 
+- delta*k_p**3) + y1**3*y2*beta_i*delta*k**2*k_p*( - 3*beta_i*delta*gamma_p**2*k_p - 6*beta_i*delta*gamma_p*
+k_p**2 - 3*beta_i*delta*k_p**3 - 3*beta_i*gamma*gamma_p**2*k_p - 6*beta_i*gamma*gamma_p*k_p**2 - 3*beta_i*
+gamma*k_p**3 - beta_p*delta**2*gamma_p**2 - 2*beta_p*delta**2*gamma_p*k_p - beta_p*delta**2*k_p**2 - 2*beta_p*
+delta*gamma*gamma_p**2 - 4*beta_p*delta*gamma*gamma_p*k_p - 2*beta_p*delta*gamma*k_p**2 - beta_p*gamma**2*
+gamma_p**2 - 2*beta_p*gamma**2*gamma_p*k_p - beta_p*gamma**2*k_p**2 + delta**2*gamma_p**2*k_p + 2*delta**2*
+gamma_p*k_p**2 + delta**2*k_p**3 + delta*gamma*gamma_p**2*k_p + 2*delta*gamma*gamma_p*k_p**2 + delta*gamma*k_p
+**3) + y1**2*y2**2*beta_i**2*k**2*k_p**2*(delta**2*gamma_p**2 + 2*delta**2*gamma_p*k_p + delta**2*k_p**2 + 2*
+delta*gamma*gamma_p**2 + 4*delta*gamma*gamma_p*k_p + 2*delta*gamma*k_p**2 + gamma**2*gamma_p**2 + 2*gamma**2*
+gamma_p*k_p + gamma**2*k_p**2)
+
+
+aa_(3) :=  - df(y1,t,3)*x1*y1*beta_p*delta*k*k_p - df(y1,t,3)*x1*y2*beta_i*k*k_p**2 - df(y1,t,2)**2*y1*beta_p*
+delta + df(y1,t,2)**2*y2*k_p*( - beta_i + delta) + df(y1,t,2)*df(y1,t)*x1*beta_p*delta*k*k_p - 2*df(y1,t,2)*df
+(y1,t)*y1*beta_p*delta*(gamma_p + k + k_p) + 2*df(y1,t,2)*df(y1,t)*y2*k_p*( - beta_i*gamma_p - beta_i*k - 
+beta_i*k_p + delta*gamma_p + delta*k + delta*k_p) + df(y1,t,2)*x1*y1*delta*k*k_p*(beta_i*k_p - beta_p*gamma_p 
+- beta_p*k - beta_p*k_p) - df(y1,t,2)*x1*y2*beta_i*k*k_p**2*(delta + gamma + gamma_p + k + k_p) - 2*df(y1,t,2)
+*y1**2*beta_p*delta*k*(gamma_p + k_p) + 2*df(y1,t,2)*y1*y2*k*k_p*( - beta_i*gamma_p - beta_i*k_p + delta*
+gamma_p + delta*k_p) + df(y1,t)**2*x1*beta_p*delta*k*k_p*(gamma_p + k + k_p) + df(y1,t)**2*y1*beta_p*delta*( -
+ gamma_p**2 - 2*gamma_p*k - 2*gamma_p*k_p - k**2 - 2*k*k_p - k_p**2) + df(y1,t)**2*y2*k_p*( - beta_i*gamma_p**
+2 - 2*beta_i*gamma_p*k - 2*beta_i*gamma_p*k_p - beta_i*k**2 - 2*beta_i*k*k_p - beta_i*k_p**2 + delta*gamma_p**
+2 + 2*delta*gamma_p*k + 2*delta*gamma_p*k_p + delta*k**2 + 2*delta*k*k_p + delta*k_p**2) + df(y1,t)*x1*y1*
+beta_i*delta*k*k_p**2*(gamma_p + k + k_p) - df(y1,t)*x1*y2*beta_i*k*k_p**2*(delta*gamma_p + delta*k + delta*
+k_p + gamma*gamma_p + gamma*k + gamma*k_p + gamma_p*k + k*k_p) + 2*df(y1,t)*y1**2*beta_p*delta*k*( - gamma_p**
+2 - gamma_p*k - 2*gamma_p*k_p - k*k_p - k_p**2) + 2*df(y1,t)*y1*y2*k*k_p*( - beta_i*gamma_p**2 - beta_i*
+gamma_p*k - 2*beta_i*gamma_p*k_p - beta_i*k*k_p - beta_i*k_p**2 + delta*gamma_p**2 + delta*gamma_p*k + 2*delta
+*gamma_p*k_p + delta*k*k_p + delta*k_p**2) + x1*y1**2*beta_i*delta*k**2*k_p**2*(gamma_p + k_p) - x1*y1*y2*
+beta_i*k**2*k_p**2*(delta*gamma_p + delta*k_p + gamma*gamma_p + gamma*k_p) + y1**3*beta_p*delta*k**2*( - 
+gamma_p**2 - 2*gamma_p*k_p - k_p**2) + y1**2*y2*k**2*k_p*( - beta_i*gamma_p**2 - 2*beta_i*gamma_p*k_p - beta_i
+*k_p**2 + delta*gamma_p**2 + 2*delta*gamma_p*k_p + delta*k_p**2)
+
+
+aa_(4) := df(y1,t) - x2*k*k_p + y1*(gamma_p + k_p)
+
+
+aa_(5) :=  - x3*k_p + y1
+
+
+aa_(6) :=  - x4*delta + y2
+
+
+aa_(7) := df(y1,t,3)*df(y1,t)*y1*beta_p*delta**2 + df(y1,t,3)*df(y1,t)*y2*beta_i*delta*k_p + df(y1,t,3)*x5*y1*
+beta_p*delta**2*k*k_p + df(y1,t,3)*x5*y2*beta_i*delta*k*k_p**2 + df(y1,t,3)*y1**2*beta_p*delta**2*(gamma_p + k
+ + k_p) + df(y1,t,3)*y1*y2*delta*k_p*(beta_i*gamma_p + beta_i*k + beta_i*k_p + beta_p*k) + df(y1,t,3)*y2**2*
+beta_i*k*k_p**2 - df(y1,t,2)**2*y1*beta_p*delta**2 + df(y1,t,2)**2*y2*delta*k_p*( - beta_i + delta) - df(y1,t,
+2)*df(y1,t)**2*beta_p*delta**2 - df(y1,t,2)*df(y1,t)*x5*beta_p*delta**2*k*k_p + df(y1,t,2)*df(y1,t)*y1*delta**
+2*( - beta_i*k_p - 2*beta_p*gamma_p - 2*beta_p*k - 2*beta_p*k_p) + df(y1,t,2)*df(y1,t)*y2*delta*k_p*(beta_i*
+delta + beta_i*gamma - beta_i*gamma_p - beta_i*k - beta_i*k_p - beta_p*k + 2*delta*gamma_p + 2*delta*k + 2*
+delta*k_p) + df(y1,t,2)*x5*y1*delta**2*k*k_p*( - beta_i*k_p + beta_p*gamma_p + beta_p*k + beta_p*k_p) + df(y1,
+t,2)*x5*y2*beta_i*delta*k*k_p**2*(delta + gamma + gamma_p + k + k_p) + df(y1,t,2)*y1**2*delta**2*( - beta_i*
+gamma_p*k_p - beta_i*k*k_p - beta_i*k_p**2 + beta_p**2*k + beta_p*gamma_p**2 + 2*beta_p*gamma_p*k_p + beta_p*k
+**2 + beta_p*k_p**2) + df(y1,t,2)*y1*y2*delta*k_p*(2*beta_i*beta_p*k + beta_i*delta*gamma_p + beta_i*delta*k +
+ beta_i*delta*k_p + beta_i*gamma*gamma_p + beta_i*gamma*k + beta_i*gamma*k_p + beta_i*gamma_p**2 + 2*beta_i*
+gamma_p*k_p + beta_i*k**2 - beta_i*k*k_p + beta_i*k_p**2 - beta_p*delta*k + beta_p*gamma_p*k + beta_p*k**2 + 
+beta_p*k*k_p + 2*delta*gamma_p*k + 2*delta*k*k_p) + df(y1,t,2)*y2**2*beta_i*k*k_p**2*(beta_i + gamma + gamma_p
+ + k + k_p) - df(y1,t)**3*beta_p*delta**2*(gamma_p + k + k_p) - df(y1,t)**2*x5*beta_p*delta**2*k*k_p*(gamma_p 
++ k + k_p) + df(y1,t)**2*y1*delta**2*( - beta_i*gamma_p*k_p - beta_i*k*k_p - beta_i*k_p**2 - 2*beta_p*gamma_p
+**2 - 4*beta_p*gamma_p*k - 4*beta_p*gamma_p*k_p - 2*beta_p*k**2 - 4*beta_p*k*k_p - 2*beta_p*k_p**2) + df(y1,t)
+**2*y2*delta*k_p*(beta_i*delta*gamma_p + beta_i*delta*k + beta_i*delta*k_p + beta_i*gamma*gamma_p + beta_i*
+gamma*k + beta_i*gamma*k_p - beta_i*gamma_p**2 - beta_i*gamma_p*k - 2*beta_i*gamma_p*k_p - beta_i*k**2 - 
+beta_i*k*k_p - beta_i*k_p**2 - beta_p*gamma_p*k - beta_p*k**2 - beta_p*k*k_p + delta*gamma_p**2 + 2*delta*
+gamma_p*k + 2*delta*gamma_p*k_p + delta*k**2 + 2*delta*k*k_p + delta*k_p**2) - df(y1,t)*x5*y1*beta_i*delta**2*
+k*k_p**2*(gamma_p + k + k_p) + df(y1,t)*x5*y2*beta_i*delta*k*k_p**2*(delta*gamma_p + delta*k + delta*k_p + 
+gamma*gamma_p + gamma*k + gamma*k_p + gamma_p*k + k*k_p) + df(y1,t)*y1**2*delta**2*( - beta_i*gamma_p**2*k_p -
+ 3*beta_i*gamma_p*k*k_p - 2*beta_i*gamma_p*k_p**2 - beta_i*k**2*k_p - 3*beta_i*k*k_p**2 - beta_i*k_p**3 + 
+beta_p**2*gamma_p*k + beta_p**2*k**2 + beta_p**2*k*k_p - 2*beta_p*gamma_p**2*k - 2*beta_p*gamma_p*k**2 - 4*
+beta_p*gamma_p*k*k_p - 2*beta_p*k**2*k_p - 2*beta_p*k*k_p**2) + df(y1,t)*y1*y2*delta*k_p*(2*beta_i*beta_p*
+gamma_p*k + 2*beta_i*beta_p*k**2 + 2*beta_i*beta_p*k*k_p + beta_i*delta*gamma_p**2 + 3*beta_i*delta*gamma_p*k 
++ 2*beta_i*delta*gamma_p*k_p + beta_i*delta*k**2 + 3*beta_i*delta*k*k_p + beta_i*delta*k_p**2 + beta_i*gamma*
+gamma_p**2 + 3*beta_i*gamma*gamma_p*k + 2*beta_i*gamma*gamma_p*k_p + beta_i*gamma*k**2 + 3*beta_i*gamma*k*k_p 
++ beta_i*gamma*k_p**2 - beta_i*gamma_p**2*k - beta_i*gamma_p*k**2 - 3*beta_i*gamma_p*k*k_p - 2*beta_i*k**2*k_p
+ - 2*beta_i*k*k_p**2 - beta_p*delta*gamma_p*k - beta_p*delta*k**2 - beta_p*delta*k*k_p + 2*delta*gamma_p**2*k 
++ 2*delta*gamma_p*k**2 + 4*delta*gamma_p*k*k_p + 2*delta*k**2*k_p + 2*delta*k*k_p**2) + df(y1,t)*y2**2*beta_i*
+k*k_p**2*(beta_i*gamma_p + beta_i*k + beta_i*k_p + gamma*gamma_p + gamma*k + gamma*k_p + gamma_p*k + k*k_p) - 
+x5*y1**2*beta_i*delta**2*k**2*k_p**2*(gamma_p + k_p) + x5*y1*y2*beta_i*delta*k**2*k_p**2*(delta*gamma_p + 
+delta*k_p + gamma*gamma_p + gamma*k_p) + y1**3*delta**2*k*( - beta_i*gamma_p**2*k_p - beta_i*gamma_p*k*k_p - 2
+*beta_i*gamma_p*k_p**2 - beta_i*k*k_p**2 - beta_i*k_p**3 + beta_p**2*gamma_p*k + beta_p**2*k*k_p - beta_p*
+gamma_p**2*k - 2*beta_p*gamma_p*k*k_p - beta_p*k*k_p**2) + y1**2*y2*delta*k*k_p*(2*beta_i*beta_p*gamma_p*k + 2
+*beta_i*beta_p*k*k_p + beta_i*delta*gamma_p**2 + beta_i*delta*gamma_p*k + 2*beta_i*delta*gamma_p*k_p + beta_i*
+delta*k*k_p + beta_i*delta*k_p**2 + beta_i*gamma*gamma_p**2 + beta_i*gamma*gamma_p*k + 2*beta_i*gamma*gamma_p*
+k_p + beta_i*gamma*k*k_p + beta_i*gamma*k_p**2 - beta_i*gamma_p**2*k - 3*beta_i*gamma_p*k*k_p - 2*beta_i*k*k_p
+**2 - beta_p*delta*gamma_p*k - beta_p*delta*k*k_p + delta*gamma_p**2*k + 2*delta*gamma_p*k*k_p + delta*k*k_p**
+2) + y1*y2**2*beta_i*k**2*k_p**2*(beta_i*gamma_p + beta_i*k_p + gamma*gamma_p + gamma*k_p)
+
+
+aa_(8) := df(x6,t) - y2
+
+
+MODEL NOT ALGEBRAICALLY OBSERVABLE
+
+
+PARAMETER VALUES
+
+
+b2_ := {beta_p=2,beta_i=3,k=5,k_p=7,gamma_p=11,gamma=13,delta=17}
+
+
+MODEL PARAMETER SOLUTION(S)
+
+
+g_ := {{beta_p=( - 2*gamma_p + 36)/7,
+delta=17,
+gamma=13,
+k=5,
+beta_i=3,
+k_p= - gamma_p + 18},
+{beta_p=( - 2*gamma_p + 10)/7,
+delta=17,
+gamma=13,
+k=18,
+beta_i=3,
+k_p= - gamma_p + 5}}
+
+
+MODEL NON IDENTIFIABLE
+
+
+IDENTIFIABILITY WITH ALL INITIAL CONDITIONS (IC_)
+
+
+ic_ := {x1=x10,x2=x20,x3=x30,x4=x40,x5=x50,x6=x60}
+
+
+MODEL PARAMETER SOLUTIONS
+
+
+gi_ := {{gamma=13,beta_p=2,gamma_p=11,beta_i=3,delta=17,k=5,k_p=7}}
+
+
+MODEL GLOBALLY IDENTIFIABLE
+
+
+4: 
