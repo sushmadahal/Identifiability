@@ -1,0 +1,1677 @@
+MODEL EQUATION(S)
+
+
+c_ := {df(x1,t)=((lamdaupsilon - muupsilon*x1)*n - beta*x1*x4)/n,
+df(x2,t)=(beta*x1*x4 - muupsilon*n*x2)/n,
+df(x3,t)=( - betaupsilon*x2*x3)/n,
+df(x4,t)=(betaupsilon*x2*x3 - gamma*n*x4)/n,
+df(x5,t)=gamma*x4,
+y1= - x3 + x30}
+
+
+CHARACTERISTIC SET
+
+
+aa_(1) :=  - df(y1,t,4)**2*df(y1,t,2)*df(y1,t)*y1**7*n**5 + 7*df(y1,t,4)**2*df(y1,t,2)*df(y1,t)*y1**6*n**5*x30
+ - 21*df(y1,t,4)**2*df(y1,t,2)*df(y1,t)*y1**5*n**5*x30**2 + 35*df(y1,t,4)**2*df(y1,t,2)*df(y1,t)*y1**4*n**5*
+x30**3 - 35*df(y1,t,4)**2*df(y1,t,2)*df(y1,t)*y1**3*n**5*x30**4 + 21*df(y1,t,4)**2*df(y1,t,2)*df(y1,t)*y1**2*n
+**5*x30**5 - 7*df(y1,t,4)**2*df(y1,t,2)*df(y1,t)*y1*n**5*x30**6 + df(y1,t,4)**2*df(y1,t,2)*df(y1,t)*n**5*x30**
+7 + df(y1,t,4)**2*df(y1,t)**3*y1**6*n**5 - 6*df(y1,t,4)**2*df(y1,t)**3*y1**5*n**5*x30 + 15*df(y1,t,4)**2*df(y1
+,t)**3*y1**4*n**5*x30**2 - 20*df(y1,t,4)**2*df(y1,t)**3*y1**3*n**5*x30**3 + 15*df(y1,t,4)**2*df(y1,t)**3*y1**2
+*n**5*x30**4 - 6*df(y1,t,4)**2*df(y1,t)**3*y1*n**5*x30**5 + df(y1,t,4)**2*df(y1,t)**3*n**5*x30**6 - df(y1,t,4)
+**2*df(y1,t)**2*y1**7*muupsilon*n**5 + 7*df(y1,t,4)**2*df(y1,t)**2*y1**6*muupsilon*n**5*x30 - 21*df(y1,t,4)**2
+*df(y1,t)**2*y1**5*muupsilon*n**5*x30**2 + 35*df(y1,t,4)**2*df(y1,t)**2*y1**4*muupsilon*n**5*x30**3 - 35*df(y1
+,t,4)**2*df(y1,t)**2*y1**3*muupsilon*n**5*x30**4 + 21*df(y1,t,4)**2*df(y1,t)**2*y1**2*muupsilon*n**5*x30**5 - 
+7*df(y1,t,4)**2*df(y1,t)**2*y1*muupsilon*n**5*x30**6 + df(y1,t,4)**2*df(y1,t)**2*muupsilon*n**5*x30**7 - df(y1
+,t,4)**2*df(y1,t)*y1**8*betaupsilon*lamdaupsilon*n**4 + 8*df(y1,t,4)**2*df(y1,t)*y1**7*betaupsilon*
+lamdaupsilon*n**4*x30 - 28*df(y1,t,4)**2*df(y1,t)*y1**6*betaupsilon*lamdaupsilon*n**4*x30**2 + 56*df(y1,t,4)**
+2*df(y1,t)*y1**5*betaupsilon*lamdaupsilon*n**4*x30**3 - 70*df(y1,t,4)**2*df(y1,t)*y1**4*betaupsilon*
+lamdaupsilon*n**4*x30**4 + 56*df(y1,t,4)**2*df(y1,t)*y1**3*betaupsilon*lamdaupsilon*n**4*x30**5 - 28*df(y1,t,4
+)**2*df(y1,t)*y1**2*betaupsilon*lamdaupsilon*n**4*x30**6 + 8*df(y1,t,4)**2*df(y1,t)*y1*betaupsilon*
+lamdaupsilon*n**4*x30**7 - df(y1,t,4)**2*df(y1,t)*betaupsilon*lamdaupsilon*n**4*x30**8 + df(y1,t,4)*df(y1,t,3)
+**2*df(y1,t)*y1**7*n**5 - 7*df(y1,t,4)*df(y1,t,3)**2*df(y1,t)*y1**6*n**5*x30 + 21*df(y1,t,4)*df(y1,t,3)**2*df(
+y1,t)*y1**5*n**5*x30**2 - 35*df(y1,t,4)*df(y1,t,3)**2*df(y1,t)*y1**4*n**5*x30**3 + 35*df(y1,t,4)*df(y1,t,3)**2
+*df(y1,t)*y1**3*n**5*x30**4 - 21*df(y1,t,4)*df(y1,t,3)**2*df(y1,t)*y1**2*n**5*x30**5 + 7*df(y1,t,4)*df(y1,t,3)
+**2*df(y1,t)*y1*n**5*x30**6 - df(y1,t,4)*df(y1,t,3)**2*df(y1,t)*n**5*x30**7 + df(y1,t,4)*df(y1,t,3)*df(y1,t,2)
+**2*y1**7*n**5 - 7*df(y1,t,4)*df(y1,t,3)*df(y1,t,2)**2*y1**6*n**5*x30 + 21*df(y1,t,4)*df(y1,t,3)*df(y1,t,2)**2
+*y1**5*n**5*x30**2 - 35*df(y1,t,4)*df(y1,t,3)*df(y1,t,2)**2*y1**4*n**5*x30**3 + 35*df(y1,t,4)*df(y1,t,3)*df(y1
+,t,2)**2*y1**3*n**5*x30**4 - 21*df(y1,t,4)*df(y1,t,3)*df(y1,t,2)**2*y1**2*n**5*x30**5 + 7*df(y1,t,4)*df(y1,t,3
+)*df(y1,t,2)**2*y1*n**5*x30**6 - df(y1,t,4)*df(y1,t,3)*df(y1,t,2)**2*n**5*x30**7 + df(y1,t,4)*df(y1,t,3)*df(y1
+,t,2)*df(y1,t)**2*y1**6*n**5 - 6*df(y1,t,4)*df(y1,t,3)*df(y1,t,2)*df(y1,t)**2*y1**5*n**5*x30 + 15*df(y1,t,4)*
+df(y1,t,3)*df(y1,t,2)*df(y1,t)**2*y1**4*n**5*x30**2 - 20*df(y1,t,4)*df(y1,t,3)*df(y1,t,2)*df(y1,t)**2*y1**3*n
+**5*x30**3 + 15*df(y1,t,4)*df(y1,t,3)*df(y1,t,2)*df(y1,t)**2*y1**2*n**5*x30**4 - 6*df(y1,t,4)*df(y1,t,3)*df(y1
+,t,2)*df(y1,t)**2*y1*n**5*x30**5 + df(y1,t,4)*df(y1,t,3)*df(y1,t,2)*df(y1,t)**2*n**5*x30**6 + df(y1,t,4)*df(y1
+,t,3)*df(y1,t,2)*df(y1,t)*y1**7*n**5*( - 2*gamma - muupsilon) + 7*df(y1,t,4)*df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1
+**6*n**5*x30*(2*gamma + muupsilon) + 21*df(y1,t,4)*df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1**5*n**5*x30**2*( - 2*
+gamma - muupsilon) + 35*df(y1,t,4)*df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1**4*n**5*x30**3*(2*gamma + muupsilon) + 35
+*df(y1,t,4)*df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1**3*n**5*x30**4*( - 2*gamma - muupsilon) + 21*df(y1,t,4)*df(y1,t,
+3)*df(y1,t,2)*df(y1,t)*y1**2*n**5*x30**5*(2*gamma + muupsilon) + 7*df(y1,t,4)*df(y1,t,3)*df(y1,t,2)*df(y1,t)*
+y1*n**5*x30**6*( - 2*gamma - muupsilon) + df(y1,t,4)*df(y1,t,3)*df(y1,t,2)*df(y1,t)*n**5*x30**7*(2*gamma + 
+muupsilon) + df(y1,t,4)*df(y1,t,3)*df(y1,t,2)*y1**8*betaupsilon*lamdaupsilon*n**4 - 8*df(y1,t,4)*df(y1,t,3)*df
+(y1,t,2)*y1**7*betaupsilon*lamdaupsilon*n**4*x30 + 28*df(y1,t,4)*df(y1,t,3)*df(y1,t,2)*y1**6*betaupsilon*
+lamdaupsilon*n**4*x30**2 - 56*df(y1,t,4)*df(y1,t,3)*df(y1,t,2)*y1**5*betaupsilon*lamdaupsilon*n**4*x30**3 + 70
+*df(y1,t,4)*df(y1,t,3)*df(y1,t,2)*y1**4*betaupsilon*lamdaupsilon*n**4*x30**4 - 56*df(y1,t,4)*df(y1,t,3)*df(y1,
+t,2)*y1**3*betaupsilon*lamdaupsilon*n**4*x30**5 + 28*df(y1,t,4)*df(y1,t,3)*df(y1,t,2)*y1**2*betaupsilon*
+lamdaupsilon*n**4*x30**6 - 8*df(y1,t,4)*df(y1,t,3)*df(y1,t,2)*y1*betaupsilon*lamdaupsilon*n**4*x30**7 + df(y1,
+t,4)*df(y1,t,3)*df(y1,t,2)*betaupsilon*lamdaupsilon*n**4*x30**8 - 4*df(y1,t,4)*df(y1,t,3)*df(y1,t)**4*y1**5*n
+**5 + 20*df(y1,t,4)*df(y1,t,3)*df(y1,t)**4*y1**4*n**5*x30 - 40*df(y1,t,4)*df(y1,t,3)*df(y1,t)**4*y1**3*n**5*
+x30**2 + 40*df(y1,t,4)*df(y1,t,3)*df(y1,t)**4*y1**2*n**5*x30**3 - 20*df(y1,t,4)*df(y1,t,3)*df(y1,t)**4*y1*n**5
+*x30**4 + 4*df(y1,t,4)*df(y1,t,3)*df(y1,t)**4*n**5*x30**5 + 2*df(y1,t,4)*df(y1,t,3)*df(y1,t)**3*y1**6*n**5*(
+gamma + 5*muupsilon) + 12*df(y1,t,4)*df(y1,t,3)*df(y1,t)**3*y1**5*n**5*x30*( - gamma - 5*muupsilon) + 30*df(y1
+,t,4)*df(y1,t,3)*df(y1,t)**3*y1**4*n**5*x30**2*(gamma + 5*muupsilon) + 40*df(y1,t,4)*df(y1,t,3)*df(y1,t)**3*y1
+**3*n**5*x30**3*( - gamma - 5*muupsilon) + 30*df(y1,t,4)*df(y1,t,3)*df(y1,t)**3*y1**2*n**5*x30**4*(gamma + 5*
+muupsilon) + 12*df(y1,t,4)*df(y1,t,3)*df(y1,t)**3*y1*n**5*x30**5*( - gamma - 5*muupsilon) + 2*df(y1,t,4)*df(y1
+,t,3)*df(y1,t)**3*n**5*x30**6*(gamma + 5*muupsilon) + 2*df(y1,t,4)*df(y1,t,3)*df(y1,t)**2*y1**7*n**4*(4*
+betaupsilon*lamdaupsilon - gamma*muupsilon*n - 2*muupsilon**2*n) + 14*df(y1,t,4)*df(y1,t,3)*df(y1,t)**2*y1**6*
+n**4*x30*( - 4*betaupsilon*lamdaupsilon + gamma*muupsilon*n + 2*muupsilon**2*n) + 42*df(y1,t,4)*df(y1,t,3)*df(
+y1,t)**2*y1**5*n**4*x30**2*(4*betaupsilon*lamdaupsilon - gamma*muupsilon*n - 2*muupsilon**2*n) + 70*df(y1,t,4)
+*df(y1,t,3)*df(y1,t)**2*y1**4*n**4*x30**3*( - 4*betaupsilon*lamdaupsilon + gamma*muupsilon*n + 2*muupsilon**2*
+n) + 70*df(y1,t,4)*df(y1,t,3)*df(y1,t)**2*y1**3*n**4*x30**4*(4*betaupsilon*lamdaupsilon - gamma*muupsilon*n - 
+2*muupsilon**2*n) + 42*df(y1,t,4)*df(y1,t,3)*df(y1,t)**2*y1**2*n**4*x30**5*( - 4*betaupsilon*lamdaupsilon + 
+gamma*muupsilon*n + 2*muupsilon**2*n) + 14*df(y1,t,4)*df(y1,t,3)*df(y1,t)**2*y1*n**4*x30**6*(4*betaupsilon*
+lamdaupsilon - gamma*muupsilon*n - 2*muupsilon**2*n) + 2*df(y1,t,4)*df(y1,t,3)*df(y1,t)**2*n**4*x30**7*( - 4*
+betaupsilon*lamdaupsilon + gamma*muupsilon*n + 2*muupsilon**2*n) + df(y1,t,4)*df(y1,t,3)*df(y1,t)*y1**8*
+betaupsilon*lamdaupsilon*n**4*( - 3*gamma - 5*muupsilon) + 8*df(y1,t,4)*df(y1,t,3)*df(y1,t)*y1**7*betaupsilon*
+lamdaupsilon*n**4*x30*(3*gamma + 5*muupsilon) + 28*df(y1,t,4)*df(y1,t,3)*df(y1,t)*y1**6*betaupsilon*
+lamdaupsilon*n**4*x30**2*( - 3*gamma - 5*muupsilon) + 56*df(y1,t,4)*df(y1,t,3)*df(y1,t)*y1**5*betaupsilon*
+lamdaupsilon*n**4*x30**3*(3*gamma + 5*muupsilon) + 70*df(y1,t,4)*df(y1,t,3)*df(y1,t)*y1**4*betaupsilon*
+lamdaupsilon*n**4*x30**4*( - 3*gamma - 5*muupsilon) + 56*df(y1,t,4)*df(y1,t,3)*df(y1,t)*y1**3*betaupsilon*
+lamdaupsilon*n**4*x30**5*(3*gamma + 5*muupsilon) + 28*df(y1,t,4)*df(y1,t,3)*df(y1,t)*y1**2*betaupsilon*
+lamdaupsilon*n**4*x30**6*( - 3*gamma - 5*muupsilon) + 8*df(y1,t,4)*df(y1,t,3)*df(y1,t)*y1*betaupsilon*
+lamdaupsilon*n**4*x30**7*(3*gamma + 5*muupsilon) + df(y1,t,4)*df(y1,t,3)*df(y1,t)*betaupsilon*lamdaupsilon*n**
+4*x30**8*( - 3*gamma - 5*muupsilon) + 3*df(y1,t,4)*df(y1,t,2)**3*df(y1,t)*y1**6*n**5 - 18*df(y1,t,4)*df(y1,t,2
+)**3*df(y1,t)*y1**5*n**5*x30 + 45*df(y1,t,4)*df(y1,t,2)**3*df(y1,t)*y1**4*n**5*x30**2 - 60*df(y1,t,4)*df(y1,t,
+2)**3*df(y1,t)*y1**3*n**5*x30**3 + 45*df(y1,t,4)*df(y1,t,2)**3*df(y1,t)*y1**2*n**5*x30**4 - 18*df(y1,t,4)*df(
+y1,t,2)**3*df(y1,t)*y1*n**5*x30**5 + 3*df(y1,t,4)*df(y1,t,2)**3*df(y1,t)*n**5*x30**6 + df(y1,t,4)*df(y1,t,2)**
+3*y1**7*n**5*(gamma + 2*muupsilon) + 7*df(y1,t,4)*df(y1,t,2)**3*y1**6*n**5*x30*( - gamma - 2*muupsilon) + 21*
+df(y1,t,4)*df(y1,t,2)**3*y1**5*n**5*x30**2*(gamma + 2*muupsilon) + 35*df(y1,t,4)*df(y1,t,2)**3*y1**4*n**5*x30
+**3*( - gamma - 2*muupsilon) + 35*df(y1,t,4)*df(y1,t,2)**3*y1**3*n**5*x30**4*(gamma + 2*muupsilon) + 21*df(y1,
+t,4)*df(y1,t,2)**3*y1**2*n**5*x30**5*( - gamma - 2*muupsilon) + 7*df(y1,t,4)*df(y1,t,2)**3*y1*n**5*x30**6*(
+gamma + 2*muupsilon) + df(y1,t,4)*df(y1,t,2)**3*n**5*x30**7*( - gamma - 2*muupsilon) - 16*df(y1,t,4)*df(y1,t,2
+)**2*df(y1,t)**3*y1**5*n**5 + 80*df(y1,t,4)*df(y1,t,2)**2*df(y1,t)**3*y1**4*n**5*x30 - 160*df(y1,t,4)*df(y1,t,
+2)**2*df(y1,t)**3*y1**3*n**5*x30**2 + 160*df(y1,t,4)*df(y1,t,2)**2*df(y1,t)**3*y1**2*n**5*x30**3 - 80*df(y1,t,
+4)*df(y1,t,2)**2*df(y1,t)**3*y1*n**5*x30**4 + 16*df(y1,t,4)*df(y1,t,2)**2*df(y1,t)**3*n**5*x30**5 - 4*df(y1,t,
+4)*df(y1,t,2)**2*df(y1,t)**2*y1**7*beta*n**4 + df(y1,t,4)*df(y1,t,2)**2*df(y1,t)**2*y1**6*n**4*(28*beta*x30 + 
+4*gamma*n + 5*muupsilon*n) + 6*df(y1,t,4)*df(y1,t,2)**2*df(y1,t)**2*y1**5*n**4*x30*( - 14*beta*x30 - 4*gamma*n
+ - 5*muupsilon*n) + 5*df(y1,t,4)*df(y1,t,2)**2*df(y1,t)**2*y1**4*n**4*x30**2*(28*beta*x30 + 12*gamma*n + 15*
+muupsilon*n) + 20*df(y1,t,4)*df(y1,t,2)**2*df(y1,t)**2*y1**3*n**4*x30**3*( - 7*beta*x30 - 4*gamma*n - 5*
+muupsilon*n) + 3*df(y1,t,4)*df(y1,t,2)**2*df(y1,t)**2*y1**2*n**4*x30**4*(28*beta*x30 + 20*gamma*n + 25*
+muupsilon*n) + 2*df(y1,t,4)*df(y1,t,2)**2*df(y1,t)**2*y1*n**4*x30**5*( - 14*beta*x30 - 12*gamma*n - 15*
+muupsilon*n) + df(y1,t,4)*df(y1,t,2)**2*df(y1,t)**2*n**4*x30**6*(4*beta*x30 + 4*gamma*n + 5*muupsilon*n) + df(
+y1,t,4)*df(y1,t,2)**2*df(y1,t)*y1**7*n**4*(3*betaupsilon*lamdaupsilon - gamma**2*n - 2*gamma*muupsilon*n + 
+muupsilon**2*n) + 7*df(y1,t,4)*df(y1,t,2)**2*df(y1,t)*y1**6*n**4*x30*( - 3*betaupsilon*lamdaupsilon + gamma**2
+*n + 2*gamma*muupsilon*n - muupsilon**2*n) + 21*df(y1,t,4)*df(y1,t,2)**2*df(y1,t)*y1**5*n**4*x30**2*(3*
+betaupsilon*lamdaupsilon - gamma**2*n - 2*gamma*muupsilon*n + muupsilon**2*n) + 35*df(y1,t,4)*df(y1,t,2)**2*df
+(y1,t)*y1**4*n**4*x30**3*( - 3*betaupsilon*lamdaupsilon + gamma**2*n + 2*gamma*muupsilon*n - muupsilon**2*n) +
+ 35*df(y1,t,4)*df(y1,t,2)**2*df(y1,t)*y1**3*n**4*x30**4*(3*betaupsilon*lamdaupsilon - gamma**2*n - 2*gamma*
+muupsilon*n + muupsilon**2*n) + 21*df(y1,t,4)*df(y1,t,2)**2*df(y1,t)*y1**2*n**4*x30**5*( - 3*betaupsilon*
+lamdaupsilon + gamma**2*n + 2*gamma*muupsilon*n - muupsilon**2*n) + 7*df(y1,t,4)*df(y1,t,2)**2*df(y1,t)*y1*n**
+4*x30**6*(3*betaupsilon*lamdaupsilon - gamma**2*n - 2*gamma*muupsilon*n + muupsilon**2*n) + df(y1,t,4)*df(y1,t
+,2)**2*df(y1,t)*n**4*x30**7*( - 3*betaupsilon*lamdaupsilon + gamma**2*n + 2*gamma*muupsilon*n - muupsilon**2*n
+) + df(y1,t,4)*df(y1,t,2)**2*y1**8*betaupsilon*lamdaupsilon*n**4*(gamma + 2*muupsilon) + 8*df(y1,t,4)*df(y1,t,
+2)**2*y1**7*betaupsilon*lamdaupsilon*n**4*x30*( - gamma - 2*muupsilon) + 28*df(y1,t,4)*df(y1,t,2)**2*y1**6*
+betaupsilon*lamdaupsilon*n**4*x30**2*(gamma + 2*muupsilon) + 56*df(y1,t,4)*df(y1,t,2)**2*y1**5*betaupsilon*
+lamdaupsilon*n**4*x30**3*( - gamma - 2*muupsilon) + 70*df(y1,t,4)*df(y1,t,2)**2*y1**4*betaupsilon*lamdaupsilon
+*n**4*x30**4*(gamma + 2*muupsilon) + 56*df(y1,t,4)*df(y1,t,2)**2*y1**3*betaupsilon*lamdaupsilon*n**4*x30**5*( 
+- gamma - 2*muupsilon) + 28*df(y1,t,4)*df(y1,t,2)**2*y1**2*betaupsilon*lamdaupsilon*n**4*x30**6*(gamma + 2*
+muupsilon) + 8*df(y1,t,4)*df(y1,t,2)**2*y1*betaupsilon*lamdaupsilon*n**4*x30**7*( - gamma - 2*muupsilon) + df(
+y1,t,4)*df(y1,t,2)**2*betaupsilon*lamdaupsilon*n**4*x30**8*(gamma + 2*muupsilon) + 22*df(y1,t,4)*df(y1,t,2)*df
+(y1,t)**5*y1**4*n**5 - 88*df(y1,t,4)*df(y1,t,2)*df(y1,t)**5*y1**3*n**5*x30 + 132*df(y1,t,4)*df(y1,t,2)*df(y1,t
+)**5*y1**2*n**5*x30**2 - 88*df(y1,t,4)*df(y1,t,2)*df(y1,t)**5*y1*n**5*x30**3 + 22*df(y1,t,4)*df(y1,t,2)*df(y1,
+t)**5*n**5*x30**4 + 8*df(y1,t,4)*df(y1,t,2)*df(y1,t)**4*y1**6*beta*n**4 + 3*df(y1,t,4)*df(y1,t,2)*df(y1,t)**4*
+y1**5*n**4*( - 16*beta*x30 - 3*gamma*n - 10*muupsilon*n) + 15*df(y1,t,4)*df(y1,t,2)*df(y1,t)**4*y1**4*n**4*x30
+*(8*beta*x30 + 3*gamma*n + 10*muupsilon*n) + 10*df(y1,t,4)*df(y1,t,2)*df(y1,t)**4*y1**3*n**4*x30**2*( - 16*
+beta*x30 - 9*gamma*n - 30*muupsilon*n) + 30*df(y1,t,4)*df(y1,t,2)*df(y1,t)**4*y1**2*n**4*x30**3*(4*beta*x30 + 
+3*gamma*n + 10*muupsilon*n) + 3*df(y1,t,4)*df(y1,t,2)*df(y1,t)**4*y1*n**4*x30**4*( - 16*beta*x30 - 15*gamma*n 
+- 50*muupsilon*n) + df(y1,t,4)*df(y1,t,2)*df(y1,t)**4*n**4*x30**5*(8*beta*x30 + 9*gamma*n + 30*muupsilon*n) - 
+8*df(y1,t,4)*df(y1,t,2)*df(y1,t)**3*y1**7*beta*muupsilon*n**4 + df(y1,t,4)*df(y1,t,2)*df(y1,t)**3*y1**6*n**4*(
+56*beta*muupsilon*x30 - 22*betaupsilon*lamdaupsilon + 2*gamma**2*n + 12*gamma*muupsilon*n + 13*muupsilon**2*n)
+ + 6*df(y1,t,4)*df(y1,t,2)*df(y1,t)**3*y1**5*n**4*x30*( - 28*beta*muupsilon*x30 + 22*betaupsilon*lamdaupsilon 
+- 2*gamma**2*n - 12*gamma*muupsilon*n - 13*muupsilon**2*n) + 5*df(y1,t,4)*df(y1,t,2)*df(y1,t)**3*y1**4*n**4*
+x30**2*(56*beta*muupsilon*x30 - 66*betaupsilon*lamdaupsilon + 6*gamma**2*n + 36*gamma*muupsilon*n + 39*
+muupsilon**2*n) + 20*df(y1,t,4)*df(y1,t,2)*df(y1,t)**3*y1**3*n**4*x30**3*( - 14*beta*muupsilon*x30 + 22*
+betaupsilon*lamdaupsilon - 2*gamma**2*n - 12*gamma*muupsilon*n - 13*muupsilon**2*n) + 3*df(y1,t,4)*df(y1,t,2)*
+df(y1,t)**3*y1**2*n**4*x30**4*(56*beta*muupsilon*x30 - 110*betaupsilon*lamdaupsilon + 10*gamma**2*n + 60*gamma
+*muupsilon*n + 65*muupsilon**2*n) + 2*df(y1,t,4)*df(y1,t,2)*df(y1,t)**3*y1*n**4*x30**5*( - 28*beta*muupsilon*
+x30 + 66*betaupsilon*lamdaupsilon - 6*gamma**2*n - 36*gamma*muupsilon*n - 39*muupsilon**2*n) + df(y1,t,4)*df(
+y1,t,2)*df(y1,t)**3*n**4*x30**6*(8*beta*muupsilon*x30 - 22*betaupsilon*lamdaupsilon + 2*gamma**2*n + 12*gamma*
+muupsilon*n + 13*muupsilon**2*n) - 8*df(y1,t,4)*df(y1,t,2)*df(y1,t)**2*y1**8*beta*betaupsilon*lamdaupsilon*n**
+3 + df(y1,t,4)*df(y1,t,2)*df(y1,t)**2*y1**7*n**3*(64*beta*betaupsilon*lamdaupsilon*x30 + 8*betaupsilon*gamma*
+lamdaupsilon*n + 13*betaupsilon*lamdaupsilon*muupsilon*n - 2*gamma**2*muupsilon*n**2 - 5*gamma*muupsilon**2*n
+**2 - 3*muupsilon**3*n**2) + 7*df(y1,t,4)*df(y1,t,2)*df(y1,t)**2*y1**6*n**3*x30*( - 32*beta*betaupsilon*
+lamdaupsilon*x30 - 8*betaupsilon*gamma*lamdaupsilon*n - 13*betaupsilon*lamdaupsilon*muupsilon*n + 2*gamma**2*
+muupsilon*n**2 + 5*gamma*muupsilon**2*n**2 + 3*muupsilon**3*n**2) + 7*df(y1,t,4)*df(y1,t,2)*df(y1,t)**2*y1**5*
+n**3*x30**2*(64*beta*betaupsilon*lamdaupsilon*x30 + 24*betaupsilon*gamma*lamdaupsilon*n + 39*betaupsilon*
+lamdaupsilon*muupsilon*n - 6*gamma**2*muupsilon*n**2 - 15*gamma*muupsilon**2*n**2 - 9*muupsilon**3*n**2) + 35*
+df(y1,t,4)*df(y1,t,2)*df(y1,t)**2*y1**4*n**3*x30**3*( - 16*beta*betaupsilon*lamdaupsilon*x30 - 8*betaupsilon*
+gamma*lamdaupsilon*n - 13*betaupsilon*lamdaupsilon*muupsilon*n + 2*gamma**2*muupsilon*n**2 + 5*gamma*muupsilon
+**2*n**2 + 3*muupsilon**3*n**2) + 7*df(y1,t,4)*df(y1,t,2)*df(y1,t)**2*y1**3*n**3*x30**4*(64*beta*betaupsilon*
+lamdaupsilon*x30 + 40*betaupsilon*gamma*lamdaupsilon*n + 65*betaupsilon*lamdaupsilon*muupsilon*n - 10*gamma**2
+*muupsilon*n**2 - 25*gamma*muupsilon**2*n**2 - 15*muupsilon**3*n**2) + 7*df(y1,t,4)*df(y1,t,2)*df(y1,t)**2*y1
+**2*n**3*x30**5*( - 32*beta*betaupsilon*lamdaupsilon*x30 - 24*betaupsilon*gamma*lamdaupsilon*n - 39*
+betaupsilon*lamdaupsilon*muupsilon*n + 6*gamma**2*muupsilon*n**2 + 15*gamma*muupsilon**2*n**2 + 9*muupsilon**3
+*n**2) + df(y1,t,4)*df(y1,t,2)*df(y1,t)**2*y1*n**3*x30**6*(64*beta*betaupsilon*lamdaupsilon*x30 + 56*
+betaupsilon*gamma*lamdaupsilon*n + 91*betaupsilon*lamdaupsilon*muupsilon*n - 14*gamma**2*muupsilon*n**2 - 35*
+gamma*muupsilon**2*n**2 - 21*muupsilon**3*n**2) + df(y1,t,4)*df(y1,t,2)*df(y1,t)**2*n**3*x30**7*( - 8*beta*
+betaupsilon*lamdaupsilon*x30 - 8*betaupsilon*gamma*lamdaupsilon*n - 13*betaupsilon*lamdaupsilon*muupsilon*n + 
+2*gamma**2*muupsilon*n**2 + 5*gamma*muupsilon**2*n**2 + 3*muupsilon**3*n**2) + df(y1,t,4)*df(y1,t,2)*df(y1,t)*
+y1**8*betaupsilon*lamdaupsilon*n**4*( - gamma**2 - 4*gamma*muupsilon - 3*muupsilon**2) + 8*df(y1,t,4)*df(y1,t,
+2)*df(y1,t)*y1**7*betaupsilon*lamdaupsilon*n**4*x30*(gamma**2 + 4*gamma*muupsilon + 3*muupsilon**2) + 28*df(y1
+,t,4)*df(y1,t,2)*df(y1,t)*y1**6*betaupsilon*lamdaupsilon*n**4*x30**2*( - gamma**2 - 4*gamma*muupsilon - 3*
+muupsilon**2) + 56*df(y1,t,4)*df(y1,t,2)*df(y1,t)*y1**5*betaupsilon*lamdaupsilon*n**4*x30**3*(gamma**2 + 4*
+gamma*muupsilon + 3*muupsilon**2) + 70*df(y1,t,4)*df(y1,t,2)*df(y1,t)*y1**4*betaupsilon*lamdaupsilon*n**4*x30
+**4*( - gamma**2 - 4*gamma*muupsilon - 3*muupsilon**2) + 56*df(y1,t,4)*df(y1,t,2)*df(y1,t)*y1**3*betaupsilon*
+lamdaupsilon*n**4*x30**5*(gamma**2 + 4*gamma*muupsilon + 3*muupsilon**2) + 28*df(y1,t,4)*df(y1,t,2)*df(y1,t)*
+y1**2*betaupsilon*lamdaupsilon*n**4*x30**6*( - gamma**2 - 4*gamma*muupsilon - 3*muupsilon**2) + 8*df(y1,t,4)*
+df(y1,t,2)*df(y1,t)*y1*betaupsilon*lamdaupsilon*n**4*x30**7*(gamma**2 + 4*gamma*muupsilon + 3*muupsilon**2) + 
+df(y1,t,4)*df(y1,t,2)*df(y1,t)*betaupsilon*lamdaupsilon*n**4*x30**8*( - gamma**2 - 4*gamma*muupsilon - 3*
+muupsilon**2) - 8*df(y1,t,4)*df(y1,t)**7*y1**3*n**5 + 24*df(y1,t,4)*df(y1,t)**7*y1**2*n**5*x30 - 24*df(y1,t,4)
+*df(y1,t)**7*y1*n**5*x30**2 + 8*df(y1,t,4)*df(y1,t)**7*n**5*x30**3 - 4*df(y1,t,4)*df(y1,t)**6*y1**5*beta*n**4 
++ 4*df(y1,t,4)*df(y1,t)**6*y1**4*n**4*(5*beta*x30 + gamma*n + 4*muupsilon*n) + 8*df(y1,t,4)*df(y1,t)**6*y1**3*
+n**4*x30*( - 5*beta*x30 - 2*gamma*n - 8*muupsilon*n) + 8*df(y1,t,4)*df(y1,t)**6*y1**2*n**4*x30**2*(5*beta*x30 
++ 3*gamma*n + 12*muupsilon*n) + 4*df(y1,t,4)*df(y1,t)**6*y1*n**4*x30**3*( - 5*beta*x30 - 4*gamma*n - 16*
+muupsilon*n) + 4*df(y1,t,4)*df(y1,t)**6*n**4*x30**4*(beta*x30 + gamma*n + 4*muupsilon*n) + 8*df(y1,t,4)*df(y1,
+t)**5*y1**6*beta*muupsilon*n**4 + df(y1,t,4)*df(y1,t)**5*y1**5*n**4*( - 48*beta*muupsilon*x30 + 12*betaupsilon
+*lamdaupsilon - gamma**2*n - 8*gamma*muupsilon*n - 10*muupsilon**2*n) + 5*df(y1,t,4)*df(y1,t)**5*y1**4*n**4*
+x30*(24*beta*muupsilon*x30 - 12*betaupsilon*lamdaupsilon + gamma**2*n + 8*gamma*muupsilon*n + 10*muupsilon**2*
+n) + 10*df(y1,t,4)*df(y1,t)**5*y1**3*n**4*x30**2*( - 16*beta*muupsilon*x30 + 12*betaupsilon*lamdaupsilon - 
+gamma**2*n - 8*gamma*muupsilon*n - 10*muupsilon**2*n) + 10*df(y1,t,4)*df(y1,t)**5*y1**2*n**4*x30**3*(12*beta*
+muupsilon*x30 - 12*betaupsilon*lamdaupsilon + gamma**2*n + 8*gamma*muupsilon*n + 10*muupsilon**2*n) + df(y1,t,
+4)*df(y1,t)**5*y1*n**4*x30**4*( - 48*beta*muupsilon*x30 + 60*betaupsilon*lamdaupsilon - 5*gamma**2*n - 40*
+gamma*muupsilon*n - 50*muupsilon**2*n) + df(y1,t,4)*df(y1,t)**5*n**4*x30**5*(8*beta*muupsilon*x30 - 12*
+betaupsilon*lamdaupsilon + gamma**2*n + 8*gamma*muupsilon*n + 10*muupsilon**2*n) + 4*df(y1,t,4)*df(y1,t)**4*y1
+**7*beta*n**3*(2*betaupsilon*lamdaupsilon - muupsilon**2*n) + 2*df(y1,t,4)*df(y1,t)**4*y1**6*n**3*( - 28*beta*
+betaupsilon*lamdaupsilon*x30 + 14*beta*muupsilon**2*n*x30 - 3*betaupsilon*gamma*lamdaupsilon*n - 5*betaupsilon
+*lamdaupsilon*muupsilon*n + gamma**2*muupsilon*n**2 + 3*gamma*muupsilon**2*n**2 + 2*muupsilon**3*n**2) + 12*df
+(y1,t,4)*df(y1,t)**4*y1**5*n**3*x30*(14*beta*betaupsilon*lamdaupsilon*x30 - 7*beta*muupsilon**2*n*x30 + 3*
+betaupsilon*gamma*lamdaupsilon*n + 5*betaupsilon*lamdaupsilon*muupsilon*n - gamma**2*muupsilon*n**2 - 3*gamma*
+muupsilon**2*n**2 - 2*muupsilon**3*n**2) + 10*df(y1,t,4)*df(y1,t)**4*y1**4*n**3*x30**2*( - 28*beta*betaupsilon
+*lamdaupsilon*x30 + 14*beta*muupsilon**2*n*x30 - 9*betaupsilon*gamma*lamdaupsilon*n - 15*betaupsilon*
+lamdaupsilon*muupsilon*n + 3*gamma**2*muupsilon*n**2 + 9*gamma*muupsilon**2*n**2 + 6*muupsilon**3*n**2) + 20*
+df(y1,t,4)*df(y1,t)**4*y1**3*n**3*x30**3*(14*beta*betaupsilon*lamdaupsilon*x30 - 7*beta*muupsilon**2*n*x30 + 6
+*betaupsilon*gamma*lamdaupsilon*n + 10*betaupsilon*lamdaupsilon*muupsilon*n - 2*gamma**2*muupsilon*n**2 - 6*
+gamma*muupsilon**2*n**2 - 4*muupsilon**3*n**2) + 6*df(y1,t,4)*df(y1,t)**4*y1**2*n**3*x30**4*( - 28*beta*
+betaupsilon*lamdaupsilon*x30 + 14*beta*muupsilon**2*n*x30 - 15*betaupsilon*gamma*lamdaupsilon*n - 25*
+betaupsilon*lamdaupsilon*muupsilon*n + 5*gamma**2*muupsilon*n**2 + 15*gamma*muupsilon**2*n**2 + 10*muupsilon**
+3*n**2) + 4*df(y1,t,4)*df(y1,t)**4*y1*n**3*x30**5*(14*beta*betaupsilon*lamdaupsilon*x30 - 7*beta*muupsilon**2*
+n*x30 + 9*betaupsilon*gamma*lamdaupsilon*n + 15*betaupsilon*lamdaupsilon*muupsilon*n - 3*gamma**2*muupsilon*n
+**2 - 9*gamma*muupsilon**2*n**2 - 6*muupsilon**3*n**2) + 2*df(y1,t,4)*df(y1,t)**4*n**3*x30**6*( - 4*beta*
+betaupsilon*lamdaupsilon*x30 + 2*beta*muupsilon**2*n*x30 - 3*betaupsilon*gamma*lamdaupsilon*n - 5*betaupsilon*
+lamdaupsilon*muupsilon*n + gamma**2*muupsilon*n**2 + 3*gamma*muupsilon**2*n**2 + 2*muupsilon**3*n**2) - 8*df(
+y1,t,4)*df(y1,t)**3*y1**8*beta*betaupsilon*lamdaupsilon*muupsilon*n**3 + df(y1,t,4)*df(y1,t)**3*y1**7*n**3*(64
+*beta*betaupsilon*lamdaupsilon*muupsilon*x30 + betaupsilon*gamma**2*lamdaupsilon*n + 5*betaupsilon*gamma*
+lamdaupsilon*muupsilon*n + 4*betaupsilon*lamdaupsilon*muupsilon**2*n - gamma**2*muupsilon**2*n**2 - 2*gamma*
+muupsilon**3*n**2 - muupsilon**4*n**2) + 7*df(y1,t,4)*df(y1,t)**3*y1**6*n**3*x30*( - 32*beta*betaupsilon*
+lamdaupsilon*muupsilon*x30 - betaupsilon*gamma**2*lamdaupsilon*n - 5*betaupsilon*gamma*lamdaupsilon*muupsilon*
+n - 4*betaupsilon*lamdaupsilon*muupsilon**2*n + gamma**2*muupsilon**2*n**2 + 2*gamma*muupsilon**3*n**2 + 
+muupsilon**4*n**2) + 7*df(y1,t,4)*df(y1,t)**3*y1**5*n**3*x30**2*(64*beta*betaupsilon*lamdaupsilon*muupsilon*
+x30 + 3*betaupsilon*gamma**2*lamdaupsilon*n + 15*betaupsilon*gamma*lamdaupsilon*muupsilon*n + 12*betaupsilon*
+lamdaupsilon*muupsilon**2*n - 3*gamma**2*muupsilon**2*n**2 - 6*gamma*muupsilon**3*n**2 - 3*muupsilon**4*n**2) 
++ 35*df(y1,t,4)*df(y1,t)**3*y1**4*n**3*x30**3*( - 16*beta*betaupsilon*lamdaupsilon*muupsilon*x30 - betaupsilon
+*gamma**2*lamdaupsilon*n - 5*betaupsilon*gamma*lamdaupsilon*muupsilon*n - 4*betaupsilon*lamdaupsilon*muupsilon
+**2*n + gamma**2*muupsilon**2*n**2 + 2*gamma*muupsilon**3*n**2 + muupsilon**4*n**2) + 7*df(y1,t,4)*df(y1,t)**3
+*y1**3*n**3*x30**4*(64*beta*betaupsilon*lamdaupsilon*muupsilon*x30 + 5*betaupsilon*gamma**2*lamdaupsilon*n + 
+25*betaupsilon*gamma*lamdaupsilon*muupsilon*n + 20*betaupsilon*lamdaupsilon*muupsilon**2*n - 5*gamma**2*
+muupsilon**2*n**2 - 10*gamma*muupsilon**3*n**2 - 5*muupsilon**4*n**2) + 7*df(y1,t,4)*df(y1,t)**3*y1**2*n**3*
+x30**5*( - 32*beta*betaupsilon*lamdaupsilon*muupsilon*x30 - 3*betaupsilon*gamma**2*lamdaupsilon*n - 15*
+betaupsilon*gamma*lamdaupsilon*muupsilon*n - 12*betaupsilon*lamdaupsilon*muupsilon**2*n + 3*gamma**2*muupsilon
+**2*n**2 + 6*gamma*muupsilon**3*n**2 + 3*muupsilon**4*n**2) + df(y1,t,4)*df(y1,t)**3*y1*n**3*x30**6*(64*beta*
+betaupsilon*lamdaupsilon*muupsilon*x30 + 7*betaupsilon*gamma**2*lamdaupsilon*n + 35*betaupsilon*gamma*
+lamdaupsilon*muupsilon*n + 28*betaupsilon*lamdaupsilon*muupsilon**2*n - 7*gamma**2*muupsilon**2*n**2 - 14*
+gamma*muupsilon**3*n**2 - 7*muupsilon**4*n**2) + df(y1,t,4)*df(y1,t)**3*n**3*x30**7*( - 8*beta*betaupsilon*
+lamdaupsilon*muupsilon*x30 - betaupsilon*gamma**2*lamdaupsilon*n - 5*betaupsilon*gamma*lamdaupsilon*muupsilon*
+n - 4*betaupsilon*lamdaupsilon*muupsilon**2*n + gamma**2*muupsilon**2*n**2 + 2*gamma*muupsilon**3*n**2 + 
+muupsilon**4*n**2) - 4*df(y1,t,4)*df(y1,t)**2*y1**9*beta*betaupsilon**2*lamdaupsilon**2*n**2 + df(y1,t,4)*df(
+y1,t)**2*y1**8*betaupsilon*lamdaupsilon*n**2*(36*beta*betaupsilon*lamdaupsilon*x30 - gamma**2*muupsilon*n**2 -
+ 2*gamma*muupsilon**2*n**2 - muupsilon**3*n**2) + 8*df(y1,t,4)*df(y1,t)**2*y1**7*betaupsilon*lamdaupsilon*n**2
+*x30*( - 18*beta*betaupsilon*lamdaupsilon*x30 + gamma**2*muupsilon*n**2 + 2*gamma*muupsilon**2*n**2 + 
+muupsilon**3*n**2) + 28*df(y1,t,4)*df(y1,t)**2*y1**6*betaupsilon*lamdaupsilon*n**2*x30**2*(12*beta*betaupsilon
+*lamdaupsilon*x30 - gamma**2*muupsilon*n**2 - 2*gamma*muupsilon**2*n**2 - muupsilon**3*n**2) + 56*df(y1,t,4)*
+df(y1,t)**2*y1**5*betaupsilon*lamdaupsilon*n**2*x30**3*( - 9*beta*betaupsilon*lamdaupsilon*x30 + gamma**2*
+muupsilon*n**2 + 2*gamma*muupsilon**2*n**2 + muupsilon**3*n**2) + 14*df(y1,t,4)*df(y1,t)**2*y1**4*betaupsilon*
+lamdaupsilon*n**2*x30**4*(36*beta*betaupsilon*lamdaupsilon*x30 - 5*gamma**2*muupsilon*n**2 - 10*gamma*
+muupsilon**2*n**2 - 5*muupsilon**3*n**2) + 56*df(y1,t,4)*df(y1,t)**2*y1**3*betaupsilon*lamdaupsilon*n**2*x30**
+5*( - 6*beta*betaupsilon*lamdaupsilon*x30 + gamma**2*muupsilon*n**2 + 2*gamma*muupsilon**2*n**2 + muupsilon**3
+*n**2) + 4*df(y1,t,4)*df(y1,t)**2*y1**2*betaupsilon*lamdaupsilon*n**2*x30**6*(36*beta*betaupsilon*lamdaupsilon
+*x30 - 7*gamma**2*muupsilon*n**2 - 14*gamma*muupsilon**2*n**2 - 7*muupsilon**3*n**2) + 4*df(y1,t,4)*df(y1,t)**
+2*y1*betaupsilon*lamdaupsilon*n**2*x30**7*( - 9*beta*betaupsilon*lamdaupsilon*x30 + 2*gamma**2*muupsilon*n**2 
++ 4*gamma*muupsilon**2*n**2 + 2*muupsilon**3*n**2) + df(y1,t,4)*df(y1,t)**2*betaupsilon*lamdaupsilon*n**2*x30
+**8*(4*beta*betaupsilon*lamdaupsilon*x30 - gamma**2*muupsilon*n**2 - 2*gamma*muupsilon**2*n**2 - muupsilon**3*
+n**2) - df(y1,t,3)**3*df(y1,t,2)*y1**7*n**5 + 7*df(y1,t,3)**3*df(y1,t,2)*y1**6*n**5*x30 - 21*df(y1,t,3)**3*df(
+y1,t,2)*y1**5*n**5*x30**2 + 35*df(y1,t,3)**3*df(y1,t,2)*y1**4*n**5*x30**3 - 35*df(y1,t,3)**3*df(y1,t,2)*y1**3*
+n**5*x30**4 + 21*df(y1,t,3)**3*df(y1,t,2)*y1**2*n**5*x30**5 - 7*df(y1,t,3)**3*df(y1,t,2)*y1*n**5*x30**6 + df(
+y1,t,3)**3*df(y1,t,2)*n**5*x30**7 - 4*df(y1,t,3)**3*df(y1,t)**2*y1**6*n**5 + 24*df(y1,t,3)**3*df(y1,t)**2*y1**
+5*n**5*x30 - 60*df(y1,t,3)**3*df(y1,t)**2*y1**4*n**5*x30**2 + 80*df(y1,t,3)**3*df(y1,t)**2*y1**3*n**5*x30**3 -
+ 60*df(y1,t,3)**3*df(y1,t)**2*y1**2*n**5*x30**4 + 24*df(y1,t,3)**3*df(y1,t)**2*y1*n**5*x30**5 - 4*df(y1,t,3)**
+3*df(y1,t)**2*n**5*x30**6 + df(y1,t,3)**3*df(y1,t)*y1**7*n**5*(gamma + 3*muupsilon) + 7*df(y1,t,3)**3*df(y1,t)
+*y1**6*n**5*x30*( - gamma - 3*muupsilon) + 21*df(y1,t,3)**3*df(y1,t)*y1**5*n**5*x30**2*(gamma + 3*muupsilon) +
+ 35*df(y1,t,3)**3*df(y1,t)*y1**4*n**5*x30**3*( - gamma - 3*muupsilon) + 35*df(y1,t,3)**3*df(y1,t)*y1**3*n**5*
+x30**4*(gamma + 3*muupsilon) + 21*df(y1,t,3)**3*df(y1,t)*y1**2*n**5*x30**5*( - gamma - 3*muupsilon) + 7*df(y1,
+t,3)**3*df(y1,t)*y1*n**5*x30**6*(gamma + 3*muupsilon) + df(y1,t,3)**3*df(y1,t)*n**5*x30**7*( - gamma - 3*
+muupsilon) + 2*df(y1,t,3)**2*df(y1,t,2)**2*df(y1,t)*y1**6*n**5 - 12*df(y1,t,3)**2*df(y1,t,2)**2*df(y1,t)*y1**5
+*n**5*x30 + 30*df(y1,t,3)**2*df(y1,t,2)**2*df(y1,t)*y1**4*n**5*x30**2 - 40*df(y1,t,3)**2*df(y1,t,2)**2*df(y1,t
+)*y1**3*n**5*x30**3 + 30*df(y1,t,3)**2*df(y1,t,2)**2*df(y1,t)*y1**2*n**5*x30**4 - 12*df(y1,t,3)**2*df(y1,t,2)
+**2*df(y1,t)*y1*n**5*x30**5 + 2*df(y1,t,3)**2*df(y1,t,2)**2*df(y1,t)*n**5*x30**6 - 3*df(y1,t,3)**2*df(y1,t,2)
+**2*y1**7*muupsilon*n**5 + 21*df(y1,t,3)**2*df(y1,t,2)**2*y1**6*muupsilon*n**5*x30 - 63*df(y1,t,3)**2*df(y1,t,
+2)**2*y1**5*muupsilon*n**5*x30**2 + 105*df(y1,t,3)**2*df(y1,t,2)**2*y1**4*muupsilon*n**5*x30**3 - 105*df(y1,t,
+3)**2*df(y1,t,2)**2*y1**3*muupsilon*n**5*x30**4 + 63*df(y1,t,3)**2*df(y1,t,2)**2*y1**2*muupsilon*n**5*x30**5 -
+ 21*df(y1,t,3)**2*df(y1,t,2)**2*y1*muupsilon*n**5*x30**6 + 3*df(y1,t,3)**2*df(y1,t,2)**2*muupsilon*n**5*x30**7
+ + 18*df(y1,t,3)**2*df(y1,t,2)*df(y1,t)**3*y1**5*n**5 - 90*df(y1,t,3)**2*df(y1,t,2)*df(y1,t)**3*y1**4*n**5*x30
+ + 180*df(y1,t,3)**2*df(y1,t,2)*df(y1,t)**3*y1**3*n**5*x30**2 - 180*df(y1,t,3)**2*df(y1,t,2)*df(y1,t)**3*y1**2
+*n**5*x30**3 + 90*df(y1,t,3)**2*df(y1,t,2)*df(y1,t)**3*y1*n**5*x30**4 - 18*df(y1,t,3)**2*df(y1,t,2)*df(y1,t)**
+3*n**5*x30**5 + 3*df(y1,t,3)**2*df(y1,t,2)*df(y1,t)**2*y1**7*beta*n**4 + df(y1,t,3)**2*df(y1,t,2)*df(y1,t)**2*
+y1**6*n**4*( - 21*beta*x30 - gamma*n - 20*muupsilon*n) + 3*df(y1,t,3)**2*df(y1,t,2)*df(y1,t)**2*y1**5*n**4*x30
+*(21*beta*x30 + 2*gamma*n + 40*muupsilon*n) + 15*df(y1,t,3)**2*df(y1,t,2)*df(y1,t)**2*y1**4*n**4*x30**2*( - 7*
+beta*x30 - gamma*n - 20*muupsilon*n) + 5*df(y1,t,3)**2*df(y1,t,2)*df(y1,t)**2*y1**3*n**4*x30**3*(21*beta*x30 +
+ 4*gamma*n + 80*muupsilon*n) + 3*df(y1,t,3)**2*df(y1,t,2)*df(y1,t)**2*y1**2*n**4*x30**4*( - 21*beta*x30 - 5*
+gamma*n - 100*muupsilon*n) + 3*df(y1,t,3)**2*df(y1,t,2)*df(y1,t)**2*y1*n**4*x30**5*(7*beta*x30 + 2*gamma*n + 
+40*muupsilon*n) + df(y1,t,3)**2*df(y1,t,2)*df(y1,t)**2*n**4*x30**6*( - 3*beta*x30 - gamma*n - 20*muupsilon*n) 
++ df(y1,t,3)**2*df(y1,t,2)*df(y1,t)*y1**7*n**4*( - 4*betaupsilon*lamdaupsilon - gamma**2*n + 6*muupsilon**2*n)
+ + 7*df(y1,t,3)**2*df(y1,t,2)*df(y1,t)*y1**6*n**4*x30*(4*betaupsilon*lamdaupsilon + gamma**2*n - 6*muupsilon**
+2*n) + 21*df(y1,t,3)**2*df(y1,t,2)*df(y1,t)*y1**5*n**4*x30**2*( - 4*betaupsilon*lamdaupsilon - gamma**2*n + 6*
+muupsilon**2*n) + 35*df(y1,t,3)**2*df(y1,t,2)*df(y1,t)*y1**4*n**4*x30**3*(4*betaupsilon*lamdaupsilon + gamma**
+2*n - 6*muupsilon**2*n) + 35*df(y1,t,3)**2*df(y1,t,2)*df(y1,t)*y1**3*n**4*x30**4*( - 4*betaupsilon*
+lamdaupsilon - gamma**2*n + 6*muupsilon**2*n) + 21*df(y1,t,3)**2*df(y1,t,2)*df(y1,t)*y1**2*n**4*x30**5*(4*
+betaupsilon*lamdaupsilon + gamma**2*n - 6*muupsilon**2*n) + 7*df(y1,t,3)**2*df(y1,t,2)*df(y1,t)*y1*n**4*x30**6
+*( - 4*betaupsilon*lamdaupsilon - gamma**2*n + 6*muupsilon**2*n) + df(y1,t,3)**2*df(y1,t,2)*df(y1,t)*n**4*x30
+**7*(4*betaupsilon*lamdaupsilon + gamma**2*n - 6*muupsilon**2*n) + 2*df(y1,t,3)**2*df(y1,t,2)*y1**8*
+betaupsilon*lamdaupsilon*n**4*(gamma + muupsilon) - 16*df(y1,t,3)**2*df(y1,t,2)*y1**7*betaupsilon*lamdaupsilon
+*n**4*x30*(gamma + muupsilon) + 56*df(y1,t,3)**2*df(y1,t,2)*y1**6*betaupsilon*lamdaupsilon*n**4*x30**2*(gamma 
++ muupsilon) - 112*df(y1,t,3)**2*df(y1,t,2)*y1**5*betaupsilon*lamdaupsilon*n**4*x30**3*(gamma + muupsilon) + 
+140*df(y1,t,3)**2*df(y1,t,2)*y1**4*betaupsilon*lamdaupsilon*n**4*x30**4*(gamma + muupsilon) - 112*df(y1,t,3)**
+2*df(y1,t,2)*y1**3*betaupsilon*lamdaupsilon*n**4*x30**5*(gamma + muupsilon) + 56*df(y1,t,3)**2*df(y1,t,2)*y1**
+2*betaupsilon*lamdaupsilon*n**4*x30**6*(gamma + muupsilon) - 16*df(y1,t,3)**2*df(y1,t,2)*y1*betaupsilon*
+lamdaupsilon*n**4*x30**7*(gamma + muupsilon) + 2*df(y1,t,3)**2*df(y1,t,2)*betaupsilon*lamdaupsilon*n**4*x30**8
+*(gamma + muupsilon) - 6*df(y1,t,3)**2*df(y1,t)**5*y1**4*n**5 + 24*df(y1,t,3)**2*df(y1,t)**5*y1**3*n**5*x30 - 
+36*df(y1,t,3)**2*df(y1,t)**5*y1**2*n**5*x30**2 + 24*df(y1,t,3)**2*df(y1,t)**5*y1*n**5*x30**3 - 6*df(y1,t,3)**2
+*df(y1,t)**5*n**5*x30**4 - 3*df(y1,t,3)**2*df(y1,t)**4*y1**6*beta*n**4 + 2*df(y1,t,3)**2*df(y1,t)**4*y1**5*n**
+4*(9*beta*x30 - gamma*n - 3*muupsilon*n) + 5*df(y1,t,3)**2*df(y1,t)**4*y1**4*n**4*x30*( - 9*beta*x30 + 2*gamma
+*n + 6*muupsilon*n) + 20*df(y1,t,3)**2*df(y1,t)**4*y1**3*n**4*x30**2*(3*beta*x30 - gamma*n - 3*muupsilon*n) + 
+5*df(y1,t,3)**2*df(y1,t)**4*y1**2*n**4*x30**3*( - 9*beta*x30 + 4*gamma*n + 12*muupsilon*n) + 2*df(y1,t,3)**2*
+df(y1,t)**4*y1*n**4*x30**4*(9*beta*x30 - 5*gamma*n - 15*muupsilon*n) + df(y1,t,3)**2*df(y1,t)**4*n**4*x30**5*(
+ - 3*beta*x30 + 2*gamma*n + 6*muupsilon*n) + 3*df(y1,t,3)**2*df(y1,t)**3*y1**7*beta*muupsilon*n**4 + df(y1,t,3
+)**2*df(y1,t)**3*y1**6*n**4*( - 21*beta*muupsilon*x30 - 16*betaupsilon*lamdaupsilon + gamma**2*n + 8*gamma*
+muupsilon*n + 10*muupsilon**2*n) + 3*df(y1,t,3)**2*df(y1,t)**3*y1**5*n**4*x30*(21*beta*muupsilon*x30 + 32*
+betaupsilon*lamdaupsilon - 2*gamma**2*n - 16*gamma*muupsilon*n - 20*muupsilon**2*n) + 15*df(y1,t,3)**2*df(y1,t
+)**3*y1**4*n**4*x30**2*( - 7*beta*muupsilon*x30 - 16*betaupsilon*lamdaupsilon + gamma**2*n + 8*gamma*muupsilon
+*n + 10*muupsilon**2*n) + 5*df(y1,t,3)**2*df(y1,t)**3*y1**3*n**4*x30**3*(21*beta*muupsilon*x30 + 64*
+betaupsilon*lamdaupsilon - 4*gamma**2*n - 32*gamma*muupsilon*n - 40*muupsilon**2*n) + 3*df(y1,t,3)**2*df(y1,t)
+**3*y1**2*n**4*x30**4*( - 21*beta*muupsilon*x30 - 80*betaupsilon*lamdaupsilon + 5*gamma**2*n + 40*gamma*
+muupsilon*n + 50*muupsilon**2*n) + 3*df(y1,t,3)**2*df(y1,t)**3*y1*n**4*x30**5*(7*beta*muupsilon*x30 + 32*
+betaupsilon*lamdaupsilon - 2*gamma**2*n - 16*gamma*muupsilon*n - 20*muupsilon**2*n) + df(y1,t,3)**2*df(y1,t)**
+3*n**4*x30**6*( - 3*beta*muupsilon*x30 - 16*betaupsilon*lamdaupsilon + gamma**2*n + 8*gamma*muupsilon*n + 10*
+muupsilon**2*n) + 2*df(y1,t,3)**2*df(y1,t)**2*y1**8*beta*betaupsilon*lamdaupsilon*n**3 + df(y1,t,3)**2*df(y1,t
+)**2*y1**7*n**3*( - 16*beta*betaupsilon*lamdaupsilon*x30 + 12*betaupsilon*gamma*lamdaupsilon*n + 20*
+betaupsilon*lamdaupsilon*muupsilon*n - gamma**2*muupsilon*n**2 - 3*gamma*muupsilon**2*n**2 - 2*muupsilon**3*n
+**2) + 7*df(y1,t,3)**2*df(y1,t)**2*y1**6*n**3*x30*(8*beta*betaupsilon*lamdaupsilon*x30 - 12*betaupsilon*gamma*
+lamdaupsilon*n - 20*betaupsilon*lamdaupsilon*muupsilon*n + gamma**2*muupsilon*n**2 + 3*gamma*muupsilon**2*n**2
+ + 2*muupsilon**3*n**2) + 7*df(y1,t,3)**2*df(y1,t)**2*y1**5*n**3*x30**2*( - 16*beta*betaupsilon*lamdaupsilon*
+x30 + 36*betaupsilon*gamma*lamdaupsilon*n + 60*betaupsilon*lamdaupsilon*muupsilon*n - 3*gamma**2*muupsilon*n**
+2 - 9*gamma*muupsilon**2*n**2 - 6*muupsilon**3*n**2) + 35*df(y1,t,3)**2*df(y1,t)**2*y1**4*n**3*x30**3*(4*beta*
+betaupsilon*lamdaupsilon*x30 - 12*betaupsilon*gamma*lamdaupsilon*n - 20*betaupsilon*lamdaupsilon*muupsilon*n +
+ gamma**2*muupsilon*n**2 + 3*gamma*muupsilon**2*n**2 + 2*muupsilon**3*n**2) + 7*df(y1,t,3)**2*df(y1,t)**2*y1**
+3*n**3*x30**4*( - 16*beta*betaupsilon*lamdaupsilon*x30 + 60*betaupsilon*gamma*lamdaupsilon*n + 100*betaupsilon
+*lamdaupsilon*muupsilon*n - 5*gamma**2*muupsilon*n**2 - 15*gamma*muupsilon**2*n**2 - 10*muupsilon**3*n**2) + 7
+*df(y1,t,3)**2*df(y1,t)**2*y1**2*n**3*x30**5*(8*beta*betaupsilon*lamdaupsilon*x30 - 36*betaupsilon*gamma*
+lamdaupsilon*n - 60*betaupsilon*lamdaupsilon*muupsilon*n + 3*gamma**2*muupsilon*n**2 + 9*gamma*muupsilon**2*n
+**2 + 6*muupsilon**3*n**2) + df(y1,t,3)**2*df(y1,t)**2*y1*n**3*x30**6*( - 16*beta*betaupsilon*lamdaupsilon*x30
+ + 84*betaupsilon*gamma*lamdaupsilon*n + 140*betaupsilon*lamdaupsilon*muupsilon*n - 7*gamma**2*muupsilon*n**2 
+- 21*gamma*muupsilon**2*n**2 - 14*muupsilon**3*n**2) + df(y1,t,3)**2*df(y1,t)**2*n**3*x30**7*(2*beta*
+betaupsilon*lamdaupsilon*x30 - 12*betaupsilon*gamma*lamdaupsilon*n - 20*betaupsilon*lamdaupsilon*muupsilon*n +
+ gamma**2*muupsilon*n**2 + 3*gamma*muupsilon**2*n**2 + 2*muupsilon**3*n**2) + 2*df(y1,t,3)**2*df(y1,t)*y1**8*
+betaupsilon*lamdaupsilon*n**4*( - gamma**2 - 4*gamma*muupsilon - 3*muupsilon**2) + 16*df(y1,t,3)**2*df(y1,t)*
+y1**7*betaupsilon*lamdaupsilon*n**4*x30*(gamma**2 + 4*gamma*muupsilon + 3*muupsilon**2) + 56*df(y1,t,3)**2*df(
+y1,t)*y1**6*betaupsilon*lamdaupsilon*n**4*x30**2*( - gamma**2 - 4*gamma*muupsilon - 3*muupsilon**2) + 112*df(
+y1,t,3)**2*df(y1,t)*y1**5*betaupsilon*lamdaupsilon*n**4*x30**3*(gamma**2 + 4*gamma*muupsilon + 3*muupsilon**2)
+ + 140*df(y1,t,3)**2*df(y1,t)*y1**4*betaupsilon*lamdaupsilon*n**4*x30**4*( - gamma**2 - 4*gamma*muupsilon - 3*
+muupsilon**2) + 112*df(y1,t,3)**2*df(y1,t)*y1**3*betaupsilon*lamdaupsilon*n**4*x30**5*(gamma**2 + 4*gamma*
+muupsilon + 3*muupsilon**2) + 56*df(y1,t,3)**2*df(y1,t)*y1**2*betaupsilon*lamdaupsilon*n**4*x30**6*( - gamma**
+2 - 4*gamma*muupsilon - 3*muupsilon**2) + 16*df(y1,t,3)**2*df(y1,t)*y1*betaupsilon*lamdaupsilon*n**4*x30**7*(
+gamma**2 + 4*gamma*muupsilon + 3*muupsilon**2) + 2*df(y1,t,3)**2*df(y1,t)*betaupsilon*lamdaupsilon*n**4*x30**8
+*( - gamma**2 - 4*gamma*muupsilon - 3*muupsilon**2) - 3*df(y1,t,3)*df(y1,t,2)**4*y1**6*n**5 + 18*df(y1,t,3)*df
+(y1,t,2)**4*y1**5*n**5*x30 - 45*df(y1,t,3)*df(y1,t,2)**4*y1**4*n**5*x30**2 + 60*df(y1,t,3)*df(y1,t,2)**4*y1**3
+*n**5*x30**3 - 45*df(y1,t,3)*df(y1,t,2)**4*y1**2*n**5*x30**4 + 18*df(y1,t,3)*df(y1,t,2)**4*y1*n**5*x30**5 - 3*
+df(y1,t,3)*df(y1,t,2)**4*n**5*x30**6 - 6*df(y1,t,3)*df(y1,t,2)**3*df(y1,t)**2*y1**5*n**5 + 30*df(y1,t,3)*df(y1
+,t,2)**3*df(y1,t)**2*y1**4*n**5*x30 - 60*df(y1,t,3)*df(y1,t,2)**3*df(y1,t)**2*y1**3*n**5*x30**2 + 60*df(y1,t,3
+)*df(y1,t,2)**3*df(y1,t)**2*y1**2*n**5*x30**3 - 30*df(y1,t,3)*df(y1,t,2)**3*df(y1,t)**2*y1*n**5*x30**4 + 6*df(
+y1,t,3)*df(y1,t,2)**3*df(y1,t)**2*n**5*x30**5 + df(y1,t,3)*df(y1,t,2)**3*df(y1,t)*y1**6*n**5*(2*gamma + 13*
+muupsilon) + 6*df(y1,t,3)*df(y1,t,2)**3*df(y1,t)*y1**5*n**5*x30*( - 2*gamma - 13*muupsilon) + 15*df(y1,t,3)*df
+(y1,t,2)**3*df(y1,t)*y1**4*n**5*x30**2*(2*gamma + 13*muupsilon) + 20*df(y1,t,3)*df(y1,t,2)**3*df(y1,t)*y1**3*n
+**5*x30**3*( - 2*gamma - 13*muupsilon) + 15*df(y1,t,3)*df(y1,t,2)**3*df(y1,t)*y1**2*n**5*x30**4*(2*gamma + 13*
+muupsilon) + 6*df(y1,t,3)*df(y1,t,2)**3*df(y1,t)*y1*n**5*x30**5*( - 2*gamma - 13*muupsilon) + df(y1,t,3)*df(y1
+,t,2)**3*df(y1,t)*n**5*x30**6*(2*gamma + 13*muupsilon) + df(y1,t,3)*df(y1,t,2)**3*y1**7*n**4*( - 3*betaupsilon
+*lamdaupsilon + 2*gamma**2*n + 3*gamma*muupsilon*n - 3*muupsilon**2*n) + 7*df(y1,t,3)*df(y1,t,2)**3*y1**6*n**4
+*x30*(3*betaupsilon*lamdaupsilon - 2*gamma**2*n - 3*gamma*muupsilon*n + 3*muupsilon**2*n) + 21*df(y1,t,3)*df(
+y1,t,2)**3*y1**5*n**4*x30**2*( - 3*betaupsilon*lamdaupsilon + 2*gamma**2*n + 3*gamma*muupsilon*n - 3*muupsilon
+**2*n) + 35*df(y1,t,3)*df(y1,t,2)**3*y1**4*n**4*x30**3*(3*betaupsilon*lamdaupsilon - 2*gamma**2*n - 3*gamma*
+muupsilon*n + 3*muupsilon**2*n) + 35*df(y1,t,3)*df(y1,t,2)**3*y1**3*n**4*x30**4*( - 3*betaupsilon*lamdaupsilon
+ + 2*gamma**2*n + 3*gamma*muupsilon*n - 3*muupsilon**2*n) + 21*df(y1,t,3)*df(y1,t,2)**3*y1**2*n**4*x30**5*(3*
+betaupsilon*lamdaupsilon - 2*gamma**2*n - 3*gamma*muupsilon*n + 3*muupsilon**2*n) + 7*df(y1,t,3)*df(y1,t,2)**3
+*y1*n**4*x30**6*( - 3*betaupsilon*lamdaupsilon + 2*gamma**2*n + 3*gamma*muupsilon*n - 3*muupsilon**2*n) + df(
+y1,t,3)*df(y1,t,2)**3*n**4*x30**7*(3*betaupsilon*lamdaupsilon - 2*gamma**2*n - 3*gamma*muupsilon*n + 3*
+muupsilon**2*n) - 2*df(y1,t,3)*df(y1,t,2)**2*df(y1,t)**4*y1**4*n**5 + 8*df(y1,t,3)*df(y1,t,2)**2*df(y1,t)**4*
+y1**3*n**5*x30 - 12*df(y1,t,3)*df(y1,t,2)**2*df(y1,t)**4*y1**2*n**5*x30**2 + 8*df(y1,t,3)*df(y1,t,2)**2*df(y1,
+t)**4*y1*n**5*x30**3 - 2*df(y1,t,3)*df(y1,t,2)**2*df(y1,t)**4*n**5*x30**4 - 2*df(y1,t,3)*df(y1,t,2)**2*df(y1,t
+)**3*y1**6*beta*n**4 + df(y1,t,3)*df(y1,t,2)**2*df(y1,t)**3*y1**5*n**4*(12*beta*x30 - 19*gamma*n + 13*
+muupsilon*n) + 5*df(y1,t,3)*df(y1,t,2)**2*df(y1,t)**3*y1**4*n**4*x30*( - 6*beta*x30 + 19*gamma*n - 13*
+muupsilon*n) + 10*df(y1,t,3)*df(y1,t,2)**2*df(y1,t)**3*y1**3*n**4*x30**2*(4*beta*x30 - 19*gamma*n + 13*
+muupsilon*n) + 10*df(y1,t,3)*df(y1,t,2)**2*df(y1,t)**3*y1**2*n**4*x30**3*( - 3*beta*x30 + 19*gamma*n - 13*
+muupsilon*n) + df(y1,t,3)*df(y1,t,2)**2*df(y1,t)**3*y1*n**4*x30**4*(12*beta*x30 - 95*gamma*n + 65*muupsilon*n)
+ + df(y1,t,3)*df(y1,t,2)**2*df(y1,t)**3*n**4*x30**5*( - 2*beta*x30 + 19*gamma*n - 13*muupsilon*n) - 6*df(y1,t,
+3)*df(y1,t,2)**2*df(y1,t)**2*y1**7*beta*gamma*n**4 + 2*df(y1,t,3)*df(y1,t,2)**2*df(y1,t)**2*y1**6*n**4*(21*
+beta*gamma*x30 + 3*gamma**2*n + 4*gamma*muupsilon*n - 11*muupsilon**2*n) + 6*df(y1,t,3)*df(y1,t,2)**2*df(y1,t)
+**2*y1**5*n**4*x30*( - 21*beta*gamma*x30 - 6*gamma**2*n - 8*gamma*muupsilon*n + 22*muupsilon**2*n) + 30*df(y1,
+t,3)*df(y1,t,2)**2*df(y1,t)**2*y1**4*n**4*x30**2*(7*beta*gamma*x30 + 3*gamma**2*n + 4*gamma*muupsilon*n - 11*
+muupsilon**2*n) + 10*df(y1,t,3)*df(y1,t,2)**2*df(y1,t)**2*y1**3*n**4*x30**3*( - 21*beta*gamma*x30 - 12*gamma**
+2*n - 16*gamma*muupsilon*n + 44*muupsilon**2*n) + 6*df(y1,t,3)*df(y1,t,2)**2*df(y1,t)**2*y1**2*n**4*x30**4*(21
+*beta*gamma*x30 + 15*gamma**2*n + 20*gamma*muupsilon*n - 55*muupsilon**2*n) + 6*df(y1,t,3)*df(y1,t,2)**2*df(y1
+,t)**2*y1*n**4*x30**5*( - 7*beta*gamma*x30 - 6*gamma**2*n - 8*gamma*muupsilon*n + 22*muupsilon**2*n) + 2*df(y1
+,t,3)*df(y1,t,2)**2*df(y1,t)**2*n**4*x30**6*(3*beta*gamma*x30 + 3*gamma**2*n + 4*gamma*muupsilon*n - 11*
+muupsilon**2*n) + 2*df(y1,t,3)*df(y1,t,2)**2*df(y1,t)*y1**8*beta*betaupsilon*lamdaupsilon*n**3 + df(y1,t,3)*df
+(y1,t,2)**2*df(y1,t)*y1**7*n**3*( - 16*beta*betaupsilon*lamdaupsilon*x30 - 7*betaupsilon*gamma*lamdaupsilon*n 
+- 5*betaupsilon*lamdaupsilon*muupsilon*n - gamma**3*n**2 - 3*gamma**2*muupsilon*n**2 + 7*muupsilon**3*n**2) + 
+7*df(y1,t,3)*df(y1,t,2)**2*df(y1,t)*y1**6*n**3*x30*(8*beta*betaupsilon*lamdaupsilon*x30 + 7*betaupsilon*gamma*
+lamdaupsilon*n + 5*betaupsilon*lamdaupsilon*muupsilon*n + gamma**3*n**2 + 3*gamma**2*muupsilon*n**2 - 7*
+muupsilon**3*n**2) + 7*df(y1,t,3)*df(y1,t,2)**2*df(y1,t)*y1**5*n**3*x30**2*( - 16*beta*betaupsilon*
+lamdaupsilon*x30 - 21*betaupsilon*gamma*lamdaupsilon*n - 15*betaupsilon*lamdaupsilon*muupsilon*n - 3*gamma**3*
+n**2 - 9*gamma**2*muupsilon*n**2 + 21*muupsilon**3*n**2) + 35*df(y1,t,3)*df(y1,t,2)**2*df(y1,t)*y1**4*n**3*x30
+**3*(4*beta*betaupsilon*lamdaupsilon*x30 + 7*betaupsilon*gamma*lamdaupsilon*n + 5*betaupsilon*lamdaupsilon*
+muupsilon*n + gamma**3*n**2 + 3*gamma**2*muupsilon*n**2 - 7*muupsilon**3*n**2) + 7*df(y1,t,3)*df(y1,t,2)**2*df
+(y1,t)*y1**3*n**3*x30**4*( - 16*beta*betaupsilon*lamdaupsilon*x30 - 35*betaupsilon*gamma*lamdaupsilon*n - 25*
+betaupsilon*lamdaupsilon*muupsilon*n - 5*gamma**3*n**2 - 15*gamma**2*muupsilon*n**2 + 35*muupsilon**3*n**2) + 
+7*df(y1,t,3)*df(y1,t,2)**2*df(y1,t)*y1**2*n**3*x30**5*(8*beta*betaupsilon*lamdaupsilon*x30 + 21*betaupsilon*
+gamma*lamdaupsilon*n + 15*betaupsilon*lamdaupsilon*muupsilon*n + 3*gamma**3*n**2 + 9*gamma**2*muupsilon*n**2 -
+ 21*muupsilon**3*n**2) + df(y1,t,3)*df(y1,t,2)**2*df(y1,t)*y1*n**3*x30**6*( - 16*beta*betaupsilon*lamdaupsilon
+*x30 - 49*betaupsilon*gamma*lamdaupsilon*n - 35*betaupsilon*lamdaupsilon*muupsilon*n - 7*gamma**3*n**2 - 21*
+gamma**2*muupsilon*n**2 + 49*muupsilon**3*n**2) + df(y1,t,3)*df(y1,t,2)**2*df(y1,t)*n**3*x30**7*(2*beta*
+betaupsilon*lamdaupsilon*x30 + 7*betaupsilon*gamma*lamdaupsilon*n + 5*betaupsilon*lamdaupsilon*muupsilon*n + 
+gamma**3*n**2 + 3*gamma**2*muupsilon*n**2 - 7*muupsilon**3*n**2) + df(y1,t,3)*df(y1,t,2)**2*y1**8*betaupsilon*
+lamdaupsilon*n**4*(3*gamma**2 + 9*gamma*muupsilon + 5*muupsilon**2) + 8*df(y1,t,3)*df(y1,t,2)**2*y1**7*
+betaupsilon*lamdaupsilon*n**4*x30*( - 3*gamma**2 - 9*gamma*muupsilon - 5*muupsilon**2) + 28*df(y1,t,3)*df(y1,t
+,2)**2*y1**6*betaupsilon*lamdaupsilon*n**4*x30**2*(3*gamma**2 + 9*gamma*muupsilon + 5*muupsilon**2) + 56*df(y1
+,t,3)*df(y1,t,2)**2*y1**5*betaupsilon*lamdaupsilon*n**4*x30**3*( - 3*gamma**2 - 9*gamma*muupsilon - 5*
+muupsilon**2) + 70*df(y1,t,3)*df(y1,t,2)**2*y1**4*betaupsilon*lamdaupsilon*n**4*x30**4*(3*gamma**2 + 9*gamma*
+muupsilon + 5*muupsilon**2) + 56*df(y1,t,3)*df(y1,t,2)**2*y1**3*betaupsilon*lamdaupsilon*n**4*x30**5*( - 3*
+gamma**2 - 9*gamma*muupsilon - 5*muupsilon**2) + 28*df(y1,t,3)*df(y1,t,2)**2*y1**2*betaupsilon*lamdaupsilon*n
+**4*x30**6*(3*gamma**2 + 9*gamma*muupsilon + 5*muupsilon**2) + 8*df(y1,t,3)*df(y1,t,2)**2*y1*betaupsilon*
+lamdaupsilon*n**4*x30**7*( - 3*gamma**2 - 9*gamma*muupsilon - 5*muupsilon**2) + df(y1,t,3)*df(y1,t,2)**2*
+betaupsilon*lamdaupsilon*n**4*x30**8*(3*gamma**2 + 9*gamma*muupsilon + 5*muupsilon**2) - 10*df(y1,t,3)*df(y1,t
+,2)*df(y1,t)**6*y1**3*n**5 + 30*df(y1,t,3)*df(y1,t,2)*df(y1,t)**6*y1**2*n**5*x30 - 30*df(y1,t,3)*df(y1,t,2)*df
+(y1,t)**6*y1*n**5*x30**2 + 10*df(y1,t,3)*df(y1,t,2)*df(y1,t)**6*n**5*x30**3 - 2*df(y1,t,3)*df(y1,t,2)*df(y1,t)
+**5*y1**5*beta*n**4 + 2*df(y1,t,3)*df(y1,t,2)*df(y1,t)**5*y1**4*n**4*(5*beta*x30 + 18*gamma*n + 27*muupsilon*n
+) + 4*df(y1,t,3)*df(y1,t,2)*df(y1,t)**5*y1**3*n**4*x30*( - 5*beta*x30 - 36*gamma*n - 54*muupsilon*n) + 4*df(y1
+,t,3)*df(y1,t,2)*df(y1,t)**5*y1**2*n**4*x30**2*(5*beta*x30 + 54*gamma*n + 81*muupsilon*n) + 2*df(y1,t,3)*df(y1
+,t,2)*df(y1,t)**5*y1*n**4*x30**3*( - 5*beta*x30 - 72*gamma*n - 108*muupsilon*n) + 2*df(y1,t,3)*df(y1,t,2)*df(
+y1,t)**5*n**4*x30**4*(beta*x30 + 18*gamma*n + 27*muupsilon*n) + 2*df(y1,t,3)*df(y1,t,2)*df(y1,t)**4*y1**6*beta
+*n**4*(6*gamma + 7*muupsilon) + df(y1,t,3)*df(y1,t,2)*df(y1,t)**4*y1**5*n**4*( - 72*beta*gamma*x30 - 84*beta*
+muupsilon*x30 + 82*betaupsilon*lamdaupsilon - 16*gamma**2*n - 69*gamma*muupsilon*n - 43*muupsilon**2*n) + 5*df
+(y1,t,3)*df(y1,t,2)*df(y1,t)**4*y1**4*n**4*x30*(36*beta*gamma*x30 + 42*beta*muupsilon*x30 - 82*betaupsilon*
+lamdaupsilon + 16*gamma**2*n + 69*gamma*muupsilon*n + 43*muupsilon**2*n) + 10*df(y1,t,3)*df(y1,t,2)*df(y1,t)**
+4*y1**3*n**4*x30**2*( - 24*beta*gamma*x30 - 28*beta*muupsilon*x30 + 82*betaupsilon*lamdaupsilon - 16*gamma**2*
+n - 69*gamma*muupsilon*n - 43*muupsilon**2*n) + 10*df(y1,t,3)*df(y1,t,2)*df(y1,t)**4*y1**2*n**4*x30**3*(18*
+beta*gamma*x30 + 21*beta*muupsilon*x30 - 82*betaupsilon*lamdaupsilon + 16*gamma**2*n + 69*gamma*muupsilon*n + 
+43*muupsilon**2*n) + df(y1,t,3)*df(y1,t,2)*df(y1,t)**4*y1*n**4*x30**4*( - 72*beta*gamma*x30 - 84*beta*
+muupsilon*x30 + 410*betaupsilon*lamdaupsilon - 80*gamma**2*n - 345*gamma*muupsilon*n - 215*muupsilon**2*n) + 
+df(y1,t,3)*df(y1,t,2)*df(y1,t)**4*n**4*x30**5*(12*beta*gamma*x30 + 14*beta*muupsilon*x30 - 82*betaupsilon*
+lamdaupsilon + 16*gamma**2*n + 69*gamma*muupsilon*n + 43*muupsilon**2*n) + 6*df(y1,t,3)*df(y1,t,2)*df(y1,t)**3
+*y1**7*beta*n**3*(3*betaupsilon*lamdaupsilon - 2*gamma*muupsilon*n - muupsilon**2*n) + df(y1,t,3)*df(y1,t,2)*
+df(y1,t)**3*y1**6*n**3*( - 126*beta*betaupsilon*lamdaupsilon*x30 + 84*beta*gamma*muupsilon*n*x30 + 42*beta*
+muupsilon**2*n*x30 - 60*betaupsilon*gamma*lamdaupsilon*n - 104*betaupsilon*lamdaupsilon*muupsilon*n + 2*gamma
+**3*n**2 + 24*gamma**2*muupsilon*n**2 + 44*gamma*muupsilon**2*n**2 + 11*muupsilon**3*n**2) + 6*df(y1,t,3)*df(
+y1,t,2)*df(y1,t)**3*y1**5*n**3*x30*(63*beta*betaupsilon*lamdaupsilon*x30 - 42*beta*gamma*muupsilon*n*x30 - 21*
+beta*muupsilon**2*n*x30 + 60*betaupsilon*gamma*lamdaupsilon*n + 104*betaupsilon*lamdaupsilon*muupsilon*n - 2*
+gamma**3*n**2 - 24*gamma**2*muupsilon*n**2 - 44*gamma*muupsilon**2*n**2 - 11*muupsilon**3*n**2) + 15*df(y1,t,3
+)*df(y1,t,2)*df(y1,t)**3*y1**4*n**3*x30**2*( - 42*beta*betaupsilon*lamdaupsilon*x30 + 28*beta*gamma*muupsilon*
+n*x30 + 14*beta*muupsilon**2*n*x30 - 60*betaupsilon*gamma*lamdaupsilon*n - 104*betaupsilon*lamdaupsilon*
+muupsilon*n + 2*gamma**3*n**2 + 24*gamma**2*muupsilon*n**2 + 44*gamma*muupsilon**2*n**2 + 11*muupsilon**3*n**2
+) + 10*df(y1,t,3)*df(y1,t,2)*df(y1,t)**3*y1**3*n**3*x30**3*(63*beta*betaupsilon*lamdaupsilon*x30 - 42*beta*
+gamma*muupsilon*n*x30 - 21*beta*muupsilon**2*n*x30 + 120*betaupsilon*gamma*lamdaupsilon*n + 208*betaupsilon*
+lamdaupsilon*muupsilon*n - 4*gamma**3*n**2 - 48*gamma**2*muupsilon*n**2 - 88*gamma*muupsilon**2*n**2 - 22*
+muupsilon**3*n**2) + 3*df(y1,t,3)*df(y1,t,2)*df(y1,t)**3*y1**2*n**3*x30**4*( - 126*beta*betaupsilon*
+lamdaupsilon*x30 + 84*beta*gamma*muupsilon*n*x30 + 42*beta*muupsilon**2*n*x30 - 300*betaupsilon*gamma*
+lamdaupsilon*n - 520*betaupsilon*lamdaupsilon*muupsilon*n + 10*gamma**3*n**2 + 120*gamma**2*muupsilon*n**2 + 
+220*gamma*muupsilon**2*n**2 + 55*muupsilon**3*n**2) + 6*df(y1,t,3)*df(y1,t,2)*df(y1,t)**3*y1*n**3*x30**5*(21*
+beta*betaupsilon*lamdaupsilon*x30 - 14*beta*gamma*muupsilon*n*x30 - 7*beta*muupsilon**2*n*x30 + 60*betaupsilon
+*gamma*lamdaupsilon*n + 104*betaupsilon*lamdaupsilon*muupsilon*n - 2*gamma**3*n**2 - 24*gamma**2*muupsilon*n**
+2 - 44*gamma*muupsilon**2*n**2 - 11*muupsilon**3*n**2) + df(y1,t,3)*df(y1,t,2)*df(y1,t)**3*n**3*x30**6*( - 18*
+beta*betaupsilon*lamdaupsilon*x30 + 12*beta*gamma*muupsilon*n*x30 + 6*beta*muupsilon**2*n*x30 - 60*betaupsilon
+*gamma*lamdaupsilon*n - 104*betaupsilon*lamdaupsilon*muupsilon*n + 2*gamma**3*n**2 + 24*gamma**2*muupsilon*n**
+2 + 44*gamma*muupsilon**2*n**2 + 11*muupsilon**3*n**2) + 2*df(y1,t,3)*df(y1,t,2)*df(y1,t)**2*y1**8*beta*
+betaupsilon*lamdaupsilon*n**3*( - 6*gamma - 5*muupsilon) + df(y1,t,3)*df(y1,t,2)*df(y1,t)**2*y1**7*n**3*(96*
+beta*betaupsilon*gamma*lamdaupsilon*x30 + 80*beta*betaupsilon*lamdaupsilon*muupsilon*x30 + 13*betaupsilon*
+gamma**2*lamdaupsilon*n + 55*betaupsilon*gamma*lamdaupsilon*muupsilon*n + 43*betaupsilon*lamdaupsilon*
+muupsilon**2*n - 2*gamma**3*muupsilon*n**2 - 10*gamma**2*muupsilon**2*n**2 - 11*gamma*muupsilon**3*n**2 - 
+muupsilon**4*n**2) + 7*df(y1,t,3)*df(y1,t,2)*df(y1,t)**2*y1**6*n**3*x30*( - 48*beta*betaupsilon*gamma*
+lamdaupsilon*x30 - 40*beta*betaupsilon*lamdaupsilon*muupsilon*x30 - 13*betaupsilon*gamma**2*lamdaupsilon*n - 
+55*betaupsilon*gamma*lamdaupsilon*muupsilon*n - 43*betaupsilon*lamdaupsilon*muupsilon**2*n + 2*gamma**3*
+muupsilon*n**2 + 10*gamma**2*muupsilon**2*n**2 + 11*gamma*muupsilon**3*n**2 + muupsilon**4*n**2) + 7*df(y1,t,3
+)*df(y1,t,2)*df(y1,t)**2*y1**5*n**3*x30**2*(96*beta*betaupsilon*gamma*lamdaupsilon*x30 + 80*beta*betaupsilon*
+lamdaupsilon*muupsilon*x30 + 39*betaupsilon*gamma**2*lamdaupsilon*n + 165*betaupsilon*gamma*lamdaupsilon*
+muupsilon*n + 129*betaupsilon*lamdaupsilon*muupsilon**2*n - 6*gamma**3*muupsilon*n**2 - 30*gamma**2*muupsilon
+**2*n**2 - 33*gamma*muupsilon**3*n**2 - 3*muupsilon**4*n**2) + 35*df(y1,t,3)*df(y1,t,2)*df(y1,t)**2*y1**4*n**3
+*x30**3*( - 24*beta*betaupsilon*gamma*lamdaupsilon*x30 - 20*beta*betaupsilon*lamdaupsilon*muupsilon*x30 - 13*
+betaupsilon*gamma**2*lamdaupsilon*n - 55*betaupsilon*gamma*lamdaupsilon*muupsilon*n - 43*betaupsilon*
+lamdaupsilon*muupsilon**2*n + 2*gamma**3*muupsilon*n**2 + 10*gamma**2*muupsilon**2*n**2 + 11*gamma*muupsilon**
+3*n**2 + muupsilon**4*n**2) + 7*df(y1,t,3)*df(y1,t,2)*df(y1,t)**2*y1**3*n**3*x30**4*(96*beta*betaupsilon*gamma
+*lamdaupsilon*x30 + 80*beta*betaupsilon*lamdaupsilon*muupsilon*x30 + 65*betaupsilon*gamma**2*lamdaupsilon*n + 
+275*betaupsilon*gamma*lamdaupsilon*muupsilon*n + 215*betaupsilon*lamdaupsilon*muupsilon**2*n - 10*gamma**3*
+muupsilon*n**2 - 50*gamma**2*muupsilon**2*n**2 - 55*gamma*muupsilon**3*n**2 - 5*muupsilon**4*n**2) + 7*df(y1,t
+,3)*df(y1,t,2)*df(y1,t)**2*y1**2*n**3*x30**5*( - 48*beta*betaupsilon*gamma*lamdaupsilon*x30 - 40*beta*
+betaupsilon*lamdaupsilon*muupsilon*x30 - 39*betaupsilon*gamma**2*lamdaupsilon*n - 165*betaupsilon*gamma*
+lamdaupsilon*muupsilon*n - 129*betaupsilon*lamdaupsilon*muupsilon**2*n + 6*gamma**3*muupsilon*n**2 + 30*gamma
+**2*muupsilon**2*n**2 + 33*gamma*muupsilon**3*n**2 + 3*muupsilon**4*n**2) + df(y1,t,3)*df(y1,t,2)*df(y1,t)**2*
+y1*n**3*x30**6*(96*beta*betaupsilon*gamma*lamdaupsilon*x30 + 80*beta*betaupsilon*lamdaupsilon*muupsilon*x30 + 
+91*betaupsilon*gamma**2*lamdaupsilon*n + 385*betaupsilon*gamma*lamdaupsilon*muupsilon*n + 301*betaupsilon*
+lamdaupsilon*muupsilon**2*n - 14*gamma**3*muupsilon*n**2 - 70*gamma**2*muupsilon**2*n**2 - 77*gamma*muupsilon
+**3*n**2 - 7*muupsilon**4*n**2) + df(y1,t,3)*df(y1,t,2)*df(y1,t)**2*n**3*x30**7*( - 12*beta*betaupsilon*gamma*
+lamdaupsilon*x30 - 10*beta*betaupsilon*lamdaupsilon*muupsilon*x30 - 13*betaupsilon*gamma**2*lamdaupsilon*n - 
+55*betaupsilon*gamma*lamdaupsilon*muupsilon*n - 43*betaupsilon*lamdaupsilon*muupsilon**2*n + 2*gamma**3*
+muupsilon*n**2 + 10*gamma**2*muupsilon**2*n**2 + 11*gamma*muupsilon**3*n**2 + muupsilon**4*n**2) + 2*df(y1,t,3
+)*df(y1,t,2)*df(y1,t)*y1**9*beta*betaupsilon**2*lamdaupsilon**2*n**2 + df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1**8*
+betaupsilon*lamdaupsilon*n**2*( - 18*beta*betaupsilon*lamdaupsilon*x30 - gamma**3*n**2 - 7*gamma**2*muupsilon*
+n**2 - 15*gamma*muupsilon**2*n**2 - 7*muupsilon**3*n**2) + 8*df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1**7*betaupsilon*
+lamdaupsilon*n**2*x30*(9*beta*betaupsilon*lamdaupsilon*x30 + gamma**3*n**2 + 7*gamma**2*muupsilon*n**2 + 15*
+gamma*muupsilon**2*n**2 + 7*muupsilon**3*n**2) + 28*df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1**6*betaupsilon*
+lamdaupsilon*n**2*x30**2*( - 6*beta*betaupsilon*lamdaupsilon*x30 - gamma**3*n**2 - 7*gamma**2*muupsilon*n**2 -
+ 15*gamma*muupsilon**2*n**2 - 7*muupsilon**3*n**2) + 28*df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1**5*betaupsilon*
+lamdaupsilon*n**2*x30**3*(9*beta*betaupsilon*lamdaupsilon*x30 + 2*gamma**3*n**2 + 14*gamma**2*muupsilon*n**2 +
+ 30*gamma*muupsilon**2*n**2 + 14*muupsilon**3*n**2) + 14*df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1**4*betaupsilon*
+lamdaupsilon*n**2*x30**4*( - 18*beta*betaupsilon*lamdaupsilon*x30 - 5*gamma**3*n**2 - 35*gamma**2*muupsilon*n
+**2 - 75*gamma*muupsilon**2*n**2 - 35*muupsilon**3*n**2) + 56*df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1**3*betaupsilon
+*lamdaupsilon*n**2*x30**5*(3*beta*betaupsilon*lamdaupsilon*x30 + gamma**3*n**2 + 7*gamma**2*muupsilon*n**2 + 
+15*gamma*muupsilon**2*n**2 + 7*muupsilon**3*n**2) + 4*df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1**2*betaupsilon*
+lamdaupsilon*n**2*x30**6*( - 18*beta*betaupsilon*lamdaupsilon*x30 - 7*gamma**3*n**2 - 49*gamma**2*muupsilon*n
+**2 - 105*gamma*muupsilon**2*n**2 - 49*muupsilon**3*n**2) + 2*df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1*betaupsilon*
+lamdaupsilon*n**2*x30**7*(9*beta*betaupsilon*lamdaupsilon*x30 + 4*gamma**3*n**2 + 28*gamma**2*muupsilon*n**2 +
+ 60*gamma*muupsilon**2*n**2 + 28*muupsilon**3*n**2) + df(y1,t,3)*df(y1,t,2)*df(y1,t)*betaupsilon*lamdaupsilon*
+n**2*x30**8*( - 2*beta*betaupsilon*lamdaupsilon*x30 - gamma**3*n**2 - 7*gamma**2*muupsilon*n**2 - 15*gamma*
+muupsilon**2*n**2 - 7*muupsilon**3*n**2) + 8*df(y1,t,3)*df(y1,t)**8*y1**2*n**5 - 16*df(y1,t,3)*df(y1,t)**8*y1*
+n**5*x30 + 8*df(y1,t,3)*df(y1,t)**8*n**5*x30**2 + 4*df(y1,t,3)*df(y1,t)**7*y1**4*beta*n**4 + 8*df(y1,t,3)*df(
+y1,t)**7*y1**3*n**4*( - 2*beta*x30 - 2*gamma*n - 5*muupsilon*n) + 24*df(y1,t,3)*df(y1,t)**7*y1**2*n**4*x30*(
+beta*x30 + 2*gamma*n + 5*muupsilon*n) + 8*df(y1,t,3)*df(y1,t)**7*y1*n**4*x30**2*( - 2*beta*x30 - 6*gamma*n - 
+15*muupsilon*n) + 4*df(y1,t,3)*df(y1,t)**7*n**4*x30**3*(beta*x30 + 4*gamma*n + 10*muupsilon*n) + 2*df(y1,t,3)*
+df(y1,t)**6*y1**5*beta*n**4*( - 3*gamma - 10*muupsilon) + 2*df(y1,t,3)*df(y1,t)**6*y1**4*n**4*(15*beta*gamma*
+x30 + 50*beta*muupsilon*x30 - 24*betaupsilon*lamdaupsilon + 4*gamma**2*n + 22*gamma*muupsilon*n + 20*muupsilon
+**2*n) + 4*df(y1,t,3)*df(y1,t)**6*y1**3*n**4*x30*( - 15*beta*gamma*x30 - 50*beta*muupsilon*x30 + 48*
+betaupsilon*lamdaupsilon - 8*gamma**2*n - 44*gamma*muupsilon*n - 40*muupsilon**2*n) + 4*df(y1,t,3)*df(y1,t)**6
+*y1**2*n**4*x30**2*(15*beta*gamma*x30 + 50*beta*muupsilon*x30 - 72*betaupsilon*lamdaupsilon + 12*gamma**2*n + 
+66*gamma*muupsilon*n + 60*muupsilon**2*n) + 2*df(y1,t,3)*df(y1,t)**6*y1*n**4*x30**3*( - 15*beta*gamma*x30 - 50
+*beta*muupsilon*x30 + 96*betaupsilon*lamdaupsilon - 16*gamma**2*n - 88*gamma*muupsilon*n - 80*muupsilon**2*n) 
++ 2*df(y1,t,3)*df(y1,t)**6*n**4*x30**4*(3*beta*gamma*x30 + 10*beta*muupsilon*x30 - 24*betaupsilon*lamdaupsilon
+ + 4*gamma**2*n + 22*gamma*muupsilon*n + 20*muupsilon**2*n) + 2*df(y1,t,3)*df(y1,t)**5*y1**6*beta*n**3*( - 12*
+betaupsilon*lamdaupsilon + 6*gamma*muupsilon*n + 11*muupsilon**2*n) + df(y1,t,3)*df(y1,t)**5*y1**5*n**3*(144*
+beta*betaupsilon*lamdaupsilon*x30 - 72*beta*gamma*muupsilon*n*x30 - 132*beta*muupsilon**2*n*x30 + 42*
+betaupsilon*gamma*lamdaupsilon*n + 70*betaupsilon*lamdaupsilon*muupsilon*n - gamma**3*n**2 - 19*gamma**2*
+muupsilon*n**2 - 42*gamma*muupsilon**2*n**2 - 18*muupsilon**3*n**2) + 5*df(y1,t,3)*df(y1,t)**5*y1**4*n**3*x30*
+( - 72*beta*betaupsilon*lamdaupsilon*x30 + 36*beta*gamma*muupsilon*n*x30 + 66*beta*muupsilon**2*n*x30 - 42*
+betaupsilon*gamma*lamdaupsilon*n - 70*betaupsilon*lamdaupsilon*muupsilon*n + gamma**3*n**2 + 19*gamma**2*
+muupsilon*n**2 + 42*gamma*muupsilon**2*n**2 + 18*muupsilon**3*n**2) + 10*df(y1,t,3)*df(y1,t)**5*y1**3*n**3*x30
+**2*(48*beta*betaupsilon*lamdaupsilon*x30 - 24*beta*gamma*muupsilon*n*x30 - 44*beta*muupsilon**2*n*x30 + 42*
+betaupsilon*gamma*lamdaupsilon*n + 70*betaupsilon*lamdaupsilon*muupsilon*n - gamma**3*n**2 - 19*gamma**2*
+muupsilon*n**2 - 42*gamma*muupsilon**2*n**2 - 18*muupsilon**3*n**2) + 10*df(y1,t,3)*df(y1,t)**5*y1**2*n**3*x30
+**3*( - 36*beta*betaupsilon*lamdaupsilon*x30 + 18*beta*gamma*muupsilon*n*x30 + 33*beta*muupsilon**2*n*x30 - 42
+*betaupsilon*gamma*lamdaupsilon*n - 70*betaupsilon*lamdaupsilon*muupsilon*n + gamma**3*n**2 + 19*gamma**2*
+muupsilon*n**2 + 42*gamma*muupsilon**2*n**2 + 18*muupsilon**3*n**2) + df(y1,t,3)*df(y1,t)**5*y1*n**3*x30**4*(
+144*beta*betaupsilon*lamdaupsilon*x30 - 72*beta*gamma*muupsilon*n*x30 - 132*beta*muupsilon**2*n*x30 + 210*
+betaupsilon*gamma*lamdaupsilon*n + 350*betaupsilon*lamdaupsilon*muupsilon*n - 5*gamma**3*n**2 - 95*gamma**2*
+muupsilon*n**2 - 210*gamma*muupsilon**2*n**2 - 90*muupsilon**3*n**2) + df(y1,t,3)*df(y1,t)**5*n**3*x30**5*( - 
+24*beta*betaupsilon*lamdaupsilon*x30 + 12*beta*gamma*muupsilon*n*x30 + 22*beta*muupsilon**2*n*x30 - 42*
+betaupsilon*gamma*lamdaupsilon*n - 70*betaupsilon*lamdaupsilon*muupsilon*n + gamma**3*n**2 + 19*gamma**2*
+muupsilon*n**2 + 42*gamma*muupsilon**2*n**2 + 18*muupsilon**3*n**2) + 2*df(y1,t,3)*df(y1,t)**4*y1**7*beta*n**3
+*(6*betaupsilon*gamma*lamdaupsilon + 22*betaupsilon*lamdaupsilon*muupsilon - 3*gamma*muupsilon**2*n - 3*
+muupsilon**3*n) + 2*df(y1,t,3)*df(y1,t)**4*y1**6*n**3*( - 42*beta*betaupsilon*gamma*lamdaupsilon*x30 - 154*
+beta*betaupsilon*lamdaupsilon*muupsilon*x30 + 21*beta*gamma*muupsilon**2*n*x30 + 21*beta*muupsilon**3*n*x30 - 
+6*betaupsilon*gamma**2*lamdaupsilon*n - 26*betaupsilon*gamma*lamdaupsilon*muupsilon*n - 20*betaupsilon*
+lamdaupsilon*muupsilon**2*n + gamma**3*muupsilon*n**2 + 8*gamma**2*muupsilon**2*n**2 + 11*gamma*muupsilon**3*n
+**2 + 3*muupsilon**4*n**2) + 6*df(y1,t,3)*df(y1,t)**4*y1**5*n**3*x30*(42*beta*betaupsilon*gamma*lamdaupsilon*
+x30 + 154*beta*betaupsilon*lamdaupsilon*muupsilon*x30 - 21*beta*gamma*muupsilon**2*n*x30 - 21*beta*muupsilon**
+3*n*x30 + 12*betaupsilon*gamma**2*lamdaupsilon*n + 52*betaupsilon*gamma*lamdaupsilon*muupsilon*n + 40*
+betaupsilon*lamdaupsilon*muupsilon**2*n - 2*gamma**3*muupsilon*n**2 - 16*gamma**2*muupsilon**2*n**2 - 22*gamma
+*muupsilon**3*n**2 - 6*muupsilon**4*n**2) + 10*df(y1,t,3)*df(y1,t)**4*y1**4*n**3*x30**2*( - 42*beta*
+betaupsilon*gamma*lamdaupsilon*x30 - 154*beta*betaupsilon*lamdaupsilon*muupsilon*x30 + 21*beta*gamma*muupsilon
+**2*n*x30 + 21*beta*muupsilon**3*n*x30 - 18*betaupsilon*gamma**2*lamdaupsilon*n - 78*betaupsilon*gamma*
+lamdaupsilon*muupsilon*n - 60*betaupsilon*lamdaupsilon*muupsilon**2*n + 3*gamma**3*muupsilon*n**2 + 24*gamma**
+2*muupsilon**2*n**2 + 33*gamma*muupsilon**3*n**2 + 9*muupsilon**4*n**2) + 10*df(y1,t,3)*df(y1,t)**4*y1**3*n**3
+*x30**3*(42*beta*betaupsilon*gamma*lamdaupsilon*x30 + 154*beta*betaupsilon*lamdaupsilon*muupsilon*x30 - 21*
+beta*gamma*muupsilon**2*n*x30 - 21*beta*muupsilon**3*n*x30 + 24*betaupsilon*gamma**2*lamdaupsilon*n + 104*
+betaupsilon*gamma*lamdaupsilon*muupsilon*n + 80*betaupsilon*lamdaupsilon*muupsilon**2*n - 4*gamma**3*muupsilon
+*n**2 - 32*gamma**2*muupsilon**2*n**2 - 44*gamma*muupsilon**3*n**2 - 12*muupsilon**4*n**2) + 6*df(y1,t,3)*df(
+y1,t)**4*y1**2*n**3*x30**4*( - 42*beta*betaupsilon*gamma*lamdaupsilon*x30 - 154*beta*betaupsilon*lamdaupsilon*
+muupsilon*x30 + 21*beta*gamma*muupsilon**2*n*x30 + 21*beta*muupsilon**3*n*x30 - 30*betaupsilon*gamma**2*
+lamdaupsilon*n - 130*betaupsilon*gamma*lamdaupsilon*muupsilon*n - 100*betaupsilon*lamdaupsilon*muupsilon**2*n 
++ 5*gamma**3*muupsilon*n**2 + 40*gamma**2*muupsilon**2*n**2 + 55*gamma*muupsilon**3*n**2 + 15*muupsilon**4*n**
+2) + 2*df(y1,t,3)*df(y1,t)**4*y1*n**3*x30**5*(42*beta*betaupsilon*gamma*lamdaupsilon*x30 + 154*beta*
+betaupsilon*lamdaupsilon*muupsilon*x30 - 21*beta*gamma*muupsilon**2*n*x30 - 21*beta*muupsilon**3*n*x30 + 36*
+betaupsilon*gamma**2*lamdaupsilon*n + 156*betaupsilon*gamma*lamdaupsilon*muupsilon*n + 120*betaupsilon*
+lamdaupsilon*muupsilon**2*n - 6*gamma**3*muupsilon*n**2 - 48*gamma**2*muupsilon**2*n**2 - 66*gamma*muupsilon**
+3*n**2 - 18*muupsilon**4*n**2) + 2*df(y1,t,3)*df(y1,t)**4*n**3*x30**6*( - 6*beta*betaupsilon*gamma*
+lamdaupsilon*x30 - 22*beta*betaupsilon*lamdaupsilon*muupsilon*x30 + 3*beta*gamma*muupsilon**2*n*x30 + 3*beta*
+muupsilon**3*n*x30 - 6*betaupsilon*gamma**2*lamdaupsilon*n - 26*betaupsilon*gamma*lamdaupsilon*muupsilon*n - 
+20*betaupsilon*lamdaupsilon*muupsilon**2*n + gamma**3*muupsilon*n**2 + 8*gamma**2*muupsilon**2*n**2 + 11*gamma
+*muupsilon**3*n**2 + 3*muupsilon**4*n**2) + 4*df(y1,t,3)*df(y1,t)**3*y1**8*beta*betaupsilon*lamdaupsilon*n**2*
+(4*betaupsilon*lamdaupsilon - 3*gamma*muupsilon*n - 4*muupsilon**2*n) + df(y1,t,3)*df(y1,t)**3*y1**7*n**2*( - 
+128*beta*betaupsilon**2*lamdaupsilon**2*x30 + 96*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n*x30 + 128*
+beta*betaupsilon*lamdaupsilon*muupsilon**2*n*x30 + betaupsilon*gamma**3*lamdaupsilon*n**2 + 14*betaupsilon*
+gamma**2*lamdaupsilon*muupsilon*n**2 + 28*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 + 13*betaupsilon*
+lamdaupsilon*muupsilon**3*n**2 - gamma**3*muupsilon**2*n**3 - 5*gamma**2*muupsilon**3*n**3 - 5*gamma*muupsilon
+**4*n**3 - muupsilon**5*n**3) + 7*df(y1,t,3)*df(y1,t)**3*y1**6*n**2*x30*(64*beta*betaupsilon**2*lamdaupsilon**
+2*x30 - 48*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n*x30 - 64*beta*betaupsilon*lamdaupsilon*muupsilon**2
+*n*x30 - betaupsilon*gamma**3*lamdaupsilon*n**2 - 14*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2 - 28*
+betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 - 13*betaupsilon*lamdaupsilon*muupsilon**3*n**2 + gamma**3*
+muupsilon**2*n**3 + 5*gamma**2*muupsilon**3*n**3 + 5*gamma*muupsilon**4*n**3 + muupsilon**5*n**3) + 7*df(y1,t,
+3)*df(y1,t)**3*y1**5*n**2*x30**2*( - 128*beta*betaupsilon**2*lamdaupsilon**2*x30 + 96*beta*betaupsilon*gamma*
+lamdaupsilon*muupsilon*n*x30 + 128*beta*betaupsilon*lamdaupsilon*muupsilon**2*n*x30 + 3*betaupsilon*gamma**3*
+lamdaupsilon*n**2 + 42*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2 + 84*betaupsilon*gamma*lamdaupsilon*
+muupsilon**2*n**2 + 39*betaupsilon*lamdaupsilon*muupsilon**3*n**2 - 3*gamma**3*muupsilon**2*n**3 - 15*gamma**2
+*muupsilon**3*n**3 - 15*gamma*muupsilon**4*n**3 - 3*muupsilon**5*n**3) + 35*df(y1,t,3)*df(y1,t)**3*y1**4*n**2*
+x30**3*(32*beta*betaupsilon**2*lamdaupsilon**2*x30 - 24*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n*x30 - 
+32*beta*betaupsilon*lamdaupsilon*muupsilon**2*n*x30 - betaupsilon*gamma**3*lamdaupsilon*n**2 - 14*betaupsilon*
+gamma**2*lamdaupsilon*muupsilon*n**2 - 28*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 - 13*betaupsilon*
+lamdaupsilon*muupsilon**3*n**2 + gamma**3*muupsilon**2*n**3 + 5*gamma**2*muupsilon**3*n**3 + 5*gamma*muupsilon
+**4*n**3 + muupsilon**5*n**3) + 7*df(y1,t,3)*df(y1,t)**3*y1**3*n**2*x30**4*( - 128*beta*betaupsilon**2*
+lamdaupsilon**2*x30 + 96*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n*x30 + 128*beta*betaupsilon*
+lamdaupsilon*muupsilon**2*n*x30 + 5*betaupsilon*gamma**3*lamdaupsilon*n**2 + 70*betaupsilon*gamma**2*
+lamdaupsilon*muupsilon*n**2 + 140*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 + 65*betaupsilon*
+lamdaupsilon*muupsilon**3*n**2 - 5*gamma**3*muupsilon**2*n**3 - 25*gamma**2*muupsilon**3*n**3 - 25*gamma*
+muupsilon**4*n**3 - 5*muupsilon**5*n**3) + 7*df(y1,t,3)*df(y1,t)**3*y1**2*n**2*x30**5*(64*beta*betaupsilon**2*
+lamdaupsilon**2*x30 - 48*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n*x30 - 64*beta*betaupsilon*
+lamdaupsilon*muupsilon**2*n*x30 - 3*betaupsilon*gamma**3*lamdaupsilon*n**2 - 42*betaupsilon*gamma**2*
+lamdaupsilon*muupsilon*n**2 - 84*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 - 39*betaupsilon*
+lamdaupsilon*muupsilon**3*n**2 + 3*gamma**3*muupsilon**2*n**3 + 15*gamma**2*muupsilon**3*n**3 + 15*gamma*
+muupsilon**4*n**3 + 3*muupsilon**5*n**3) + df(y1,t,3)*df(y1,t)**3*y1*n**2*x30**6*( - 128*beta*betaupsilon**2*
+lamdaupsilon**2*x30 + 96*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n*x30 + 128*beta*betaupsilon*
+lamdaupsilon*muupsilon**2*n*x30 + 7*betaupsilon*gamma**3*lamdaupsilon*n**2 + 98*betaupsilon*gamma**2*
+lamdaupsilon*muupsilon*n**2 + 196*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 + 91*betaupsilon*
+lamdaupsilon*muupsilon**3*n**2 - 7*gamma**3*muupsilon**2*n**3 - 35*gamma**2*muupsilon**3*n**3 - 35*gamma*
+muupsilon**4*n**3 - 7*muupsilon**5*n**3) + df(y1,t,3)*df(y1,t)**3*n**2*x30**7*(16*beta*betaupsilon**2*
+lamdaupsilon**2*x30 - 12*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n*x30 - 16*beta*betaupsilon*
+lamdaupsilon*muupsilon**2*n*x30 - betaupsilon*gamma**3*lamdaupsilon*n**2 - 14*betaupsilon*gamma**2*
+lamdaupsilon*muupsilon*n**2 - 28*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 - 13*betaupsilon*
+lamdaupsilon*muupsilon**3*n**2 + gamma**3*muupsilon**2*n**3 + 5*gamma**2*muupsilon**3*n**3 + 5*gamma*muupsilon
+**4*n**3 + muupsilon**5*n**3) + 2*df(y1,t,3)*df(y1,t)**2*y1**9*beta*betaupsilon**2*lamdaupsilon**2*n**2*( - 3*
+gamma - 5*muupsilon) + df(y1,t,3)*df(y1,t)**2*y1**8*betaupsilon*lamdaupsilon*n**2*(54*beta*betaupsilon*gamma*
+lamdaupsilon*x30 + 90*beta*betaupsilon*lamdaupsilon*muupsilon*x30 - gamma**3*muupsilon*n**2 - 6*gamma**2*
+muupsilon**2*n**2 - 7*gamma*muupsilon**3*n**2 - 2*muupsilon**4*n**2) + 8*df(y1,t,3)*df(y1,t)**2*y1**7*
+betaupsilon*lamdaupsilon*n**2*x30*( - 27*beta*betaupsilon*gamma*lamdaupsilon*x30 - 45*beta*betaupsilon*
+lamdaupsilon*muupsilon*x30 + gamma**3*muupsilon*n**2 + 6*gamma**2*muupsilon**2*n**2 + 7*gamma*muupsilon**3*n**
+2 + 2*muupsilon**4*n**2) + 28*df(y1,t,3)*df(y1,t)**2*y1**6*betaupsilon*lamdaupsilon*n**2*x30**2*(18*beta*
+betaupsilon*gamma*lamdaupsilon*x30 + 30*beta*betaupsilon*lamdaupsilon*muupsilon*x30 - gamma**3*muupsilon*n**2 
+- 6*gamma**2*muupsilon**2*n**2 - 7*gamma*muupsilon**3*n**2 - 2*muupsilon**4*n**2) + 28*df(y1,t,3)*df(y1,t)**2*
+y1**5*betaupsilon*lamdaupsilon*n**2*x30**3*( - 27*beta*betaupsilon*gamma*lamdaupsilon*x30 - 45*beta*
+betaupsilon*lamdaupsilon*muupsilon*x30 + 2*gamma**3*muupsilon*n**2 + 12*gamma**2*muupsilon**2*n**2 + 14*gamma*
+muupsilon**3*n**2 + 4*muupsilon**4*n**2) + 14*df(y1,t,3)*df(y1,t)**2*y1**4*betaupsilon*lamdaupsilon*n**2*x30**
+4*(54*beta*betaupsilon*gamma*lamdaupsilon*x30 + 90*beta*betaupsilon*lamdaupsilon*muupsilon*x30 - 5*gamma**3*
+muupsilon*n**2 - 30*gamma**2*muupsilon**2*n**2 - 35*gamma*muupsilon**3*n**2 - 10*muupsilon**4*n**2) + 56*df(y1
+,t,3)*df(y1,t)**2*y1**3*betaupsilon*lamdaupsilon*n**2*x30**5*( - 9*beta*betaupsilon*gamma*lamdaupsilon*x30 - 
+15*beta*betaupsilon*lamdaupsilon*muupsilon*x30 + gamma**3*muupsilon*n**2 + 6*gamma**2*muupsilon**2*n**2 + 7*
+gamma*muupsilon**3*n**2 + 2*muupsilon**4*n**2) + 4*df(y1,t,3)*df(y1,t)**2*y1**2*betaupsilon*lamdaupsilon*n**2*
+x30**6*(54*beta*betaupsilon*gamma*lamdaupsilon*x30 + 90*beta*betaupsilon*lamdaupsilon*muupsilon*x30 - 7*gamma
+**3*muupsilon*n**2 - 42*gamma**2*muupsilon**2*n**2 - 49*gamma*muupsilon**3*n**2 - 14*muupsilon**4*n**2) + 2*df
+(y1,t,3)*df(y1,t)**2*y1*betaupsilon*lamdaupsilon*n**2*x30**7*( - 27*beta*betaupsilon*gamma*lamdaupsilon*x30 - 
+45*beta*betaupsilon*lamdaupsilon*muupsilon*x30 + 4*gamma**3*muupsilon*n**2 + 24*gamma**2*muupsilon**2*n**2 + 
+28*gamma*muupsilon**3*n**2 + 8*muupsilon**4*n**2) + df(y1,t,3)*df(y1,t)**2*betaupsilon*lamdaupsilon*n**2*x30**
+8*(6*beta*betaupsilon*gamma*lamdaupsilon*x30 + 10*beta*betaupsilon*lamdaupsilon*muupsilon*x30 - gamma**3*
+muupsilon*n**2 - 6*gamma**2*muupsilon**2*n**2 - 7*gamma*muupsilon**3*n**2 - 2*muupsilon**4*n**2) + df(y1,t,2)
+**5*y1**7*beta*n**4 + df(y1,t,2)**5*y1**6*n**4*( - 7*beta*x30 - 3*gamma*n - 6*muupsilon*n) + 3*df(y1,t,2)**5*
+y1**5*n**4*x30*(7*beta*x30 + 6*gamma*n + 12*muupsilon*n) + 5*df(y1,t,2)**5*y1**4*n**4*x30**2*( - 7*beta*x30 - 
+9*gamma*n - 18*muupsilon*n) + 5*df(y1,t,2)**5*y1**3*n**4*x30**3*(7*beta*x30 + 12*gamma*n + 24*muupsilon*n) + 3
+*df(y1,t,2)**5*y1**2*n**4*x30**4*( - 7*beta*x30 - 15*gamma*n - 30*muupsilon*n) + df(y1,t,2)**5*y1*n**4*x30**5*
+(7*beta*x30 + 18*gamma*n + 36*muupsilon*n) + df(y1,t,2)**5*n**4*x30**6*( - beta*x30 - 3*gamma*n - 6*muupsilon*
+n) + 30*df(y1,t,2)**4*df(y1,t)**3*y1**4*n**5 - 120*df(y1,t,2)**4*df(y1,t)**3*y1**3*n**5*x30 + 180*df(y1,t,2)**
+4*df(y1,t)**3*y1**2*n**5*x30**2 - 120*df(y1,t,2)**4*df(y1,t)**3*y1*n**5*x30**3 + 30*df(y1,t,2)**4*df(y1,t)**3*
+n**5*x30**4 + 9*df(y1,t,2)**4*df(y1,t)**2*y1**6*beta*n**4 + 9*df(y1,t,2)**4*df(y1,t)**2*y1**5*n**4*( - 6*beta*
+x30 - muupsilon*n) + 45*df(y1,t,2)**4*df(y1,t)**2*y1**4*n**4*x30*(3*beta*x30 + muupsilon*n) + 90*df(y1,t,2)**4
+*df(y1,t)**2*y1**3*n**4*x30**2*( - 2*beta*x30 - muupsilon*n) + 45*df(y1,t,2)**4*df(y1,t)**2*y1**2*n**4*x30**3*
+(3*beta*x30 + 2*muupsilon*n) + 9*df(y1,t,2)**4*df(y1,t)**2*y1*n**4*x30**4*( - 6*beta*x30 - 5*muupsilon*n) + 9*
+df(y1,t,2)**4*df(y1,t)**2*n**4*x30**5*(beta*x30 + muupsilon*n) + df(y1,t,2)**4*df(y1,t)*y1**7*beta*n**4*(4*
+gamma + 3*muupsilon) + df(y1,t,2)**4*df(y1,t)*y1**6*n**4*( - 28*beta*gamma*x30 - 21*beta*muupsilon*x30 - 3*
+gamma**2*n - 3*gamma*muupsilon*n + 6*muupsilon**2*n) + 3*df(y1,t,2)**4*df(y1,t)*y1**5*n**4*x30*(28*beta*gamma*
+x30 + 21*beta*muupsilon*x30 + 6*gamma**2*n + 6*gamma*muupsilon*n - 12*muupsilon**2*n) + 5*df(y1,t,2)**4*df(y1,
+t)*y1**4*n**4*x30**2*( - 28*beta*gamma*x30 - 21*beta*muupsilon*x30 - 9*gamma**2*n - 9*gamma*muupsilon*n + 18*
+muupsilon**2*n) + 5*df(y1,t,2)**4*df(y1,t)*y1**3*n**4*x30**3*(28*beta*gamma*x30 + 21*beta*muupsilon*x30 + 12*
+gamma**2*n + 12*gamma*muupsilon*n - 24*muupsilon**2*n) + 3*df(y1,t,2)**4*df(y1,t)*y1**2*n**4*x30**4*( - 28*
+beta*gamma*x30 - 21*beta*muupsilon*x30 - 15*gamma**2*n - 15*gamma*muupsilon*n + 30*muupsilon**2*n) + df(y1,t,2
+)**4*df(y1,t)*y1*n**4*x30**5*(28*beta*gamma*x30 + 21*beta*muupsilon*x30 + 18*gamma**2*n + 18*gamma*muupsilon*n
+ - 36*muupsilon**2*n) + df(y1,t,2)**4*df(y1,t)*n**4*x30**6*( - 4*beta*gamma*x30 - 3*beta*muupsilon*x30 - 3*
+gamma**2*n - 3*gamma*muupsilon*n + 6*muupsilon**2*n) + 2*df(y1,t,2)**4*y1**8*beta*betaupsilon*lamdaupsilon*n**
+3 + df(y1,t,2)**4*y1**7*n**3*( - 16*beta*betaupsilon*lamdaupsilon*x30 - 3*betaupsilon*gamma*lamdaupsilon*n - 6
+*betaupsilon*lamdaupsilon*muupsilon*n + gamma**3*n**2 + 4*gamma**2*muupsilon*n**2 + 3*gamma*muupsilon**2*n**2 
+- 2*muupsilon**3*n**2) + 7*df(y1,t,2)**4*y1**6*n**3*x30*(8*beta*betaupsilon*lamdaupsilon*x30 + 3*betaupsilon*
+gamma*lamdaupsilon*n + 6*betaupsilon*lamdaupsilon*muupsilon*n - gamma**3*n**2 - 4*gamma**2*muupsilon*n**2 - 3*
+gamma*muupsilon**2*n**2 + 2*muupsilon**3*n**2) + 7*df(y1,t,2)**4*y1**5*n**3*x30**2*( - 16*beta*betaupsilon*
+lamdaupsilon*x30 - 9*betaupsilon*gamma*lamdaupsilon*n - 18*betaupsilon*lamdaupsilon*muupsilon*n + 3*gamma**3*n
+**2 + 12*gamma**2*muupsilon*n**2 + 9*gamma*muupsilon**2*n**2 - 6*muupsilon**3*n**2) + 35*df(y1,t,2)**4*y1**4*n
+**3*x30**3*(4*beta*betaupsilon*lamdaupsilon*x30 + 3*betaupsilon*gamma*lamdaupsilon*n + 6*betaupsilon*
+lamdaupsilon*muupsilon*n - gamma**3*n**2 - 4*gamma**2*muupsilon*n**2 - 3*gamma*muupsilon**2*n**2 + 2*muupsilon
+**3*n**2) + 7*df(y1,t,2)**4*y1**3*n**3*x30**4*( - 16*beta*betaupsilon*lamdaupsilon*x30 - 15*betaupsilon*gamma*
+lamdaupsilon*n - 30*betaupsilon*lamdaupsilon*muupsilon*n + 5*gamma**3*n**2 + 20*gamma**2*muupsilon*n**2 + 15*
+gamma*muupsilon**2*n**2 - 10*muupsilon**3*n**2) + 7*df(y1,t,2)**4*y1**2*n**3*x30**5*(8*beta*betaupsilon*
+lamdaupsilon*x30 + 9*betaupsilon*gamma*lamdaupsilon*n + 18*betaupsilon*lamdaupsilon*muupsilon*n - 3*gamma**3*n
+**2 - 12*gamma**2*muupsilon*n**2 - 9*gamma*muupsilon**2*n**2 + 6*muupsilon**3*n**2) + df(y1,t,2)**4*y1*n**3*
+x30**6*( - 16*beta*betaupsilon*lamdaupsilon*x30 - 21*betaupsilon*gamma*lamdaupsilon*n - 42*betaupsilon*
+lamdaupsilon*muupsilon*n + 7*gamma**3*n**2 + 28*gamma**2*muupsilon*n**2 + 21*gamma*muupsilon**2*n**2 - 14*
+muupsilon**3*n**2) + df(y1,t,2)**4*n**3*x30**7*(2*beta*betaupsilon*lamdaupsilon*x30 + 3*betaupsilon*gamma*
+lamdaupsilon*n + 6*betaupsilon*lamdaupsilon*muupsilon*n - gamma**3*n**2 - 4*gamma**2*muupsilon*n**2 - 3*gamma*
+muupsilon**2*n**2 + 2*muupsilon**3*n**2) - 78*df(y1,t,2)**3*df(y1,t)**5*y1**3*n**5 + 234*df(y1,t,2)**3*df(y1,t
+)**5*y1**2*n**5*x30 - 234*df(y1,t,2)**3*df(y1,t)**5*y1*n**5*x30**2 + 78*df(y1,t,2)**3*df(y1,t)**5*n**5*x30**3 
+- 42*df(y1,t,2)**3*df(y1,t)**4*y1**5*beta*n**4 + 6*df(y1,t,2)**3*df(y1,t)**4*y1**4*n**4*(35*beta*x30 + 7*gamma
+*n + 8*muupsilon*n) + 12*df(y1,t,2)**3*df(y1,t)**4*y1**3*n**4*x30*( - 35*beta*x30 - 14*gamma*n - 16*muupsilon*
+n) + 12*df(y1,t,2)**3*df(y1,t)**4*y1**2*n**4*x30**2*(35*beta*x30 + 21*gamma*n + 24*muupsilon*n) + 6*df(y1,t,2)
+**3*df(y1,t)**4*y1*n**4*x30**3*( - 35*beta*x30 - 28*gamma*n - 32*muupsilon*n) + 6*df(y1,t,2)**3*df(y1,t)**4*n
+**4*x30**4*(7*beta*x30 + 7*gamma*n + 8*muupsilon*n) - 4*df(y1,t,2)**3*df(y1,t)**3*y1**7*beta**2*n**3 + 2*df(y1
+,t,2)**3*df(y1,t)**3*y1**6*beta*n**3*(14*beta*x30 + 3*gamma*n + 9*muupsilon*n) + df(y1,t,2)**3*df(y1,t)**3*y1
+**5*n**3*( - 84*beta**2*x30**2 - 36*beta*gamma*n*x30 - 108*beta*muupsilon*n*x30 + 30*betaupsilon*lamdaupsilon*
+n - 11*gamma**2*n**2 - 36*gamma*muupsilon*n**2 + 3*muupsilon**2*n**2) + 5*df(y1,t,2)**3*df(y1,t)**3*y1**4*n**3
+*x30*(28*beta**2*x30**2 + 18*beta*gamma*n*x30 + 54*beta*muupsilon*n*x30 - 30*betaupsilon*lamdaupsilon*n + 11*
+gamma**2*n**2 + 36*gamma*muupsilon*n**2 - 3*muupsilon**2*n**2) + 10*df(y1,t,2)**3*df(y1,t)**3*y1**3*n**3*x30**
+2*( - 14*beta**2*x30**2 - 12*beta*gamma*n*x30 - 36*beta*muupsilon*n*x30 + 30*betaupsilon*lamdaupsilon*n - 11*
+gamma**2*n**2 - 36*gamma*muupsilon*n**2 + 3*muupsilon**2*n**2) + 2*df(y1,t,2)**3*df(y1,t)**3*y1**2*n**3*x30**3
+*(42*beta**2*x30**2 + 45*beta*gamma*n*x30 + 135*beta*muupsilon*n*x30 - 150*betaupsilon*lamdaupsilon*n + 55*
+gamma**2*n**2 + 180*gamma*muupsilon*n**2 - 15*muupsilon**2*n**2) + df(y1,t,2)**3*df(y1,t)**3*y1*n**3*x30**4*( 
+- 28*beta**2*x30**2 - 36*beta*gamma*n*x30 - 108*beta*muupsilon*n*x30 + 150*betaupsilon*lamdaupsilon*n - 55*
+gamma**2*n**2 - 180*gamma*muupsilon*n**2 + 15*muupsilon**2*n**2) + df(y1,t,2)**3*df(y1,t)**3*n**3*x30**5*(4*
+beta**2*x30**2 + 6*beta*gamma*n*x30 + 18*beta*muupsilon*n*x30 - 30*betaupsilon*lamdaupsilon*n + 11*gamma**2*n
+**2 + 36*gamma*muupsilon*n**2 - 3*muupsilon**2*n**2) + df(y1,t,2)**3*df(y1,t)**2*y1**7*beta*n**3*(14*
+betaupsilon*lamdaupsilon - gamma**2*n + 3*muupsilon**2*n) + df(y1,t,2)**3*df(y1,t)**2*y1**6*n**3*( - 98*beta*
+betaupsilon*lamdaupsilon*x30 + 7*beta*gamma**2*n*x30 - 21*beta*muupsilon**2*n*x30 + 6*betaupsilon*gamma*
+lamdaupsilon*n + 3*betaupsilon*lamdaupsilon*muupsilon*n + 3*gamma**2*muupsilon*n**2 + 6*gamma*muupsilon**2*n**
+2 - 6*muupsilon**3*n**2) + 3*df(y1,t,2)**3*df(y1,t)**2*y1**5*n**3*x30*(98*beta*betaupsilon*lamdaupsilon*x30 - 
+7*beta*gamma**2*n*x30 + 21*beta*muupsilon**2*n*x30 - 12*betaupsilon*gamma*lamdaupsilon*n - 6*betaupsilon*
+lamdaupsilon*muupsilon*n - 6*gamma**2*muupsilon*n**2 - 12*gamma*muupsilon**2*n**2 + 12*muupsilon**3*n**2) + 5*
+df(y1,t,2)**3*df(y1,t)**2*y1**4*n**3*x30**2*( - 98*beta*betaupsilon*lamdaupsilon*x30 + 7*beta*gamma**2*n*x30 -
+ 21*beta*muupsilon**2*n*x30 + 18*betaupsilon*gamma*lamdaupsilon*n + 9*betaupsilon*lamdaupsilon*muupsilon*n + 9
+*gamma**2*muupsilon*n**2 + 18*gamma*muupsilon**2*n**2 - 18*muupsilon**3*n**2) + 5*df(y1,t,2)**3*df(y1,t)**2*y1
+**3*n**3*x30**3*(98*beta*betaupsilon*lamdaupsilon*x30 - 7*beta*gamma**2*n*x30 + 21*beta*muupsilon**2*n*x30 - 
+24*betaupsilon*gamma*lamdaupsilon*n - 12*betaupsilon*lamdaupsilon*muupsilon*n - 12*gamma**2*muupsilon*n**2 - 
+24*gamma*muupsilon**2*n**2 + 24*muupsilon**3*n**2) + 3*df(y1,t,2)**3*df(y1,t)**2*y1**2*n**3*x30**4*( - 98*beta
+*betaupsilon*lamdaupsilon*x30 + 7*beta*gamma**2*n*x30 - 21*beta*muupsilon**2*n*x30 + 30*betaupsilon*gamma*
+lamdaupsilon*n + 15*betaupsilon*lamdaupsilon*muupsilon*n + 15*gamma**2*muupsilon*n**2 + 30*gamma*muupsilon**2*
+n**2 - 30*muupsilon**3*n**2) + df(y1,t,2)**3*df(y1,t)**2*y1*n**3*x30**5*(98*beta*betaupsilon*lamdaupsilon*x30 
+- 7*beta*gamma**2*n*x30 + 21*beta*muupsilon**2*n*x30 - 36*betaupsilon*gamma*lamdaupsilon*n - 18*betaupsilon*
+lamdaupsilon*muupsilon*n - 18*gamma**2*muupsilon*n**2 - 36*gamma*muupsilon**2*n**2 + 36*muupsilon**3*n**2) + 
+df(y1,t,2)**3*df(y1,t)**2*n**3*x30**6*( - 14*beta*betaupsilon*lamdaupsilon*x30 + beta*gamma**2*n*x30 - 3*beta*
+muupsilon**2*n*x30 + 6*betaupsilon*gamma*lamdaupsilon*n + 3*betaupsilon*lamdaupsilon*muupsilon*n + 3*gamma**2*
+muupsilon*n**2 + 6*gamma*muupsilon**2*n**2 - 6*muupsilon**3*n**2) + 2*df(y1,t,2)**3*df(y1,t)*y1**8*beta*
+betaupsilon*lamdaupsilon*n**3*(4*gamma + 3*muupsilon) + df(y1,t,2)**3*df(y1,t)*y1**7*n**3*( - 64*beta*
+betaupsilon*gamma*lamdaupsilon*x30 - 48*beta*betaupsilon*lamdaupsilon*muupsilon*x30 - 6*betaupsilon*gamma**2*
+lamdaupsilon*n - 15*betaupsilon*gamma*lamdaupsilon*muupsilon*n - 6*betaupsilon*lamdaupsilon*muupsilon**2*n + 
+gamma**3*muupsilon*n**2 + 3*gamma**2*muupsilon**2*n**2 + 3*gamma*muupsilon**3*n**2 + 2*muupsilon**4*n**2) + 7*
+df(y1,t,2)**3*df(y1,t)*y1**6*n**3*x30*(32*beta*betaupsilon*gamma*lamdaupsilon*x30 + 24*beta*betaupsilon*
+lamdaupsilon*muupsilon*x30 + 6*betaupsilon*gamma**2*lamdaupsilon*n + 15*betaupsilon*gamma*lamdaupsilon*
+muupsilon*n + 6*betaupsilon*lamdaupsilon*muupsilon**2*n - gamma**3*muupsilon*n**2 - 3*gamma**2*muupsilon**2*n
+**2 - 3*gamma*muupsilon**3*n**2 - 2*muupsilon**4*n**2) + 7*df(y1,t,2)**3*df(y1,t)*y1**5*n**3*x30**2*( - 64*
+beta*betaupsilon*gamma*lamdaupsilon*x30 - 48*beta*betaupsilon*lamdaupsilon*muupsilon*x30 - 18*betaupsilon*
+gamma**2*lamdaupsilon*n - 45*betaupsilon*gamma*lamdaupsilon*muupsilon*n - 18*betaupsilon*lamdaupsilon*
+muupsilon**2*n + 3*gamma**3*muupsilon*n**2 + 9*gamma**2*muupsilon**2*n**2 + 9*gamma*muupsilon**3*n**2 + 6*
+muupsilon**4*n**2) + 35*df(y1,t,2)**3*df(y1,t)*y1**4*n**3*x30**3*(16*beta*betaupsilon*gamma*lamdaupsilon*x30 +
+ 12*beta*betaupsilon*lamdaupsilon*muupsilon*x30 + 6*betaupsilon*gamma**2*lamdaupsilon*n + 15*betaupsilon*gamma
+*lamdaupsilon*muupsilon*n + 6*betaupsilon*lamdaupsilon*muupsilon**2*n - gamma**3*muupsilon*n**2 - 3*gamma**2*
+muupsilon**2*n**2 - 3*gamma*muupsilon**3*n**2 - 2*muupsilon**4*n**2) + 7*df(y1,t,2)**3*df(y1,t)*y1**3*n**3*x30
+**4*( - 64*beta*betaupsilon*gamma*lamdaupsilon*x30 - 48*beta*betaupsilon*lamdaupsilon*muupsilon*x30 - 30*
+betaupsilon*gamma**2*lamdaupsilon*n - 75*betaupsilon*gamma*lamdaupsilon*muupsilon*n - 30*betaupsilon*
+lamdaupsilon*muupsilon**2*n + 5*gamma**3*muupsilon*n**2 + 15*gamma**2*muupsilon**2*n**2 + 15*gamma*muupsilon**
+3*n**2 + 10*muupsilon**4*n**2) + 7*df(y1,t,2)**3*df(y1,t)*y1**2*n**3*x30**5*(32*beta*betaupsilon*gamma*
+lamdaupsilon*x30 + 24*beta*betaupsilon*lamdaupsilon*muupsilon*x30 + 18*betaupsilon*gamma**2*lamdaupsilon*n + 
+45*betaupsilon*gamma*lamdaupsilon*muupsilon*n + 18*betaupsilon*lamdaupsilon*muupsilon**2*n - 3*gamma**3*
+muupsilon*n**2 - 9*gamma**2*muupsilon**2*n**2 - 9*gamma*muupsilon**3*n**2 - 6*muupsilon**4*n**2) + df(y1,t,2)
+**3*df(y1,t)*y1*n**3*x30**6*( - 64*beta*betaupsilon*gamma*lamdaupsilon*x30 - 48*beta*betaupsilon*lamdaupsilon*
+muupsilon*x30 - 42*betaupsilon*gamma**2*lamdaupsilon*n - 105*betaupsilon*gamma*lamdaupsilon*muupsilon*n - 42*
+betaupsilon*lamdaupsilon*muupsilon**2*n + 7*gamma**3*muupsilon*n**2 + 21*gamma**2*muupsilon**2*n**2 + 21*gamma
+*muupsilon**3*n**2 + 14*muupsilon**4*n**2) + df(y1,t,2)**3*df(y1,t)*n**3*x30**7*(8*beta*betaupsilon*gamma*
+lamdaupsilon*x30 + 6*beta*betaupsilon*lamdaupsilon*muupsilon*x30 + 6*betaupsilon*gamma**2*lamdaupsilon*n + 15*
+betaupsilon*gamma*lamdaupsilon*muupsilon*n + 6*betaupsilon*lamdaupsilon*muupsilon**2*n - gamma**3*muupsilon*n
+**2 - 3*gamma**2*muupsilon**2*n**2 - 3*gamma*muupsilon**3*n**2 - 2*muupsilon**4*n**2) + df(y1,t,2)**3*y1**9*
+beta*betaupsilon**2*lamdaupsilon**2*n**2 + df(y1,t,2)**3*y1**8*betaupsilon*lamdaupsilon*n**2*( - 9*beta*
+betaupsilon*lamdaupsilon*x30 + gamma**3*n**2 + 5*gamma**2*muupsilon*n**2 + 7*gamma*muupsilon**2*n**2 + 2*
+muupsilon**3*n**2) + 4*df(y1,t,2)**3*y1**7*betaupsilon*lamdaupsilon*n**2*x30*(9*beta*betaupsilon*lamdaupsilon*
+x30 - 2*gamma**3*n**2 - 10*gamma**2*muupsilon*n**2 - 14*gamma*muupsilon**2*n**2 - 4*muupsilon**3*n**2) + 28*df
+(y1,t,2)**3*y1**6*betaupsilon*lamdaupsilon*n**2*x30**2*( - 3*beta*betaupsilon*lamdaupsilon*x30 + gamma**3*n**2
+ + 5*gamma**2*muupsilon*n**2 + 7*gamma*muupsilon**2*n**2 + 2*muupsilon**3*n**2) + 14*df(y1,t,2)**3*y1**5*
+betaupsilon*lamdaupsilon*n**2*x30**3*(9*beta*betaupsilon*lamdaupsilon*x30 - 4*gamma**3*n**2 - 20*gamma**2*
+muupsilon*n**2 - 28*gamma*muupsilon**2*n**2 - 8*muupsilon**3*n**2) + 14*df(y1,t,2)**3*y1**4*betaupsilon*
+lamdaupsilon*n**2*x30**4*( - 9*beta*betaupsilon*lamdaupsilon*x30 + 5*gamma**3*n**2 + 25*gamma**2*muupsilon*n**
+2 + 35*gamma*muupsilon**2*n**2 + 10*muupsilon**3*n**2) + 28*df(y1,t,2)**3*y1**3*betaupsilon*lamdaupsilon*n**2*
+x30**5*(3*beta*betaupsilon*lamdaupsilon*x30 - 2*gamma**3*n**2 - 10*gamma**2*muupsilon*n**2 - 14*gamma*
+muupsilon**2*n**2 - 4*muupsilon**3*n**2) + 4*df(y1,t,2)**3*y1**2*betaupsilon*lamdaupsilon*n**2*x30**6*( - 9*
+beta*betaupsilon*lamdaupsilon*x30 + 7*gamma**3*n**2 + 35*gamma**2*muupsilon*n**2 + 49*gamma*muupsilon**2*n**2 
++ 14*muupsilon**3*n**2) + df(y1,t,2)**3*y1*betaupsilon*lamdaupsilon*n**2*x30**7*(9*beta*betaupsilon*
+lamdaupsilon*x30 - 8*gamma**3*n**2 - 40*gamma**2*muupsilon*n**2 - 56*gamma*muupsilon**2*n**2 - 16*muupsilon**3
+*n**2) + df(y1,t,2)**3*betaupsilon*lamdaupsilon*n**2*x30**8*( - beta*betaupsilon*lamdaupsilon*x30 + gamma**3*n
+**2 + 5*gamma**2*muupsilon*n**2 + 7*gamma*muupsilon**2*n**2 + 2*muupsilon**3*n**2) + 96*df(y1,t,2)**2*df(y1,t)
+**7*y1**2*n**5 - 192*df(y1,t,2)**2*df(y1,t)**7*y1*n**5*x30 + 96*df(y1,t,2)**2*df(y1,t)**7*n**5*x30**2 + 68*df(
+y1,t,2)**2*df(y1,t)**6*y1**4*beta*n**4 + 2*df(y1,t,2)**2*df(y1,t)**6*y1**3*n**4*( - 136*beta*x30 - 45*gamma*n 
+- 72*muupsilon*n) + 6*df(y1,t,2)**2*df(y1,t)**6*y1**2*n**4*x30*(68*beta*x30 + 45*gamma*n + 72*muupsilon*n) + 2
+*df(y1,t,2)**2*df(y1,t)**6*y1*n**4*x30**2*( - 136*beta*x30 - 135*gamma*n - 216*muupsilon*n) + 2*df(y1,t,2)**2*
+df(y1,t)**6*n**4*x30**3*(34*beta*x30 + 45*gamma*n + 72*muupsilon*n) + 12*df(y1,t,2)**2*df(y1,t)**5*y1**6*beta
+**2*n**3 + 18*df(y1,t,2)**2*df(y1,t)**5*y1**5*beta*n**3*( - 4*beta*x30 - 2*gamma*n - 5*muupsilon*n) + df(y1,t,
+2)**2*df(y1,t)**5*y1**4*n**3*(180*beta**2*x30**2 + 180*beta*gamma*n*x30 + 450*beta*muupsilon*n*x30 - 138*
+betaupsilon*lamdaupsilon*n + 40*gamma**2*n**2 + 159*gamma*muupsilon*n**2 + 75*muupsilon**2*n**2) + 4*df(y1,t,2
+)**2*df(y1,t)**5*y1**3*n**3*x30*( - 60*beta**2*x30**2 - 90*beta*gamma*n*x30 - 225*beta*muupsilon*n*x30 + 138*
+betaupsilon*lamdaupsilon*n - 40*gamma**2*n**2 - 159*gamma*muupsilon*n**2 - 75*muupsilon**2*n**2) + 6*df(y1,t,2
+)**2*df(y1,t)**5*y1**2*n**3*x30**2*(30*beta**2*x30**2 + 60*beta*gamma*n*x30 + 150*beta*muupsilon*n*x30 - 138*
+betaupsilon*lamdaupsilon*n + 40*gamma**2*n**2 + 159*gamma*muupsilon*n**2 + 75*muupsilon**2*n**2) + 2*df(y1,t,2
+)**2*df(y1,t)**5*y1*n**3*x30**3*( - 36*beta**2*x30**2 - 90*beta*gamma*n*x30 - 225*beta*muupsilon*n*x30 + 276*
+betaupsilon*lamdaupsilon*n - 80*gamma**2*n**2 - 318*gamma*muupsilon*n**2 - 150*muupsilon**2*n**2) + df(y1,t,2)
+**2*df(y1,t)**5*n**3*x30**4*(12*beta**2*x30**2 + 36*beta*gamma*n*x30 + 90*beta*muupsilon*n*x30 - 138*
+betaupsilon*lamdaupsilon*n + 40*gamma**2*n**2 + 159*gamma*muupsilon*n**2 + 75*muupsilon**2*n**2) - 12*df(y1,t,
+2)**2*df(y1,t)**4*y1**7*beta**2*muupsilon*n**3 + 3*df(y1,t,2)**2*df(y1,t)**4*y1**6*beta*n**3*(28*beta*
+muupsilon*x30 - 30*betaupsilon*lamdaupsilon + gamma**2*n + 16*gamma*muupsilon*n + 9*muupsilon**2*n) + df(y1,t,
+2)**2*df(y1,t)**4*y1**5*n**3*( - 252*beta**2*muupsilon*x30**2 + 540*beta*betaupsilon*lamdaupsilon*x30 - 18*
+beta*gamma**2*n*x30 - 288*beta*gamma*muupsilon*n*x30 - 162*beta*muupsilon**2*n*x30 + 84*betaupsilon*gamma*
+lamdaupsilon*n + 150*betaupsilon*lamdaupsilon*muupsilon*n - 5*gamma**3*n**2 - 63*gamma**2*muupsilon*n**2 - 114
+*gamma*muupsilon**2*n**2 - 19*muupsilon**3*n**2) + 5*df(y1,t,2)**2*df(y1,t)**4*y1**4*n**3*x30*(84*beta**2*
+muupsilon*x30**2 - 270*beta*betaupsilon*lamdaupsilon*x30 + 9*beta*gamma**2*n*x30 + 144*beta*gamma*muupsilon*n*
+x30 + 81*beta*muupsilon**2*n*x30 - 84*betaupsilon*gamma*lamdaupsilon*n - 150*betaupsilon*lamdaupsilon*
+muupsilon*n + 5*gamma**3*n**2 + 63*gamma**2*muupsilon*n**2 + 114*gamma*muupsilon**2*n**2 + 19*muupsilon**3*n**
+2) + 10*df(y1,t,2)**2*df(y1,t)**4*y1**3*n**3*x30**2*( - 42*beta**2*muupsilon*x30**2 + 180*beta*betaupsilon*
+lamdaupsilon*x30 - 6*beta*gamma**2*n*x30 - 96*beta*gamma*muupsilon*n*x30 - 54*beta*muupsilon**2*n*x30 + 84*
+betaupsilon*gamma*lamdaupsilon*n + 150*betaupsilon*lamdaupsilon*muupsilon*n - 5*gamma**3*n**2 - 63*gamma**2*
+muupsilon*n**2 - 114*gamma*muupsilon**2*n**2 - 19*muupsilon**3*n**2) + df(y1,t,2)**2*df(y1,t)**4*y1**2*n**3*
+x30**3*(252*beta**2*muupsilon*x30**2 - 1350*beta*betaupsilon*lamdaupsilon*x30 + 45*beta*gamma**2*n*x30 + 720*
+beta*gamma*muupsilon*n*x30 + 405*beta*muupsilon**2*n*x30 - 840*betaupsilon*gamma*lamdaupsilon*n - 1500*
+betaupsilon*lamdaupsilon*muupsilon*n + 50*gamma**3*n**2 + 630*gamma**2*muupsilon*n**2 + 1140*gamma*muupsilon**
+2*n**2 + 190*muupsilon**3*n**2) + df(y1,t,2)**2*df(y1,t)**4*y1*n**3*x30**4*( - 84*beta**2*muupsilon*x30**2 + 
+540*beta*betaupsilon*lamdaupsilon*x30 - 18*beta*gamma**2*n*x30 - 288*beta*gamma*muupsilon*n*x30 - 162*beta*
+muupsilon**2*n*x30 + 420*betaupsilon*gamma*lamdaupsilon*n + 750*betaupsilon*lamdaupsilon*muupsilon*n - 25*
+gamma**3*n**2 - 315*gamma**2*muupsilon*n**2 - 570*gamma*muupsilon**2*n**2 - 95*muupsilon**3*n**2) + df(y1,t,2)
+**2*df(y1,t)**4*n**3*x30**5*(12*beta**2*muupsilon*x30**2 - 90*beta*betaupsilon*lamdaupsilon*x30 + 3*beta*gamma
+**2*n*x30 + 48*beta*gamma*muupsilon*n*x30 + 27*beta*muupsilon**2*n*x30 - 84*betaupsilon*gamma*lamdaupsilon*n -
+ 150*betaupsilon*lamdaupsilon*muupsilon*n + 5*gamma**3*n**2 + 63*gamma**2*muupsilon*n**2 + 114*gamma*muupsilon
+**2*n**2 + 19*muupsilon**3*n**2) - 12*df(y1,t,2)**2*df(y1,t)**3*y1**8*beta**2*betaupsilon*lamdaupsilon*n**2 + 
+df(y1,t,2)**2*df(y1,t)**3*y1**7*beta*n**2*(96*beta*betaupsilon*lamdaupsilon*x30 + 20*betaupsilon*gamma*
+lamdaupsilon*n + 46*betaupsilon*lamdaupsilon*muupsilon*n - 3*gamma**2*muupsilon*n**2 - 18*gamma*muupsilon**2*n
+**2 - 3*muupsilon**3*n**2) + df(y1,t,2)**2*df(y1,t)**3*y1**6*n**2*( - 336*beta**2*betaupsilon*lamdaupsilon*x30
+**2 - 140*beta*betaupsilon*gamma*lamdaupsilon*n*x30 - 322*beta*betaupsilon*lamdaupsilon*muupsilon*n*x30 + 21*
+beta*gamma**2*muupsilon*n**2*x30 + 126*beta*gamma*muupsilon**2*n**2*x30 + 21*beta*muupsilon**3*n**2*x30 - 18*
+betaupsilon*gamma**2*lamdaupsilon*n**2 - 90*betaupsilon*gamma*lamdaupsilon*muupsilon*n**2 - 77*betaupsilon*
+lamdaupsilon*muupsilon**2*n**2 + 6*gamma**3*muupsilon*n**3 + 34*gamma**2*muupsilon**2*n**3 + 37*gamma*
+muupsilon**3*n**3 - muupsilon**4*n**3) + 3*df(y1,t,2)**2*df(y1,t)**3*y1**5*n**2*x30*(224*beta**2*betaupsilon*
+lamdaupsilon*x30**2 + 140*beta*betaupsilon*gamma*lamdaupsilon*n*x30 + 322*beta*betaupsilon*lamdaupsilon*
+muupsilon*n*x30 - 21*beta*gamma**2*muupsilon*n**2*x30 - 126*beta*gamma*muupsilon**2*n**2*x30 - 21*beta*
+muupsilon**3*n**2*x30 + 36*betaupsilon*gamma**2*lamdaupsilon*n**2 + 180*betaupsilon*gamma*lamdaupsilon*
+muupsilon*n**2 + 154*betaupsilon*lamdaupsilon*muupsilon**2*n**2 - 12*gamma**3*muupsilon*n**3 - 68*gamma**2*
+muupsilon**2*n**3 - 74*gamma*muupsilon**3*n**3 + 2*muupsilon**4*n**3) + 5*df(y1,t,2)**2*df(y1,t)**3*y1**4*n**2
+*x30**2*( - 168*beta**2*betaupsilon*lamdaupsilon*x30**2 - 140*beta*betaupsilon*gamma*lamdaupsilon*n*x30 - 322*
+beta*betaupsilon*lamdaupsilon*muupsilon*n*x30 + 21*beta*gamma**2*muupsilon*n**2*x30 + 126*beta*gamma*muupsilon
+**2*n**2*x30 + 21*beta*muupsilon**3*n**2*x30 - 54*betaupsilon*gamma**2*lamdaupsilon*n**2 - 270*betaupsilon*
+gamma*lamdaupsilon*muupsilon*n**2 - 231*betaupsilon*lamdaupsilon*muupsilon**2*n**2 + 18*gamma**3*muupsilon*n**
+3 + 102*gamma**2*muupsilon**2*n**3 + 111*gamma*muupsilon**3*n**3 - 3*muupsilon**4*n**3) + df(y1,t,2)**2*df(y1,
+t)**3*y1**3*n**2*x30**3*(672*beta**2*betaupsilon*lamdaupsilon*x30**2 + 700*beta*betaupsilon*gamma*lamdaupsilon
+*n*x30 + 1610*beta*betaupsilon*lamdaupsilon*muupsilon*n*x30 - 105*beta*gamma**2*muupsilon*n**2*x30 - 630*beta*
+gamma*muupsilon**2*n**2*x30 - 105*beta*muupsilon**3*n**2*x30 + 360*betaupsilon*gamma**2*lamdaupsilon*n**2 + 
+1800*betaupsilon*gamma*lamdaupsilon*muupsilon*n**2 + 1540*betaupsilon*lamdaupsilon*muupsilon**2*n**2 - 120*
+gamma**3*muupsilon*n**3 - 680*gamma**2*muupsilon**2*n**3 - 740*gamma*muupsilon**3*n**3 + 20*muupsilon**4*n**3)
+ + 3*df(y1,t,2)**2*df(y1,t)**3*y1**2*n**2*x30**4*( - 112*beta**2*betaupsilon*lamdaupsilon*x30**2 - 140*beta*
+betaupsilon*gamma*lamdaupsilon*n*x30 - 322*beta*betaupsilon*lamdaupsilon*muupsilon*n*x30 + 21*beta*gamma**2*
+muupsilon*n**2*x30 + 126*beta*gamma*muupsilon**2*n**2*x30 + 21*beta*muupsilon**3*n**2*x30 - 90*betaupsilon*
+gamma**2*lamdaupsilon*n**2 - 450*betaupsilon*gamma*lamdaupsilon*muupsilon*n**2 - 385*betaupsilon*lamdaupsilon*
+muupsilon**2*n**2 + 30*gamma**3*muupsilon*n**3 + 170*gamma**2*muupsilon**2*n**3 + 185*gamma*muupsilon**3*n**3 
+- 5*muupsilon**4*n**3) + df(y1,t,2)**2*df(y1,t)**3*y1*n**2*x30**5*(96*beta**2*betaupsilon*lamdaupsilon*x30**2 
++ 140*beta*betaupsilon*gamma*lamdaupsilon*n*x30 + 322*beta*betaupsilon*lamdaupsilon*muupsilon*n*x30 - 21*beta*
+gamma**2*muupsilon*n**2*x30 - 126*beta*gamma*muupsilon**2*n**2*x30 - 21*beta*muupsilon**3*n**2*x30 + 108*
+betaupsilon*gamma**2*lamdaupsilon*n**2 + 540*betaupsilon*gamma*lamdaupsilon*muupsilon*n**2 + 462*betaupsilon*
+lamdaupsilon*muupsilon**2*n**2 - 36*gamma**3*muupsilon*n**3 - 204*gamma**2*muupsilon**2*n**3 - 222*gamma*
+muupsilon**3*n**3 + 6*muupsilon**4*n**3) + df(y1,t,2)**2*df(y1,t)**3*n**2*x30**6*( - 12*beta**2*betaupsilon*
+lamdaupsilon*x30**2 - 20*beta*betaupsilon*gamma*lamdaupsilon*n*x30 - 46*beta*betaupsilon*lamdaupsilon*
+muupsilon*n*x30 + 3*beta*gamma**2*muupsilon*n**2*x30 + 18*beta*gamma*muupsilon**2*n**2*x30 + 3*beta*muupsilon
+**3*n**2*x30 - 18*betaupsilon*gamma**2*lamdaupsilon*n**2 - 90*betaupsilon*gamma*lamdaupsilon*muupsilon*n**2 - 
+77*betaupsilon*lamdaupsilon*muupsilon**2*n**2 + 6*gamma**3*muupsilon*n**3 + 34*gamma**2*muupsilon**2*n**3 + 37
+*gamma*muupsilon**3*n**3 - muupsilon**4*n**3) + df(y1,t,2)**2*df(y1,t)**2*y1**8*beta*betaupsilon*lamdaupsilon*
+n**2*(5*betaupsilon*lamdaupsilon - 2*gamma**2*n - 8*gamma*muupsilon*n - 4*muupsilon**2*n) + df(y1,t,2)**2*df(
+y1,t)**2*y1**7*n**2*( - 40*beta*betaupsilon**2*lamdaupsilon**2*x30 + 16*beta*betaupsilon*gamma**2*lamdaupsilon
+*n*x30 + 64*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n*x30 + 32*beta*betaupsilon*lamdaupsilon*muupsilon**
+2*n*x30 + betaupsilon*gamma**3*lamdaupsilon*n**2 + 14*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2 + 37*
+betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 + 20*betaupsilon*lamdaupsilon*muupsilon**3*n**2 - 2*gamma**3*
+muupsilon**2*n**3 - 7*gamma**2*muupsilon**3*n**3 - 5*gamma*muupsilon**4*n**3 + muupsilon**5*n**3) + 7*df(y1,t,
+2)**2*df(y1,t)**2*y1**6*n**2*x30*(20*beta*betaupsilon**2*lamdaupsilon**2*x30 - 8*beta*betaupsilon*gamma**2*
+lamdaupsilon*n*x30 - 32*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n*x30 - 16*beta*betaupsilon*lamdaupsilon
+*muupsilon**2*n*x30 - betaupsilon*gamma**3*lamdaupsilon*n**2 - 14*betaupsilon*gamma**2*lamdaupsilon*muupsilon*
+n**2 - 37*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 - 20*betaupsilon*lamdaupsilon*muupsilon**3*n**2 + 2
+*gamma**3*muupsilon**2*n**3 + 7*gamma**2*muupsilon**3*n**3 + 5*gamma*muupsilon**4*n**3 - muupsilon**5*n**3) + 
+7*df(y1,t,2)**2*df(y1,t)**2*y1**5*n**2*x30**2*( - 40*beta*betaupsilon**2*lamdaupsilon**2*x30 + 16*beta*
+betaupsilon*gamma**2*lamdaupsilon*n*x30 + 64*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n*x30 + 32*beta*
+betaupsilon*lamdaupsilon*muupsilon**2*n*x30 + 3*betaupsilon*gamma**3*lamdaupsilon*n**2 + 42*betaupsilon*gamma
+**2*lamdaupsilon*muupsilon*n**2 + 111*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 + 60*betaupsilon*
+lamdaupsilon*muupsilon**3*n**2 - 6*gamma**3*muupsilon**2*n**3 - 21*gamma**2*muupsilon**3*n**3 - 15*gamma*
+muupsilon**4*n**3 + 3*muupsilon**5*n**3) + 35*df(y1,t,2)**2*df(y1,t)**2*y1**4*n**2*x30**3*(10*beta*betaupsilon
+**2*lamdaupsilon**2*x30 - 4*beta*betaupsilon*gamma**2*lamdaupsilon*n*x30 - 16*beta*betaupsilon*gamma*
+lamdaupsilon*muupsilon*n*x30 - 8*beta*betaupsilon*lamdaupsilon*muupsilon**2*n*x30 - betaupsilon*gamma**3*
+lamdaupsilon*n**2 - 14*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2 - 37*betaupsilon*gamma*lamdaupsilon*
+muupsilon**2*n**2 - 20*betaupsilon*lamdaupsilon*muupsilon**3*n**2 + 2*gamma**3*muupsilon**2*n**3 + 7*gamma**2*
+muupsilon**3*n**3 + 5*gamma*muupsilon**4*n**3 - muupsilon**5*n**3) + 7*df(y1,t,2)**2*df(y1,t)**2*y1**3*n**2*
+x30**4*( - 40*beta*betaupsilon**2*lamdaupsilon**2*x30 + 16*beta*betaupsilon*gamma**2*lamdaupsilon*n*x30 + 64*
+beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n*x30 + 32*beta*betaupsilon*lamdaupsilon*muupsilon**2*n*x30 + 5*
+betaupsilon*gamma**3*lamdaupsilon*n**2 + 70*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2 + 185*betaupsilon
+*gamma*lamdaupsilon*muupsilon**2*n**2 + 100*betaupsilon*lamdaupsilon*muupsilon**3*n**2 - 10*gamma**3*muupsilon
+**2*n**3 - 35*gamma**2*muupsilon**3*n**3 - 25*gamma*muupsilon**4*n**3 + 5*muupsilon**5*n**3) + 7*df(y1,t,2)**2
+*df(y1,t)**2*y1**2*n**2*x30**5*(20*beta*betaupsilon**2*lamdaupsilon**2*x30 - 8*beta*betaupsilon*gamma**2*
+lamdaupsilon*n*x30 - 32*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n*x30 - 16*beta*betaupsilon*lamdaupsilon
+*muupsilon**2*n*x30 - 3*betaupsilon*gamma**3*lamdaupsilon*n**2 - 42*betaupsilon*gamma**2*lamdaupsilon*
+muupsilon*n**2 - 111*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 - 60*betaupsilon*lamdaupsilon*muupsilon
+**3*n**2 + 6*gamma**3*muupsilon**2*n**3 + 21*gamma**2*muupsilon**3*n**3 + 15*gamma*muupsilon**4*n**3 - 3*
+muupsilon**5*n**3) + df(y1,t,2)**2*df(y1,t)**2*y1*n**2*x30**6*( - 40*beta*betaupsilon**2*lamdaupsilon**2*x30 +
+ 16*beta*betaupsilon*gamma**2*lamdaupsilon*n*x30 + 64*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n*x30 + 32
+*beta*betaupsilon*lamdaupsilon*muupsilon**2*n*x30 + 7*betaupsilon*gamma**3*lamdaupsilon*n**2 + 98*betaupsilon*
+gamma**2*lamdaupsilon*muupsilon*n**2 + 259*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 + 140*betaupsilon*
+lamdaupsilon*muupsilon**3*n**2 - 14*gamma**3*muupsilon**2*n**3 - 49*gamma**2*muupsilon**3*n**3 - 35*gamma*
+muupsilon**4*n**3 + 7*muupsilon**5*n**3) + df(y1,t,2)**2*df(y1,t)**2*n**2*x30**7*(5*beta*betaupsilon**2*
+lamdaupsilon**2*x30 - 2*beta*betaupsilon*gamma**2*lamdaupsilon*n*x30 - 8*beta*betaupsilon*gamma*lamdaupsilon*
+muupsilon*n*x30 - 4*beta*betaupsilon*lamdaupsilon*muupsilon**2*n*x30 - betaupsilon*gamma**3*lamdaupsilon*n**2 
+- 14*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2 - 37*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 - 
+20*betaupsilon*lamdaupsilon*muupsilon**3*n**2 + 2*gamma**3*muupsilon**2*n**3 + 7*gamma**2*muupsilon**3*n**3 + 
+5*gamma*muupsilon**4*n**3 - muupsilon**5*n**3) + df(y1,t,2)**2*df(y1,t)*y1**9*beta*betaupsilon**2*lamdaupsilon
+**2*n**2*(4*gamma + 3*muupsilon) + df(y1,t,2)**2*df(y1,t)*y1**8*betaupsilon*lamdaupsilon*n**2*( - 36*beta*
+betaupsilon*gamma*lamdaupsilon*x30 - 27*beta*betaupsilon*lamdaupsilon*muupsilon*x30 - 2*gamma**2*muupsilon**2*
+n**2 - 5*gamma*muupsilon**3*n**2 - 2*muupsilon**4*n**2) + 4*df(y1,t,2)**2*df(y1,t)*y1**7*betaupsilon*
+lamdaupsilon*n**2*x30*(36*beta*betaupsilon*gamma*lamdaupsilon*x30 + 27*beta*betaupsilon*lamdaupsilon*muupsilon
+*x30 + 4*gamma**2*muupsilon**2*n**2 + 10*gamma*muupsilon**3*n**2 + 4*muupsilon**4*n**2) + 28*df(y1,t,2)**2*df(
+y1,t)*y1**6*betaupsilon*lamdaupsilon*n**2*x30**2*( - 12*beta*betaupsilon*gamma*lamdaupsilon*x30 - 9*beta*
+betaupsilon*lamdaupsilon*muupsilon*x30 - 2*gamma**2*muupsilon**2*n**2 - 5*gamma*muupsilon**3*n**2 - 2*
+muupsilon**4*n**2) + 14*df(y1,t,2)**2*df(y1,t)*y1**5*betaupsilon*lamdaupsilon*n**2*x30**3*(36*beta*betaupsilon
+*gamma*lamdaupsilon*x30 + 27*beta*betaupsilon*lamdaupsilon*muupsilon*x30 + 8*gamma**2*muupsilon**2*n**2 + 20*
+gamma*muupsilon**3*n**2 + 8*muupsilon**4*n**2) + 14*df(y1,t,2)**2*df(y1,t)*y1**4*betaupsilon*lamdaupsilon*n**2
+*x30**4*( - 36*beta*betaupsilon*gamma*lamdaupsilon*x30 - 27*beta*betaupsilon*lamdaupsilon*muupsilon*x30 - 10*
+gamma**2*muupsilon**2*n**2 - 25*gamma*muupsilon**3*n**2 - 10*muupsilon**4*n**2) + 28*df(y1,t,2)**2*df(y1,t)*y1
+**3*betaupsilon*lamdaupsilon*n**2*x30**5*(12*beta*betaupsilon*gamma*lamdaupsilon*x30 + 9*beta*betaupsilon*
+lamdaupsilon*muupsilon*x30 + 4*gamma**2*muupsilon**2*n**2 + 10*gamma*muupsilon**3*n**2 + 4*muupsilon**4*n**2) 
++ 4*df(y1,t,2)**2*df(y1,t)*y1**2*betaupsilon*lamdaupsilon*n**2*x30**6*( - 36*beta*betaupsilon*gamma*
+lamdaupsilon*x30 - 27*beta*betaupsilon*lamdaupsilon*muupsilon*x30 - 14*gamma**2*muupsilon**2*n**2 - 35*gamma*
+muupsilon**3*n**2 - 14*muupsilon**4*n**2) + df(y1,t,2)**2*df(y1,t)*y1*betaupsilon*lamdaupsilon*n**2*x30**7*(36
+*beta*betaupsilon*gamma*lamdaupsilon*x30 + 27*beta*betaupsilon*lamdaupsilon*muupsilon*x30 + 16*gamma**2*
+muupsilon**2*n**2 + 40*gamma*muupsilon**3*n**2 + 16*muupsilon**4*n**2) + df(y1,t,2)**2*df(y1,t)*betaupsilon*
+lamdaupsilon*n**2*x30**8*( - 4*beta*betaupsilon*gamma*lamdaupsilon*x30 - 3*beta*betaupsilon*lamdaupsilon*
+muupsilon*x30 - 2*gamma**2*muupsilon**2*n**2 - 5*gamma*muupsilon**3*n**2 - 2*muupsilon**4*n**2) - 56*df(y1,t,2
+)*df(y1,t)**9*y1*n**5 + 56*df(y1,t,2)*df(y1,t)**9*n**5*x30 - 48*df(y1,t,2)*df(y1,t)**8*y1**3*beta*n**4 + 6*df(
+y1,t,2)*df(y1,t)**8*y1**2*n**4*(24*beta*x30 + 11*gamma*n + 22*muupsilon*n) + 12*df(y1,t,2)*df(y1,t)**8*y1*n**4
+*x30*( - 12*beta*x30 - 11*gamma*n - 22*muupsilon*n) + 6*df(y1,t,2)*df(y1,t)**8*n**4*x30**2*(8*beta*x30 + 11*
+gamma*n + 22*muupsilon*n) - 12*df(y1,t,2)*df(y1,t)**7*y1**5*beta**2*n**3 + 2*df(y1,t,2)*df(y1,t)**7*y1**4*beta
+*n**3*(30*beta*x30 + 19*gamma*n + 54*muupsilon*n) + 2*df(y1,t,2)*df(y1,t)**7*y1**3*n**3*( - 60*beta**2*x30**2 
+- 76*beta*gamma*n*x30 - 216*beta*muupsilon*n*x30 + 66*betaupsilon*lamdaupsilon*n - 18*gamma**2*n**2 - 81*gamma
+*muupsilon*n**2 - 54*muupsilon**2*n**2) + 6*df(y1,t,2)*df(y1,t)**7*y1**2*n**3*x30*(20*beta**2*x30**2 + 38*beta
+*gamma*n*x30 + 108*beta*muupsilon*n*x30 - 66*betaupsilon*lamdaupsilon*n + 18*gamma**2*n**2 + 81*gamma*
+muupsilon*n**2 + 54*muupsilon**2*n**2) + 2*df(y1,t,2)*df(y1,t)**7*y1*n**3*x30**2*( - 30*beta**2*x30**2 - 76*
+beta*gamma*n*x30 - 216*beta*muupsilon*n*x30 + 198*betaupsilon*lamdaupsilon*n - 54*gamma**2*n**2 - 243*gamma*
+muupsilon*n**2 - 162*muupsilon**2*n**2) + 2*df(y1,t,2)*df(y1,t)**7*n**3*x30**3*(6*beta**2*x30**2 + 19*beta*
+gamma*n*x30 + 54*beta*muupsilon*n*x30 - 66*betaupsilon*lamdaupsilon*n + 18*gamma**2*n**2 + 81*gamma*muupsilon*
+n**2 + 54*muupsilon**2*n**2) + 24*df(y1,t,2)*df(y1,t)**6*y1**6*beta**2*muupsilon*n**3 + df(y1,t,2)*df(y1,t)**6
+*y1**5*beta*n**3*( - 144*beta*muupsilon*x30 + 116*betaupsilon*lamdaupsilon - 3*gamma**2*n - 84*gamma*muupsilon
+*n - 78*muupsilon**2*n) + df(y1,t,2)*df(y1,t)**6*y1**4*n**3*(360*beta**2*muupsilon*x30**2 - 580*beta*
+betaupsilon*lamdaupsilon*x30 + 15*beta*gamma**2*n*x30 + 420*beta*gamma*muupsilon*n*x30 + 390*beta*muupsilon**2
+*n*x30 - 112*betaupsilon*gamma*lamdaupsilon*n - 190*betaupsilon*lamdaupsilon*muupsilon*n + 6*gamma**3*n**2 + 
+85*gamma**2*muupsilon*n**2 + 165*gamma*muupsilon**2*n**2 + 48*muupsilon**3*n**2) + 2*df(y1,t,2)*df(y1,t)**6*y1
+**3*n**3*x30*( - 240*beta**2*muupsilon*x30**2 + 580*beta*betaupsilon*lamdaupsilon*x30 - 15*beta*gamma**2*n*x30
+ - 420*beta*gamma*muupsilon*n*x30 - 390*beta*muupsilon**2*n*x30 + 224*betaupsilon*gamma*lamdaupsilon*n + 380*
+betaupsilon*lamdaupsilon*muupsilon*n - 12*gamma**3*n**2 - 170*gamma**2*muupsilon*n**2 - 330*gamma*muupsilon**2
+*n**2 - 96*muupsilon**3*n**2) + 2*df(y1,t,2)*df(y1,t)**6*y1**2*n**3*x30**2*(180*beta**2*muupsilon*x30**2 - 580
+*beta*betaupsilon*lamdaupsilon*x30 + 15*beta*gamma**2*n*x30 + 420*beta*gamma*muupsilon*n*x30 + 390*beta*
+muupsilon**2*n*x30 - 336*betaupsilon*gamma*lamdaupsilon*n - 570*betaupsilon*lamdaupsilon*muupsilon*n + 18*
+gamma**3*n**2 + 255*gamma**2*muupsilon*n**2 + 495*gamma*muupsilon**2*n**2 + 144*muupsilon**3*n**2) + df(y1,t,2
+)*df(y1,t)**6*y1*n**3*x30**3*( - 144*beta**2*muupsilon*x30**2 + 580*beta*betaupsilon*lamdaupsilon*x30 - 15*
+beta*gamma**2*n*x30 - 420*beta*gamma*muupsilon*n*x30 - 390*beta*muupsilon**2*n*x30 + 448*betaupsilon*gamma*
+lamdaupsilon*n + 760*betaupsilon*lamdaupsilon*muupsilon*n - 24*gamma**3*n**2 - 340*gamma**2*muupsilon*n**2 - 
+660*gamma*muupsilon**2*n**2 - 192*muupsilon**3*n**2) + df(y1,t,2)*df(y1,t)**6*n**3*x30**4*(24*beta**2*
+muupsilon*x30**2 - 116*beta*betaupsilon*lamdaupsilon*x30 + 3*beta*gamma**2*n*x30 + 84*beta*gamma*muupsilon*n*
+x30 + 78*beta*muupsilon**2*n*x30 - 112*betaupsilon*gamma*lamdaupsilon*n - 190*betaupsilon*lamdaupsilon*
+muupsilon*n + 6*gamma**3*n**2 + 85*gamma**2*muupsilon*n**2 + 165*gamma*muupsilon**2*n**2 + 48*muupsilon**3*n**
+2) + 12*df(y1,t,2)*df(y1,t)**5*y1**7*beta**2*n**2*(2*betaupsilon*lamdaupsilon - muupsilon**2*n) + 2*df(y1,t,2)
+*df(y1,t)**5*y1**6*beta*n**2*( - 84*beta*betaupsilon*lamdaupsilon*x30 + 42*beta*muupsilon**2*n*x30 - 26*
+betaupsilon*gamma*lamdaupsilon*n - 75*betaupsilon*lamdaupsilon*muupsilon*n + 3*gamma**2*muupsilon*n**2 + 33*
+gamma*muupsilon**2*n**2 + 13*muupsilon**3*n**2) + df(y1,t,2)*df(y1,t)**5*y1**5*n**2*(504*beta**2*betaupsilon*
+lamdaupsilon*x30**2 - 252*beta**2*muupsilon**2*n*x30**2 + 312*beta*betaupsilon*gamma*lamdaupsilon*n*x30 + 900*
+beta*betaupsilon*lamdaupsilon*muupsilon*n*x30 - 36*beta*gamma**2*muupsilon*n**2*x30 - 396*beta*gamma*muupsilon
+**2*n**2*x30 - 156*beta*muupsilon**3*n**2*x30 + 36*betaupsilon*gamma**2*lamdaupsilon*n**2 + 162*betaupsilon*
+gamma*lamdaupsilon*muupsilon*n**2 + 128*betaupsilon*lamdaupsilon*muupsilon**2*n**2 - 13*gamma**3*muupsilon*n**
+3 - 79*gamma**2*muupsilon**2*n**3 - 93*gamma*muupsilon**3*n**3 - 12*muupsilon**4*n**3) + 5*df(y1,t,2)*df(y1,t)
+**5*y1**4*n**2*x30*( - 168*beta**2*betaupsilon*lamdaupsilon*x30**2 + 84*beta**2*muupsilon**2*n*x30**2 - 156*
+beta*betaupsilon*gamma*lamdaupsilon*n*x30 - 450*beta*betaupsilon*lamdaupsilon*muupsilon*n*x30 + 18*beta*gamma
+**2*muupsilon*n**2*x30 + 198*beta*gamma*muupsilon**2*n**2*x30 + 78*beta*muupsilon**3*n**2*x30 - 36*betaupsilon
+*gamma**2*lamdaupsilon*n**2 - 162*betaupsilon*gamma*lamdaupsilon*muupsilon*n**2 - 128*betaupsilon*lamdaupsilon
+*muupsilon**2*n**2 + 13*gamma**3*muupsilon*n**3 + 79*gamma**2*muupsilon**2*n**3 + 93*gamma*muupsilon**3*n**3 +
+ 12*muupsilon**4*n**3) + 10*df(y1,t,2)*df(y1,t)**5*y1**3*n**2*x30**2*(84*beta**2*betaupsilon*lamdaupsilon*x30
+**2 - 42*beta**2*muupsilon**2*n*x30**2 + 104*beta*betaupsilon*gamma*lamdaupsilon*n*x30 + 300*beta*betaupsilon*
+lamdaupsilon*muupsilon*n*x30 - 12*beta*gamma**2*muupsilon*n**2*x30 - 132*beta*gamma*muupsilon**2*n**2*x30 - 52
+*beta*muupsilon**3*n**2*x30 + 36*betaupsilon*gamma**2*lamdaupsilon*n**2 + 162*betaupsilon*gamma*lamdaupsilon*
+muupsilon*n**2 + 128*betaupsilon*lamdaupsilon*muupsilon**2*n**2 - 13*gamma**3*muupsilon*n**3 - 79*gamma**2*
+muupsilon**2*n**3 - 93*gamma*muupsilon**3*n**3 - 12*muupsilon**4*n**3) + 2*df(y1,t,2)*df(y1,t)**5*y1**2*n**2*
+x30**3*( - 252*beta**2*betaupsilon*lamdaupsilon*x30**2 + 126*beta**2*muupsilon**2*n*x30**2 - 390*beta*
+betaupsilon*gamma*lamdaupsilon*n*x30 - 1125*beta*betaupsilon*lamdaupsilon*muupsilon*n*x30 + 45*beta*gamma**2*
+muupsilon*n**2*x30 + 495*beta*gamma*muupsilon**2*n**2*x30 + 195*beta*muupsilon**3*n**2*x30 - 180*betaupsilon*
+gamma**2*lamdaupsilon*n**2 - 810*betaupsilon*gamma*lamdaupsilon*muupsilon*n**2 - 640*betaupsilon*lamdaupsilon*
+muupsilon**2*n**2 + 65*gamma**3*muupsilon*n**3 + 395*gamma**2*muupsilon**2*n**3 + 465*gamma*muupsilon**3*n**3 
++ 60*muupsilon**4*n**3) + df(y1,t,2)*df(y1,t)**5*y1*n**2*x30**4*(168*beta**2*betaupsilon*lamdaupsilon*x30**2 -
+ 84*beta**2*muupsilon**2*n*x30**2 + 312*beta*betaupsilon*gamma*lamdaupsilon*n*x30 + 900*beta*betaupsilon*
+lamdaupsilon*muupsilon*n*x30 - 36*beta*gamma**2*muupsilon*n**2*x30 - 396*beta*gamma*muupsilon**2*n**2*x30 - 
+156*beta*muupsilon**3*n**2*x30 + 180*betaupsilon*gamma**2*lamdaupsilon*n**2 + 810*betaupsilon*gamma*
+lamdaupsilon*muupsilon*n**2 + 640*betaupsilon*lamdaupsilon*muupsilon**2*n**2 - 65*gamma**3*muupsilon*n**3 - 
+395*gamma**2*muupsilon**2*n**3 - 465*gamma*muupsilon**3*n**3 - 60*muupsilon**4*n**3) + df(y1,t,2)*df(y1,t)**5*
+n**2*x30**5*( - 24*beta**2*betaupsilon*lamdaupsilon*x30**2 + 12*beta**2*muupsilon**2*n*x30**2 - 52*beta*
+betaupsilon*gamma*lamdaupsilon*n*x30 - 150*beta*betaupsilon*lamdaupsilon*muupsilon*n*x30 + 6*beta*gamma**2*
+muupsilon*n**2*x30 + 66*beta*gamma*muupsilon**2*n**2*x30 + 26*beta*muupsilon**3*n**2*x30 - 36*betaupsilon*
+gamma**2*lamdaupsilon*n**2 - 162*betaupsilon*gamma*lamdaupsilon*muupsilon*n**2 - 128*betaupsilon*lamdaupsilon*
+muupsilon**2*n**2 + 13*gamma**3*muupsilon*n**3 + 79*gamma**2*muupsilon**2*n**3 + 93*gamma*muupsilon**3*n**3 + 
+12*muupsilon**4*n**3) - 24*df(y1,t,2)*df(y1,t)**4*y1**8*beta**2*betaupsilon*lamdaupsilon*muupsilon*n**2 + df(
+y1,t,2)*df(y1,t)**4*y1**7*beta*n**2*(192*beta*betaupsilon*lamdaupsilon*muupsilon*x30 - 44*betaupsilon**2*
+lamdaupsilon**2 + 4*betaupsilon*gamma**2*lamdaupsilon*n + 68*betaupsilon*gamma*lamdaupsilon*muupsilon*n + 62*
+betaupsilon*lamdaupsilon*muupsilon**2*n - 3*gamma**2*muupsilon**2*n**2 - 20*gamma*muupsilon**3*n**2 - 5*
+muupsilon**4*n**2) + df(y1,t,2)*df(y1,t)**4*y1**6*n**2*( - 672*beta**2*betaupsilon*lamdaupsilon*muupsilon*x30
+**2 + 308*beta*betaupsilon**2*lamdaupsilon**2*x30 - 28*beta*betaupsilon*gamma**2*lamdaupsilon*n*x30 - 476*beta
+*betaupsilon*gamma*lamdaupsilon*muupsilon*n*x30 - 434*beta*betaupsilon*lamdaupsilon*muupsilon**2*n*x30 + 21*
+beta*gamma**2*muupsilon**2*n**2*x30 + 140*beta*gamma*muupsilon**3*n**2*x30 + 35*beta*muupsilon**4*n**2*x30 - 4
+*betaupsilon*gamma**3*lamdaupsilon*n**2 - 51*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2 - 107*
+betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 - 51*betaupsilon*lamdaupsilon*muupsilon**3*n**2 + 10*gamma**3
+*muupsilon**2*n**3 + 37*gamma**2*muupsilon**3*n**3 + 30*gamma*muupsilon**4*n**3 + muupsilon**5*n**3) + 3*df(y1
+,t,2)*df(y1,t)**4*y1**5*n**2*x30*(448*beta**2*betaupsilon*lamdaupsilon*muupsilon*x30**2 - 308*beta*betaupsilon
+**2*lamdaupsilon**2*x30 + 28*beta*betaupsilon*gamma**2*lamdaupsilon*n*x30 + 476*beta*betaupsilon*gamma*
+lamdaupsilon*muupsilon*n*x30 + 434*beta*betaupsilon*lamdaupsilon*muupsilon**2*n*x30 - 21*beta*gamma**2*
+muupsilon**2*n**2*x30 - 140*beta*gamma*muupsilon**3*n**2*x30 - 35*beta*muupsilon**4*n**2*x30 + 8*betaupsilon*
+gamma**3*lamdaupsilon*n**2 + 102*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2 + 214*betaupsilon*gamma*
+lamdaupsilon*muupsilon**2*n**2 + 102*betaupsilon*lamdaupsilon*muupsilon**3*n**2 - 20*gamma**3*muupsilon**2*n**
+3 - 74*gamma**2*muupsilon**3*n**3 - 60*gamma*muupsilon**4*n**3 - 2*muupsilon**5*n**3) + 5*df(y1,t,2)*df(y1,t)
+**4*y1**4*n**2*x30**2*( - 336*beta**2*betaupsilon*lamdaupsilon*muupsilon*x30**2 + 308*beta*betaupsilon**2*
+lamdaupsilon**2*x30 - 28*beta*betaupsilon*gamma**2*lamdaupsilon*n*x30 - 476*beta*betaupsilon*gamma*
+lamdaupsilon*muupsilon*n*x30 - 434*beta*betaupsilon*lamdaupsilon*muupsilon**2*n*x30 + 21*beta*gamma**2*
+muupsilon**2*n**2*x30 + 140*beta*gamma*muupsilon**3*n**2*x30 + 35*beta*muupsilon**4*n**2*x30 - 12*betaupsilon*
+gamma**3*lamdaupsilon*n**2 - 153*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2 - 321*betaupsilon*gamma*
+lamdaupsilon*muupsilon**2*n**2 - 153*betaupsilon*lamdaupsilon*muupsilon**3*n**2 + 30*gamma**3*muupsilon**2*n**
+3 + 111*gamma**2*muupsilon**3*n**3 + 90*gamma*muupsilon**4*n**3 + 3*muupsilon**5*n**3) + df(y1,t,2)*df(y1,t)**
+4*y1**3*n**2*x30**3*(1344*beta**2*betaupsilon*lamdaupsilon*muupsilon*x30**2 - 1540*beta*betaupsilon**2*
+lamdaupsilon**2*x30 + 140*beta*betaupsilon*gamma**2*lamdaupsilon*n*x30 + 2380*beta*betaupsilon*gamma*
+lamdaupsilon*muupsilon*n*x30 + 2170*beta*betaupsilon*lamdaupsilon*muupsilon**2*n*x30 - 105*beta*gamma**2*
+muupsilon**2*n**2*x30 - 700*beta*gamma*muupsilon**3*n**2*x30 - 175*beta*muupsilon**4*n**2*x30 + 80*betaupsilon
+*gamma**3*lamdaupsilon*n**2 + 1020*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2 + 2140*betaupsilon*gamma*
+lamdaupsilon*muupsilon**2*n**2 + 1020*betaupsilon*lamdaupsilon*muupsilon**3*n**2 - 200*gamma**3*muupsilon**2*n
+**3 - 740*gamma**2*muupsilon**3*n**3 - 600*gamma*muupsilon**4*n**3 - 20*muupsilon**5*n**3) + 3*df(y1,t,2)*df(
+y1,t)**4*y1**2*n**2*x30**4*( - 224*beta**2*betaupsilon*lamdaupsilon*muupsilon*x30**2 + 308*beta*betaupsilon**2
+*lamdaupsilon**2*x30 - 28*beta*betaupsilon*gamma**2*lamdaupsilon*n*x30 - 476*beta*betaupsilon*gamma*
+lamdaupsilon*muupsilon*n*x30 - 434*beta*betaupsilon*lamdaupsilon*muupsilon**2*n*x30 + 21*beta*gamma**2*
+muupsilon**2*n**2*x30 + 140*beta*gamma*muupsilon**3*n**2*x30 + 35*beta*muupsilon**4*n**2*x30 - 20*betaupsilon*
+gamma**3*lamdaupsilon*n**2 - 255*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2 - 535*betaupsilon*gamma*
+lamdaupsilon*muupsilon**2*n**2 - 255*betaupsilon*lamdaupsilon*muupsilon**3*n**2 + 50*gamma**3*muupsilon**2*n**
+3 + 185*gamma**2*muupsilon**3*n**3 + 150*gamma*muupsilon**4*n**3 + 5*muupsilon**5*n**3) + df(y1,t,2)*df(y1,t)
+**4*y1*n**2*x30**5*(192*beta**2*betaupsilon*lamdaupsilon*muupsilon*x30**2 - 308*beta*betaupsilon**2*
+lamdaupsilon**2*x30 + 28*beta*betaupsilon*gamma**2*lamdaupsilon*n*x30 + 476*beta*betaupsilon*gamma*
+lamdaupsilon*muupsilon*n*x30 + 434*beta*betaupsilon*lamdaupsilon*muupsilon**2*n*x30 - 21*beta*gamma**2*
+muupsilon**2*n**2*x30 - 140*beta*gamma*muupsilon**3*n**2*x30 - 35*beta*muupsilon**4*n**2*x30 + 24*betaupsilon*
+gamma**3*lamdaupsilon*n**2 + 306*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2 + 642*betaupsilon*gamma*
+lamdaupsilon*muupsilon**2*n**2 + 306*betaupsilon*lamdaupsilon*muupsilon**3*n**2 - 60*gamma**3*muupsilon**2*n**
+3 - 222*gamma**2*muupsilon**3*n**3 - 180*gamma*muupsilon**4*n**3 - 6*muupsilon**5*n**3) + df(y1,t,2)*df(y1,t)
+**4*n**2*x30**6*( - 24*beta**2*betaupsilon*lamdaupsilon*muupsilon*x30**2 + 44*beta*betaupsilon**2*lamdaupsilon
+**2*x30 - 4*beta*betaupsilon*gamma**2*lamdaupsilon*n*x30 - 68*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n*
+x30 - 62*beta*betaupsilon*lamdaupsilon*muupsilon**2*n*x30 + 3*beta*gamma**2*muupsilon**2*n**2*x30 + 20*beta*
+gamma*muupsilon**3*n**2*x30 + 5*beta*muupsilon**4*n**2*x30 - 4*betaupsilon*gamma**3*lamdaupsilon*n**2 - 51*
+betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2 - 107*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 - 51*
+betaupsilon*lamdaupsilon*muupsilon**3*n**2 + 10*gamma**3*muupsilon**2*n**3 + 37*gamma**2*muupsilon**3*n**3 + 
+30*gamma*muupsilon**4*n**3 + muupsilon**5*n**3) - 12*df(y1,t,2)*df(y1,t)**3*y1**9*beta**2*betaupsilon**2*
+lamdaupsilon**2*n + 2*df(y1,t,2)*df(y1,t)**3*y1**8*beta*betaupsilon*lamdaupsilon*n*(54*beta*betaupsilon*
+lamdaupsilon*x30 + 7*betaupsilon*gamma*lamdaupsilon*n + 14*betaupsilon*lamdaupsilon*muupsilon*n - 2*gamma**2*
+muupsilon*n**2 - 14*gamma*muupsilon**2*n**2 - 6*muupsilon**3*n**2) + df(y1,t,2)*df(y1,t)**3*y1**7*n*( - 432*
+beta**2*betaupsilon**2*lamdaupsilon**2*x30**2 - 112*beta*betaupsilon**2*gamma*lamdaupsilon**2*n*x30 - 224*beta
+*betaupsilon**2*lamdaupsilon**2*muupsilon*n*x30 + 32*beta*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2*x30
+ + 224*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2*x30 + 96*beta*betaupsilon*lamdaupsilon*muupsilon
+**3*n**2*x30 + 5*betaupsilon*gamma**3*lamdaupsilon*muupsilon*n**3 + 29*betaupsilon*gamma**2*lamdaupsilon*
+muupsilon**2*n**3 + 37*betaupsilon*gamma*lamdaupsilon*muupsilon**3*n**3 + 11*betaupsilon*lamdaupsilon*
+muupsilon**4*n**3 - 3*gamma**3*muupsilon**3*n**4 - 8*gamma**2*muupsilon**4*n**4 - 5*gamma*muupsilon**5*n**4) +
+ 7*df(y1,t,2)*df(y1,t)**3*y1**6*n*x30*(144*beta**2*betaupsilon**2*lamdaupsilon**2*x30**2 + 56*beta*betaupsilon
+**2*gamma*lamdaupsilon**2*n*x30 + 112*beta*betaupsilon**2*lamdaupsilon**2*muupsilon*n*x30 - 16*beta*
+betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2*x30 - 112*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n
+**2*x30 - 48*beta*betaupsilon*lamdaupsilon*muupsilon**3*n**2*x30 - 5*betaupsilon*gamma**3*lamdaupsilon*
+muupsilon*n**3 - 29*betaupsilon*gamma**2*lamdaupsilon*muupsilon**2*n**3 - 37*betaupsilon*gamma*lamdaupsilon*
+muupsilon**3*n**3 - 11*betaupsilon*lamdaupsilon*muupsilon**4*n**3 + 3*gamma**3*muupsilon**3*n**4 + 8*gamma**2*
+muupsilon**4*n**4 + 5*gamma*muupsilon**5*n**4) + 7*df(y1,t,2)*df(y1,t)**3*y1**5*n*x30**2*( - 216*beta**2*
+betaupsilon**2*lamdaupsilon**2*x30**2 - 112*beta*betaupsilon**2*gamma*lamdaupsilon**2*n*x30 - 224*beta*
+betaupsilon**2*lamdaupsilon**2*muupsilon*n*x30 + 32*beta*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2*x30 
++ 224*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2*x30 + 96*beta*betaupsilon*lamdaupsilon*muupsilon**
+3*n**2*x30 + 15*betaupsilon*gamma**3*lamdaupsilon*muupsilon*n**3 + 87*betaupsilon*gamma**2*lamdaupsilon*
+muupsilon**2*n**3 + 111*betaupsilon*gamma*lamdaupsilon*muupsilon**3*n**3 + 33*betaupsilon*lamdaupsilon*
+muupsilon**4*n**3 - 9*gamma**3*muupsilon**3*n**4 - 24*gamma**2*muupsilon**4*n**4 - 15*gamma*muupsilon**5*n**4)
+ + 7*df(y1,t,2)*df(y1,t)**3*y1**4*n*x30**3*(216*beta**2*betaupsilon**2*lamdaupsilon**2*x30**2 + 140*beta*
+betaupsilon**2*gamma*lamdaupsilon**2*n*x30 + 280*beta*betaupsilon**2*lamdaupsilon**2*muupsilon*n*x30 - 40*beta
+*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2*x30 - 280*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n
+**2*x30 - 120*beta*betaupsilon*lamdaupsilon*muupsilon**3*n**2*x30 - 25*betaupsilon*gamma**3*lamdaupsilon*
+muupsilon*n**3 - 145*betaupsilon*gamma**2*lamdaupsilon*muupsilon**2*n**3 - 185*betaupsilon*gamma*lamdaupsilon*
+muupsilon**3*n**3 - 55*betaupsilon*lamdaupsilon*muupsilon**4*n**3 + 15*gamma**3*muupsilon**3*n**4 + 40*gamma**
+2*muupsilon**4*n**4 + 25*gamma*muupsilon**5*n**4) + 7*df(y1,t,2)*df(y1,t)**3*y1**3*n*x30**4*( - 144*beta**2*
+betaupsilon**2*lamdaupsilon**2*x30**2 - 112*beta*betaupsilon**2*gamma*lamdaupsilon**2*n*x30 - 224*beta*
+betaupsilon**2*lamdaupsilon**2*muupsilon*n*x30 + 32*beta*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2*x30 
++ 224*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2*x30 + 96*beta*betaupsilon*lamdaupsilon*muupsilon**
+3*n**2*x30 + 25*betaupsilon*gamma**3*lamdaupsilon*muupsilon*n**3 + 145*betaupsilon*gamma**2*lamdaupsilon*
+muupsilon**2*n**3 + 185*betaupsilon*gamma*lamdaupsilon*muupsilon**3*n**3 + 55*betaupsilon*lamdaupsilon*
+muupsilon**4*n**3 - 15*gamma**3*muupsilon**3*n**4 - 40*gamma**2*muupsilon**4*n**4 - 25*gamma*muupsilon**5*n**4
+) + df(y1,t,2)*df(y1,t)**3*y1**2*n*x30**5*(432*beta**2*betaupsilon**2*lamdaupsilon**2*x30**2 + 392*beta*
+betaupsilon**2*gamma*lamdaupsilon**2*n*x30 + 784*beta*betaupsilon**2*lamdaupsilon**2*muupsilon*n*x30 - 112*
+beta*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2*x30 - 784*beta*betaupsilon*gamma*lamdaupsilon*muupsilon
+**2*n**2*x30 - 336*beta*betaupsilon*lamdaupsilon*muupsilon**3*n**2*x30 - 105*betaupsilon*gamma**3*lamdaupsilon
+*muupsilon*n**3 - 609*betaupsilon*gamma**2*lamdaupsilon*muupsilon**2*n**3 - 777*betaupsilon*gamma*lamdaupsilon
+*muupsilon**3*n**3 - 231*betaupsilon*lamdaupsilon*muupsilon**4*n**3 + 63*gamma**3*muupsilon**3*n**4 + 168*
+gamma**2*muupsilon**4*n**4 + 105*gamma*muupsilon**5*n**4) + df(y1,t,2)*df(y1,t)**3*y1*n*x30**6*( - 108*beta**2
+*betaupsilon**2*lamdaupsilon**2*x30**2 - 112*beta*betaupsilon**2*gamma*lamdaupsilon**2*n*x30 - 224*beta*
+betaupsilon**2*lamdaupsilon**2*muupsilon*n*x30 + 32*beta*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2*x30 
++ 224*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2*x30 + 96*beta*betaupsilon*lamdaupsilon*muupsilon**
+3*n**2*x30 + 35*betaupsilon*gamma**3*lamdaupsilon*muupsilon*n**3 + 203*betaupsilon*gamma**2*lamdaupsilon*
+muupsilon**2*n**3 + 259*betaupsilon*gamma*lamdaupsilon*muupsilon**3*n**3 + 77*betaupsilon*lamdaupsilon*
+muupsilon**4*n**3 - 21*gamma**3*muupsilon**3*n**4 - 56*gamma**2*muupsilon**4*n**4 - 35*gamma*muupsilon**5*n**4
+) + df(y1,t,2)*df(y1,t)**3*n*x30**7*(12*beta**2*betaupsilon**2*lamdaupsilon**2*x30**2 + 14*beta*betaupsilon**2
+*gamma*lamdaupsilon**2*n*x30 + 28*beta*betaupsilon**2*lamdaupsilon**2*muupsilon*n*x30 - 4*beta*betaupsilon*
+gamma**2*lamdaupsilon*muupsilon*n**2*x30 - 28*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2*x30 - 12*
+beta*betaupsilon*lamdaupsilon*muupsilon**3*n**2*x30 - 5*betaupsilon*gamma**3*lamdaupsilon*muupsilon*n**3 - 29*
+betaupsilon*gamma**2*lamdaupsilon*muupsilon**2*n**3 - 37*betaupsilon*gamma*lamdaupsilon*muupsilon**3*n**3 - 11
+*betaupsilon*lamdaupsilon*muupsilon**4*n**3 + 3*gamma**3*muupsilon**3*n**4 + 8*gamma**2*muupsilon**4*n**4 + 5*
+gamma*muupsilon**5*n**4) + df(y1,t,2)*df(y1,t)**2*y1**9*beta*betaupsilon**2*lamdaupsilon**2*n**2*( - gamma**2 
+- 8*gamma*muupsilon - 7*muupsilon**2) + df(y1,t,2)*df(y1,t)**2*y1**8*betaupsilon*lamdaupsilon*n**2*(9*beta*
+betaupsilon*gamma**2*lamdaupsilon*x30 + 72*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*x30 + 63*beta*
+betaupsilon*lamdaupsilon*muupsilon**2*x30 - 2*gamma**3*muupsilon**2*n**2 - 7*gamma**2*muupsilon**3*n**2 - 6*
+gamma*muupsilon**4*n**2 - muupsilon**5*n**2) + 4*df(y1,t,2)*df(y1,t)**2*y1**7*betaupsilon*lamdaupsilon*n**2*
+x30*( - 9*beta*betaupsilon*gamma**2*lamdaupsilon*x30 - 72*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*x30 - 
+63*beta*betaupsilon*lamdaupsilon*muupsilon**2*x30 + 4*gamma**3*muupsilon**2*n**2 + 14*gamma**2*muupsilon**3*n
+**2 + 12*gamma*muupsilon**4*n**2 + 2*muupsilon**5*n**2) + 28*df(y1,t,2)*df(y1,t)**2*y1**6*betaupsilon*
+lamdaupsilon*n**2*x30**2*(3*beta*betaupsilon*gamma**2*lamdaupsilon*x30 + 24*beta*betaupsilon*gamma*
+lamdaupsilon*muupsilon*x30 + 21*beta*betaupsilon*lamdaupsilon*muupsilon**2*x30 - 2*gamma**3*muupsilon**2*n**2 
+- 7*gamma**2*muupsilon**3*n**2 - 6*gamma*muupsilon**4*n**2 - muupsilon**5*n**2) + 14*df(y1,t,2)*df(y1,t)**2*y1
+**5*betaupsilon*lamdaupsilon*n**2*x30**3*( - 9*beta*betaupsilon*gamma**2*lamdaupsilon*x30 - 72*beta*
+betaupsilon*gamma*lamdaupsilon*muupsilon*x30 - 63*beta*betaupsilon*lamdaupsilon*muupsilon**2*x30 + 8*gamma**3*
+muupsilon**2*n**2 + 28*gamma**2*muupsilon**3*n**2 + 24*gamma*muupsilon**4*n**2 + 4*muupsilon**5*n**2) + 14*df(
+y1,t,2)*df(y1,t)**2*y1**4*betaupsilon*lamdaupsilon*n**2*x30**4*(9*beta*betaupsilon*gamma**2*lamdaupsilon*x30 +
+ 72*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*x30 + 63*beta*betaupsilon*lamdaupsilon*muupsilon**2*x30 - 10
+*gamma**3*muupsilon**2*n**2 - 35*gamma**2*muupsilon**3*n**2 - 30*gamma*muupsilon**4*n**2 - 5*muupsilon**5*n**2
+) + 28*df(y1,t,2)*df(y1,t)**2*y1**3*betaupsilon*lamdaupsilon*n**2*x30**5*( - 3*beta*betaupsilon*gamma**2*
+lamdaupsilon*x30 - 24*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*x30 - 21*beta*betaupsilon*lamdaupsilon*
+muupsilon**2*x30 + 4*gamma**3*muupsilon**2*n**2 + 14*gamma**2*muupsilon**3*n**2 + 12*gamma*muupsilon**4*n**2 +
+ 2*muupsilon**5*n**2) + 4*df(y1,t,2)*df(y1,t)**2*y1**2*betaupsilon*lamdaupsilon*n**2*x30**6*(9*beta*
+betaupsilon*gamma**2*lamdaupsilon*x30 + 72*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*x30 + 63*beta*
+betaupsilon*lamdaupsilon*muupsilon**2*x30 - 14*gamma**3*muupsilon**2*n**2 - 49*gamma**2*muupsilon**3*n**2 - 42
+*gamma*muupsilon**4*n**2 - 7*muupsilon**5*n**2) + df(y1,t,2)*df(y1,t)**2*y1*betaupsilon*lamdaupsilon*n**2*x30
+**7*( - 9*beta*betaupsilon*gamma**2*lamdaupsilon*x30 - 72*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*x30 - 
+63*beta*betaupsilon*lamdaupsilon*muupsilon**2*x30 + 16*gamma**3*muupsilon**2*n**2 + 56*gamma**2*muupsilon**3*n
+**2 + 48*gamma*muupsilon**4*n**2 + 8*muupsilon**5*n**2) + df(y1,t,2)*df(y1,t)**2*betaupsilon*lamdaupsilon*n**2
+*x30**8*(beta*betaupsilon*gamma**2*lamdaupsilon*x30 + 8*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*x30 + 7*
+beta*betaupsilon*lamdaupsilon*muupsilon**2*x30 - 2*gamma**3*muupsilon**2*n**2 - 7*gamma**2*muupsilon**3*n**2 -
+ 6*gamma*muupsilon**4*n**2 - muupsilon**5*n**2) + 12*df(y1,t)**11*n**5 + 12*df(y1,t)**10*y1**2*beta*n**4 + 4*
+df(y1,t)**10*y1*n**4*( - 6*beta*x30 - 4*gamma*n - 9*muupsilon*n) + 4*df(y1,t)**10*n**4*x30*(3*beta*x30 + 4*
+gamma*n + 9*muupsilon*n) + 4*df(y1,t)**9*y1**4*beta**2*n**3 + 4*df(y1,t)**9*y1**3*beta*n**3*( - 4*beta*x30 - 3
+*gamma*n - 9*muupsilon*n) + 2*df(y1,t)**9*y1**2*n**3*(12*beta**2*x30**2 + 18*beta*gamma*n*x30 + 54*beta*
+muupsilon*n*x30 - 18*betaupsilon*lamdaupsilon*n + 5*gamma**2*n**2 + 24*gamma*muupsilon*n**2 + 18*muupsilon**2*
+n**2) + 4*df(y1,t)**9*y1*n**3*x30*( - 4*beta**2*x30**2 - 9*beta*gamma*n*x30 - 27*beta*muupsilon*n*x30 + 18*
+betaupsilon*lamdaupsilon*n - 5*gamma**2*n**2 - 24*gamma*muupsilon*n**2 - 18*muupsilon**2*n**2) + 2*df(y1,t)**9
+*n**3*x30**2*(2*beta**2*x30**2 + 6*beta*gamma*n*x30 + 18*beta*muupsilon*n*x30 - 18*betaupsilon*lamdaupsilon*n 
++ 5*gamma**2*n**2 + 24*gamma*muupsilon*n**2 + 18*muupsilon**2*n**2) - 12*df(y1,t)**8*y1**5*beta**2*muupsilon*n
+**3 + df(y1,t)**8*y1**4*beta*n**3*(60*beta*muupsilon*x30 - 40*betaupsilon*lamdaupsilon + gamma**2*n + 36*gamma
+*muupsilon*n + 36*muupsilon**2*n) + 2*df(y1,t)**8*y1**3*n**3*( - 60*beta**2*muupsilon*x30**2 + 80*beta*
+betaupsilon*lamdaupsilon*x30 - 2*beta*gamma**2*n*x30 - 72*beta*gamma*muupsilon*n*x30 - 72*beta*muupsilon**2*n*
+x30 + 18*betaupsilon*gamma*lamdaupsilon*n + 30*betaupsilon*lamdaupsilon*muupsilon*n - gamma**3*n**2 - 15*gamma
+**2*muupsilon*n**2 - 30*gamma*muupsilon**2*n**2 - 10*muupsilon**3*n**2) + 6*df(y1,t)**8*y1**2*n**3*x30*(20*
+beta**2*muupsilon*x30**2 - 40*beta*betaupsilon*lamdaupsilon*x30 + beta*gamma**2*n*x30 + 36*beta*gamma*
+muupsilon*n*x30 + 36*beta*muupsilon**2*n*x30 - 18*betaupsilon*gamma*lamdaupsilon*n - 30*betaupsilon*
+lamdaupsilon*muupsilon*n + gamma**3*n**2 + 15*gamma**2*muupsilon*n**2 + 30*gamma*muupsilon**2*n**2 + 10*
+muupsilon**3*n**2) + 2*df(y1,t)**8*y1*n**3*x30**2*( - 30*beta**2*muupsilon*x30**2 + 80*beta*betaupsilon*
+lamdaupsilon*x30 - 2*beta*gamma**2*n*x30 - 72*beta*gamma*muupsilon*n*x30 - 72*beta*muupsilon**2*n*x30 + 54*
+betaupsilon*gamma*lamdaupsilon*n + 90*betaupsilon*lamdaupsilon*muupsilon*n - 3*gamma**3*n**2 - 45*gamma**2*
+muupsilon*n**2 - 90*gamma*muupsilon**2*n**2 - 30*muupsilon**3*n**2) + df(y1,t)**8*n**3*x30**3*(12*beta**2*
+muupsilon*x30**2 - 40*beta*betaupsilon*lamdaupsilon*x30 + beta*gamma**2*n*x30 + 36*beta*gamma*muupsilon*n*x30 
++ 36*beta*muupsilon**2*n*x30 - 36*betaupsilon*gamma*lamdaupsilon*n - 60*betaupsilon*lamdaupsilon*muupsilon*n +
+ 2*gamma**3*n**2 + 30*gamma**2*muupsilon*n**2 + 60*gamma*muupsilon**2*n**2 + 20*muupsilon**3*n**2) + 12*df(y1,
+t)**7*y1**6*beta**2*n**2*( - betaupsilon*lamdaupsilon + muupsilon**2*n) + df(y1,t)**7*y1**5*beta*n**2*(72*beta
+*betaupsilon*lamdaupsilon*x30 - 72*beta*muupsilon**2*n*x30 + 24*betaupsilon*gamma*lamdaupsilon*n + 72*
+betaupsilon*lamdaupsilon*muupsilon*n - 3*gamma**2*muupsilon*n**2 - 42*gamma*muupsilon**2*n**2 - 16*muupsilon**
+3*n**2) + df(y1,t)**7*y1**4*n**2*( - 180*beta**2*betaupsilon*lamdaupsilon*x30**2 + 180*beta**2*muupsilon**2*n*
+x30**2 - 120*beta*betaupsilon*gamma*lamdaupsilon*n*x30 - 360*beta*betaupsilon*lamdaupsilon*muupsilon*n*x30 + 
+15*beta*gamma**2*muupsilon*n**2*x30 + 210*beta*gamma*muupsilon**2*n**2*x30 + 80*beta*muupsilon**3*n**2*x30 - 
+14*betaupsilon*gamma**2*lamdaupsilon*n**2 - 62*betaupsilon*gamma*lamdaupsilon*muupsilon*n**2 - 48*betaupsilon*
+lamdaupsilon*muupsilon**2*n**2 + 6*gamma**3*muupsilon*n**3 + 37*gamma**2*muupsilon**2*n**3 + 44*gamma*
+muupsilon**3*n**3 + 7*muupsilon**4*n**3) + 2*df(y1,t)**7*y1**3*n**2*x30*(120*beta**2*betaupsilon*lamdaupsilon*
+x30**2 - 120*beta**2*muupsilon**2*n*x30**2 + 120*beta*betaupsilon*gamma*lamdaupsilon*n*x30 + 360*beta*
+betaupsilon*lamdaupsilon*muupsilon*n*x30 - 15*beta*gamma**2*muupsilon*n**2*x30 - 210*beta*gamma*muupsilon**2*n
+**2*x30 - 80*beta*muupsilon**3*n**2*x30 + 28*betaupsilon*gamma**2*lamdaupsilon*n**2 + 124*betaupsilon*gamma*
+lamdaupsilon*muupsilon*n**2 + 96*betaupsilon*lamdaupsilon*muupsilon**2*n**2 - 12*gamma**3*muupsilon*n**3 - 74*
+gamma**2*muupsilon**2*n**3 - 88*gamma*muupsilon**3*n**3 - 14*muupsilon**4*n**3) + 2*df(y1,t)**7*y1**2*n**2*x30
+**2*( - 90*beta**2*betaupsilon*lamdaupsilon*x30**2 + 90*beta**2*muupsilon**2*n*x30**2 - 120*beta*betaupsilon*
+gamma*lamdaupsilon*n*x30 - 360*beta*betaupsilon*lamdaupsilon*muupsilon*n*x30 + 15*beta*gamma**2*muupsilon*n**2
+*x30 + 210*beta*gamma*muupsilon**2*n**2*x30 + 80*beta*muupsilon**3*n**2*x30 - 42*betaupsilon*gamma**2*
+lamdaupsilon*n**2 - 186*betaupsilon*gamma*lamdaupsilon*muupsilon*n**2 - 144*betaupsilon*lamdaupsilon*muupsilon
+**2*n**2 + 18*gamma**3*muupsilon*n**3 + 111*gamma**2*muupsilon**2*n**3 + 132*gamma*muupsilon**3*n**3 + 21*
+muupsilon**4*n**3) + df(y1,t)**7*y1*n**2*x30**3*(72*beta**2*betaupsilon*lamdaupsilon*x30**2 - 72*beta**2*
+muupsilon**2*n*x30**2 + 120*beta*betaupsilon*gamma*lamdaupsilon*n*x30 + 360*beta*betaupsilon*lamdaupsilon*
+muupsilon*n*x30 - 15*beta*gamma**2*muupsilon*n**2*x30 - 210*beta*gamma*muupsilon**2*n**2*x30 - 80*beta*
+muupsilon**3*n**2*x30 + 56*betaupsilon*gamma**2*lamdaupsilon*n**2 + 248*betaupsilon*gamma*lamdaupsilon*
+muupsilon*n**2 + 192*betaupsilon*lamdaupsilon*muupsilon**2*n**2 - 24*gamma**3*muupsilon*n**3 - 148*gamma**2*
+muupsilon**2*n**3 - 176*gamma*muupsilon**3*n**3 - 28*muupsilon**4*n**3) + df(y1,t)**7*n**2*x30**4*( - 12*beta
+**2*betaupsilon*lamdaupsilon*x30**2 + 12*beta**2*muupsilon**2*n*x30**2 - 24*beta*betaupsilon*gamma*
+lamdaupsilon*n*x30 - 72*beta*betaupsilon*lamdaupsilon*muupsilon*n*x30 + 3*beta*gamma**2*muupsilon*n**2*x30 + 
+42*beta*gamma*muupsilon**2*n**2*x30 + 16*beta*muupsilon**3*n**2*x30 - 14*betaupsilon*gamma**2*lamdaupsilon*n**
+2 - 62*betaupsilon*gamma*lamdaupsilon*muupsilon*n**2 - 48*betaupsilon*lamdaupsilon*muupsilon**2*n**2 + 6*gamma
+**3*muupsilon*n**3 + 37*gamma**2*muupsilon**2*n**3 + 44*gamma*muupsilon**3*n**3 + 7*muupsilon**4*n**3) + 4*df(
+y1,t)**6*y1**7*beta**2*muupsilon*n**2*(6*betaupsilon*lamdaupsilon - muupsilon**2*n) + df(y1,t)**6*y1**6*beta*n
+**2*( - 168*beta*betaupsilon*lamdaupsilon*muupsilon*x30 + 28*beta*muupsilon**3*n*x30 + 24*betaupsilon**2*
+lamdaupsilon**2 - 2*betaupsilon*gamma**2*lamdaupsilon*n - 48*betaupsilon*gamma*lamdaupsilon*muupsilon*n - 40*
+betaupsilon*lamdaupsilon*muupsilon**2*n + 3*gamma**2*muupsilon**2*n**2 + 24*gamma*muupsilon**3*n**2 + 5*
+muupsilon**4*n**2) + df(y1,t)**6*y1**5*n**2*(504*beta**2*betaupsilon*lamdaupsilon*muupsilon*x30**2 - 84*beta**
+2*muupsilon**3*n*x30**2 - 144*beta*betaupsilon**2*lamdaupsilon**2*x30 + 12*beta*betaupsilon*gamma**2*
+lamdaupsilon*n*x30 + 288*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n*x30 + 240*beta*betaupsilon*
+lamdaupsilon*muupsilon**2*n*x30 - 18*beta*gamma**2*muupsilon**2*n**2*x30 - 144*beta*gamma*muupsilon**3*n**2*
+x30 - 30*beta*muupsilon**4*n**2*x30 + 2*betaupsilon*gamma**3*lamdaupsilon*n**2 + 26*betaupsilon*gamma**2*
+lamdaupsilon*muupsilon*n**2 + 52*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 + 24*betaupsilon*
+lamdaupsilon*muupsilon**3*n**2 - 7*gamma**3*muupsilon**2*n**3 - 25*gamma**2*muupsilon**3*n**3 - 20*gamma*
+muupsilon**4*n**3 - muupsilon**5*n**3) + 5*df(y1,t)**6*y1**4*n**2*x30*( - 168*beta**2*betaupsilon*lamdaupsilon
+*muupsilon*x30**2 + 28*beta**2*muupsilon**3*n*x30**2 + 72*beta*betaupsilon**2*lamdaupsilon**2*x30 - 6*beta*
+betaupsilon*gamma**2*lamdaupsilon*n*x30 - 144*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n*x30 - 120*beta*
+betaupsilon*lamdaupsilon*muupsilon**2*n*x30 + 9*beta*gamma**2*muupsilon**2*n**2*x30 + 72*beta*gamma*muupsilon
+**3*n**2*x30 + 15*beta*muupsilon**4*n**2*x30 - 2*betaupsilon*gamma**3*lamdaupsilon*n**2 - 26*betaupsilon*gamma
+**2*lamdaupsilon*muupsilon*n**2 - 52*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 - 24*betaupsilon*
+lamdaupsilon*muupsilon**3*n**2 + 7*gamma**3*muupsilon**2*n**3 + 25*gamma**2*muupsilon**3*n**3 + 20*gamma*
+muupsilon**4*n**3 + muupsilon**5*n**3) + 10*df(y1,t)**6*y1**3*n**2*x30**2*(84*beta**2*betaupsilon*lamdaupsilon
+*muupsilon*x30**2 - 14*beta**2*muupsilon**3*n*x30**2 - 48*beta*betaupsilon**2*lamdaupsilon**2*x30 + 4*beta*
+betaupsilon*gamma**2*lamdaupsilon*n*x30 + 96*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n*x30 + 80*beta*
+betaupsilon*lamdaupsilon*muupsilon**2*n*x30 - 6*beta*gamma**2*muupsilon**2*n**2*x30 - 48*beta*gamma*muupsilon
+**3*n**2*x30 - 10*beta*muupsilon**4*n**2*x30 + 2*betaupsilon*gamma**3*lamdaupsilon*n**2 + 26*betaupsilon*gamma
+**2*lamdaupsilon*muupsilon*n**2 + 52*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 + 24*betaupsilon*
+lamdaupsilon*muupsilon**3*n**2 - 7*gamma**3*muupsilon**2*n**3 - 25*gamma**2*muupsilon**3*n**3 - 20*gamma*
+muupsilon**4*n**3 - muupsilon**5*n**3) + df(y1,t)**6*y1**2*n**2*x30**3*( - 504*beta**2*betaupsilon*
+lamdaupsilon*muupsilon*x30**2 + 84*beta**2*muupsilon**3*n*x30**2 + 360*beta*betaupsilon**2*lamdaupsilon**2*x30
+ - 30*beta*betaupsilon*gamma**2*lamdaupsilon*n*x30 - 720*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n*x30 -
+ 600*beta*betaupsilon*lamdaupsilon*muupsilon**2*n*x30 + 45*beta*gamma**2*muupsilon**2*n**2*x30 + 360*beta*
+gamma*muupsilon**3*n**2*x30 + 75*beta*muupsilon**4*n**2*x30 - 20*betaupsilon*gamma**3*lamdaupsilon*n**2 - 260*
+betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2 - 520*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 - 240*
+betaupsilon*lamdaupsilon*muupsilon**3*n**2 + 70*gamma**3*muupsilon**2*n**3 + 250*gamma**2*muupsilon**3*n**3 + 
+200*gamma*muupsilon**4*n**3 + 10*muupsilon**5*n**3) + df(y1,t)**6*y1*n**2*x30**4*(168*beta**2*betaupsilon*
+lamdaupsilon*muupsilon*x30**2 - 28*beta**2*muupsilon**3*n*x30**2 - 144*beta*betaupsilon**2*lamdaupsilon**2*x30
+ + 12*beta*betaupsilon*gamma**2*lamdaupsilon*n*x30 + 288*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n*x30 +
+ 240*beta*betaupsilon*lamdaupsilon*muupsilon**2*n*x30 - 18*beta*gamma**2*muupsilon**2*n**2*x30 - 144*beta*
+gamma*muupsilon**3*n**2*x30 - 30*beta*muupsilon**4*n**2*x30 + 10*betaupsilon*gamma**3*lamdaupsilon*n**2 + 130*
+betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2 + 260*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 + 120*
+betaupsilon*lamdaupsilon*muupsilon**3*n**2 - 35*gamma**3*muupsilon**2*n**3 - 125*gamma**2*muupsilon**3*n**3 - 
+100*gamma*muupsilon**4*n**3 - 5*muupsilon**5*n**3) + df(y1,t)**6*n**2*x30**5*( - 24*beta**2*betaupsilon*
+lamdaupsilon*muupsilon*x30**2 + 4*beta**2*muupsilon**3*n*x30**2 + 24*beta*betaupsilon**2*lamdaupsilon**2*x30 -
+ 2*beta*betaupsilon*gamma**2*lamdaupsilon*n*x30 - 48*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n*x30 - 40*
+beta*betaupsilon*lamdaupsilon*muupsilon**2*n*x30 + 3*beta*gamma**2*muupsilon**2*n**2*x30 + 24*beta*gamma*
+muupsilon**3*n**2*x30 + 5*beta*muupsilon**4*n**2*x30 - 2*betaupsilon*gamma**3*lamdaupsilon*n**2 - 26*
+betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2 - 52*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 - 24*
+betaupsilon*lamdaupsilon*muupsilon**3*n**2 + 7*gamma**3*muupsilon**2*n**3 + 25*gamma**2*muupsilon**3*n**3 + 20
+*gamma*muupsilon**4*n**3 + muupsilon**5*n**3) + 12*df(y1,t)**5*y1**8*beta**2*betaupsilon*lamdaupsilon*n*(
+betaupsilon*lamdaupsilon - muupsilon**2*n) + df(y1,t)**5*y1**7*beta*n*( - 96*beta*betaupsilon**2*lamdaupsilon
+**2*x30 + 96*beta*betaupsilon*lamdaupsilon*muupsilon**2*n*x30 - 12*betaupsilon**2*gamma*lamdaupsilon**2*n - 20
+*betaupsilon**2*lamdaupsilon**2*muupsilon*n + 4*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2 + 36*
+betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2 + 12*betaupsilon*lamdaupsilon*muupsilon**3*n**2 - gamma**2*
+muupsilon**3*n**3 - 6*gamma*muupsilon**4*n**3 - muupsilon**5*n**3) + df(y1,t)**5*y1**6*n*(336*beta**2*
+betaupsilon**2*lamdaupsilon**2*x30**2 - 336*beta**2*betaupsilon*lamdaupsilon*muupsilon**2*n*x30**2 + 84*beta*
+betaupsilon**2*gamma*lamdaupsilon**2*n*x30 + 140*beta*betaupsilon**2*lamdaupsilon**2*muupsilon*n*x30 - 28*beta
+*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2*x30 - 252*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n
+**2*x30 - 84*beta*betaupsilon*lamdaupsilon*muupsilon**3*n**2*x30 + 7*beta*gamma**2*muupsilon**3*n**3*x30 + 42*
+beta*gamma*muupsilon**4*n**3*x30 + 7*beta*muupsilon**5*n**3*x30 - 4*betaupsilon*gamma**3*lamdaupsilon*
+muupsilon*n**3 - 21*betaupsilon*gamma**2*lamdaupsilon*muupsilon**2*n**3 - 25*betaupsilon*gamma*lamdaupsilon*
+muupsilon**3*n**3 - 7*betaupsilon*lamdaupsilon*muupsilon**4*n**3 + 4*gamma**3*muupsilon**3*n**4 + 10*gamma**2*
+muupsilon**4*n**4 + 6*gamma*muupsilon**5*n**4) + 3*df(y1,t)**5*y1**5*n*x30*( - 224*beta**2*betaupsilon**2*
+lamdaupsilon**2*x30**2 + 224*beta**2*betaupsilon*lamdaupsilon*muupsilon**2*n*x30**2 - 84*beta*betaupsilon**2*
+gamma*lamdaupsilon**2*n*x30 - 140*beta*betaupsilon**2*lamdaupsilon**2*muupsilon*n*x30 + 28*beta*betaupsilon*
+gamma**2*lamdaupsilon*muupsilon*n**2*x30 + 252*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2*x30 + 84*
+beta*betaupsilon*lamdaupsilon*muupsilon**3*n**2*x30 - 7*beta*gamma**2*muupsilon**3*n**3*x30 - 42*beta*gamma*
+muupsilon**4*n**3*x30 - 7*beta*muupsilon**5*n**3*x30 + 8*betaupsilon*gamma**3*lamdaupsilon*muupsilon*n**3 + 42
+*betaupsilon*gamma**2*lamdaupsilon*muupsilon**2*n**3 + 50*betaupsilon*gamma*lamdaupsilon*muupsilon**3*n**3 + 
+14*betaupsilon*lamdaupsilon*muupsilon**4*n**3 - 8*gamma**3*muupsilon**3*n**4 - 20*gamma**2*muupsilon**4*n**4 -
+ 12*gamma*muupsilon**5*n**4) + 5*df(y1,t)**5*y1**4*n*x30**2*(168*beta**2*betaupsilon**2*lamdaupsilon**2*x30**2
+ - 168*beta**2*betaupsilon*lamdaupsilon*muupsilon**2*n*x30**2 + 84*beta*betaupsilon**2*gamma*lamdaupsilon**2*n
+*x30 + 140*beta*betaupsilon**2*lamdaupsilon**2*muupsilon*n*x30 - 28*beta*betaupsilon*gamma**2*lamdaupsilon*
+muupsilon*n**2*x30 - 252*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2*x30 - 84*beta*betaupsilon*
+lamdaupsilon*muupsilon**3*n**2*x30 + 7*beta*gamma**2*muupsilon**3*n**3*x30 + 42*beta*gamma*muupsilon**4*n**3*
+x30 + 7*beta*muupsilon**5*n**3*x30 - 12*betaupsilon*gamma**3*lamdaupsilon*muupsilon*n**3 - 63*betaupsilon*
+gamma**2*lamdaupsilon*muupsilon**2*n**3 - 75*betaupsilon*gamma*lamdaupsilon*muupsilon**3*n**3 - 21*betaupsilon
+*lamdaupsilon*muupsilon**4*n**3 + 12*gamma**3*muupsilon**3*n**4 + 30*gamma**2*muupsilon**4*n**4 + 18*gamma*
+muupsilon**5*n**4) + df(y1,t)**5*y1**3*n*x30**3*( - 672*beta**2*betaupsilon**2*lamdaupsilon**2*x30**2 + 672*
+beta**2*betaupsilon*lamdaupsilon*muupsilon**2*n*x30**2 - 420*beta*betaupsilon**2*gamma*lamdaupsilon**2*n*x30 -
+ 700*beta*betaupsilon**2*lamdaupsilon**2*muupsilon*n*x30 + 140*beta*betaupsilon*gamma**2*lamdaupsilon*
+muupsilon*n**2*x30 + 1260*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2*x30 + 420*beta*betaupsilon*
+lamdaupsilon*muupsilon**3*n**2*x30 - 35*beta*gamma**2*muupsilon**3*n**3*x30 - 210*beta*gamma*muupsilon**4*n**3
+*x30 - 35*beta*muupsilon**5*n**3*x30 + 80*betaupsilon*gamma**3*lamdaupsilon*muupsilon*n**3 + 420*betaupsilon*
+gamma**2*lamdaupsilon*muupsilon**2*n**3 + 500*betaupsilon*gamma*lamdaupsilon*muupsilon**3*n**3 + 140*
+betaupsilon*lamdaupsilon*muupsilon**4*n**3 - 80*gamma**3*muupsilon**3*n**4 - 200*gamma**2*muupsilon**4*n**4 - 
+120*gamma*muupsilon**5*n**4) + 3*df(y1,t)**5*y1**2*n*x30**4*(112*beta**2*betaupsilon**2*lamdaupsilon**2*x30**2
+ - 112*beta**2*betaupsilon*lamdaupsilon*muupsilon**2*n*x30**2 + 84*beta*betaupsilon**2*gamma*lamdaupsilon**2*n
+*x30 + 140*beta*betaupsilon**2*lamdaupsilon**2*muupsilon*n*x30 - 28*beta*betaupsilon*gamma**2*lamdaupsilon*
+muupsilon*n**2*x30 - 252*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2*x30 - 84*beta*betaupsilon*
+lamdaupsilon*muupsilon**3*n**2*x30 + 7*beta*gamma**2*muupsilon**3*n**3*x30 + 42*beta*gamma*muupsilon**4*n**3*
+x30 + 7*beta*muupsilon**5*n**3*x30 - 20*betaupsilon*gamma**3*lamdaupsilon*muupsilon*n**3 - 105*betaupsilon*
+gamma**2*lamdaupsilon*muupsilon**2*n**3 - 125*betaupsilon*gamma*lamdaupsilon*muupsilon**3*n**3 - 35*
+betaupsilon*lamdaupsilon*muupsilon**4*n**3 + 20*gamma**3*muupsilon**3*n**4 + 50*gamma**2*muupsilon**4*n**4 + 
+30*gamma*muupsilon**5*n**4) + df(y1,t)**5*y1*n*x30**5*( - 96*beta**2*betaupsilon**2*lamdaupsilon**2*x30**2 + 
+96*beta**2*betaupsilon*lamdaupsilon*muupsilon**2*n*x30**2 - 84*beta*betaupsilon**2*gamma*lamdaupsilon**2*n*x30
+ - 140*beta*betaupsilon**2*lamdaupsilon**2*muupsilon*n*x30 + 28*beta*betaupsilon*gamma**2*lamdaupsilon*
+muupsilon*n**2*x30 + 252*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2*x30 + 84*beta*betaupsilon*
+lamdaupsilon*muupsilon**3*n**2*x30 - 7*beta*gamma**2*muupsilon**3*n**3*x30 - 42*beta*gamma*muupsilon**4*n**3*
+x30 - 7*beta*muupsilon**5*n**3*x30 + 24*betaupsilon*gamma**3*lamdaupsilon*muupsilon*n**3 + 126*betaupsilon*
+gamma**2*lamdaupsilon*muupsilon**2*n**3 + 150*betaupsilon*gamma*lamdaupsilon*muupsilon**3*n**3 + 42*
+betaupsilon*lamdaupsilon*muupsilon**4*n**3 - 24*gamma**3*muupsilon**3*n**4 - 60*gamma**2*muupsilon**4*n**4 - 
+36*gamma*muupsilon**5*n**4) + df(y1,t)**5*n*x30**6*(12*beta**2*betaupsilon**2*lamdaupsilon**2*x30**2 - 12*beta
+**2*betaupsilon*lamdaupsilon*muupsilon**2*n*x30**2 + 12*beta*betaupsilon**2*gamma*lamdaupsilon**2*n*x30 + 20*
+beta*betaupsilon**2*lamdaupsilon**2*muupsilon*n*x30 - 4*beta*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2*
+x30 - 36*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2*x30 - 12*beta*betaupsilon*lamdaupsilon*
+muupsilon**3*n**2*x30 + beta*gamma**2*muupsilon**3*n**3*x30 + 6*beta*gamma*muupsilon**4*n**3*x30 + beta*
+muupsilon**5*n**3*x30 - 4*betaupsilon*gamma**3*lamdaupsilon*muupsilon*n**3 - 21*betaupsilon*gamma**2*
+lamdaupsilon*muupsilon**2*n**3 - 25*betaupsilon*gamma*lamdaupsilon*muupsilon**3*n**3 - 7*betaupsilon*
+lamdaupsilon*muupsilon**4*n**3 + 4*gamma**3*muupsilon**3*n**4 + 10*gamma**2*muupsilon**4*n**4 + 6*gamma*
+muupsilon**5*n**4) - 12*df(y1,t)**4*y1**9*beta**2*betaupsilon**2*lamdaupsilon**2*muupsilon*n + df(y1,t)**4*y1
+**8*beta*betaupsilon*lamdaupsilon*n*(108*beta*betaupsilon*lamdaupsilon*muupsilon*x30 + betaupsilon*gamma**2*
+lamdaupsilon*n + 12*betaupsilon*gamma*lamdaupsilon*muupsilon*n + 7*betaupsilon*lamdaupsilon*muupsilon**2*n - 2
+*gamma**2*muupsilon**2*n**2 - 12*gamma*muupsilon**3*n**2 - 2*muupsilon**4*n**2) + df(y1,t)**4*y1**7*n*( - 432*
+beta**2*betaupsilon**2*lamdaupsilon**2*muupsilon*x30**2 - 8*beta*betaupsilon**2*gamma**2*lamdaupsilon**2*n*x30
+ - 96*beta*betaupsilon**2*gamma*lamdaupsilon**2*muupsilon*n*x30 - 56*beta*betaupsilon**2*lamdaupsilon**2*
+muupsilon**2*n*x30 + 16*beta*betaupsilon*gamma**2*lamdaupsilon*muupsilon**2*n**2*x30 + 96*beta*betaupsilon*
+gamma*lamdaupsilon*muupsilon**3*n**2*x30 + 16*beta*betaupsilon*lamdaupsilon*muupsilon**4*n**2*x30 + 3*
+betaupsilon*gamma**3*lamdaupsilon*muupsilon**2*n**3 + 9*betaupsilon*gamma**2*lamdaupsilon*muupsilon**3*n**3 + 
+7*betaupsilon*gamma*lamdaupsilon*muupsilon**4*n**3 + betaupsilon*lamdaupsilon*muupsilon**5*n**3 - gamma**3*
+muupsilon**4*n**4 - 2*gamma**2*muupsilon**5*n**4 - gamma*muupsilon**6*n**4) + 7*df(y1,t)**4*y1**6*n*x30*(144*
+beta**2*betaupsilon**2*lamdaupsilon**2*muupsilon*x30**2 + 4*beta*betaupsilon**2*gamma**2*lamdaupsilon**2*n*x30
+ + 48*beta*betaupsilon**2*gamma*lamdaupsilon**2*muupsilon*n*x30 + 28*beta*betaupsilon**2*lamdaupsilon**2*
+muupsilon**2*n*x30 - 8*beta*betaupsilon*gamma**2*lamdaupsilon*muupsilon**2*n**2*x30 - 48*beta*betaupsilon*
+gamma*lamdaupsilon*muupsilon**3*n**2*x30 - 8*beta*betaupsilon*lamdaupsilon*muupsilon**4*n**2*x30 - 3*
+betaupsilon*gamma**3*lamdaupsilon*muupsilon**2*n**3 - 9*betaupsilon*gamma**2*lamdaupsilon*muupsilon**3*n**3 - 
+7*betaupsilon*gamma*lamdaupsilon*muupsilon**4*n**3 - betaupsilon*lamdaupsilon*muupsilon**5*n**3 + gamma**3*
+muupsilon**4*n**4 + 2*gamma**2*muupsilon**5*n**4 + gamma*muupsilon**6*n**4) + 7*df(y1,t)**4*y1**5*n*x30**2*( -
+ 216*beta**2*betaupsilon**2*lamdaupsilon**2*muupsilon*x30**2 - 8*beta*betaupsilon**2*gamma**2*lamdaupsilon**2*
+n*x30 - 96*beta*betaupsilon**2*gamma*lamdaupsilon**2*muupsilon*n*x30 - 56*beta*betaupsilon**2*lamdaupsilon**2*
+muupsilon**2*n*x30 + 16*beta*betaupsilon*gamma**2*lamdaupsilon*muupsilon**2*n**2*x30 + 96*beta*betaupsilon*
+gamma*lamdaupsilon*muupsilon**3*n**2*x30 + 16*beta*betaupsilon*lamdaupsilon*muupsilon**4*n**2*x30 + 9*
+betaupsilon*gamma**3*lamdaupsilon*muupsilon**2*n**3 + 27*betaupsilon*gamma**2*lamdaupsilon*muupsilon**3*n**3 +
+ 21*betaupsilon*gamma*lamdaupsilon*muupsilon**4*n**3 + 3*betaupsilon*lamdaupsilon*muupsilon**5*n**3 - 3*gamma
+**3*muupsilon**4*n**4 - 6*gamma**2*muupsilon**5*n**4 - 3*gamma*muupsilon**6*n**4) + 7*df(y1,t)**4*y1**4*n*x30
+**3*(216*beta**2*betaupsilon**2*lamdaupsilon**2*muupsilon*x30**2 + 10*beta*betaupsilon**2*gamma**2*
+lamdaupsilon**2*n*x30 + 120*beta*betaupsilon**2*gamma*lamdaupsilon**2*muupsilon*n*x30 + 70*beta*betaupsilon**2
+*lamdaupsilon**2*muupsilon**2*n*x30 - 20*beta*betaupsilon*gamma**2*lamdaupsilon*muupsilon**2*n**2*x30 - 120*
+beta*betaupsilon*gamma*lamdaupsilon*muupsilon**3*n**2*x30 - 20*beta*betaupsilon*lamdaupsilon*muupsilon**4*n**2
+*x30 - 15*betaupsilon*gamma**3*lamdaupsilon*muupsilon**2*n**3 - 45*betaupsilon*gamma**2*lamdaupsilon*muupsilon
+**3*n**3 - 35*betaupsilon*gamma*lamdaupsilon*muupsilon**4*n**3 - 5*betaupsilon*lamdaupsilon*muupsilon**5*n**3 
++ 5*gamma**3*muupsilon**4*n**4 + 10*gamma**2*muupsilon**5*n**4 + 5*gamma*muupsilon**6*n**4) + 7*df(y1,t)**4*y1
+**3*n*x30**4*( - 144*beta**2*betaupsilon**2*lamdaupsilon**2*muupsilon*x30**2 - 8*beta*betaupsilon**2*gamma**2*
+lamdaupsilon**2*n*x30 - 96*beta*betaupsilon**2*gamma*lamdaupsilon**2*muupsilon*n*x30 - 56*beta*betaupsilon**2*
+lamdaupsilon**2*muupsilon**2*n*x30 + 16*beta*betaupsilon*gamma**2*lamdaupsilon*muupsilon**2*n**2*x30 + 96*beta
+*betaupsilon*gamma*lamdaupsilon*muupsilon**3*n**2*x30 + 16*beta*betaupsilon*lamdaupsilon*muupsilon**4*n**2*x30
+ + 15*betaupsilon*gamma**3*lamdaupsilon*muupsilon**2*n**3 + 45*betaupsilon*gamma**2*lamdaupsilon*muupsilon**3*
+n**3 + 35*betaupsilon*gamma*lamdaupsilon*muupsilon**4*n**3 + 5*betaupsilon*lamdaupsilon*muupsilon**5*n**3 - 5*
+gamma**3*muupsilon**4*n**4 - 10*gamma**2*muupsilon**5*n**4 - 5*gamma*muupsilon**6*n**4) + df(y1,t)**4*y1**2*n*
+x30**5*(432*beta**2*betaupsilon**2*lamdaupsilon**2*muupsilon*x30**2 + 28*beta*betaupsilon**2*gamma**2*
+lamdaupsilon**2*n*x30 + 336*beta*betaupsilon**2*gamma*lamdaupsilon**2*muupsilon*n*x30 + 196*beta*betaupsilon**
+2*lamdaupsilon**2*muupsilon**2*n*x30 - 56*beta*betaupsilon*gamma**2*lamdaupsilon*muupsilon**2*n**2*x30 - 336*
+beta*betaupsilon*gamma*lamdaupsilon*muupsilon**3*n**2*x30 - 56*beta*betaupsilon*lamdaupsilon*muupsilon**4*n**2
+*x30 - 63*betaupsilon*gamma**3*lamdaupsilon*muupsilon**2*n**3 - 189*betaupsilon*gamma**2*lamdaupsilon*
+muupsilon**3*n**3 - 147*betaupsilon*gamma*lamdaupsilon*muupsilon**4*n**3 - 21*betaupsilon*lamdaupsilon*
+muupsilon**5*n**3 + 21*gamma**3*muupsilon**4*n**4 + 42*gamma**2*muupsilon**5*n**4 + 21*gamma*muupsilon**6*n**4
+) + df(y1,t)**4*y1*n*x30**6*( - 108*beta**2*betaupsilon**2*lamdaupsilon**2*muupsilon*x30**2 - 8*beta*
+betaupsilon**2*gamma**2*lamdaupsilon**2*n*x30 - 96*beta*betaupsilon**2*gamma*lamdaupsilon**2*muupsilon*n*x30 -
+ 56*beta*betaupsilon**2*lamdaupsilon**2*muupsilon**2*n*x30 + 16*beta*betaupsilon*gamma**2*lamdaupsilon*
+muupsilon**2*n**2*x30 + 96*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**3*n**2*x30 + 16*beta*betaupsilon*
+lamdaupsilon*muupsilon**4*n**2*x30 + 21*betaupsilon*gamma**3*lamdaupsilon*muupsilon**2*n**3 + 63*betaupsilon*
+gamma**2*lamdaupsilon*muupsilon**3*n**3 + 49*betaupsilon*gamma*lamdaupsilon*muupsilon**4*n**3 + 7*betaupsilon*
+lamdaupsilon*muupsilon**5*n**3 - 7*gamma**3*muupsilon**4*n**4 - 14*gamma**2*muupsilon**5*n**4 - 7*gamma*
+muupsilon**6*n**4) + df(y1,t)**4*n*x30**7*(12*beta**2*betaupsilon**2*lamdaupsilon**2*muupsilon*x30**2 + beta*
+betaupsilon**2*gamma**2*lamdaupsilon**2*n*x30 + 12*beta*betaupsilon**2*gamma*lamdaupsilon**2*muupsilon*n*x30 +
+ 7*beta*betaupsilon**2*lamdaupsilon**2*muupsilon**2*n*x30 - 2*beta*betaupsilon*gamma**2*lamdaupsilon*muupsilon
+**2*n**2*x30 - 12*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**3*n**2*x30 - 2*beta*betaupsilon*lamdaupsilon*
+muupsilon**4*n**2*x30 - 3*betaupsilon*gamma**3*lamdaupsilon*muupsilon**2*n**3 - 9*betaupsilon*gamma**2*
+lamdaupsilon*muupsilon**3*n**3 - 7*betaupsilon*gamma*lamdaupsilon*muupsilon**4*n**3 - betaupsilon*lamdaupsilon
+*muupsilon**5*n**3 + gamma**3*muupsilon**4*n**4 + 2*gamma**2*muupsilon**5*n**4 + gamma*muupsilon**6*n**4) - 4*
+df(y1,t)**3*y1**10*beta**2*betaupsilon**3*lamdaupsilon**3 + df(y1,t)**3*y1**9*beta*betaupsilon**2*lamdaupsilon
+**2*(40*beta*betaupsilon*lamdaupsilon*x30 - gamma**2*muupsilon*n**2 - 6*gamma*muupsilon**2*n**2 - muupsilon**3
+*n**2) + df(y1,t)**3*y1**8*betaupsilon*lamdaupsilon*( - 180*beta**2*betaupsilon**2*lamdaupsilon**2*x30**2 + 9*
+beta*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2*x30 + 54*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**
+2*n**2*x30 + 9*beta*betaupsilon*lamdaupsilon*muupsilon**3*n**2*x30 - gamma**3*muupsilon**3*n**4 - 2*gamma**2*
+muupsilon**4*n**4 - gamma*muupsilon**5*n**4) + 4*df(y1,t)**3*y1**7*betaupsilon*lamdaupsilon*x30*(120*beta**2*
+betaupsilon**2*lamdaupsilon**2*x30**2 - 9*beta*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2*x30 - 54*beta*
+betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2*x30 - 9*beta*betaupsilon*lamdaupsilon*muupsilon**3*n**2*x30 +
+ 2*gamma**3*muupsilon**3*n**4 + 4*gamma**2*muupsilon**4*n**4 + 2*gamma*muupsilon**5*n**4) + 28*df(y1,t)**3*y1
+**6*betaupsilon*lamdaupsilon*x30**2*( - 30*beta**2*betaupsilon**2*lamdaupsilon**2*x30**2 + 3*beta*betaupsilon*
+gamma**2*lamdaupsilon*muupsilon*n**2*x30 + 18*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2*x30 + 3*
+beta*betaupsilon*lamdaupsilon*muupsilon**3*n**2*x30 - gamma**3*muupsilon**3*n**4 - 2*gamma**2*muupsilon**4*n**
+4 - gamma*muupsilon**5*n**4) + 14*df(y1,t)**3*y1**5*betaupsilon*lamdaupsilon*x30**3*(72*beta**2*betaupsilon**2
+*lamdaupsilon**2*x30**2 - 9*beta*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2*x30 - 54*beta*betaupsilon*
+gamma*lamdaupsilon*muupsilon**2*n**2*x30 - 9*beta*betaupsilon*lamdaupsilon*muupsilon**3*n**2*x30 + 4*gamma**3*
+muupsilon**3*n**4 + 8*gamma**2*muupsilon**4*n**4 + 4*gamma*muupsilon**5*n**4) + 14*df(y1,t)**3*y1**4*
+betaupsilon*lamdaupsilon*x30**4*( - 60*beta**2*betaupsilon**2*lamdaupsilon**2*x30**2 + 9*beta*betaupsilon*
+gamma**2*lamdaupsilon*muupsilon*n**2*x30 + 54*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2*x30 + 9*
+beta*betaupsilon*lamdaupsilon*muupsilon**3*n**2*x30 - 5*gamma**3*muupsilon**3*n**4 - 10*gamma**2*muupsilon**4*
+n**4 - 5*gamma*muupsilon**5*n**4) + 4*df(y1,t)**3*y1**3*betaupsilon*lamdaupsilon*x30**5*(120*beta**2*
+betaupsilon**2*lamdaupsilon**2*x30**2 - 21*beta*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2*x30 - 126*
+beta*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2*x30 - 21*beta*betaupsilon*lamdaupsilon*muupsilon**3*n**2
+*x30 + 14*gamma**3*muupsilon**3*n**4 + 28*gamma**2*muupsilon**4*n**4 + 14*gamma*muupsilon**5*n**4) + 4*df(y1,t
+)**3*y1**2*betaupsilon*lamdaupsilon*x30**6*( - 45*beta**2*betaupsilon**2*lamdaupsilon**2*x30**2 + 9*beta*
+betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2*x30 + 54*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**
+2*x30 + 9*beta*betaupsilon*lamdaupsilon*muupsilon**3*n**2*x30 - 7*gamma**3*muupsilon**3*n**4 - 14*gamma**2*
+muupsilon**4*n**4 - 7*gamma*muupsilon**5*n**4) + df(y1,t)**3*y1*betaupsilon*lamdaupsilon*x30**7*(40*beta**2*
+betaupsilon**2*lamdaupsilon**2*x30**2 - 9*beta*betaupsilon*gamma**2*lamdaupsilon*muupsilon*n**2*x30 - 54*beta*
+betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2*x30 - 9*beta*betaupsilon*lamdaupsilon*muupsilon**3*n**2*x30 +
+ 8*gamma**3*muupsilon**3*n**4 + 16*gamma**2*muupsilon**4*n**4 + 8*gamma*muupsilon**5*n**4) + df(y1,t)**3*
+betaupsilon*lamdaupsilon*x30**8*( - 4*beta**2*betaupsilon**2*lamdaupsilon**2*x30**2 + beta*betaupsilon*gamma**
+2*lamdaupsilon*muupsilon*n**2*x30 + 6*beta*betaupsilon*gamma*lamdaupsilon*muupsilon**2*n**2*x30 + beta*
+betaupsilon*lamdaupsilon*muupsilon**3*n**2*x30 - gamma**3*muupsilon**3*n**4 - 2*gamma**2*muupsilon**4*n**4 - 
+gamma*muupsilon**5*n**4)
+
+
+aa_(2) :=  - df(y1,t,4)*df(y1,t)*x1*y1**4*betaupsilon*n**2 + 4*df(y1,t,4)*df(y1,t)*x1*y1**3*betaupsilon*n**2*
+x30 - 6*df(y1,t,4)*df(y1,t)*x1*y1**2*betaupsilon*n**2*x30**2 + 4*df(y1,t,4)*df(y1,t)*x1*y1*betaupsilon*n**2*
+x30**3 - df(y1,t,4)*df(y1,t)*x1*betaupsilon*n**2*x30**4 + df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1**3*n**3 - 3*df(y1,
+t,3)*df(y1,t,2)*df(y1,t)*y1**2*n**3*x30 + 3*df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1*n**3*x30**2 - df(y1,t,3)*df(y1,t
+,2)*df(y1,t)*n**3*x30**3 + df(y1,t,3)*df(y1,t,2)*x1*y1**4*betaupsilon*n**2 - 4*df(y1,t,3)*df(y1,t,2)*x1*y1**3*
+betaupsilon*n**2*x30 + 6*df(y1,t,3)*df(y1,t,2)*x1*y1**2*betaupsilon*n**2*x30**2 - 4*df(y1,t,3)*df(y1,t,2)*x1*
+y1*betaupsilon*n**2*x30**3 + df(y1,t,3)*df(y1,t,2)*x1*betaupsilon*n**2*x30**4 - df(y1,t,3)*df(y1,t)**3*y1**2*n
+**3 + 2*df(y1,t,3)*df(y1,t)**3*y1*n**3*x30 - df(y1,t,3)*df(y1,t)**3*n**3*x30**2 + 4*df(y1,t,3)*df(y1,t)**2*x1*
+y1**3*betaupsilon*n**2 - 12*df(y1,t,3)*df(y1,t)**2*x1*y1**2*betaupsilon*n**2*x30 + 12*df(y1,t,3)*df(y1,t)**2*
+x1*y1*betaupsilon*n**2*x30**2 - 4*df(y1,t,3)*df(y1,t)**2*x1*betaupsilon*n**2*x30**3 + df(y1,t,3)*df(y1,t)**2*
+y1**3*muupsilon*n**3 - 3*df(y1,t,3)*df(y1,t)**2*y1**2*muupsilon*n**3*x30 + 3*df(y1,t,3)*df(y1,t)**2*y1*
+muupsilon*n**3*x30**2 - df(y1,t,3)*df(y1,t)**2*muupsilon*n**3*x30**3 + df(y1,t,3)*df(y1,t)*x1*y1**4*
+betaupsilon*n**2*( - gamma - 3*muupsilon) + 4*df(y1,t,3)*df(y1,t)*x1*y1**3*betaupsilon*n**2*x30*(gamma + 3*
+muupsilon) + 6*df(y1,t,3)*df(y1,t)*x1*y1**2*betaupsilon*n**2*x30**2*( - gamma - 3*muupsilon) + 4*df(y1,t,3)*df
+(y1,t)*x1*y1*betaupsilon*n**2*x30**3*(gamma + 3*muupsilon) + df(y1,t,3)*df(y1,t)*x1*betaupsilon*n**2*x30**4*( 
+- gamma - 3*muupsilon) - df(y1,t,2)**3*y1**3*n**3 + 3*df(y1,t,2)**3*y1**2*n**3*x30 - 3*df(y1,t,2)**3*y1*n**3*
+x30**2 + df(y1,t,2)**3*n**3*x30**3 - df(y1,t,2)**2*df(y1,t)**2*y1**2*n**3 + 2*df(y1,t,2)**2*df(y1,t)**2*y1*n**
+3*x30 - df(y1,t,2)**2*df(y1,t)**2*n**3*x30**2 - df(y1,t,2)**2*df(y1,t)*y1**3*gamma*n**3 + 3*df(y1,t,2)**2*df(
+y1,t)*y1**2*gamma*n**3*x30 - 3*df(y1,t,2)**2*df(y1,t)*y1*gamma*n**3*x30**2 + df(y1,t,2)**2*df(y1,t)*gamma*n**3
+*x30**3 + df(y1,t,2)**2*x1*y1**4*betaupsilon*n**2*(gamma + 2*muupsilon) + 4*df(y1,t,2)**2*x1*y1**3*betaupsilon
+*n**2*x30*( - gamma - 2*muupsilon) + 6*df(y1,t,2)**2*x1*y1**2*betaupsilon*n**2*x30**2*(gamma + 2*muupsilon) + 
+4*df(y1,t,2)**2*x1*y1*betaupsilon*n**2*x30**3*( - gamma - 2*muupsilon) + df(y1,t,2)**2*x1*betaupsilon*n**2*x30
+**4*(gamma + 2*muupsilon) - df(y1,t,2)**2*y1**4*betaupsilon*lamdaupsilon*n**2 + 4*df(y1,t,2)**2*y1**3*
+betaupsilon*lamdaupsilon*n**2*x30 - 6*df(y1,t,2)**2*y1**2*betaupsilon*lamdaupsilon*n**2*x30**2 + 4*df(y1,t,2)
+**2*y1*betaupsilon*lamdaupsilon*n**2*x30**3 - df(y1,t,2)**2*betaupsilon*lamdaupsilon*n**2*x30**4 + 4*df(y1,t,2
+)*df(y1,t)**4*y1*n**3 - 4*df(y1,t,2)*df(y1,t)**4*n**3*x30 - 10*df(y1,t,2)*df(y1,t)**3*x1*y1**2*betaupsilon*n**
+2 + 20*df(y1,t,2)*df(y1,t)**3*x1*y1*betaupsilon*n**2*x30 - 10*df(y1,t,2)*df(y1,t)**3*x1*betaupsilon*n**2*x30**
+2 + df(y1,t,2)*df(y1,t)**3*y1**2*n**3*(2*gamma - 5*muupsilon) + 2*df(y1,t,2)*df(y1,t)**3*y1*n**3*x30*( - 2*
+gamma + 5*muupsilon) + df(y1,t,2)*df(y1,t)**3*n**3*x30**2*(2*gamma - 5*muupsilon) - 2*df(y1,t,2)*df(y1,t)**2*
+x1*y1**4*beta*betaupsilon*n + df(y1,t,2)*df(y1,t)**2*x1*y1**3*betaupsilon*n*(8*beta*x30 + 2*gamma*n + 7*
+muupsilon*n) + 3*df(y1,t,2)*df(y1,t)**2*x1*y1**2*betaupsilon*n*x30*( - 4*beta*x30 - 2*gamma*n - 7*muupsilon*n)
+ + df(y1,t,2)*df(y1,t)**2*x1*y1*betaupsilon*n*x30**2*(8*beta*x30 + 6*gamma*n + 21*muupsilon*n) + df(y1,t,2)*df
+(y1,t)**2*x1*betaupsilon*n*x30**3*( - 2*beta*x30 - 2*gamma*n - 7*muupsilon*n) + df(y1,t,2)*df(y1,t)**2*y1**3*n
+**2*(betaupsilon*lamdaupsilon - 2*gamma*muupsilon*n + 2*muupsilon**2*n) + 3*df(y1,t,2)*df(y1,t)**2*y1**2*n**2*
+x30*( - betaupsilon*lamdaupsilon + 2*gamma*muupsilon*n - 2*muupsilon**2*n) + 3*df(y1,t,2)*df(y1,t)**2*y1*n**2*
+x30**2*(betaupsilon*lamdaupsilon - 2*gamma*muupsilon*n + 2*muupsilon**2*n) + df(y1,t,2)*df(y1,t)**2*n**2*x30**
+3*( - betaupsilon*lamdaupsilon + 2*gamma*muupsilon*n - 2*muupsilon**2*n) + df(y1,t,2)*df(y1,t)*x1*y1**4*
+betaupsilon*muupsilon*n**2*( - gamma - 2*muupsilon) + 4*df(y1,t,2)*df(y1,t)*x1*y1**3*betaupsilon*muupsilon*n**
+2*x30*(gamma + 2*muupsilon) + 6*df(y1,t,2)*df(y1,t)*x1*y1**2*betaupsilon*muupsilon*n**2*x30**2*( - gamma - 2*
+muupsilon) + 4*df(y1,t,2)*df(y1,t)*x1*y1*betaupsilon*muupsilon*n**2*x30**3*(gamma + 2*muupsilon) + df(y1,t,2)*
+df(y1,t)*x1*betaupsilon*muupsilon*n**2*x30**4*( - gamma - 2*muupsilon) - df(y1,t,2)*df(y1,t)*y1**4*betaupsilon
+*gamma*lamdaupsilon*n**2 + 4*df(y1,t,2)*df(y1,t)*y1**3*betaupsilon*gamma*lamdaupsilon*n**2*x30 - 6*df(y1,t,2)*
+df(y1,t)*y1**2*betaupsilon*gamma*lamdaupsilon*n**2*x30**2 + 4*df(y1,t,2)*df(y1,t)*y1*betaupsilon*gamma*
+lamdaupsilon*n**2*x30**3 - df(y1,t,2)*df(y1,t)*betaupsilon*gamma*lamdaupsilon*n**2*x30**4 - 2*df(y1,t)**6*n**3
+ + 6*df(y1,t)**5*x1*y1*betaupsilon*n**2 - 6*df(y1,t)**5*x1*betaupsilon*n**2*x30 + df(y1,t)**5*y1*n**3*( - 
+gamma + 4*muupsilon) + df(y1,t)**5*n**3*x30*(gamma - 4*muupsilon) + 2*df(y1,t)**4*x1*y1**3*beta*betaupsilon*n 
++ 2*df(y1,t)**4*x1*y1**2*betaupsilon*n*( - 3*beta*x30 - gamma*n - 3*muupsilon*n) + 2*df(y1,t)**4*x1*y1*
+betaupsilon*n*x30*(3*beta*x30 + 2*gamma*n + 6*muupsilon*n) + 2*df(y1,t)**4*x1*betaupsilon*n*x30**2*( - beta*
+x30 - gamma*n - 3*muupsilon*n) + df(y1,t)**4*y1**2*muupsilon*n**3*(2*gamma - 3*muupsilon) + 2*df(y1,t)**4*y1*
+muupsilon*n**3*x30*( - 2*gamma + 3*muupsilon) + df(y1,t)**4*muupsilon*n**3*x30**2*(2*gamma - 3*muupsilon) - 2*
+df(y1,t)**3*x1*y1**4*beta*betaupsilon*muupsilon*n + df(y1,t)**3*x1*y1**3*betaupsilon*muupsilon*n*(8*beta*x30 +
+ 2*gamma*n + 3*muupsilon*n) + 3*df(y1,t)**3*x1*y1**2*betaupsilon*muupsilon*n*x30*( - 4*beta*x30 - 2*gamma*n - 
+3*muupsilon*n) + df(y1,t)**3*x1*y1*betaupsilon*muupsilon*n*x30**2*(8*beta*x30 + 6*gamma*n + 9*muupsilon*n) + 
+df(y1,t)**3*x1*betaupsilon*muupsilon*n*x30**3*( - 2*beta*x30 - 2*gamma*n - 3*muupsilon*n) + df(y1,t)**3*y1**3*
+n**2*(betaupsilon*gamma*lamdaupsilon - betaupsilon*lamdaupsilon*muupsilon - gamma*muupsilon**2*n + muupsilon**
+3*n) + 3*df(y1,t)**3*y1**2*n**2*x30*( - betaupsilon*gamma*lamdaupsilon + betaupsilon*lamdaupsilon*muupsilon + 
+gamma*muupsilon**2*n - muupsilon**3*n) + 3*df(y1,t)**3*y1*n**2*x30**2*(betaupsilon*gamma*lamdaupsilon - 
+betaupsilon*lamdaupsilon*muupsilon - gamma*muupsilon**2*n + muupsilon**3*n) + df(y1,t)**3*n**2*x30**3*( - 
+betaupsilon*gamma*lamdaupsilon + betaupsilon*lamdaupsilon*muupsilon + gamma*muupsilon**2*n - muupsilon**3*n) -
+ 2*df(y1,t)**2*x1*y1**5*beta*betaupsilon**2*lamdaupsilon + df(y1,t)**2*x1*y1**4*betaupsilon*(10*beta*
+betaupsilon*lamdaupsilon*x30 - gamma*muupsilon**2*n**2 - muupsilon**3*n**2) + 4*df(y1,t)**2*x1*y1**3*
+betaupsilon*x30*( - 5*beta*betaupsilon*lamdaupsilon*x30 + gamma*muupsilon**2*n**2 + muupsilon**3*n**2) + 2*df(
+y1,t)**2*x1*y1**2*betaupsilon*x30**2*(10*beta*betaupsilon*lamdaupsilon*x30 - 3*gamma*muupsilon**2*n**2 - 3*
+muupsilon**3*n**2) + 2*df(y1,t)**2*x1*y1*betaupsilon*x30**3*( - 5*beta*betaupsilon*lamdaupsilon*x30 + 2*gamma*
+muupsilon**2*n**2 + 2*muupsilon**3*n**2) + df(y1,t)**2*x1*betaupsilon*x30**4*(2*beta*betaupsilon*lamdaupsilon*
+x30 - gamma*muupsilon**2*n**2 - muupsilon**3*n**2) + df(y1,t)**2*y1**4*betaupsilon*lamdaupsilon*muupsilon*n**2
+*( - gamma + muupsilon) + 4*df(y1,t)**2*y1**3*betaupsilon*lamdaupsilon*muupsilon*n**2*x30*(gamma - muupsilon) 
++ 6*df(y1,t)**2*y1**2*betaupsilon*lamdaupsilon*muupsilon*n**2*x30**2*( - gamma + muupsilon) + 4*df(y1,t)**2*y1
+*betaupsilon*lamdaupsilon*muupsilon*n**2*x30**3*(gamma - muupsilon) + df(y1,t)**2*betaupsilon*lamdaupsilon*
+muupsilon*n**2*x30**4*( - gamma + muupsilon)
+
+
+aa_(3) :=  - df(y1,t)*n - x2*y1*betaupsilon + x2*betaupsilon*x30
+
+
+aa_(4) := x3 + y1 - x30
+
+
+aa_(5) := df(y1,t,4)*df(y1,t,2)*df(y1,t)*y1**4*n**2 - 4*df(y1,t,4)*df(y1,t,2)*df(y1,t)*y1**3*n**2*x30 + 6*df(
+y1,t,4)*df(y1,t,2)*df(y1,t)*y1**2*n**2*x30**2 - 4*df(y1,t,4)*df(y1,t,2)*df(y1,t)*y1*n**2*x30**3 + df(y1,t,4)*
+df(y1,t,2)*df(y1,t)*n**2*x30**4 - df(y1,t,4)*df(y1,t)**3*y1**3*n**2 + 3*df(y1,t,4)*df(y1,t)**3*y1**2*n**2*x30 
+- 3*df(y1,t,4)*df(y1,t)**3*y1*n**2*x30**2 + df(y1,t,4)*df(y1,t)**3*n**2*x30**3 + df(y1,t,4)*df(y1,t)**2*y1**4*
+muupsilon*n**2 - 4*df(y1,t,4)*df(y1,t)**2*y1**3*muupsilon*n**2*x30 + 6*df(y1,t,4)*df(y1,t)**2*y1**2*muupsilon*
+n**2*x30**2 - 4*df(y1,t,4)*df(y1,t)**2*y1*muupsilon*n**2*x30**3 + df(y1,t,4)*df(y1,t)**2*muupsilon*n**2*x30**4
+ - df(y1,t,3)*df(y1,t,2)**2*y1**4*n**2 + 4*df(y1,t,3)*df(y1,t,2)**2*y1**3*n**2*x30 - 6*df(y1,t,3)*df(y1,t,2)**
+2*y1**2*n**2*x30**2 + 4*df(y1,t,3)*df(y1,t,2)**2*y1*n**2*x30**3 - df(y1,t,3)*df(y1,t,2)**2*n**2*x30**4 - 3*df(
+y1,t,3)*df(y1,t,2)*df(y1,t)**2*y1**3*n**2 + 9*df(y1,t,3)*df(y1,t,2)*df(y1,t)**2*y1**2*n**2*x30 - 9*df(y1,t,3)*
+df(y1,t,2)*df(y1,t)**2*y1*n**2*x30**2 + 3*df(y1,t,3)*df(y1,t,2)*df(y1,t)**2*n**2*x30**3 + df(y1,t,3)*df(y1,t,2
+)*df(y1,t)*x4*y1**4*beta*n - 4*df(y1,t,3)*df(y1,t,2)*df(y1,t)*x4*y1**3*beta*n*x30 + 6*df(y1,t,3)*df(y1,t,2)*df
+(y1,t)*x4*y1**2*beta*n*x30**2 - 4*df(y1,t,3)*df(y1,t,2)*df(y1,t)*x4*y1*beta*n*x30**3 + df(y1,t,3)*df(y1,t,2)*
+df(y1,t)*x4*beta*n*x30**4 + df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1**4*n**2*(gamma + 2*muupsilon) + 4*df(y1,t,3)*df(
+y1,t,2)*df(y1,t)*y1**3*n**2*x30*( - gamma - 2*muupsilon) + 6*df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1**2*n**2*x30**2*
+(gamma + 2*muupsilon) + 4*df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1*n**2*x30**3*( - gamma - 2*muupsilon) + df(y1,t,3)*
+df(y1,t,2)*df(y1,t)*n**2*x30**4*(gamma + 2*muupsilon) + 4*df(y1,t,3)*df(y1,t)**4*y1**2*n**2 - 8*df(y1,t,3)*df(
+y1,t)**4*y1*n**2*x30 + 4*df(y1,t,3)*df(y1,t)**4*n**2*x30**2 - df(y1,t,3)*df(y1,t)**3*x4*y1**3*beta*n + 3*df(y1
+,t,3)*df(y1,t)**3*x4*y1**2*beta*n*x30 - 3*df(y1,t,3)*df(y1,t)**3*x4*y1*beta*n*x30**2 + df(y1,t,3)*df(y1,t)**3*
+x4*beta*n*x30**3 + df(y1,t,3)*df(y1,t)**3*y1**3*n**2*( - gamma - 7*muupsilon) + 3*df(y1,t,3)*df(y1,t)**3*y1**2
+*n**2*x30*(gamma + 7*muupsilon) + 3*df(y1,t,3)*df(y1,t)**3*y1*n**2*x30**2*( - gamma - 7*muupsilon) + df(y1,t,3
+)*df(y1,t)**3*n**2*x30**3*(gamma + 7*muupsilon) + df(y1,t,3)*df(y1,t)**2*x4*y1**4*beta*muupsilon*n - 4*df(y1,t
+,3)*df(y1,t)**2*x4*y1**3*beta*muupsilon*n*x30 + 6*df(y1,t,3)*df(y1,t)**2*x4*y1**2*beta*muupsilon*n*x30**2 - 4*
+df(y1,t,3)*df(y1,t)**2*x4*y1*beta*muupsilon*n*x30**3 + df(y1,t,3)*df(y1,t)**2*x4*beta*muupsilon*n*x30**4 + df(
+y1,t,3)*df(y1,t)**2*y1**4*muupsilon*n**2*(gamma + 3*muupsilon) + 4*df(y1,t,3)*df(y1,t)**2*y1**3*muupsilon*n**2
+*x30*( - gamma - 3*muupsilon) + 6*df(y1,t,3)*df(y1,t)**2*y1**2*muupsilon*n**2*x30**2*(gamma + 3*muupsilon) + 4
+*df(y1,t,3)*df(y1,t)**2*y1*muupsilon*n**2*x30**3*( - gamma - 3*muupsilon) + df(y1,t,3)*df(y1,t)**2*muupsilon*n
+**2*x30**4*(gamma + 3*muupsilon) - df(y1,t,2)**3*x4*y1**4*beta*n + 4*df(y1,t,2)**3*x4*y1**3*beta*n*x30 - 6*df(
+y1,t,2)**3*x4*y1**2*beta*n*x30**2 + 4*df(y1,t,2)**3*x4*y1*beta*n*x30**3 - df(y1,t,2)**3*x4*beta*n*x30**4 + df(
+y1,t,2)**3*y1**4*n**2*( - gamma - 2*muupsilon) + 4*df(y1,t,2)**3*y1**3*n**2*x30*(gamma + 2*muupsilon) + 6*df(
+y1,t,2)**3*y1**2*n**2*x30**2*( - gamma - 2*muupsilon) + 4*df(y1,t,2)**3*y1*n**2*x30**3*(gamma + 2*muupsilon) +
+ df(y1,t,2)**3*n**2*x30**4*( - gamma - 2*muupsilon) + 10*df(y1,t,2)**2*df(y1,t)**3*y1**2*n**2 - 20*df(y1,t,2)
+**2*df(y1,t)**3*y1*n**2*x30 + 10*df(y1,t,2)**2*df(y1,t)**3*n**2*x30**2 - df(y1,t,2)**2*df(y1,t)**2*x4*y1**3*
+beta*n + 3*df(y1,t,2)**2*df(y1,t)**2*x4*y1**2*beta*n*x30 - 3*df(y1,t,2)**2*df(y1,t)**2*x4*y1*beta*n*x30**2 + 
+df(y1,t,2)**2*df(y1,t)**2*x4*beta*n*x30**3 + 2*df(y1,t,2)**2*df(y1,t)**2*y1**4*beta*n + df(y1,t,2)**2*df(y1,t)
+**2*y1**3*n*( - 8*beta*x30 - gamma*n - 5*muupsilon*n) + 3*df(y1,t,2)**2*df(y1,t)**2*y1**2*n*x30*(4*beta*x30 + 
+gamma*n + 5*muupsilon*n) + df(y1,t,2)**2*df(y1,t)**2*y1*n*x30**2*( - 8*beta*x30 - 3*gamma*n - 15*muupsilon*n) 
++ df(y1,t,2)**2*df(y1,t)**2*n*x30**3*(2*beta*x30 + gamma*n + 5*muupsilon*n) - df(y1,t,2)**2*df(y1,t)*x4*y1**4*
+beta*gamma*n + 4*df(y1,t,2)**2*df(y1,t)*x4*y1**3*beta*gamma*n*x30 - 6*df(y1,t,2)**2*df(y1,t)*x4*y1**2*beta*
+gamma*n*x30**2 + 4*df(y1,t,2)**2*df(y1,t)*x4*y1*beta*gamma*n*x30**3 - df(y1,t,2)**2*df(y1,t)*x4*beta*gamma*n*
+x30**4 - df(y1,t,2)**2*x4*y1**5*beta*betaupsilon*lamdaupsilon + 5*df(y1,t,2)**2*x4*y1**4*beta*betaupsilon*
+lamdaupsilon*x30 - 10*df(y1,t,2)**2*x4*y1**3*beta*betaupsilon*lamdaupsilon*x30**2 + 10*df(y1,t,2)**2*x4*y1**2*
+beta*betaupsilon*lamdaupsilon*x30**3 - 5*df(y1,t,2)**2*x4*y1*beta*betaupsilon*lamdaupsilon*x30**4 + df(y1,t,2)
+**2*x4*beta*betaupsilon*lamdaupsilon*x30**5 - 16*df(y1,t,2)*df(y1,t)**5*y1*n**2 + 16*df(y1,t,2)*df(y1,t)**5*n
+**2*x30 + 4*df(y1,t,2)*df(y1,t)**4*x4*y1**2*beta*n - 8*df(y1,t,2)*df(y1,t)**4*x4*y1*beta*n*x30 + 4*df(y1,t,2)*
+df(y1,t)**4*x4*beta*n*x30**2 - 4*df(y1,t,2)*df(y1,t)**4*y1**3*beta*n + df(y1,t,2)*df(y1,t)**4*y1**2*n*(12*beta
+*x30 + 4*gamma*n + 23*muupsilon*n) + 2*df(y1,t,2)*df(y1,t)**4*y1*n*x30*( - 6*beta*x30 - 4*gamma*n - 23*
+muupsilon*n) + df(y1,t,2)*df(y1,t)**4*n*x30**2*(4*beta*x30 + 4*gamma*n + 23*muupsilon*n) + df(y1,t,2)*df(y1,t)
+**3*x4*y1**3*beta*n*(2*gamma - 5*muupsilon) + 3*df(y1,t,2)*df(y1,t)**3*x4*y1**2*beta*n*x30*( - 2*gamma + 5*
+muupsilon) + 3*df(y1,t,2)*df(y1,t)**3*x4*y1*beta*n*x30**2*(2*gamma - 5*muupsilon) + df(y1,t,2)*df(y1,t)**3*x4*
+beta*n*x30**3*( - 2*gamma + 5*muupsilon) + 4*df(y1,t,2)*df(y1,t)**3*y1**4*beta*muupsilon*n + df(y1,t,2)*df(y1,
+t)**3*y1**3*muupsilon*n*( - 16*beta*x30 - 5*gamma*n - 12*muupsilon*n) + 3*df(y1,t,2)*df(y1,t)**3*y1**2*
+muupsilon*n*x30*(8*beta*x30 + 5*gamma*n + 12*muupsilon*n) + df(y1,t,2)*df(y1,t)**3*y1*muupsilon*n*x30**2*( - 
+16*beta*x30 - 15*gamma*n - 36*muupsilon*n) + df(y1,t,2)*df(y1,t)**3*muupsilon*n*x30**3*(4*beta*x30 + 5*gamma*n
+ + 12*muupsilon*n) + df(y1,t,2)*df(y1,t)**2*x4*y1**4*beta*(betaupsilon*lamdaupsilon - 2*gamma*muupsilon*n + 2*
+muupsilon**2*n) + 4*df(y1,t,2)*df(y1,t)**2*x4*y1**3*beta*x30*( - betaupsilon*lamdaupsilon + 2*gamma*muupsilon*
+n - 2*muupsilon**2*n) + 6*df(y1,t,2)*df(y1,t)**2*x4*y1**2*beta*x30**2*(betaupsilon*lamdaupsilon - 2*gamma*
+muupsilon*n + 2*muupsilon**2*n) + 4*df(y1,t,2)*df(y1,t)**2*x4*y1*beta*x30**3*( - betaupsilon*lamdaupsilon + 2*
+gamma*muupsilon*n - 2*muupsilon**2*n) + df(y1,t,2)*df(y1,t)**2*x4*beta*x30**4*(betaupsilon*lamdaupsilon - 2*
+gamma*muupsilon*n + 2*muupsilon**2*n) + 2*df(y1,t,2)*df(y1,t)**2*y1**5*beta*betaupsilon*lamdaupsilon + df(y1,t
+,2)*df(y1,t)**2*y1**4*( - 10*beta*betaupsilon*lamdaupsilon*x30 + 2*gamma*muupsilon**2*n**2 + 3*muupsilon**3*n
+**2) + 4*df(y1,t,2)*df(y1,t)**2*y1**3*x30*(5*beta*betaupsilon*lamdaupsilon*x30 - 2*gamma*muupsilon**2*n**2 - 3
+*muupsilon**3*n**2) + 2*df(y1,t,2)*df(y1,t)**2*y1**2*x30**2*( - 10*beta*betaupsilon*lamdaupsilon*x30 + 6*gamma
+*muupsilon**2*n**2 + 9*muupsilon**3*n**2) + 2*df(y1,t,2)*df(y1,t)**2*y1*x30**3*(5*beta*betaupsilon*
+lamdaupsilon*x30 - 4*gamma*muupsilon**2*n**2 - 6*muupsilon**3*n**2) + df(y1,t,2)*df(y1,t)**2*x30**4*( - 2*beta
+*betaupsilon*lamdaupsilon*x30 + 2*gamma*muupsilon**2*n**2 + 3*muupsilon**3*n**2) - df(y1,t,2)*df(y1,t)*x4*y1**
+5*beta*betaupsilon*gamma*lamdaupsilon + 5*df(y1,t,2)*df(y1,t)*x4*y1**4*beta*betaupsilon*gamma*lamdaupsilon*x30
+ - 10*df(y1,t,2)*df(y1,t)*x4*y1**3*beta*betaupsilon*gamma*lamdaupsilon*x30**2 + 10*df(y1,t,2)*df(y1,t)*x4*y1**
+2*beta*betaupsilon*gamma*lamdaupsilon*x30**3 - 5*df(y1,t,2)*df(y1,t)*x4*y1*beta*betaupsilon*gamma*lamdaupsilon
+*x30**4 + df(y1,t,2)*df(y1,t)*x4*beta*betaupsilon*gamma*lamdaupsilon*x30**5 + 6*df(y1,t)**7*n**2 - 2*df(y1,t)
+**6*x4*y1*beta*n + 2*df(y1,t)**6*x4*beta*n*x30 + 2*df(y1,t)**6*y1**2*beta*n + 2*df(y1,t)**6*y1*n*( - 2*beta*
+x30 - gamma*n - 6*muupsilon*n) + 2*df(y1,t)**6*n*x30*(beta*x30 + gamma*n + 6*muupsilon*n) + df(y1,t)**5*x4*y1
+**2*beta*n*( - gamma + 4*muupsilon) + 2*df(y1,t)**5*x4*y1*beta*n*x30*(gamma - 4*muupsilon) + df(y1,t)**5*x4*
+beta*n*x30**2*( - gamma + 4*muupsilon) - 4*df(y1,t)**5*y1**3*beta*muupsilon*n + df(y1,t)**5*y1**2*muupsilon*n*
+(12*beta*x30 + 4*gamma*n + 9*muupsilon*n) + 2*df(y1,t)**5*y1*muupsilon*n*x30*( - 6*beta*x30 - 4*gamma*n - 9*
+muupsilon*n) + df(y1,t)**5*muupsilon*n*x30**2*(4*beta*x30 + 4*gamma*n + 9*muupsilon*n) + df(y1,t)**4*x4*y1**3*
+beta*muupsilon*n*(2*gamma - 3*muupsilon) + 3*df(y1,t)**4*x4*y1**2*beta*muupsilon*n*x30*( - 2*gamma + 3*
+muupsilon) + 3*df(y1,t)**4*x4*y1*beta*muupsilon*n*x30**2*(2*gamma - 3*muupsilon) + df(y1,t)**4*x4*beta*
+muupsilon*n*x30**3*( - 2*gamma + 3*muupsilon) + 2*df(y1,t)**4*y1**4*beta*( - betaupsilon*lamdaupsilon + 
+muupsilon**2*n) + df(y1,t)**4*y1**3*(8*beta*betaupsilon*lamdaupsilon*x30 - 8*beta*muupsilon**2*n*x30 - 3*gamma
+*muupsilon**2*n**2 - 4*muupsilon**3*n**2) + 3*df(y1,t)**4*y1**2*x30*( - 4*beta*betaupsilon*lamdaupsilon*x30 + 
+4*beta*muupsilon**2*n*x30 + 3*gamma*muupsilon**2*n**2 + 4*muupsilon**3*n**2) + df(y1,t)**4*y1*x30**2*(8*beta*
+betaupsilon*lamdaupsilon*x30 - 8*beta*muupsilon**2*n*x30 - 9*gamma*muupsilon**2*n**2 - 12*muupsilon**3*n**2) +
+ df(y1,t)**4*x30**3*( - 2*beta*betaupsilon*lamdaupsilon*x30 + 2*beta*muupsilon**2*n*x30 + 3*gamma*muupsilon**2
+*n**2 + 4*muupsilon**3*n**2) + df(y1,t)**3*x4*y1**4*beta*(betaupsilon*gamma*lamdaupsilon - betaupsilon*
+lamdaupsilon*muupsilon - gamma*muupsilon**2*n + muupsilon**3*n) + 4*df(y1,t)**3*x4*y1**3*beta*x30*( - 
+betaupsilon*gamma*lamdaupsilon + betaupsilon*lamdaupsilon*muupsilon + gamma*muupsilon**2*n - muupsilon**3*n) +
+ 6*df(y1,t)**3*x4*y1**2*beta*x30**2*(betaupsilon*gamma*lamdaupsilon - betaupsilon*lamdaupsilon*muupsilon - 
+gamma*muupsilon**2*n + muupsilon**3*n) + 4*df(y1,t)**3*x4*y1*beta*x30**3*( - betaupsilon*gamma*lamdaupsilon + 
+betaupsilon*lamdaupsilon*muupsilon + gamma*muupsilon**2*n - muupsilon**3*n) + df(y1,t)**3*x4*beta*x30**4*(
+betaupsilon*gamma*lamdaupsilon - betaupsilon*lamdaupsilon*muupsilon - gamma*muupsilon**2*n + muupsilon**3*n) +
+ 2*df(y1,t)**3*y1**5*beta*betaupsilon*lamdaupsilon*muupsilon + df(y1,t)**3*y1**4*muupsilon*( - 10*beta*
+betaupsilon*lamdaupsilon*x30 + gamma*muupsilon**2*n**2 + muupsilon**3*n**2) + 4*df(y1,t)**3*y1**3*muupsilon*
+x30*(5*beta*betaupsilon*lamdaupsilon*x30 - gamma*muupsilon**2*n**2 - muupsilon**3*n**2) + 2*df(y1,t)**3*y1**2*
+muupsilon*x30**2*( - 10*beta*betaupsilon*lamdaupsilon*x30 + 3*gamma*muupsilon**2*n**2 + 3*muupsilon**3*n**2) +
+ 2*df(y1,t)**3*y1*muupsilon*x30**3*(5*beta*betaupsilon*lamdaupsilon*x30 - 2*gamma*muupsilon**2*n**2 - 2*
+muupsilon**3*n**2) + df(y1,t)**3*muupsilon*x30**4*( - 2*beta*betaupsilon*lamdaupsilon*x30 + gamma*muupsilon**2
+*n**2 + muupsilon**3*n**2) + df(y1,t)**2*x4*y1**5*beta*betaupsilon*lamdaupsilon*muupsilon*( - gamma + 
+muupsilon) + 5*df(y1,t)**2*x4*y1**4*beta*betaupsilon*lamdaupsilon*muupsilon*x30*(gamma - muupsilon) + 10*df(y1
+,t)**2*x4*y1**3*beta*betaupsilon*lamdaupsilon*muupsilon*x30**2*( - gamma + muupsilon) + 10*df(y1,t)**2*x4*y1**
+2*beta*betaupsilon*lamdaupsilon*muupsilon*x30**3*(gamma - muupsilon) + 5*df(y1,t)**2*x4*y1*beta*betaupsilon*
+lamdaupsilon*muupsilon*x30**4*( - gamma + muupsilon) + df(y1,t)**2*x4*beta*betaupsilon*lamdaupsilon*muupsilon*
+x30**5*(gamma - muupsilon)
+
+
+aa_(6) :=  - df(x5,t)*df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1**4*beta*n**3 + 4*df(x5,t)*df(y1,t,3)*df(y1,t,2)*df(y1,
+t)*y1**3*beta*n**3*x30 - 6*df(x5,t)*df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1**2*beta*n**3*x30**2 + 4*df(x5,t)*df(y1,t
+,3)*df(y1,t,2)*df(y1,t)*y1*beta*n**3*x30**3 - df(x5,t)*df(y1,t,3)*df(y1,t,2)*df(y1,t)*beta*n**3*x30**4 + df(x5
+,t)*df(y1,t,3)*df(y1,t)**3*y1**3*beta*n**3 - 3*df(x5,t)*df(y1,t,3)*df(y1,t)**3*y1**2*beta*n**3*x30 + 3*df(x5,t
+)*df(y1,t,3)*df(y1,t)**3*y1*beta*n**3*x30**2 - df(x5,t)*df(y1,t,3)*df(y1,t)**3*beta*n**3*x30**3 - df(x5,t)*df(
+y1,t,3)*df(y1,t)**2*y1**4*beta*muupsilon*n**3 + 4*df(x5,t)*df(y1,t,3)*df(y1,t)**2*y1**3*beta*muupsilon*n**3*
+x30 - 6*df(x5,t)*df(y1,t,3)*df(y1,t)**2*y1**2*beta*muupsilon*n**3*x30**2 + 4*df(x5,t)*df(y1,t,3)*df(y1,t)**2*
+y1*beta*muupsilon*n**3*x30**3 - df(x5,t)*df(y1,t,3)*df(y1,t)**2*beta*muupsilon*n**3*x30**4 + df(x5,t)*df(y1,t,
+2)**3*y1**4*beta*n**3 - 4*df(x5,t)*df(y1,t,2)**3*y1**3*beta*n**3*x30 + 6*df(x5,t)*df(y1,t,2)**3*y1**2*beta*n**
+3*x30**2 - 4*df(x5,t)*df(y1,t,2)**3*y1*beta*n**3*x30**3 + df(x5,t)*df(y1,t,2)**3*beta*n**3*x30**4 + df(x5,t)*
+df(y1,t,2)**2*df(y1,t)**2*y1**3*beta*n**3 - 3*df(x5,t)*df(y1,t,2)**2*df(y1,t)**2*y1**2*beta*n**3*x30 + 3*df(x5
+,t)*df(y1,t,2)**2*df(y1,t)**2*y1*beta*n**3*x30**2 - df(x5,t)*df(y1,t,2)**2*df(y1,t)**2*beta*n**3*x30**3 + df(
+x5,t)*df(y1,t,2)**2*df(y1,t)*y1**4*beta*gamma*n**3 - 4*df(x5,t)*df(y1,t,2)**2*df(y1,t)*y1**3*beta*gamma*n**3*
+x30 + 6*df(x5,t)*df(y1,t,2)**2*df(y1,t)*y1**2*beta*gamma*n**3*x30**2 - 4*df(x5,t)*df(y1,t,2)**2*df(y1,t)*y1*
+beta*gamma*n**3*x30**3 + df(x5,t)*df(y1,t,2)**2*df(y1,t)*beta*gamma*n**3*x30**4 + df(x5,t)*df(y1,t,2)**2*y1**5
+*beta*betaupsilon*lamdaupsilon*n**2 - 5*df(x5,t)*df(y1,t,2)**2*y1**4*beta*betaupsilon*lamdaupsilon*n**2*x30 + 
+10*df(x5,t)*df(y1,t,2)**2*y1**3*beta*betaupsilon*lamdaupsilon*n**2*x30**2 - 10*df(x5,t)*df(y1,t,2)**2*y1**2*
+beta*betaupsilon*lamdaupsilon*n**2*x30**3 + 5*df(x5,t)*df(y1,t,2)**2*y1*beta*betaupsilon*lamdaupsilon*n**2*x30
+**4 - df(x5,t)*df(y1,t,2)**2*beta*betaupsilon*lamdaupsilon*n**2*x30**5 - 4*df(x5,t)*df(y1,t,2)*df(y1,t)**4*y1
+**2*beta*n**3 + 8*df(x5,t)*df(y1,t,2)*df(y1,t)**4*y1*beta*n**3*x30 - 4*df(x5,t)*df(y1,t,2)*df(y1,t)**4*beta*n
+**3*x30**2 + df(x5,t)*df(y1,t,2)*df(y1,t)**3*y1**3*beta*n**3*( - 2*gamma + 5*muupsilon) + 3*df(x5,t)*df(y1,t,2
+)*df(y1,t)**3*y1**2*beta*n**3*x30*(2*gamma - 5*muupsilon) + 3*df(x5,t)*df(y1,t,2)*df(y1,t)**3*y1*beta*n**3*x30
+**2*( - 2*gamma + 5*muupsilon) + df(x5,t)*df(y1,t,2)*df(y1,t)**3*beta*n**3*x30**3*(2*gamma - 5*muupsilon) + df
+(x5,t)*df(y1,t,2)*df(y1,t)**2*y1**4*beta*n**2*( - betaupsilon*lamdaupsilon + 2*gamma*muupsilon*n - 2*muupsilon
+**2*n) + 4*df(x5,t)*df(y1,t,2)*df(y1,t)**2*y1**3*beta*n**2*x30*(betaupsilon*lamdaupsilon - 2*gamma*muupsilon*n
+ + 2*muupsilon**2*n) + 6*df(x5,t)*df(y1,t,2)*df(y1,t)**2*y1**2*beta*n**2*x30**2*( - betaupsilon*lamdaupsilon +
+ 2*gamma*muupsilon*n - 2*muupsilon**2*n) + 4*df(x5,t)*df(y1,t,2)*df(y1,t)**2*y1*beta*n**2*x30**3*(betaupsilon*
+lamdaupsilon - 2*gamma*muupsilon*n + 2*muupsilon**2*n) + df(x5,t)*df(y1,t,2)*df(y1,t)**2*beta*n**2*x30**4*( - 
+betaupsilon*lamdaupsilon + 2*gamma*muupsilon*n - 2*muupsilon**2*n) + df(x5,t)*df(y1,t,2)*df(y1,t)*y1**5*beta*
+betaupsilon*gamma*lamdaupsilon*n**2 - 5*df(x5,t)*df(y1,t,2)*df(y1,t)*y1**4*beta*betaupsilon*gamma*lamdaupsilon
+*n**2*x30 + 10*df(x5,t)*df(y1,t,2)*df(y1,t)*y1**3*beta*betaupsilon*gamma*lamdaupsilon*n**2*x30**2 - 10*df(x5,t
+)*df(y1,t,2)*df(y1,t)*y1**2*beta*betaupsilon*gamma*lamdaupsilon*n**2*x30**3 + 5*df(x5,t)*df(y1,t,2)*df(y1,t)*
+y1*beta*betaupsilon*gamma*lamdaupsilon*n**2*x30**4 - df(x5,t)*df(y1,t,2)*df(y1,t)*beta*betaupsilon*gamma*
+lamdaupsilon*n**2*x30**5 + 2*df(x5,t)*df(y1,t)**6*y1*beta*n**3 - 2*df(x5,t)*df(y1,t)**6*beta*n**3*x30 + df(x5,
+t)*df(y1,t)**5*y1**2*beta*n**3*(gamma - 4*muupsilon) + 2*df(x5,t)*df(y1,t)**5*y1*beta*n**3*x30*( - gamma + 4*
+muupsilon) + df(x5,t)*df(y1,t)**5*beta*n**3*x30**2*(gamma - 4*muupsilon) + df(x5,t)*df(y1,t)**4*y1**3*beta*
+muupsilon*n**3*( - 2*gamma + 3*muupsilon) + 3*df(x5,t)*df(y1,t)**4*y1**2*beta*muupsilon*n**3*x30*(2*gamma - 3*
+muupsilon) + 3*df(x5,t)*df(y1,t)**4*y1*beta*muupsilon*n**3*x30**2*( - 2*gamma + 3*muupsilon) + df(x5,t)*df(y1,
+t)**4*beta*muupsilon*n**3*x30**3*(2*gamma - 3*muupsilon) + df(x5,t)*df(y1,t)**3*y1**4*beta*n**2*( - 
+betaupsilon*gamma*lamdaupsilon + betaupsilon*lamdaupsilon*muupsilon + gamma*muupsilon**2*n - muupsilon**3*n) +
+ 4*df(x5,t)*df(y1,t)**3*y1**3*beta*n**2*x30*(betaupsilon*gamma*lamdaupsilon - betaupsilon*lamdaupsilon*
+muupsilon - gamma*muupsilon**2*n + muupsilon**3*n) + 6*df(x5,t)*df(y1,t)**3*y1**2*beta*n**2*x30**2*( - 
+betaupsilon*gamma*lamdaupsilon + betaupsilon*lamdaupsilon*muupsilon + gamma*muupsilon**2*n - muupsilon**3*n) +
+ 4*df(x5,t)*df(y1,t)**3*y1*beta*n**2*x30**3*(betaupsilon*gamma*lamdaupsilon - betaupsilon*lamdaupsilon*
+muupsilon - gamma*muupsilon**2*n + muupsilon**3*n) + df(x5,t)*df(y1,t)**3*beta*n**2*x30**4*( - betaupsilon*
+gamma*lamdaupsilon + betaupsilon*lamdaupsilon*muupsilon + gamma*muupsilon**2*n - muupsilon**3*n) + df(x5,t)*df
+(y1,t)**2*y1**5*beta*betaupsilon*lamdaupsilon*muupsilon*n**2*(gamma - muupsilon) + 5*df(x5,t)*df(y1,t)**2*y1**
+4*beta*betaupsilon*lamdaupsilon*muupsilon*n**2*x30*( - gamma + muupsilon) + 10*df(x5,t)*df(y1,t)**2*y1**3*beta
+*betaupsilon*lamdaupsilon*muupsilon*n**2*x30**2*(gamma - muupsilon) + 10*df(x5,t)*df(y1,t)**2*y1**2*beta*
+betaupsilon*lamdaupsilon*muupsilon*n**2*x30**3*( - gamma + muupsilon) + 5*df(x5,t)*df(y1,t)**2*y1*beta*
+betaupsilon*lamdaupsilon*muupsilon*n**2*x30**4*(gamma - muupsilon) + df(x5,t)*df(y1,t)**2*beta*betaupsilon*
+lamdaupsilon*muupsilon*n**2*x30**5*( - gamma + muupsilon) - df(y1,t,4)*df(y1,t,2)*df(y1,t)*y1**4*gamma*n**4 + 
+4*df(y1,t,4)*df(y1,t,2)*df(y1,t)*y1**3*gamma*n**4*x30 - 6*df(y1,t,4)*df(y1,t,2)*df(y1,t)*y1**2*gamma*n**4*x30
+**2 + 4*df(y1,t,4)*df(y1,t,2)*df(y1,t)*y1*gamma*n**4*x30**3 - df(y1,t,4)*df(y1,t,2)*df(y1,t)*gamma*n**4*x30**4
+ + df(y1,t,4)*df(y1,t)**3*y1**3*gamma*n**4 - 3*df(y1,t,4)*df(y1,t)**3*y1**2*gamma*n**4*x30 + 3*df(y1,t,4)*df(
+y1,t)**3*y1*gamma*n**4*x30**2 - df(y1,t,4)*df(y1,t)**3*gamma*n**4*x30**3 - df(y1,t,4)*df(y1,t)**2*y1**4*gamma*
+muupsilon*n**4 + 4*df(y1,t,4)*df(y1,t)**2*y1**3*gamma*muupsilon*n**4*x30 - 6*df(y1,t,4)*df(y1,t)**2*y1**2*
+gamma*muupsilon*n**4*x30**2 + 4*df(y1,t,4)*df(y1,t)**2*y1*gamma*muupsilon*n**4*x30**3 - df(y1,t,4)*df(y1,t)**2
+*gamma*muupsilon*n**4*x30**4 + df(y1,t,3)*df(y1,t,2)**2*y1**4*gamma*n**4 - 4*df(y1,t,3)*df(y1,t,2)**2*y1**3*
+gamma*n**4*x30 + 6*df(y1,t,3)*df(y1,t,2)**2*y1**2*gamma*n**4*x30**2 - 4*df(y1,t,3)*df(y1,t,2)**2*y1*gamma*n**4
+*x30**3 + df(y1,t,3)*df(y1,t,2)**2*gamma*n**4*x30**4 + 3*df(y1,t,3)*df(y1,t,2)*df(y1,t)**2*y1**3*gamma*n**4 - 
+9*df(y1,t,3)*df(y1,t,2)*df(y1,t)**2*y1**2*gamma*n**4*x30 + 9*df(y1,t,3)*df(y1,t,2)*df(y1,t)**2*y1*gamma*n**4*
+x30**2 - 3*df(y1,t,3)*df(y1,t,2)*df(y1,t)**2*gamma*n**4*x30**3 + df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1**4*gamma*n
+**4*( - gamma - 2*muupsilon) + 4*df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1**3*gamma*n**4*x30*(gamma + 2*muupsilon) + 6
+*df(y1,t,3)*df(y1,t,2)*df(y1,t)*y1**2*gamma*n**4*x30**2*( - gamma - 2*muupsilon) + 4*df(y1,t,3)*df(y1,t,2)*df(
+y1,t)*y1*gamma*n**4*x30**3*(gamma + 2*muupsilon) + df(y1,t,3)*df(y1,t,2)*df(y1,t)*gamma*n**4*x30**4*( - gamma 
+- 2*muupsilon) - 4*df(y1,t,3)*df(y1,t)**4*y1**2*gamma*n**4 + 8*df(y1,t,3)*df(y1,t)**4*y1*gamma*n**4*x30 - 4*df
+(y1,t,3)*df(y1,t)**4*gamma*n**4*x30**2 + df(y1,t,3)*df(y1,t)**3*y1**3*gamma*n**4*(gamma + 7*muupsilon) + 3*df(
+y1,t,3)*df(y1,t)**3*y1**2*gamma*n**4*x30*( - gamma - 7*muupsilon) + 3*df(y1,t,3)*df(y1,t)**3*y1*gamma*n**4*x30
+**2*(gamma + 7*muupsilon) + df(y1,t,3)*df(y1,t)**3*gamma*n**4*x30**3*( - gamma - 7*muupsilon) + df(y1,t,3)*df(
+y1,t)**2*y1**4*gamma*muupsilon*n**4*( - gamma - 3*muupsilon) + 4*df(y1,t,3)*df(y1,t)**2*y1**3*gamma*muupsilon*
+n**4*x30*(gamma + 3*muupsilon) + 6*df(y1,t,3)*df(y1,t)**2*y1**2*gamma*muupsilon*n**4*x30**2*( - gamma - 3*
+muupsilon) + 4*df(y1,t,3)*df(y1,t)**2*y1*gamma*muupsilon*n**4*x30**3*(gamma + 3*muupsilon) + df(y1,t,3)*df(y1,
+t)**2*gamma*muupsilon*n**4*x30**4*( - gamma - 3*muupsilon) + df(y1,t,2)**3*y1**4*gamma*n**4*(gamma + 2*
+muupsilon) + 4*df(y1,t,2)**3*y1**3*gamma*n**4*x30*( - gamma - 2*muupsilon) + 6*df(y1,t,2)**3*y1**2*gamma*n**4*
+x30**2*(gamma + 2*muupsilon) + 4*df(y1,t,2)**3*y1*gamma*n**4*x30**3*( - gamma - 2*muupsilon) + df(y1,t,2)**3*
+gamma*n**4*x30**4*(gamma + 2*muupsilon) - 10*df(y1,t,2)**2*df(y1,t)**3*y1**2*gamma*n**4 + 20*df(y1,t,2)**2*df(
+y1,t)**3*y1*gamma*n**4*x30 - 10*df(y1,t,2)**2*df(y1,t)**3*gamma*n**4*x30**2 - 2*df(y1,t,2)**2*df(y1,t)**2*y1**
+4*beta*gamma*n**3 + df(y1,t,2)**2*df(y1,t)**2*y1**3*gamma*n**3*(8*beta*x30 + gamma*n + 5*muupsilon*n) + 3*df(
+y1,t,2)**2*df(y1,t)**2*y1**2*gamma*n**3*x30*( - 4*beta*x30 - gamma*n - 5*muupsilon*n) + df(y1,t,2)**2*df(y1,t)
+**2*y1*gamma*n**3*x30**2*(8*beta*x30 + 3*gamma*n + 15*muupsilon*n) + df(y1,t,2)**2*df(y1,t)**2*gamma*n**3*x30
+**3*( - 2*beta*x30 - gamma*n - 5*muupsilon*n) + 16*df(y1,t,2)*df(y1,t)**5*y1*gamma*n**4 - 16*df(y1,t,2)*df(y1,
+t)**5*gamma*n**4*x30 + 4*df(y1,t,2)*df(y1,t)**4*y1**3*beta*gamma*n**3 + df(y1,t,2)*df(y1,t)**4*y1**2*gamma*n**
+3*( - 12*beta*x30 - 4*gamma*n - 23*muupsilon*n) + 2*df(y1,t,2)*df(y1,t)**4*y1*gamma*n**3*x30*(6*beta*x30 + 4*
+gamma*n + 23*muupsilon*n) + df(y1,t,2)*df(y1,t)**4*gamma*n**3*x30**2*( - 4*beta*x30 - 4*gamma*n - 23*muupsilon
+*n) - 4*df(y1,t,2)*df(y1,t)**3*y1**4*beta*gamma*muupsilon*n**3 + df(y1,t,2)*df(y1,t)**3*y1**3*gamma*muupsilon*
+n**3*(16*beta*x30 + 5*gamma*n + 12*muupsilon*n) + 3*df(y1,t,2)*df(y1,t)**3*y1**2*gamma*muupsilon*n**3*x30*( - 
+8*beta*x30 - 5*gamma*n - 12*muupsilon*n) + df(y1,t,2)*df(y1,t)**3*y1*gamma*muupsilon*n**3*x30**2*(16*beta*x30 
++ 15*gamma*n + 36*muupsilon*n) + df(y1,t,2)*df(y1,t)**3*gamma*muupsilon*n**3*x30**3*( - 4*beta*x30 - 5*gamma*n
+ - 12*muupsilon*n) - 2*df(y1,t,2)*df(y1,t)**2*y1**5*beta*betaupsilon*gamma*lamdaupsilon*n**2 + df(y1,t,2)*df(
+y1,t)**2*y1**4*gamma*n**2*(10*beta*betaupsilon*lamdaupsilon*x30 - 2*gamma*muupsilon**2*n**2 - 3*muupsilon**3*n
+**2) + 4*df(y1,t,2)*df(y1,t)**2*y1**3*gamma*n**2*x30*( - 5*beta*betaupsilon*lamdaupsilon*x30 + 2*gamma*
+muupsilon**2*n**2 + 3*muupsilon**3*n**2) + 2*df(y1,t,2)*df(y1,t)**2*y1**2*gamma*n**2*x30**2*(10*beta*
+betaupsilon*lamdaupsilon*x30 - 6*gamma*muupsilon**2*n**2 - 9*muupsilon**3*n**2) + 2*df(y1,t,2)*df(y1,t)**2*y1*
+gamma*n**2*x30**3*( - 5*beta*betaupsilon*lamdaupsilon*x30 + 4*gamma*muupsilon**2*n**2 + 6*muupsilon**3*n**2) +
+ df(y1,t,2)*df(y1,t)**2*gamma*n**2*x30**4*(2*beta*betaupsilon*lamdaupsilon*x30 - 2*gamma*muupsilon**2*n**2 - 3
+*muupsilon**3*n**2) - 6*df(y1,t)**7*gamma*n**4 - 2*df(y1,t)**6*y1**2*beta*gamma*n**3 + 2*df(y1,t)**6*y1*gamma*
+n**3*(2*beta*x30 + gamma*n + 6*muupsilon*n) + 2*df(y1,t)**6*gamma*n**3*x30*( - beta*x30 - gamma*n - 6*
+muupsilon*n) + 4*df(y1,t)**5*y1**3*beta*gamma*muupsilon*n**3 + df(y1,t)**5*y1**2*gamma*muupsilon*n**3*( - 12*
+beta*x30 - 4*gamma*n - 9*muupsilon*n) + 2*df(y1,t)**5*y1*gamma*muupsilon*n**3*x30*(6*beta*x30 + 4*gamma*n + 9*
+muupsilon*n) + df(y1,t)**5*gamma*muupsilon*n**3*x30**2*( - 4*beta*x30 - 4*gamma*n - 9*muupsilon*n) + 2*df(y1,t
+)**4*y1**4*beta*gamma*n**2*(betaupsilon*lamdaupsilon - muupsilon**2*n) + df(y1,t)**4*y1**3*gamma*n**2*( - 8*
+beta*betaupsilon*lamdaupsilon*x30 + 8*beta*muupsilon**2*n*x30 + 3*gamma*muupsilon**2*n**2 + 4*muupsilon**3*n**
+2) + 3*df(y1,t)**4*y1**2*gamma*n**2*x30*(4*beta*betaupsilon*lamdaupsilon*x30 - 4*beta*muupsilon**2*n*x30 - 3*
+gamma*muupsilon**2*n**2 - 4*muupsilon**3*n**2) + df(y1,t)**4*y1*gamma*n**2*x30**2*( - 8*beta*betaupsilon*
+lamdaupsilon*x30 + 8*beta*muupsilon**2*n*x30 + 9*gamma*muupsilon**2*n**2 + 12*muupsilon**3*n**2) + df(y1,t)**4
+*gamma*n**2*x30**3*(2*beta*betaupsilon*lamdaupsilon*x30 - 2*beta*muupsilon**2*n*x30 - 3*gamma*muupsilon**2*n**
+2 - 4*muupsilon**3*n**2) - 2*df(y1,t)**3*y1**5*beta*betaupsilon*gamma*lamdaupsilon*muupsilon*n**2 + df(y1,t)**
+3*y1**4*gamma*muupsilon*n**2*(10*beta*betaupsilon*lamdaupsilon*x30 - gamma*muupsilon**2*n**2 - muupsilon**3*n
+**2) + 4*df(y1,t)**3*y1**3*gamma*muupsilon*n**2*x30*( - 5*beta*betaupsilon*lamdaupsilon*x30 + gamma*muupsilon
+**2*n**2 + muupsilon**3*n**2) + 2*df(y1,t)**3*y1**2*gamma*muupsilon*n**2*x30**2*(10*beta*betaupsilon*
+lamdaupsilon*x30 - 3*gamma*muupsilon**2*n**2 - 3*muupsilon**3*n**2) + 2*df(y1,t)**3*y1*gamma*muupsilon*n**2*
+x30**3*( - 5*beta*betaupsilon*lamdaupsilon*x30 + 2*gamma*muupsilon**2*n**2 + 2*muupsilon**3*n**2) + df(y1,t)**
+3*gamma*muupsilon*n**2*x30**4*(2*beta*betaupsilon*lamdaupsilon*x30 - gamma*muupsilon**2*n**2 - muupsilon**3*n
+**2)
+
+
+MODEL NOT ALGEBRAICALLY OBSERVABLE
+
+
+PARAMETER VALUES
+
+
+b2_ := {lamdaupsilon=2,beta=3,muupsilon=5,betaupsilon=7,gamma=11,n=13}
+
+
+MODEL PARAMETER SOLUTION(S)
+
+
+g_ := {{beta=(3*n)/13,betaupsilon=(14*n)/(13*lamdaupsilon),gamma=11,muupsilon=5}}
+
+
+MODEL NON IDENTIFIABLE
+
+
+IDENTIFIABILITY WITH ALL INITIAL CONDITIONS (IC_)
+
+
+ic_ := {x1=x10,x2=x20,x3=x30,x4=x40,x5=x50}
+
+
+MODEL PARAMETER SOLUTIONS
+
+
+gi_ := {{lamdaupsilon=2,beta=(3*n)/13,betaupsilon=(7*n)/13,gamma=11,muupsilon=5}}
+
+
+MODEL NON IDENTIFIABLE
+
+
+3: 
